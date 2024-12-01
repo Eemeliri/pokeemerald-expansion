@@ -48,10 +48,6 @@
 #include "constants/rgb.h"
 #include "constants/songs.h"
 
-#if (DECAP_ENABLED) && (DECAP_MIRRORING) && !(DECAP_START_MENU)
-#define AddTextPrinterParameterized (AddTextPrinterFixedCaseParameterized)
-#endif
-
 // Menu actions
 enum
 {
@@ -81,7 +77,7 @@ enum
 };
 
 // IWRAM common
-bool8 (*gMenuCallback)(void);
+COMMON_DATA bool8 (*gMenuCallback)(void) = NULL;
 
 // EWRAM
 EWRAM_DATA static u8 sSafariBallsWindowId = 0;
