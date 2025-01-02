@@ -2551,7 +2551,7 @@ void GetFollowerAction(struct ScriptContext *ctx) // Essentially a big switch fo
         }
         if (multi < NUMBER_OF_MON_TYPES)
         {
-            multi = GetTypeEffectiveness(mon, multi);
+            multi = GetOverworldTypeEffectiveness(mon, multi);
             if (multi <= UQ_4_12(0.5))
                 condEmotes[condCount++] = (struct SpecialEmote) {.emotion = FOLLOWER_EMOTION_HAPPY, .index = 32};
             else if (multi >= UQ_4_12(2.0))
@@ -9777,7 +9777,7 @@ static bool8 IsElevationMismatchAt(u8 elevation, s16 x, s16 y)
 
     mapElevation = MapGridGetElevationAt(x, y);
 
-    if (mapElevation == 0 || mapElevation == 15)
+    if (mapElevation == 0 || mapElevation == MAX_ELEVATION_LEVEL)
         return FALSE;
 
     if (mapElevation != elevation)
@@ -9836,10 +9836,8 @@ void ObjectEventUpdateElevation(struct ObjectEvent *objEvent, struct Sprite *spr
     u8 curElevation = MapGridGetElevationAt(objEvent->currentCoords.x, objEvent->currentCoords.y);
     u8 prevElevation = MapGridGetElevationAt(objEvent->previousCoords.x, objEvent->previousCoords.y);
 
-    if (curElevation == 15 || prevElevation == 15)
+    if (curElevation == MAX_ELEVATION_LEVEL || prevElevation == MAX_ELEVATION_LEVEL)
     {
-        // Ignore subsprite priorities under bridges
-        // so all subsprites will display below it
         if (OW_LARGE_OW_SUPPORT)
             sprite->subspriteMode = SUBSPRITES_IGNORE_PRIORITY;
         return;
@@ -9847,7 +9845,7 @@ void ObjectEventUpdateElevation(struct ObjectEvent *objEvent, struct Sprite *spr
 
     objEvent->currentElevation = curElevation;
 
-    if (curElevation != 0 && curElevation != 15)
+    if (curElevation != 0 && curElevation != MAX_ELEVATION_LEVEL)
         objEvent->previousElevation = curElevation;
 }
 
