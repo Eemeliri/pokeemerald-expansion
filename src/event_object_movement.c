@@ -9902,6 +9902,8 @@ void GroundEffect_SpawnOnTallGrass(struct ObjectEvent *objEvent, struct Sprite *
     gFieldEffectArguments[5] = objEvent->mapGroup;
     gFieldEffectArguments[6] = (u8)gSaveBlock1Ptr->location.mapNum << 8 | (u8)gSaveBlock1Ptr->location.mapGroup;
     gFieldEffectArguments[7] = TRUE; // skip to end of anim
+    if (objEvent->currentMetatileBehavior == MB_LONG_GRASS_COVERED)
+        gFieldEffectArguments[7] |= 2;
     FieldEffectStart(FLDEFF_TALL_GRASS);
 }
 
