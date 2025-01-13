@@ -180,6 +180,14 @@ bool8 MetatileBehavior_IsJumpSouth(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsOmnidirectionalJump(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_OMNIDIRECTIONAL_JUMP)
+        return TRUE;
+    else
+        return FALSE;
+}
+
 bool8 MetatileBehavior_IsPokeGrass(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_TALL_GRASS || metatileBehavior == MB_LONG_GRASS || metatileBehavior == MB_LONG_GRASS_COVERED)
