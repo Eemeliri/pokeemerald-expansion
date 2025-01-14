@@ -143,6 +143,13 @@
 #define METATILE_Dewford_Door              0x825
 #define METATILE_Dewford_Door_BattleTower  0x85D
 
+// gTileset_DewfordDojo
+#define METATILE_DewfordDojo_Door  0x847
+
+// gTileset_DewfordDojoBuilding
+#define METATILE_DewfordDojoBuilding_DoorLeft   0x845
+#define METATILE_DewfordDojoBuilding_DoorRight  0x846
+
 // gTileset_EliteFour
 #define METATILE_EliteFour_EntryDoor_ClosedBottom    0x80E
 #define METATILE_EliteFour_EntryDoor_ClosedTop       0x806

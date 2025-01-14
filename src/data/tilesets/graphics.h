@@ -1653,3 +1653,41 @@ const u16 gTilesetPalettes_newbarktown[][16] =
 };
 
 const u32 gTilesetTiles_newbarktown[] = INCBIN_U32("data/tilesets/secondary/newbarktown/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_DewfordDojo[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_DewfordDojo[] = INCBIN_U32("data/tilesets/secondary/dewford_dojo/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_DewfordDojoBuilding[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_DewfordDojoBuilding[] = INCBIN_U32("data/tilesets/secondary/dewford_dojo_building/tiles.4bpp.lz");

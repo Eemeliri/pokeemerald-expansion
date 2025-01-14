@@ -465,3 +465,18 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
+
+// Custom
+
+const u32 gObjectEventPic_TMBall[] = INCBIN_U32("graphics/object_events/pics/misc/TM_ball.4bpp");
+
+const u32 gObjectEventPic_Cynthia[] = INCBIN_U32("graphics/object_events/pics/people/cynthia.4bpp");
+const u32 gObjectEventPic_Ruin_Maniac[] = INCBIN_U32("graphics/object_events/pics/people/ruin_maniac.4bpp");
+const u32 gObjectEventPic_Chuck[] = INCBIN_U32("graphics/object_events/pics/people/chuck.4bpp");
+const u32 gObjectEventPic_Falkner[] = INCBIN_U32("graphics/object_events/pics/people/falkner.4bpp");
+
+const u16 gObjectEventPal_Cynthia[] = INCBIN_U16("graphics/object_events/palettes/cynthia.gbapal");
+const u16 gObjectEventPal_Ruin_Maniac[] = INCBIN_U16("graphics/object_events/palettes/ruin_maniac.gbapal");
+const u16 gObjectEventPal_Chuck[] = INCBIN_U16("graphics/object_events/palettes/chuck.gbapal");
+const u16 gObjectEventPal_Falkner[] = INCBIN_U16("graphics/object_events/palettes/falkner.gbapal");
+const u16 gObjectEventPal_Brawly[] = INCBIN_U16("graphics/object_events/palettes/brawly.gbapal");

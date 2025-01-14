@@ -1155,3 +1155,15 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/dexnav.inc"
 
 	.include "data/maps/DewfordOutskirts/scripts.inc"
+
+	.include "data/maps/DewfordDojo/scripts.inc"
+
+	.include "data/maps/DewfordDojoLobby/scripts.inc"
+
+	.include "data/maps/DewfordDojoBedroom/scripts.inc"
+
+	.include "data/maps/DewfordDojoEVRoom/scripts.inc"
+
+	.include "data/maps/DewfordDojoRematchRoom/scripts.inc"
+
+	.include "data/maps/DewfordDojoTrainingRoom/scripts.inc"

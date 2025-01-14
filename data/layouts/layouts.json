@@ -115,7 +115,7 @@
       "id": "LAYOUT_DEWFORD_TOWN",
       "name": "DewfordTown_Layout",
       "width": 20,
-      "height": 39,
+      "height": 45,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DewfordTown/border.bin",
@@ -4420,6 +4420,66 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DewfordOutskirts/border.bin",
       "blockdata_filepath": "data/layouts/DewfordOutskirts/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO",
+      "name": "DewfordDojo_Layout",
+      "width": 45,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DewfordDojo",
+      "border_filepath": "data/layouts/DewfordDojo/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojo/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_LOBBY",
+      "name": "DewfordDojoLobby_Layout",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoLobby/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoLobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_BEDROOM",
+      "name": "DewfordDojoBedroom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoBedroom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoBedroom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_EVROOM",
+      "name": "DewfordDojoEVRoom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoEVRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoEVRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_REMATCH_ROOM",
+      "name": "DewfordDojoRematchRoom_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoRematchRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoRematchRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_TRAINING_ROOM",
+      "name": "DewfordDojoTrainingRoom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoTrainingRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoTrainingRoom/map.bin"
     }
   ]
 }
