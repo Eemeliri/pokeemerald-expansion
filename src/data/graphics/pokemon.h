@@ -5629,6 +5629,10 @@ const u32 gObjectEventPic_Substitute[] = INCBIN_COMP("graphics/pokemon/question_
 #endif //OW_POKEMON_OBJECT_EVENTS
 #endif //P_GIGANTAMAX_FORMS
 
+    const u32 gMonFrontPic_EeveePartner[] = INCBIN_U32("graphics/pokemon/eevee/partner/front.4bpp.lz");
+    const u32 gMonPalette_EeveePartner[] = INCBIN_U32("graphics/pokemon/eevee/partner/normal.gbapal.lz");
+    const u32 gMonBackPic_EeveePartner[] = INCBIN_U32("graphics/pokemon/eevee/partner/back.4bpp.lz");
+    const u32 gMonShinyPalette_EeveePartner[] = INCBIN_U32("graphics/pokemon/eevee/partner/shiny.gbapal.lz");
     const u8 gMonIcon_EeveePartner[] = INCBIN_U8("graphics/pokemon/eevee/partner/icon.4bpp");
 #if P_GENDER_DIFFERENCES && P_CUSTOM_GENDER_DIFF_ICONS
     const u8 gMonIcon_EeveePartnerF[] = INCBIN_U8("graphics/pokemon/eevee/partner/iconf.4bpp");
