@@ -1167,3 +1167,11 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/DewfordDojoRematchRoom/scripts.inc"
 
 	.include "data/maps/DewfordDojoTrainingRoom/scripts.inc"
+
+	.include "data/maps/RuggedRoad/scripts.inc"
+
+	.include "data/maps/RuggedCave/scripts.inc"
+
+	.include "data/maps/RuggedCave2/scripts.inc"
+
+	.include "data/maps/RuggedCave3/scripts.inc"

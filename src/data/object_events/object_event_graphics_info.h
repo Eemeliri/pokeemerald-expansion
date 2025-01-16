@@ -4782,3 +4782,22 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Falkner = {
     .images = sPicTable_Falkner,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MegaStoneSparkle = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NPC_2,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 128,
+    .width = 16,
+    .height = 16,
+    .paletteSlot = 3,
+    .shadowSize = SHADOW_SIZE_S,
+    .inanimate = FALSE,
+    .compressed = FALSE,
+    .tracks = TRACKS_NONE,
+    .oam = &gObjectEventBaseOam_16x16,
+    .subspriteTables = sOamTables_16x16,
+    .anims = sAnimTable_MegaStoneSparkle,
+    .images = sPicTable_MegaStoneSparkle,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};

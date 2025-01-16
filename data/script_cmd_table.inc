@@ -241,6 +241,7 @@ gScriptCmdTable::
 	cmd ScrCmd_dynmultichoice, requests_effects=1              @ 0xe3
 	cmd ScrCmd_dynmultipush, requests_effects=1                @ 0xe4
 	cmd ScrCmd_bpmart, requests_effects=1 					   @ 0xe5
+	cmd ScrCmd_setwildbattle2, requests_effects=1			   @ 0xe6
 
 gScriptCmdTableEnd::
 	.4byte ScrCmd_nop

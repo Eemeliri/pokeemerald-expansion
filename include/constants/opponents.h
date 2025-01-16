@@ -859,7 +859,47 @@
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
 
+//custom
 #define TRAINER_DewfordDojo_EXP              855
+#define TRAINER_RUGGED_ROAD_SCHOOLKID        856
+#define TRAINER_RUGGED_ROAD_HIKER            857
+#define TRAINER_RUGGED_ROAD_PICNICKER        858
+#define TRAINER_RUGGED_ROAD_CAMPER           859
+
+#define TRAINER_UNUSED                       860
+#define TRAINER_UNUSED0                      861
+#define TRAINER_UNUSED1                      862
+#define TRAINER_UNUSED2                      863
+#define TRAINER_UNUSED3                      864
+#define TRAINER_UNUSED4                      865
+#define TRAINER_UNUSED5                      866
+#define TRAINER_UNUSED6                      867
+#define TRAINER_UNUSED7                      868
+#define TRAINER_UNUSED8                      869
+#define TRAINER_UNUSED9                      870
+#define TRAINER_UNUSED10                     871
+#define TRAINER_UNUSED11                     872
+#define TRAINER_UNUSED12                     873
+#define TRAINER_UNUSED13                     874
+#define TRAINER_UNUSED14                     875
+#define TRAINER_UNUSED15                     876
+#define TRAINER_UNUSED16                     877
+#define TRAINER_UNUSED17                     878
+#define TRAINER_UNUSED18                     879
+#define TRAINER_UNUSED19                     880
+#define TRAINER_UNUSED20                     881
+#define TRAINER_UNUSED21                     882
+#define TRAINER_UNUSED22                     883
+#define TRAINER_UNUSED23                     884
+#define TRAINER_UNUSED24                     885
+#define TRAINER_UNUSED25                     886
+#define TRAINER_UNUSED26                     887
+#define TRAINER_UNUSED27                     888
+#define TRAINER_UNUSED28                     889
+#define TRAINER_UNUSED29                     890
+#define TRAINER_UNUSED30                     891
+#define TRAINER_UNUSED31                     892
+#define TRAINER_UNUSED32                     893                 
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
@@ -867,8 +907,8 @@
 
 
 
-#define TRAINERS_COUNT                      856
-#define MAX_TRAINERS_COUNT                  864
+#define TRAINERS_COUNT                      894
+#define MAX_TRAINERS_COUNT                  894
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

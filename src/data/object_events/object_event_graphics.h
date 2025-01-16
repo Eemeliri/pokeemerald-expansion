@@ -480,3 +480,4 @@ const u16 gObjectEventPal_Ruin_Maniac[] = INCBIN_U16("graphics/object_events/pal
 const u16 gObjectEventPal_Chuck[] = INCBIN_U16("graphics/object_events/palettes/chuck.gbapal");
 const u16 gObjectEventPal_Falkner[] = INCBIN_U16("graphics/object_events/palettes/falkner.gbapal");
 const u16 gObjectEventPal_Brawly[] = INCBIN_U16("graphics/object_events/palettes/brawly.gbapal");
+const u32 gObjectEventPic_MegaStoneSparkle[] = INCBIN_U32("graphics/object_events/pics/misc/megastone_sparkle.4bpp");

@@ -94,7 +94,8 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "DewfordOutskirts",
-    "DewfordDojo"
+    "DewfordDojo",
+    "RuggedRoad"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -436,7 +437,10 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "RuggedCave",
+    "RuggedCave2",
+    "RuggedCave3"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",
