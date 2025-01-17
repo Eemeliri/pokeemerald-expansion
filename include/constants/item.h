@@ -19,12 +19,12 @@
 #define POCKET_TM_HM        4
 #define POCKET_POWER_UP     5
 #define POCKET_BERRIES      6
-#define POCKET_MAIL         7
-#define POCKET_TREASURES    8
-#define POCKET_MEGA_STONES  9
+//#define POCKET_MAIL         7
+//#define POCKET_TREASURES    8
+#define POCKET_MEGA_STONES  7
 //#define POCKET_Z_CRYSTALS   10
-#define POCKET_KEY_ITEMS    10
-#define POCKETS_COUNT       11
+#define POCKET_KEY_ITEMS    8
+#define POCKETS_COUNT       9
 
 // Default to POCKET_ITEMS if the specified pocket is disabled.
 #define DEFAULT_MEDICINE_POCKET     POCKET_ITEMS
