@@ -199,11 +199,32 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [ITEMS_POCKET] =    COMPOUND_STRING("ITEMS"),
-    [BALLS_POCKET] =    COMPOUND_STRING("POKé BALLS"),
-    [TMHM_POCKET]  =    COMPOUND_STRING("TMs & HMs"),
-    [BERRIES_POCKET] =  COMPOUND_STRING("BERRIES"),
-    [KEYITEMS_POCKET] = COMPOUND_STRING("KEY ITEMS")
+    [POCKET_ITEMS] = COMPOUND_STRING("Items"),
+#if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+    [POCKET_MEDICINE] = COMPOUND_STRING("Medicine"),
+#endif
+    [POCKET_POKE_BALLS] = COMPOUND_STRING("Pokéballs"),
+#if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET
+    [POCKET_BATTLE_ITEMS] = COMPOUND_STRING("Battle items"),
+#endif
+    [POCKET_TM_HM]  = COMPOUND_STRING("TM/HM"),
+#if POCKET_POWER_UP != DEFAULT_POWER_UP_POCKET
+    [POCKET_POWER_UP] = COMPOUND_STRING("Power up"),
+#endif
+    [POCKET_BERRIES] = COMPOUND_STRING("Berries"),
+#if POCKET_MAIL != DEFAULT_MAIL_POCKET
+    [POCKET_MAIL] = COMPOUND_STRING("Mail"),
+#endif
+#if POCKET_TREASURES != DEFAULT_TREASURES_POCKET
+    [POCKET_TREASURES] = COMPOUND_STRING("Treasure"),
+#endif
+#if POCKET_MEGA_STONES != DEFAULT_MEGA_STONES_POCKET
+    [POCKET_MEGA_STONES] = COMPOUND_STRING("Megastones"),
+#endif
+#if POCKET_Z_CRYSTALS != DEFAULT_Z_CRYSTALS_POCKET
+    [POCKET_Z_CRYSTALS] = COMPOUND_STRING("Z-crystals"),
+#endif
+    [POCKET_KEY_ITEMS] = COMPOUND_STRING("Key items"),
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}");
@@ -495,6 +516,27 @@ const u8 gText_Key_Items[] = _("KEY ITEMS");
 const u8 gText_Poke_Balls[] = _("POKé BALLS");
 const u8 gText_TMs_Hms[] = _("TMs & HMs");
 const u8 gText_Berries2[] = _("BERRIES");
+#if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+const u8 gText_MedicinePocket[] = _("MEDICINE");
+#endif
+#if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET
+const u8 gText_BattleItemsPocket[] = _("BATTLE ITEM");
+#endif
+#if POCKET_POWER_UP != DEFAULT_POWER_UP_POCKET
+const u8 gText_PowerUpPocket[] = _("POWER UP");
+#endif
+#if POCKET_MAIL != DEFAULT_MAIL_POCKET
+const u8 gText_MailPocket[] = _("MAIL");
+#endif
+#if POCKET_TREASURES != DEFAULT_TREASURES_POCKET
+const u8 gText_TreasuresPocket[] = _("TREASURES");
+#endif
+#if POCKET_MEGA_STONES != DEFAULT_MEGA_STONES_POCKET
+const u8 gText_MegaStonesPocket[] = _("MEGA STONES");
+#endif
+#if POCKET_Z_CRYSTALS != DEFAULT_Z_CRYSTALS_POCKET
+const u8 gText_ZCrystalsPocket[] = _("Z-CRYSTALS");
+#endif
 const u8 gText_SomeonesPC[] = _("SOMEONE'S PC");
 const u8 gText_LanettesPC[] = _("LANETTE'S PC");
 const u8 gText_PlayersPC[] = _("{PLAYER}'s PC");
@@ -753,6 +795,13 @@ const u8 gText_BattleFactory[] = _("BATTLE FACTORY");
 const u8 gText_BattleArena[] = _("BATTLE ARENA");
 const u8 gText_BattlePike[] = _("BATTLE PIKE");
 const u8 gText_BattlePyramid[] = _("BATTLE PYRAMID");
+const u8 gText_Medicine[] = _("Medicine");
+const u8 gText_BattleItems[] = _("Battle item");
+const u8 gText_Treasures[] = _("Treasures");
+const u8 gText_MegaStones[] = _("Mega stones");
+const u8 gText_ZCrystals[] = _("Z-crystals");
+const u8 gText_PowerUp[] = _("Power up");
+const u8 gText_Mail[] = _("Mail");
 
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");
