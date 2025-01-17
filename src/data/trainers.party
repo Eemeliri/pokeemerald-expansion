@@ -12900,39 +12900,39 @@ Carvanha
 Level: 43
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LILA_AND_ROY_4 ===
-Name: LILA & ROY
-Class: Sis And Bro
-Pic: Sis And Bro
-Gender: Male
-Music: Swimmer
-Double Battle: Yes
+=== TRAINER_DEWFORD_OUTSKIRTS_AL ===
+Name: Susav
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Double Battle: No
 AI: Check Bad Move
 
-Lanturn
-Level: 48
+Roselia
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sharpedo
-Level: 46
+Applin
+Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_LILA_AND_ROY_5 ===
-Name: LILA & ROY
-Class: Sis And Bro
-Pic: Sis And Bro
+=== TRAINER_DEWFORD_OUTSKIRTS_RM ===
+Name: Joshua
+Class: Ruin Maniac
+Pic: Ruin Maniac
 Gender: Male
-Music: Swimmer
-Double Battle: Yes
+Music: Hiker
+Double Battle: No
 AI: Check Bad Move
 
-Lanturn
-Level: 51
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Larvitar
+Level: 17
+IVs: 31 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 31 Spe
 
-Sharpedo
-Level: 49
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Amaura
+Level: 17
+IVs: 0 HP / 31 Atk / 0 Def / 31 SpA / 0 SpD / 31 Spe
 
 === TRAINER_LISA_AND_RAY ===
 Name: LISA & RAY

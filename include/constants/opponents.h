@@ -693,8 +693,8 @@
 #define TRAINER_LILA_AND_ROY_1              687
 #define TRAINER_LILA_AND_ROY_2              688
 #define TRAINER_LILA_AND_ROY_3              689
-#define TRAINER_LILA_AND_ROY_4              690
-#define TRAINER_LILA_AND_ROY_5              691
+#define TRAINER_DEWFORD_OUTSKIRTS_RM        690
+#define TRAINER_DEWFORD_OUTSKIRTS_AL        691
 #define TRAINER_LISA_AND_RAY                692
 #define TRAINER_CHRIS                       693
 #define TRAINER_DAWSON                      694

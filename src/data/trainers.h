@@ -32317,19 +32317,21 @@ F_TRAINER_FEMALE |
         },
     },
 #line 12903
-    [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_4] =
+    [DIFFICULTY_NORMAL][TRAINER_DEWFORD_OUTSKIRTS_AL] =
     {
 #line 12904
-        .trainerName = _("LILA & ROY"),
+        .trainerName = _("Susav"),
 #line 12905
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
+        .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 12906
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_AROMA_LADY,
         .encounterMusic_gender = 
+#line 12907
+F_TRAINER_FEMALE | 
 #line 12908
-            TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 12909
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 12910
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -32337,42 +32339,42 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12912
-            .species = SPECIES_LANTURN,
+            .species = SPECIES_ROSELIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12914
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 12913
-            .lvl = 48,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 12916
-            .species = SPECIES_SHARPEDO,
+            .species = SPECIES_APPLIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12918
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 12917
-            .lvl = 46,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
 #line 12920
-    [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_5] =
+    [DIFFICULTY_NORMAL][TRAINER_DEWFORD_OUTSKIRTS_RM] =
     {
 #line 12921
-        .trainerName = _("LILA & ROY"),
+        .trainerName = _("Joshua"),
 #line 12922
-        .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
+        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 12923
-        .trainerPic = TRAINER_PIC_SIS_AND_BRO,
+        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
         .encounterMusic_gender = 
 #line 12925
-            TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+            TRAINER_ENCOUNTER_MUSIC_HIKER,
 #line 12926
-        .doubleBattle = TRUE,
+        .doubleBattle = FALSE,
 #line 12927
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -32380,23 +32382,23 @@ F_TRAINER_FEMALE |
         {
             {
 #line 12929
-            .species = SPECIES_LANTURN,
+            .species = SPECIES_LARVITAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12931
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(31, 0, 0, 31, 0, 0),
 #line 12930
-            .lvl = 51,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
 #line 12933
-            .species = SPECIES_SHARPEDO,
+            .species = SPECIES_AMAURA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 12935
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+            .iv = TRAINER_PARTY_IVS(0, 31, 0, 31, 31, 0),
 #line 12934
-            .lvl = 49,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

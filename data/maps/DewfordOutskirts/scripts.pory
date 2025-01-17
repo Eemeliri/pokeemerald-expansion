@@ -1,1 +1,46 @@
 mapscripts DewfordOutskirts_MapScripts {}
+
+script fisherman_dewfordoutskkirts {
+    msgbox(format("A quiet spot away from the windy sea is quite nice, don't you think?"), MSGBOX_NPC)
+    end
+}
+
+script girl_dewfordoutskirts {
+    msgbox(format("I think I see a cave entrance on the island over there, shame I don't have a way to scale the wall."), MSGBOX_NPC)
+    end
+}
+
+script skorupi_static {
+    lock
+    faceplayer
+    playmoncry(SPECIES_SKORUPI, CRY_MODE_ENCOUNTER)
+    delay(40)
+    waitmoncry
+    setwildbattle2(SPECIES_SKORUPI, 12, ITEM_POISON_BARB, 2, MOVE_BITE, MOVE_FELL_STINGER, MOVE_POISON_FANG, MOVE_SKITTER_SMACK, FALSE)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        setflag(FLAG_DEWFORD_OUTSKIRTS_SKORUPI)
+    }
+    removeobject(5)
+    release
+    end
+
+}
+
+script pokemaniac_dewfordoutskirts {
+    msgbox(format("A rare bug Pokémon was sighted on this route and I will be the first to find it."), MSGBOX_NPC)
+    end
+}
+
+script ruin_maniac_dewfordoutskirts {
+    trainerbattle_single(TRAINER_DEWFORD_OUTSKIRTS_RM, format("The thrill of exploration, can you feel it?"), format("The thrill of defeat!"))
+    msgbox(format("This island houses a secret, I can sense it!"), MSGBOX_AUTOCLOSE)
+    end
+}
+
+script aroma_lady_dewfordoutskirts {
+    trainerbattle_single(TRAINER_DEWFORD_OUTSKIRTS_AL, format("The smell of the sea is so refreshing, I could stay here all day!"), format("Swept away like a sea breeze!"))
+    msgbox(format("Rare berries tend to grow around here, you should gather some and plant more."), MSGBOX_AUTOCLOSE)
+    end
+}
