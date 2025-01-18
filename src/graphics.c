@@ -2096,3 +2096,7 @@ const u32 gBattleIcons_Gfx2[] = INCBIN_U32("graphics/types/battle_icons2.4bpp.lz
 const u32 gBattleIcons_Pal1[] = INCBIN_U32("graphics/types/battle_icons1.gbapal.lz");
 const u32 gBattleIcons_Pal2[] = INCBIN_U32("graphics/types/battle_icons2.gbapal.lz");
 
+// Scrolling bgs
+
+const u32 gPartyMenuBgScroll_Tilemap[] = INCBIN_U32("graphics/party_menu/scrolling_bg.bin.lz");
+
