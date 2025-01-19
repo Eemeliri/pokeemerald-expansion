@@ -7,3 +7,4 @@ Zeturic - Move item
 AsparagusEduardo - Better bag
 Ghoulslash - Auto run, repeated field medicine use
 Archie+Xaman - Gen5 style party menu
+Ravepossum - BW summary screen
