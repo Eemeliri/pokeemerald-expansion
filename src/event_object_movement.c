@@ -550,6 +550,16 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Falkner,               OBJ_EVENT_PAL_TAG_FALKNER},
     {gObjectEventPal_Ruin_Maniac,           OBJ_EVENT_PAL_TAG_RUIN_MANIAC},
     {gObjectEventPal_Brawly,                OBJ_EVENT_PAL_TAG_BRAWLY},
+    {gObjectEventPal_Brock,                 OBJ_EVENT_PAL_TAG_BROCK},
+    {gObjectEventPal_Misty,                 OBJ_EVENT_PAL_TAG_MISTY},
+    {gObjectEventPal_Surge,                 OBJ_EVENT_PAL_TAG_SURGE},
+    {gObjectEventPal_Erika,                 OBJ_EVENT_PAL_TAG_ERIKA},
+    {gObjectEventPal_Koga,                  OBJ_EVENT_PAL_TAG_KOGA},
+    {gObjectEventPal_Janine,                OBJ_EVENT_PAL_TAG_JANINE},
+    {gObjectEventPal_Sabrina,               OBJ_EVENT_PAL_TAG_SABRINA},
+    {gObjectEventPal_Blaine,                OBJ_EVENT_PAL_TAG_BLAINE},
+    {gObjectEventPal_Giovanni,              OBJ_EVENT_PAL_TAG_GIOVANNI},
+    {gObjectEventPal_Blue,                  OBJ_EVENT_PAL_TAG_BLUE},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

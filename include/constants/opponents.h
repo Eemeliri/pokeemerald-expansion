@@ -866,8 +866,8 @@
 #define TRAINER_RUGGED_ROAD_PICNICKER        858
 #define TRAINER_RUGGED_ROAD_CAMPER           859
 
-#define TRAINER_UNUSED                       860
-#define TRAINER_UNUSED0                      861
+#define TRAINER_ROUTE115_FALKNER             860
+#define TRAINER_GRANITECAVE_BROCK            861
 #define TRAINER_UNUSED1                      862
 #define TRAINER_UNUSED2                      863
 #define TRAINER_UNUSED3                      864

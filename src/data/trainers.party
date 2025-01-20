@@ -6407,17 +6407,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Slowpoke
+Level: 18
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Tentacool
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Level: 19
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Shellder
+Level: 19
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_NED ===
 Name: NED
@@ -6428,9 +6428,9 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 11
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+Croconaw
+Level: 19
+IVs: 20 HP / 20 Atk / 10 Def / 10 SpA / 20 SpD / 10 Spe
 
 === TRAINER_DALE ===
 Name: DALE
@@ -17015,3 +17015,140 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Wooper-Paldea
 Level: 13
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROUTE115_FALKNER ===
+Name: Falkner
+Class: J Leader
+Pic: Leader Falkner
+Gender: Male
+Music: Male
+Items: Super Potion
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Ace Pokemon
+
+Rufflet @ Pecha Berry
+Hasty Nature
+Level: 13
+Ability: Hustle
+IVs: 20 HP / 10 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 200 Atk / 4 SpA / 200 SpD
+Shiny: No
+Ball: Quick Ball
+- Hone Claws
+- Wing Attack
+- Swift
+- Helping Hand
+
+Noibat @ Oran Berry
+Hardy Nature
+Level: 14
+Ability: Infiltrator
+IVs: 20 HP / 10 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 100 HP / 100 Atk / 4 SpA / 100 SpD / 100 Spe
+Shiny: No
+Ball: Great Ball
+- Wing Attack
+- Air Cutter
+- Absorb
+- Taunt
+
+Gligar @ Yache Berry
+Careful Nature
+Level: 14
+Ability: Immunity
+IVs: 10 HP / 10 Atk / 11 Def / 11 SpA / 11 SpD / 11 Spe
+EVs: 100 Atk / 4 SpA / 200 SpD
+Shiny: No
+Ball: Poke Ball
+- Quick Attack
+- Fury Cutter
+- Knock Off
+- Poison Sting
+
+Pidgeotto @ Sitrus Berry
+Hasty Nature
+Level: 15
+Ability: Big Pecks
+IVs: 20 HP / 10 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 4 HP / 100 Atk / 100 SpD / 100 Spe
+Shiny: No
+Ball: Quick Ball
+- Wing Attack
+- Air Cutter
+- Quick Attack
+- Twister
+
+=== TRAINER_GRANITECAVE_BROCK ===
+Name: Brock
+Class: K Leader
+Pic: Leader Brock
+Gender: Male
+Music: Male
+Items: Super Potion / Super Potion
+Double Battle: No
+AI: Smart Trainer
+
+Growlithe-Hisui @ Cheri Berry
+Hasty Nature
+Level: 21
+Ability: Rock Head
+IVs: 20 HP / 0 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 100 Atk / 4 SpA / 100 SpD
+Shiny: No
+Ball: Heavy Ball
+- Stealth Rock
+- Flame Wheel
+- Take Down
+- Scary Face
+
+Sandshrew @ Oran Berry
+Adamant Nature
+Level: 21
+Ability: Sand Rush
+IVs: 20 HP / 0 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 200 Atk / 4 SpA / 100 SpD
+Shiny: No
+Ball: Great Ball
+- Rapid Spin
+- Bulldoze
+- Rollout
+- Sandstorm
+
+Corsola @ Mystic Water
+Jolly Nature
+Level: 21
+Ability: Hustle
+IVs: 20 HP / 0 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 200 HP / 4 SpA / 100 SpD
+Shiny: No
+Ball: Dive Ball
+- Ancient Power
+- Bubble Beam
+- Aqua Ring
+- Safeguard
+
+Amaura @ Sitrus Berry
+Jolly Nature
+Level: 21
+Ability: Refrigerate
+IVs: 20 HP / 0 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 100 HP / 4 SpA / 100 SpD / 100 Spe
+Shiny: No
+Ball: Moon Ball
+- Freeze Dry
+- Ancient Power
+- Round
+- Reflect
+
+Onix @ Stone Plate
+Bold Nature
+Level: 21
+Ability: Sturdy
+IVs: 20 HP / 30 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+EVs: 100 HP / 100 Atk / 4 SpA / 100 SpD / 100 Spe
+Shiny: Yes
+Ball: Poke Ball
+- Smack Down
+- Dragon Breath
+- Heavy Slam
+- Slam
