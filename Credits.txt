@@ -9,4 +9,5 @@ Ghoulslash - Auto run, repeated field medicine use
 Archie+Xaman - Gen5 style party menu
 Ravepossum - BW summary screen, battle bgs
 Ruki - Battle bgs
-Hyo - Red and Brendan sprites
+Hyo - Red, May and Brendan sprites
+MrDollSteak, Rizon/Falsever, Sky High, Spherical Ice - Gen 4 trainer front sprites
