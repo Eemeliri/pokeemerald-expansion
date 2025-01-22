@@ -11,3 +11,4 @@ Ravepossum - BW summary screen, battle bgs
 Ruki - Battle bgs
 Hyo - Red, May and Brendan sprites
 MrDollSteak, Rizon/Falsever, Sky High, Spherical Ice - Gen 4 trainer front sprites
+DestvoL - Partner eevee sprite

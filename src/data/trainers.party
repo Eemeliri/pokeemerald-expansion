@@ -2138,9 +2138,9 @@ Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
-Munchlax @ Nugget
+Mareep @ Nugget
 Level: 8
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_DAPHNE ===
 Name: DAPHNE
@@ -4813,7 +4813,6 @@ Class: Leader
 Pic: Leader Roxanne
 Gender: Female
 Music: Female
-Items: Potion
 Double Battle: No
 AI: Smart Trainer / Ace Pokemon
 
@@ -4827,7 +4826,7 @@ IVs: 10 HP / 15 Atk / 10 Def / 10 SpA / 10 SpD / 15 Spe
 
 Lileep
 Level: 14
-IVs: 10 HP / 10 Atk / 15 Def / 15 SpA / 10 SpD / 15 Spe
+IVs: 10 HP / 10 Atk / 10 Def / 15 SpA / 10 SpD / 15 Spe
 Ball: Moon Ball
 - Sandstorm
 - Absorb
@@ -6017,7 +6016,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Geodude
-Level: 11
+Level: 13
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TOMMY ===
@@ -6030,11 +6029,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Sandshrew
-Level: 10
+Level: 12
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 Aron
-Level: 10
+Level: 12
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_JOEY ===
@@ -10601,11 +10600,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Nacli
-Level: 10
+Level: 12
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 Rockruff
-Level: 10
+Level: 13
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_BRENDEN ===

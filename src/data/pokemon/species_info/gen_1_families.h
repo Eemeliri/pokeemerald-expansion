@@ -4444,7 +4444,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
     [SPECIES_CLEFAIRY] =
     {
         .baseHP        = 70,
-        .baseAttack    = 45,
+        .baseAttack    = 48,
         .baseDefense   = 48,
         .baseSpeed     = 35,
         .baseSpAttack  = 60,
