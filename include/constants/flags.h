@@ -673,9 +673,9 @@
 #define FLAG_DEWFORD_OUTSKIRTS_SKORUPI  0x272
 #define FLAG_HIDE_ROUTE115_FALKNER  0x273
 #define FLAG_GRANITECAVE_BROCK  0x274
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
+#define DEXNAV_SEARCHING  0x275
+#define DEXNAV_OBTAINED  0x276
+#define DEXNAV_HIDDENMONS  0x277
 #define FLAG_UNUSED_0x278  0x278 // Unused Flag
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag

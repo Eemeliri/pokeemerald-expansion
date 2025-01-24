@@ -19,6 +19,7 @@
 #include "fldeff_misc.h"
 #include "item_menu.h"
 #include "link.h"
+#include "constants/items.h"
 #include "match_call.h"
 #include "metatile_behavior.h"
 #include "overworld.h"

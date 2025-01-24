@@ -73,6 +73,7 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	setflag FLAG_ADDED_MATCH_CALL_TO_POKENAV
 	setvar VAR_ROUTE104_STATE, 1
 	setflag FLAG_HAS_MATCH_CALL
+	setflag DEXNAV_OBTAINED
 	releaseall
 	end
 

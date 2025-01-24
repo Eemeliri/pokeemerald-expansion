@@ -1025,7 +1025,7 @@ static void PlayerWalkSlow(u8 direction)
 {
     PlayerSetAnimId(GetWalkSlowMovementAction(direction), 2);
 }
-static void PlayerRunSlow(u8 direction)
+static void UNUSED PlayerRunSlow(u8 direction)
 {
     PlayerSetAnimId(GetPlayerRunSlowMovementAction(direction), 2);
 }
@@ -1347,7 +1347,7 @@ bool8 PartyHasMonWithSurf(void)
         {
             if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE)
                 break;
-            if (MonKnowsMove(&gPlayerParty[i], MOVE_SURF))
+            if (CanLearnTeachableMove(GetMonData(&gPlayerParty[i], MON_DATA_SPECIES), ItemIdToBattleMoveId(ITEM_HM03)))
                 return TRUE;
         }
     }
