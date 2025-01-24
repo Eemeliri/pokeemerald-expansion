@@ -216,3 +216,6 @@ const u16 gMetatileAttributes_DewfordDojo[] = INCBIN_U16("data/tilesets/secondar
 
 const u16 gMetatiles_DewfordDojoBuilding[] = INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/metatiles.bin");
 const u16 gMetatileAttributes_DewfordDojoBuilding[] = INCBIN_U16("data/tilesets/secondary/dewford_dojo_building/metatile_attributes.bin");
+
+const u16 gMetatiles_PetalburgWoods[] = INCBIN_U16("data/tilesets/secondary/petalburg_woods/metatiles.bin");
+const u16 gMetatileAttributes_PetalburgWoods[] = INCBIN_U16("data/tilesets/secondary/petalburg_woods/metatile_attributes.bin");
