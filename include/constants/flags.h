@@ -676,7 +676,7 @@
 #define DEXNAV_SEARCHING  0x275
 #define DEXNAV_OBTAINED  0x276
 #define DEXNAV_HIDDENMONS  0x277
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
+#define FLAG_DEWFORD_OUTSKIRTS_FLYING_GEM  0x278
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag

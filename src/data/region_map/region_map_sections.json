@@ -1719,6 +1719,14 @@
       "y": 6,
       "width": 1,
       "height": 3
+    },
+    {
+      "map_section": "MAPSEC_DEWFORD_OUTSKIRTS",
+      "name": "",
+      "x": 1,
+      "y": 14,
+      "width": 1,
+      "height": 1
     }
   ]
 }
