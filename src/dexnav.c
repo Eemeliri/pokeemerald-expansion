@@ -3,6 +3,7 @@
 #include "battle_setup.h"
 #include "bg.h"
 #include "data.h"
+#include "caps.h"
 #include "daycare.h"
 #include "decompress.h"
 #include "dexnav.h"
@@ -1077,22 +1078,6 @@ static void Task_DexNavSearch(u8 taskId)
         return;
     }
     
-    if (sDexNavSearchDataPtr->proximity <= CREEPING_PROXIMITY && !gPlayerAvatar.creeping && task->tFrameCount > 60)
-    { //should be creeping but player walks normally
-        if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed)
-            EndDexNavSearch(taskId);
-        else
-            EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
-        return;
-    }
-    
-    if (sDexNavSearchDataPtr->proximity <= SNEAKING_PROXIMITY && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH | PLAYER_AVATAR_FLAG_BIKE)) 
-    { // running/biking too close
-        //always do event script, even if player hasn't revealed a hidden mon. It's assumed they would be creeping towards it
-        EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
-        return;
-    }
-    
     if (ArePlayerFieldControlsLocked() == TRUE)
     { // check if script just executed
         EndDexNavSearch(taskId);
@@ -1265,6 +1250,8 @@ static u8 DexNavTryGenerateMonLevel(u16 species, u8 environment)
 
     if (levelBase + levelBonus > MAX_LEVEL)
         return MAX_LEVEL;
+    else if (levelBase + levelBonus > GetCurrentLevelCap())
+        return GetCurrentLevelCap();
     else
         return levelBase + levelBonus;
 }
@@ -1982,12 +1969,20 @@ static void DexNavLoadEncounterData(void)
 
 static void TryDrawIconInSlot(u16 species, s16 x, s16 y)
 {
+    u8 spriteId;
     if (species == SPECIES_NONE || species > NUM_SPECIES)
+    {
         CreateNoDataIcon(x, y);   //'X' in slot
+    }
     else if (!GetSetPokedexFlag(SpeciesToNationalPokedexNum(species), FLAG_GET_SEEN))
-        CreateMonIcon(SPECIES_NONE, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); //question mark
+    {
+        spriteId = CreateMonIconNoPalette(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF); // Loads grayscale copy of palette to slots 3-6
+        gSprites[spriteId].oam.paletteNum += 3; // Use grayscale palette for this icon
+    }
     else
+    {
         CreateMonIcon(species, SpriteCB_MonIcon, x, y, 0, 0xFFFFFFFF);
+    }
 }
 
 static void DrawSpeciesIcons(void)
