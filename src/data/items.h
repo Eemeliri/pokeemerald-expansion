@@ -512,9 +512,9 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = COMPOUND_STRING(
         #if B_DREAM_BALL_MODIFIER >= GEN_8
-            "A Ball that works\n"
-            "well on sleeping\n"
-            "Pokémon."),
+            "A Ball that makes\n"
+            "caught Pokémon get\n"
+            "a Hidden Ability."),
         #else
             "A Poké Ball used in\n"
             "the Entree Forest."),

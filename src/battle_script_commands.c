@@ -15718,6 +15718,11 @@ static void Cmd_handleballthrow(void)
                 u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);
                 SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_FRIENDSHIP, &friendship);
             }
+            else if (ballId == BALL_DREAM)
+            {
+                u8 abilitynum = 2;
+                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &abilitynum);
+            }
         }
         else // mon may be caught, calculate shakes
         {
@@ -15776,6 +15781,11 @@ static void Cmd_handleballthrow(void)
                 {
                     u32 friendship = (B_FRIEND_BALL_MODIFIER >= GEN_8 ? 150 : 200);
                     SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_FRIENDSHIP, &friendship);
+                }
+                else if (ballId == BALL_DREAM)
+                {
+                u8 abilitynum = 2;
+                SetMonData(&gEnemyParty[gBattlerPartyIndexes[gBattlerTarget]], MON_DATA_ABILITY_NUM, &abilitynum);
                 }
             }
             else // not caught
