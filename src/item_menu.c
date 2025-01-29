@@ -768,7 +768,7 @@ static bool8 SetupBagMenu(void)
     case 13:
         PrintPocketNames(gPocketNamesStringsTable[gBagPosition.pocket], 0);
         CopyPocketNameToWindow(0);
-        for (i = 0; i < POCKETS_COUNT-1; i++)
+        for (i = 0; i < POCKETS_COUNT; i++)
             DrawPocketIndicatorSquare(i, FALSE);
         DrawPocketIndicatorSquare(gBagPosition.pocket, TRUE);
         gMain.state++;
@@ -1455,20 +1455,20 @@ static void Task_SwitchBagPocket(u8 taskId)
     }
 }
 
-static void DrawPocketIndicatorSquare(u8 x, bool8 isCurrentPocket)
-{
-    if (!isCurrentPocket)
-        FillBgTilemapBufferRect_Palette0(2, 0x103B, x + 3, 3, 1, 1);
-    else
-        FillBgTilemapBufferRect_Palette0(2, 0x103C, x + 3, 3, 1, 1);
-    ScheduleBgCopyTilemapToVram(2);
-}
-
 // The background of the item list is a lighter color than the surrounding menu
 // When the pocket is switched this lighter background is redrawn row by row
 static void DrawItemListBgRow(u8 y)
 {
     FillBgTilemapBufferRect_Palette0(2, 17, 14, y + 2, 15, 1);
+    ScheduleBgCopyTilemapToVram(2);
+}
+
+static void DrawPocketIndicatorSquare(u8 x, bool8 isCurrentPocket)
+{
+    if (!isCurrentPocket)
+        FillBgTilemapBufferRect_Palette0(2, 0x103B, x + 5 - ((POCKETS_COUNT - 4) / 2), 3, 1, 1);
+    else
+        FillBgTilemapBufferRect_Palette0(2, 0x103C, x + 5 - ((POCKETS_COUNT - 4) / 2), 3, 1, 1);
     ScheduleBgCopyTilemapToVram(2);
 }
 
@@ -1699,7 +1699,7 @@ static void OpenContextMenu(u8 taskId)
                 gBagMenu->contextMenuItemsPtr = sContextMenuItems_BerriesPocket;
                 gBagMenu->contextMenuNumItems = ARRAY_COUNT(sContextMenuItems_BerriesPocket);
                 break;
-            #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+        #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
             case POCKET_MEDICINE:
         #endif
         #if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET
@@ -2126,7 +2126,7 @@ static void Task_ItemContext_GiveToPC(u8 taskId)
 {
     if (ItemIsMail(gSpecialVar_ItemId) == TRUE)
         DisplayItemMessage(taskId, FONT_NORMAL, gText_CantWriteMail, HandleErrorMessage);
-    else if (gBagPosition.pocket != POCKET_KEY_ITEMS  && !ItemId_GetImportance(gSpecialVar_ItemId))
+    else if (gBagPosition.pocket != POCKET_KEY_ITEMS && !ItemId_GetImportance(gSpecialVar_ItemId))
         gTasks[taskId].func = Task_FadeAndCloseBagMenu;
     else
         PrintItemCantBeHeld(taskId);

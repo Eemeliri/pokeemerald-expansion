@@ -157,8 +157,8 @@ bool8 IsBagPocketNonEmpty(u8 pocket)
 
 bool8 CheckBagHasItem(u16 itemId, u16 count)
 {
-    u8 i;
-    u8 pocket;
+    u16 i;
+    u16 pocket;
 
     if (ItemId_GetPocket(itemId) == 0)
         return FALSE;

@@ -505,7 +505,7 @@ mysticTrader_4:
 	goto_if_set FLAG_ITEM_ALAKAZITE, mysticTrader_3
 # 291 "data/maps/SlateportMarket/scripts.pory"
 	msgbox mysticTrader_Text_2
-	checkitem ITEM_PSYCHIC_GEM, 1
+	checkitem ITEM_PSYCHIC_GEM
 # 0 "data/maps/SlateportMarket/scripts.pory"
 	compare VAR_RESULT, TRUE
 	goto_if_eq mysticTrader_9
