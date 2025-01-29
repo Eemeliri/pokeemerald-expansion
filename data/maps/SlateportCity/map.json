@@ -27,6 +27,11 @@
       "map": "MAP_ROUTE134",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_SLATEPORT_MARKET",
+      "offset": 18,
+      "direction": "left"
     }
   ],
   "object_events": [

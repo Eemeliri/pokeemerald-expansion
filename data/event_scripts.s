@@ -1176,3 +1176,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RuggedCave2/scripts.inc"
 
 	.include "data/maps/RuggedCave3/scripts.inc"
+
+	.include "data/maps/SlateportMarket/scripts.inc"
+
+	.include "data/maps/SlateportMarketHarbor/scripts.inc"
+
+	.include "data/maps/SlateportMarket_Underwater/scripts.inc"
