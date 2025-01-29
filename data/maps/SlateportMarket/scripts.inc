@@ -505,22 +505,12 @@ mysticTrader_4:
 	goto_if_set FLAG_ITEM_ALAKAZITE, mysticTrader_3
 # 291 "data/maps/SlateportMarket/scripts.pory"
 	msgbox mysticTrader_Text_2
-# 292 "data/maps/SlateportMarket/scripts.pory"
-	checkitem ITEM_PSYCHIC_GEM
-# 293 "data/maps/SlateportMarket/scripts.pory"
-	compare VAR_RESULT, FALSE
+	checkitem ITEM_PSYCHIC_GEM, 1
+# 0 "data/maps/SlateportMarket/scripts.pory"
+	compare VAR_RESULT, TRUE
 	goto_if_eq mysticTrader_9
-# 297 "data/maps/SlateportMarket/scripts.pory"
-	msgbox mysticTrader_Text_3
-# 298 "data/maps/SlateportMarket/scripts.pory"
-	giveitem ITEM_ALAKAZITE
+mysticTrader_8:
 # 299 "data/maps/SlateportMarket/scripts.pory"
-	removeitem ITEM_PSYCHIC_GEM, 1
-# 300 "data/maps/SlateportMarket/scripts.pory"
-	setflag FLAG_ITEM_ALAKAZITE
-# 301 "data/maps/SlateportMarket/scripts.pory"
-	waitmessage
-# 302 "data/maps/SlateportMarket/scripts.pory"
 	releaseall
 	end
 
@@ -544,109 +534,117 @@ mysticTrader_5:
 	goto mysticTrader_4
 
 mysticTrader_9:
+# 293 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_3
 # 294 "data/maps/SlateportMarket/scripts.pory"
-	releaseall
-	end
+	giveitem ITEM_ALAKAZITE
+# 295 "data/maps/SlateportMarket/scripts.pory"
+	removeitem ITEM_PSYCHIC_GEM, 1
+# 296 "data/maps/SlateportMarket/scripts.pory"
+	setflag FLAG_ITEM_ALAKAZITE
+# 297 "data/maps/SlateportMarket/scripts.pory"
+	waitmessage
+	goto mysticTrader_8
 
 
 mysticSign::
-# 307 "data/maps/SlateportMarket/scripts.pory"
+# 304 "data/maps/SlateportMarket/scripts.pory"
 	lock
-# 308 "data/maps/SlateportMarket/scripts.pory"
+# 305 "data/maps/SlateportMarket/scripts.pory"
 	msgbox mysticSign_Text_0
-# 309 "data/maps/SlateportMarket/scripts.pory"
+# 306 "data/maps/SlateportMarket/scripts.pory"
 	waitmessage
-# 310 "data/maps/SlateportMarket/scripts.pory"
+# 307 "data/maps/SlateportMarket/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 314 "data/maps/SlateportMarket/scripts.pory"
+# 311 "data/maps/SlateportMarket/scripts.pory"
 miscBerryMart:
-# 315 "data/maps/SlateportMarket/scripts.pory"
+# 312 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LIECHI_BERRY
-# 316 "data/maps/SlateportMarket/scripts.pory"
+# 313 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_GANLON_BERRY
-# 317 "data/maps/SlateportMarket/scripts.pory"
+# 314 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_SALAC_BERRY
-# 318 "data/maps/SlateportMarket/scripts.pory"
+# 315 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_PETAYA_BERRY
-# 319 "data/maps/SlateportMarket/scripts.pory"
+# 316 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_APICOT_BERRY
-# 320 "data/maps/SlateportMarket/scripts.pory"
+# 317 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LANSAT_BERRY
-# 321 "data/maps/SlateportMarket/scripts.pory"
+# 318 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_STARF_BERRY
-# 322 "data/maps/SlateportMarket/scripts.pory"
+# 319 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_JABOCA_BERRY
-# 323 "data/maps/SlateportMarket/scripts.pory"
+# 320 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_ROWAP_BERRY
 	.2byte ITEM_NONE
 
 	.align 2
-# 326 "data/maps/SlateportMarket/scripts.pory"
+# 323 "data/maps/SlateportMarket/scripts.pory"
 miscItemMart:
-# 327 "data/maps/SlateportMarket/scripts.pory"
+# 324 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LINKING_CORD
-# 328 "data/maps/SlateportMarket/scripts.pory"
+# 325 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_ABSORB_BULB
-# 329 "data/maps/SlateportMarket/scripts.pory"
+# 326 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_DESTINY_KNOT
-# 330 "data/maps/SlateportMarket/scripts.pory"
+# 327 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_COVERT_CLOAK
 	.2byte ITEM_NONE
 
 	.align 2
-# 333 "data/maps/SlateportMarket/scripts.pory"
+# 330 "data/maps/SlateportMarket/scripts.pory"
 MintShopSunday:
-# 334 "data/maps/SlateportMarket/scripts.pory"
+# 331 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_ADAMANT_MINT
-# 335 "data/maps/SlateportMarket/scripts.pory"
+# 332 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_BOLD_MINT
+# 333 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_HASTY_MINT
+# 334 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_MODEST_MINT
+# 335 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_JOLLY_MINT
 # 336 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_HASTY_MINT
-# 337 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_MODEST_MINT
-# 338 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_JOLLY_MINT
-# 339 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_BRAVE_MINT
-# 340 "data/maps/SlateportMarket/scripts.pory"
+# 337 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_CALM_MINT
-# 341 "data/maps/SlateportMarket/scripts.pory"
+# 338 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_CAREFUL_MINT
-# 342 "data/maps/SlateportMarket/scripts.pory"
+# 339 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_GENTLE_MINT
-# 343 "data/maps/SlateportMarket/scripts.pory"
+# 340 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_HASTY_MINT
-# 344 "data/maps/SlateportMarket/scripts.pory"
+# 341 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_IMPISH_MINT
-# 345 "data/maps/SlateportMarket/scripts.pory"
+# 342 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_JOLLY_MINT
-# 346 "data/maps/SlateportMarket/scripts.pory"
+# 343 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LAX_MINT
-# 347 "data/maps/SlateportMarket/scripts.pory"
+# 344 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LONELY_MINT
-# 348 "data/maps/SlateportMarket/scripts.pory"
+# 345 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_MILD_MINT
-# 349 "data/maps/SlateportMarket/scripts.pory"
+# 346 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_MODEST_MINT
-# 350 "data/maps/SlateportMarket/scripts.pory"
+# 347 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_NAIVE_MINT
-# 351 "data/maps/SlateportMarket/scripts.pory"
+# 348 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_NAUGHTY_MINT
-# 352 "data/maps/SlateportMarket/scripts.pory"
+# 349 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_QUIET_MINT
-# 353 "data/maps/SlateportMarket/scripts.pory"
+# 350 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_RASH_MINT
-# 354 "data/maps/SlateportMarket/scripts.pory"
+# 351 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_RELAXED_MINT
-# 355 "data/maps/SlateportMarket/scripts.pory"
+# 352 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_SASSY_MINT
-# 356 "data/maps/SlateportMarket/scripts.pory"
+# 353 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_SERIOUS_MINT
-# 357 "data/maps/SlateportMarket/scripts.pory"
+# 354 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_TIMID_MINT
 	.2byte ITEM_NONE
 
@@ -826,12 +824,12 @@ mysticTrader_Text_2:
 	.string "Psychic Gem.$"
 
 mysticTrader_Text_3:
-# 297 "data/maps/SlateportMarket/scripts.pory"
+# 293 "data/maps/SlateportMarket/scripts.pory"
 	.string "Yes! That is truly a beatiful specimen\n"
 	.string "of a Psychic Gem! As promised I will\l"
 	.string "grant you this stone to foster your\l"
 	.string "growth towards greatness.$"
 
 mysticSign_Text_0:
-# 308 "data/maps/SlateportMarket/scripts.pory"
+# 305 "data/maps/SlateportMarket/scripts.pory"
 	.string "Mystic Maya sees all.$"

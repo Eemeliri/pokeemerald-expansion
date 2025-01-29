@@ -289,16 +289,13 @@ script mysticTrader {
         end
     }
     msgbox(format("You! Yes you, I sense great potential within you. I can aid your growth towards greatness if you bring me a Psychic Gem."))
-    checkitem(ITEM_PSYCHIC_GEM)
-    if (var(VAR_RESULT) == FALSE) {
-        releaseall
-        end
+    if (checkitem(ITEM_PSYCHIC_GEM) == TRUE) {
+        msgbox(format("Yes! That is truly a beatiful specimen of a Psychic Gem! As promised I will grant you this stone to foster your growth towards greatness."))
+        giveitem(ITEM_ALAKAZITE)
+        removeitem(ITEM_PSYCHIC_GEM, 1)
+        setflag(FLAG_ITEM_ALAKAZITE)
+        waitmessage
     }
-    msgbox(format("Yes! That is truly a beatiful specimen of a Psychic Gem! As promised I will grant you this stone to foster your growth towards greatness."))
-    giveitem(ITEM_ALAKAZITE)
-    removeitem(ITEM_PSYCHIC_GEM, 1)
-    setflag(FLAG_ITEM_ALAKAZITE)
-    waitmessage
     releaseall
     end
 }
