@@ -92,7 +92,10 @@
     "Underwater_Route128",
     "Underwater_Route129",
     "Underwater_Route105",
-    "Underwater_Route125"
+    "Underwater_Route125",
+    "DewfordOutskirts",
+    "DewfordDojo",
+    "RuggedRoad"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -114,7 +117,12 @@
     "DewfordTown_PokemonCenter_2F",
     "DewfordTown_Gym",
     "DewfordTown_Hall",
-    "DewfordTown_House2"
+    "DewfordTown_House2",
+    "DewfordDojoLobby",
+    "DewfordDojoBedroom",
+    "DewfordDojoEVRoom",
+    "DewfordDojoRematchRoom",
+    "DewfordDojoTrainingRoom"
   ],
   "gMapGroup_IndoorLavaridge": [
     "LavaridgeTown_HerbShop",
@@ -429,7 +437,10 @@
     "TerraCave_Entrance",
     "TerraCave_End",
     "AlteringCave",
-    "MeteorFalls_StevensCave"
+    "MeteorFalls_StevensCave",
+    "RuggedCave",
+    "RuggedCave2",
+    "RuggedCave3"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

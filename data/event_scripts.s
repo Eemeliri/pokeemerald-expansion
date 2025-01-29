@@ -20,6 +20,7 @@
 #include "constants/contest.h"
 #include "constants/daycare.h"
 #include "constants/decorations.h"
+#include "constants/difficulty.h"
 #include "constants/easy_chat.h"
 #include "constants/event_objects.h"
 #include "constants/event_object_movement.h"
@@ -63,6 +64,7 @@
 
 	.section script_data, "aw", %progbits
 
+	.set ALLOCATE_SCRIPT_CMD_TABLE, 1
 	.include "data/script_cmd_table.inc"
 
 gSpecialVars::
@@ -1151,3 +1153,26 @@ EventScript_VsSeekerChargingDone::
 	.include "data/scripts/follower.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+	.include "data/scripts/dexnav.inc"
+
+	.include "data/maps/DewfordOutskirts/scripts.inc"
+
+	.include "data/maps/DewfordDojo/scripts.inc"
+
+	.include "data/maps/DewfordDojoLobby/scripts.inc"
+
+	.include "data/maps/DewfordDojoBedroom/scripts.inc"
+
+	.include "data/maps/DewfordDojoEVRoom/scripts.inc"
+
+	.include "data/maps/DewfordDojoRematchRoom/scripts.inc"
+
+	.include "data/maps/DewfordDojoTrainingRoom/scripts.inc"
+
+	.include "data/maps/RuggedRoad/scripts.inc"
+
+	.include "data/maps/RuggedCave/scripts.inc"
+
+	.include "data/maps/RuggedCave2/scripts.inc"
+
+	.include "data/maps/RuggedCave3/scripts.inc"

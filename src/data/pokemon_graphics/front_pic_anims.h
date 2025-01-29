@@ -2033,6 +2033,8 @@ static const union AnimCmd sAnim_Eevee_1[] =
 PLACEHOLDER_ANIM_SINGLE_FRAME(EeveeGmax);
 #endif //P_GIGANTAMAX_FORMS
 
+PLACEHOLDER_ANIM_SINGLE_FRAME(EeveePartner);
+
 static const union AnimCmd sAnim_Vaporeon_1[] =
 {
     ANIMCMD_FRAME(1, 40),
@@ -10677,6 +10679,7 @@ SINGLE_ANIMATION(Eevee);
 #if P_GIGANTAMAX_FORMS
 SINGLE_ANIMATION(EeveeGmax);
 #endif //P_GIGANTAMAX_FORMS
+SINGLE_ANIMATION(EeveePartner);
 SINGLE_ANIMATION(Vaporeon);
 SINGLE_ANIMATION(Jolteon);
 SINGLE_ANIMATION(Flareon);

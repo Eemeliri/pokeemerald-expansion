@@ -143,6 +143,13 @@
 #define METATILE_Dewford_Door              0x825
 #define METATILE_Dewford_Door_BattleTower  0x85D
 
+// gTileset_DewfordDojo
+#define METATILE_DewfordDojo_Door  0x847
+
+// gTileset_DewfordDojoBuilding
+#define METATILE_DewfordDojoBuilding_DoorLeft   0x845
+#define METATILE_DewfordDojoBuilding_DoorRight  0x846
+
 // gTileset_EliteFour
 #define METATILE_EliteFour_EntryDoor_ClosedBottom    0x80E
 #define METATILE_EliteFour_EntryDoor_ClosedTop       0x806
@@ -220,6 +227,7 @@
 #define METATILE_General_Grass_TreeRight       0x1CF
 #define METATILE_General_Grass_TreeUp          0x00E
 #define METATILE_General_LongGrass             0x015
+#define METATILE_General_LongGrassCovered      0x00C
 #define METATILE_General_MuddySlope_Frame0     0x0E8
 #define METATILE_General_MuddySlope_Frame1     0x0E9
 #define METATILE_General_MuddySlope_Frame2     0x0EA

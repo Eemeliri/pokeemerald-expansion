@@ -199,11 +199,32 @@ const u8 gText_ReturnToVar1[] = _("Return to\n{STR_VAR_1}.");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [ITEMS_POCKET] =    COMPOUND_STRING("ITEMS"),
-    [BALLS_POCKET] =    COMPOUND_STRING("POKé BALLS"),
-    [TMHM_POCKET]  =    COMPOUND_STRING("TMs & HMs"),
-    [BERRIES_POCKET] =  COMPOUND_STRING("BERRIES"),
-    [KEYITEMS_POCKET] = COMPOUND_STRING("KEY ITEMS")
+    [POCKET_ITEMS] = COMPOUND_STRING("Items"),
+#if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+    [POCKET_MEDICINE] = COMPOUND_STRING("Medicine"),
+#endif
+    [POCKET_POKE_BALLS] = COMPOUND_STRING("Pokéballs"),
+#if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET
+    [POCKET_BATTLE_ITEMS] = COMPOUND_STRING("Battle items"),
+#endif
+    [POCKET_TM_HM]  = COMPOUND_STRING("TM/HM"),
+#if POCKET_POWER_UP != DEFAULT_POWER_UP_POCKET
+    [POCKET_POWER_UP] = COMPOUND_STRING("Power up"),
+#endif
+    [POCKET_BERRIES] = COMPOUND_STRING("Berries"),
+#if POCKET_MAIL != DEFAULT_MAIL_POCKET
+    [POCKET_MAIL] = COMPOUND_STRING("Mail"),
+#endif
+#if POCKET_TREASURES != DEFAULT_TREASURES_POCKET
+    [POCKET_TREASURES] = COMPOUND_STRING("Treasure"),
+#endif
+#if POCKET_MEGA_STONES != DEFAULT_MEGA_STONES_POCKET
+    [POCKET_MEGA_STONES] = COMPOUND_STRING("Megastones"),
+#endif
+#if POCKET_Z_CRYSTALS != DEFAULT_Z_CRYSTALS_POCKET
+    [POCKET_Z_CRYSTALS] = COMPOUND_STRING("Z-crystals"),
+#endif
+    [POCKET_KEY_ITEMS] = COMPOUND_STRING("Key items"),
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}");
@@ -264,6 +285,10 @@ const u8 gText_SwitchedPkmnItem[] = _("The {STR_VAR_2} was taken and\nreplaced w
 const u8 gText_PkmnHoldingItemCantHoldMail[] = _("This POKéMON is holding an\nitem. It cannot hold MAIL.{PAUSE_UNTIL_PRESS}");
 const u8 gText_MailTransferredFromMailbox[] = _("MAIL was transferred from\nthe MAILBOX.{PAUSE_UNTIL_PRESS}");
 const u8 gText_BagFullCouldNotRemoveItem[] = _("The BAG is full. The POKéMON's\nitem could not be removed.{PAUSE_UNTIL_PRESS}");
+const u8 gMenuText_Move[] = _("Move");
+const u8 gText_MoveItemWhere[] = _("Move item to where?");
+const u8 gText_XsYAnd[] = _("{STR_VAR_1}'s\n{STR_VAR_2} and\l");
+const u8 gText_XsYWereSwapped[] = _("{STR_VAR_1}'s\l{STR_VAR_2} were swapped!{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnLearnedMove3[] = _("{STR_VAR_1} learned\n{STR_VAR_2}!");
 const u8 gText_PkmnCantLearnMove[] = _("{STR_VAR_1} and {STR_VAR_2}\nare not compatible.\p{STR_VAR_2} can't be\nlearned.{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnNeedsToReplaceMove[] = _("{STR_VAR_1} wants to learn the\nmove {STR_VAR_2}.\pHowever, {STR_VAR_1} already\nknows four moves.\pShould a move be deleted and\nreplaced with {STR_VAR_2}?");
@@ -495,6 +520,27 @@ const u8 gText_Key_Items[] = _("KEY ITEMS");
 const u8 gText_Poke_Balls[] = _("POKé BALLS");
 const u8 gText_TMs_Hms[] = _("TMs & HMs");
 const u8 gText_Berries2[] = _("BERRIES");
+#if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+const u8 gText_MedicinePocket[] = _("MEDICINE");
+#endif
+#if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET
+const u8 gText_BattleItemsPocket[] = _("BATTLE ITEM");
+#endif
+#if POCKET_POWER_UP != DEFAULT_POWER_UP_POCKET
+const u8 gText_PowerUpPocket[] = _("POWER UP");
+#endif
+#if POCKET_MAIL != DEFAULT_MAIL_POCKET
+const u8 gText_MailPocket[] = _("MAIL");
+#endif
+#if POCKET_TREASURES != DEFAULT_TREASURES_POCKET
+const u8 gText_TreasuresPocket[] = _("TREASURES");
+#endif
+#if POCKET_MEGA_STONES != DEFAULT_MEGA_STONES_POCKET
+const u8 gText_MegaStonesPocket[] = _("MEGA STONES");
+#endif
+#if POCKET_Z_CRYSTALS != DEFAULT_Z_CRYSTALS_POCKET
+const u8 gText_ZCrystalsPocket[] = _("Z-CRYSTALS");
+#endif
 const u8 gText_SomeonesPC[] = _("SOMEONE'S PC");
 const u8 gText_LanettesPC[] = _("LANETTE'S PC");
 const u8 gText_PlayersPC[] = _("{PLAYER}'s PC");
@@ -753,6 +799,13 @@ const u8 gText_BattleFactory[] = _("BATTLE FACTORY");
 const u8 gText_BattleArena[] = _("BATTLE ARENA");
 const u8 gText_BattlePike[] = _("BATTLE PIKE");
 const u8 gText_BattlePyramid[] = _("BATTLE PYRAMID");
+const u8 gText_Medicine[] = _("Medicine");
+const u8 gText_BattleItems[] = _("Battle item");
+const u8 gText_Treasures[] = _("Treasures");
+const u8 gText_MegaStones[] = _("Mega stones");
+const u8 gText_ZCrystals[] = _("Z-crystals");
+const u8 gText_PowerUp[] = _("Power up");
+const u8 gText_Mail[] = _("Mail");
 
 ALIGNED(4) const u8 gText_FacilitySingle[] = _("{STR_VAR_1} SINGLE");
 ALIGNED(4) const u8 gText_FacilityDouble[] = _("{STR_VAR_1} DOUBLE");
@@ -1030,6 +1083,7 @@ const u8 gText_MenuOption[] = _("OPTION");
 const u8 gText_MenuExit[] = _("EXIT");
 const u8 gText_MenuRetire[] = _("RETIRE");
 const u8 gText_MenuRest[] = _("REST");
+const u8 gText_MenuDexNav[] = _("DEXNAV");
 const u8 gText_SafariBallStock[] = _("SAFARI BALLS\nStock: {STR_VAR_1}");
 const u8 gText_BattlePyramidFloor[] = _("Battle Pyramid\n{STR_VAR_1}");
 const u8 gText_Floor1[] = _("Floor 1");

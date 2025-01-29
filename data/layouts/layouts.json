@@ -115,7 +115,7 @@
       "id": "LAYOUT_DEWFORD_TOWN",
       "name": "DewfordTown_Layout",
       "width": 20,
-      "height": 20,
+      "height": 45,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/DewfordTown/border.bin",
@@ -1347,7 +1347,7 @@
       "width": 48,
       "height": 44,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Rustboro",
+      "secondary_tileset": "gTileset_PetalburgWoods",
       "border_filepath": "data/layouts/PetalburgWoods/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgWoods/map.bin"
     },
@@ -4410,6 +4410,116 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_OUTSKIRTS",
+      "name": "DewfordOutskirts_Layout",
+      "width": 40,
+      "height": 86,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/DewfordOutskirts/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordOutskirts/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO",
+      "name": "DewfordDojo_Layout",
+      "width": 45,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_DewfordDojo",
+      "border_filepath": "data/layouts/DewfordDojo/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojo/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_LOBBY",
+      "name": "DewfordDojoLobby_Layout",
+      "width": 35,
+      "height": 35,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoLobby/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoLobby/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_BEDROOM",
+      "name": "DewfordDojoBedroom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoBedroom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoBedroom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_EVROOM",
+      "name": "DewfordDojoEVRoom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoEVRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoEVRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_REMATCH_ROOM",
+      "name": "DewfordDojoRematchRoom_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoRematchRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoRematchRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEWFORD_DOJO_TRAINING_ROOM",
+      "name": "DewfordDojoTrainingRoom_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_DewfordDojoBuilding",
+      "border_filepath": "data/layouts/DewfordDojoTrainingRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DewfordDojoTrainingRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUGGED_ROAD",
+      "name": "RuggedRoad_Layout",
+      "width": 34,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RuggedRoad/border.bin",
+      "blockdata_filepath": "data/layouts/RuggedRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUGGED_CAVE",
+      "name": "RuggedCave_Layout",
+      "width": 36,
+      "height": 36,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RuggedCave/border.bin",
+      "blockdata_filepath": "data/layouts/RuggedCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUGGED_CAVE2",
+      "name": "RuggedCave2_Layout",
+      "width": 45,
+      "height": 45,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RuggedCave2/border.bin",
+      "blockdata_filepath": "data/layouts/RuggedCave2/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUGGED_CAVE3",
+      "name": "RuggedCave3_Layout",
+      "width": 20,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RuggedCave3/border.bin",
+      "blockdata_filepath": "data/layouts/RuggedCave3/map.bin"
     }
   ]
 }

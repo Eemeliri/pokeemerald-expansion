@@ -272,9 +272,11 @@ extern const u32 gBattleTerrainPalette_Rayquaza[];
 extern const u32 gBattleTerrainPalette_Kyogre[];
 extern const u32 gBattleTerrainPalette_Groudon[];
 extern const u32 gBattleTerrainPalette_BuildingGym[];
-extern const u32 gBattleTerrainPalette_BuildingLeader[];
-extern const u32 gBattleTerrainPalette_StadiumAqua[];
-extern const u32 gBattleTerrainPalette_StadiumMagma[];
+extern const u32 gBattleTerrainPalette_BuildingAqua[];
+extern const u32 gBattleTerrainPalette_BuildingMagma[];
+extern const u32 gBattleTerrainPalette_StadiumLeader[];
+extern const u32 gBattleTerrainTiles_Plain[];
+extern const u32 gBattleTerrainTilemap_Plain[];
 extern const u32 gBattleTerrainPalette_StadiumSidney[];
 extern const u32 gBattleTerrainPalette_StadiumPhoebe[];
 extern const u32 gBattleTerrainPalette_StadiumGlacia[];
@@ -3390,5 +3392,7 @@ extern const u32 gBattleIcons_Gfx1[];
 extern const u32 gBattleIcons_Gfx2[];
 extern const u32 gBattleIcons_Pal1[];
 extern const u32 gBattleIcons_Pal2[];
+
+extern const u32 gPartyMenuBgScroll_Tilemap[];
 
 #endif //GUARD_GRAPHICS_H

@@ -1,0 +1,37 @@
+mapscripts DewfordDojoBedroom_MapScripts {}
+
+script tiredGirlDojo {
+    lock
+    faceplayer
+    msgbox(format("I'm so tired from all the training. I wish I could take a nap."))
+    release
+    end
+    
+
+}
+
+script oldLadyDojoBedroom {
+    lock
+    faceplayer
+    msgbox(format("In this dojo, we all sleep in shared spaces. It's good for the spirit of unity."))
+    release
+    end
+}
+
+script friendlyBlackBeltDojoBedroom {
+    lock
+    faceplayer
+    msgbox(format("Hey, need some refreshments?"))
+    pokemart(friendlyBlackBeltDojoBedroomShop)
+    msgbox("Stop by if you need more!")
+    release
+    end
+}
+
+mart friendlyBlackBeltDojoBedroomShop {
+    ITEM_POTION
+    ITEM_SUPER_POTION
+    ITEM_SODA_POP
+    ITEM_LEMONADE
+    ITEM_ENERGY_POWDER
+}

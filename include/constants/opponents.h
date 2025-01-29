@@ -523,24 +523,24 @@
 #define TRAINER_EDWIN_4                     517
 #define TRAINER_EDWIN_5                     518
 #define TRAINER_WALLY_VR_1                  519
-#define TRAINER_BRENDAN_ROUTE_103_MUDKIP    520
-#define TRAINER_BRENDAN_ROUTE_110_MUDKIP    521
-#define TRAINER_BRENDAN_ROUTE_119_MUDKIP    522
-#define TRAINER_BRENDAN_ROUTE_103_TREECKO   523
-#define TRAINER_BRENDAN_ROUTE_110_TREECKO   524
-#define TRAINER_BRENDAN_ROUTE_119_TREECKO   525
-#define TRAINER_BRENDAN_ROUTE_103_TORCHIC   526
-#define TRAINER_BRENDAN_ROUTE_110_TORCHIC   527
-#define TRAINER_BRENDAN_ROUTE_119_TORCHIC   528
-#define TRAINER_MAY_ROUTE_103_MUDKIP        529
-#define TRAINER_MAY_ROUTE_110_MUDKIP        530
-#define TRAINER_MAY_ROUTE_119_MUDKIP        531
-#define TRAINER_MAY_ROUTE_103_TREECKO       532
-#define TRAINER_MAY_ROUTE_110_TREECKO       533
-#define TRAINER_MAY_ROUTE_119_TREECKO       534
-#define TRAINER_MAY_ROUTE_103_TORCHIC       535
-#define TRAINER_MAY_ROUTE_110_TORCHIC       536
-#define TRAINER_MAY_ROUTE_119_TORCHIC       537
+#define TRAINER_BRENDAN_ROUTE_103_CLEFAIRY  520
+#define TRAINER_BRENDAN_ROUTE_110_CLEFAIRY  521
+#define TRAINER_BRENDAN_ROUTE_119_CLEFAIRY  522
+#define TRAINER_BRENDAN_ROUTE_103_PIKACHU   523
+#define TRAINER_BRENDAN_ROUTE_110_PIKACHU   524
+#define TRAINER_BRENDAN_ROUTE_119_PIKACHU   525
+#define TRAINER_BRENDAN_ROUTE_103_EEVEE     526
+#define TRAINER_BRENDAN_ROUTE_110_EEVEE     527
+#define TRAINER_BRENDAN_ROUTE_119_EEVEE     528
+#define TRAINER_MAY_ROUTE_103_CLEFAIRY      529
+#define TRAINER_MAY_ROUTE_110_CLEFAIRY      530
+#define TRAINER_MAY_ROUTE_119_CLEFAIRY      531
+#define TRAINER_MAY_ROUTE_103_PIKACHU       532
+#define TRAINER_MAY_ROUTE_110_PIKACHU       533
+#define TRAINER_MAY_ROUTE_119_PIKACHU       534
+#define TRAINER_MAY_ROUTE_103_EEVEE         535
+#define TRAINER_MAY_ROUTE_110_EEVEE         536
+#define TRAINER_MAY_ROUTE_119_EEVEE         537
 #define TRAINER_ISAAC_1                     538
 #define TRAINER_DAVIS                       539
 #define TRAINER_MITCHELL                    540
@@ -595,15 +595,15 @@
 #define TRAINER_GRUNT_SPACE_CENTER_6        589
 #define TRAINER_GRUNT_SPACE_CENTER_7        590
 #define TRAINER_MACEY                       591
-#define TRAINER_BRENDAN_RUSTBORO_TREECKO    592
-#define TRAINER_BRENDAN_RUSTBORO_MUDKIP     593
+#define TRAINER_BRENDAN_RUSTBORO_PIKACHU    592
+#define TRAINER_BRENDAN_RUSTBORO_CLEFAIRY   593
 #define TRAINER_PAXTON                      594
 #define TRAINER_ISABELLA                    595
 #define TRAINER_GRUNT_WEATHER_INST_5        596
 #define TRAINER_TABITHA_MT_CHIMNEY          597
 #define TRAINER_JONATHAN                    598
-#define TRAINER_BRENDAN_RUSTBORO_TORCHIC    599
-#define TRAINER_MAY_RUSTBORO_MUDKIP         600
+#define TRAINER_BRENDAN_RUSTBORO_EEVEE      599
+#define TRAINER_MAY_RUSTBORO_CLEFAIRY       600
 #define TRAINER_MAXIE_MAGMA_HIDEOUT         601
 #define TRAINER_MAXIE_MT_CHIMNEY            602
 #define TRAINER_TIANA                       603
@@ -693,8 +693,8 @@
 #define TRAINER_LILA_AND_ROY_1              687
 #define TRAINER_LILA_AND_ROY_2              688
 #define TRAINER_LILA_AND_ROY_3              689
-#define TRAINER_LILA_AND_ROY_4              690
-#define TRAINER_LILA_AND_ROY_5              691
+#define TRAINER_DEWFORD_OUTSKIRTS_RM        690
+#define TRAINER_DEWFORD_OUTSKIRTS_AL        691
 #define TRAINER_LISA_AND_RAY                692
 #define TRAINER_CHRIS                       693
 #define TRAINER_DAWSON                      694
@@ -771,8 +771,8 @@
 #define TRAINER_MYLES                       765
 #define TRAINER_PAT                         766
 #define TRAINER_CRISTIN_1                   767
-#define TRAINER_MAY_RUSTBORO_TREECKO        768
-#define TRAINER_MAY_RUSTBORO_TORCHIC        769
+#define TRAINER_MAY_RUSTBORO_PIKACHU        768
+#define TRAINER_MAY_RUSTBORO_EEVEE        769
 #define TRAINER_ROXANNE_2                   770
 #define TRAINER_ROXANNE_3                   771
 #define TRAINER_ROXANNE_4                   772
@@ -859,12 +859,56 @@
 #define TRAINER_BRENDAN_PLACEHOLDER         853
 #define TRAINER_MAY_PLACEHOLDER             854
 
+//custom
+#define TRAINER_DewfordDojo_EXP              855
+#define TRAINER_RUGGED_ROAD_SCHOOLKID        856
+#define TRAINER_RUGGED_ROAD_HIKER            857
+#define TRAINER_RUGGED_ROAD_PICNICKER        858
+#define TRAINER_RUGGED_ROAD_CAMPER           859
+
+#define TRAINER_ROUTE115_FALKNER             860
+#define TRAINER_GRANITECAVE_BROCK            861
+#define TRAINER_UNUSED1                      862
+#define TRAINER_UNUSED2                      863
+#define TRAINER_UNUSED3                      864
+#define TRAINER_UNUSED4                      865
+#define TRAINER_UNUSED5                      866
+#define TRAINER_UNUSED6                      867
+#define TRAINER_UNUSED7                      868
+#define TRAINER_UNUSED8                      869
+#define TRAINER_UNUSED9                      870
+#define TRAINER_UNUSED10                     871
+#define TRAINER_UNUSED11                     872
+#define TRAINER_UNUSED12                     873
+#define TRAINER_UNUSED13                     874
+#define TRAINER_UNUSED14                     875
+#define TRAINER_UNUSED15                     876
+#define TRAINER_UNUSED16                     877
+#define TRAINER_UNUSED17                     878
+#define TRAINER_UNUSED18                     879
+#define TRAINER_UNUSED19                     880
+#define TRAINER_UNUSED20                     881
+#define TRAINER_UNUSED21                     882
+#define TRAINER_UNUSED22                     883
+#define TRAINER_UNUSED23                     884
+#define TRAINER_UNUSED24                     885
+#define TRAINER_UNUSED25                     886
+#define TRAINER_UNUSED26                     887
+#define TRAINER_UNUSED27                     888
+#define TRAINER_UNUSED28                     889
+#define TRAINER_UNUSED29                     890
+#define TRAINER_UNUSED30                     891
+#define TRAINER_UNUSED31                     892
+#define TRAINER_UNUSED32                     893                 
+
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                      855
-#define MAX_TRAINERS_COUNT                  864
+
+
+#define TRAINERS_COUNT                      894
+#define MAX_TRAINERS_COUNT                  894
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

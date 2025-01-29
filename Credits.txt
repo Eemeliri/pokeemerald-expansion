@@ -3,3 +3,14 @@ Credits
 Team Aqua's Asset Repo and Discord
 RHH
 Kasen - BP vendor
+Zeturic - Move item
+AsparagusEduardo - Better bag
+Ghoulslash - Auto run, repeated field medicine use
+Archie+Xaman - Gen5 style party menu
+Ravepossum - BW summary screen, battle bgs
+Ruki - Battle bgs
+Hyo - Red, May and Brendan sprites
+MrDollSteak, Rizon/Falsever, Sky High, Spherical Ice - Gen 4 trainer front sprites
+DestvoL - Partner eevee sprite
+devolov - using HMs without teaching
+Ekat - tilesets

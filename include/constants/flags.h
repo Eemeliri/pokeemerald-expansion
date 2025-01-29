@@ -656,27 +656,27 @@
 #define FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY                (FLAG_HIDDEN_ITEMS_START + 0x6E)
 #define FLAG_HIDDEN_ITEM_ROUTE_105_BIG_PEARL                 (FLAG_HIDDEN_ITEMS_START + 0x6F)
 
-#define FLAG_EXP_SHARE  0x264 // Unused Flag
-#define FLAG_UNUSED_0x265  0x265 // Unused Flag
-#define FLAG_UNUSED_0x266  0x266 // Unused Flag
-#define FLAG_UNUSED_0x267  0x267 // Unused Flag
-#define FLAG_UNUSED_0x268  0x268 // Unused Flag
-#define FLAG_UNUSED_0x269  0x269 // Unused Flag
-#define FLAG_UNUSED_0x26A  0x26A // Unused Flag
-#define FLAG_UNUSED_0x26B  0x26B // Unused Flag
-#define FLAG_UNUSED_0x26C  0x26C // Unused Flag
-#define FLAG_UNUSED_0x26D  0x26D // Unused Flag
-#define FLAG_UNUSED_0x26E  0x26E // Unused Flag
-#define FLAG_UNUSED_0x26F  0x26F // Unused Flag
-#define FLAG_UNUSED_0x270  0x270 // Unused Flag
-#define FLAG_UNUSED_0x271  0x271 // Unused Flag
-#define FLAG_UNUSED_0x272  0x272 // Unused Flag
-#define FLAG_UNUSED_0x273  0x273 // Unused Flag
-#define FLAG_UNUSED_0x274  0x274 // Unused Flag
-#define FLAG_UNUSED_0x275  0x275 // Unused Flag
-#define FLAG_UNUSED_0x276  0x276 // Unused Flag
-#define FLAG_UNUSED_0x277  0x277 // Unused Flag
-#define FLAG_UNUSED_0x278  0x278 // Unused Flag
+#define FLAG_EXP_SHARE  0x264
+#define FLAG_OBTAINED_KUBFU  0x265
+#define FLAG_RECEIVED_TM88  0x266 // TODO MOVE THIS OUT OF HERE
+#define FLAG_DEWFORD_GYM_GUARD  0x267
+#define FLAG_RUGGED_CAVE3_ICYROCK  0x268
+#define FLAG_RUGGED_CAVE3_ICYBREATH  0x269
+#define FLAG_RUGGED_CAVE3_SNEASEL  0x26A
+#define FLAG_HIDDEN_ITEM_RUGGED_ROAD_1  0x26B 
+#define FLAG_HIDDEN_ITEM_RUGGED_ROAD_2  0x26C 
+#define FLAG_ITEM_RUGGED_ROAD_AIR_BALLOON  0x26D 
+#define FLAG_ITEM_RUGGEDROAD_TM_83  0x26E
+#define FLAG_ITEM_HERACRONITE  0x26F
+#define FLAG_FORCE_SHINYNESS  0x270
+#define FLAG_ITEM_GLALITITE  0x271
+#define FLAG_DEWFORD_OUTSKIRTS_SKORUPI  0x272
+#define FLAG_HIDE_ROUTE115_FALKNER  0x273
+#define FLAG_GRANITECAVE_BROCK  0x274
+#define DEXNAV_SEARCHING  0x275
+#define DEXNAV_OBTAINED  0x276
+#define DEXNAV_HIDDENMONS  0x277
+#define FLAG_DEWFORD_OUTSKIRTS_FLYING_GEM  0x278
 #define FLAG_UNUSED_0x279  0x279 // Unused Flag
 #define FLAG_UNUSED_0x27A  0x27A // Unused Flag
 #define FLAG_UNUSED_0x27B  0x27B // Unused Flag

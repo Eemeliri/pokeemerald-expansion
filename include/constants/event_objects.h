@@ -243,11 +243,27 @@
 #define OBJ_EVENT_GFX_POKE_BALL                  239
 #define OBJ_EVENT_GFX_OW_MON                     240
 #define OBJ_EVENT_GFX_LIGHT_SPRITE               241
+#define OBJ_EVENT_GFX_TM_BALL                    242
+#define OBJ_EVENT_GFX_CHUCK                      243
+#define OBJ_EVENT_GFX_CYNTHIA                    244
+#define OBJ_EVENT_GFX_FALKNER                    245
+#define OBJ_EVENT_GFX_RUIN_MANIAC                246
+#define OBJ_EVENT_GFX_MEGASTONE_SPARKLE          247
+#define OBJ_EVENT_GFX_BROCK                      248
+#define OBJ_EVENT_GFX_MISTY                      249
+#define OBJ_EVENT_GFX_SURGE                      250
+#define OBJ_EVENT_GFX_ERIKA                      251
+#define OBJ_EVENT_GFX_KOGA                       252
+#define OBJ_EVENT_GFX_JANINE                     253
+#define OBJ_EVENT_GFX_SABRINA                    254
+#define OBJ_EVENT_GFX_BLAINE                     255
+#define OBJ_EVENT_GFX_GIOVANNI                   256
+#define OBJ_EVENT_GFX_BLUE                       257
 
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        242
+#define NUM_OBJ_EVENT_GFX                        258
 
 
 // These are dynamic object gfx ids.
@@ -387,6 +403,25 @@
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124
+
+// Custom
+
+#define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x1125
+#define OBJ_EVENT_PAL_TAG_FALKNER                 0x1126
+#define OBJ_EVENT_PAL_TAG_CHUCK                   0x1127
+#define OBJ_EVENT_PAL_TAG_RUIN_MANIAC             0x1128
+#define OBJ_EVENT_PAL_TAG_BRAWLY                  0x1129
+
+#define OBJ_EVENT_PAL_TAG_BROCK                   0x112A
+#define OBJ_EVENT_PAL_TAG_MISTY                   0x112B
+#define OBJ_EVENT_PAL_TAG_SURGE                   0x112C
+#define OBJ_EVENT_PAL_TAG_ERIKA                   0x112D
+#define OBJ_EVENT_PAL_TAG_KOGA                    0x112E
+#define OBJ_EVENT_PAL_TAG_JANINE                  0x112F
+#define OBJ_EVENT_PAL_TAG_SABRINA                 0x1130
+#define OBJ_EVENT_PAL_TAG_BLAINE                  0x1131
+#define OBJ_EVENT_PAL_TAG_GIOVANNI                0x1132
+#define OBJ_EVENT_PAL_TAG_BLUE                    0x1133
 
 #if OW_FOLLOWERS_POKEBALLS
 // Vanilla

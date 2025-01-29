@@ -17,6 +17,7 @@
 #include "constants/pokemon.h"
 #include "constants/easy_chat.h"
 #include "constants/trainer_hill.h"
+#include "constants/item.h"
 #include "constants/items.h"
 #include "config/save.h"
 
@@ -211,7 +212,11 @@ struct SaveBlock3
 #if OW_SHOW_ITEM_DESCRIPTIONS == OW_ITEM_DESCRIPTIONS_FIRST_TIME
     u8 itemFlags[ITEM_FLAGS_COUNT];
 #endif
-};
+#if USE_DEXNAV_SEARCH_LEVELS == TRUE
+    u8 dexNavSearchLevels[NUM_SPECIES];
+#endif
+    u8 dexNavChain;
+}; /* max size 1624 bytes */
 
 extern struct SaveBlock3 *gSaveBlock3Ptr;
 
@@ -562,6 +567,7 @@ struct SaveBlock2
 #endif //FREE_RECORD_MIXING_HALL_RECORDS
     /*0x624*/ u16 contestLinkResults[CONTEST_CATEGORIES_COUNT][CONTESTANT_COUNT];
     /*0x64C*/ struct BattleFrontier frontier;
+    /*0xF2C*/ bool8 autoRun;
 }; // sizeof=0xF2C
 
 extern struct SaveBlock2 *gSaveBlock2Ptr;
@@ -683,8 +689,8 @@ struct MauvilleManBard
 {
     /*0x00*/ u8 id;
     /*0x01*/ //u8 padding1;
-    /*0x02*/ u16 songLyrics[BARD_SONG_LENGTH];
-    /*0x0E*/ u16 temporaryLyrics[BARD_SONG_LENGTH];
+    /*0x02*/ u16 songLyrics[NUM_BARD_SONG_WORDS];
+    /*0x0E*/ u16 newSongLyrics[NUM_BARD_SONG_WORDS];
     /*0x1A*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
     /*0x22*/ u8 filler_2DB6[0x3];
     /*0x25*/ u8 playerTrainerId[TRAINER_ID_LENGTH];
@@ -1034,6 +1040,27 @@ struct SaveBlock1
     /*0x650*/ struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
     /*0x690*/ struct ItemSlot bagPocket_TMHM[BAG_TMHM_COUNT];
     /*0x790*/ struct ItemSlot bagPocket_Berries[BAG_BERRIES_COUNT];
+    #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+              struct ItemSlot bagPocket_Medicine[BAG_MEDICINE_COUNT];
+        #endif
+        #if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET
+              struct ItemSlot bagPocket_BattleItems[BAG_BATTLEITEMS_COUNT];
+        #endif
+        #if POCKET_POWER_UP != DEFAULT_POWER_UP_POCKET
+              struct ItemSlot bagPocket_PowerUp[BAG_POWERUP_COUNT];
+        #endif
+        #if POCKET_TREASURES != DEFAULT_TREASURES_POCKET
+              struct ItemSlot bagPocket_Treasures[BAG_TREASURES_COUNT];
+        #endif
+        #if POCKET_MAIL != DEFAULT_MAIL_POCKET
+              struct ItemSlot bagPocket_Mail[BAG_MAIL_COUNT];
+        #endif
+        #if POCKET_MEGA_STONES != DEFAULT_MEGA_STONES_POCKET
+              struct ItemSlot bagPocket_MegaStones[BAG_MEGASTONES_COUNT];
+        #endif
+        #if POCKET_Z_CRYSTALS != DEFAULT_Z_CRYSTALS_POCKET
+              struct ItemSlot bagPocket_ZCrystals[BAG_ZCRYSTALS_COUNT];
+        #endif
     /*0x848*/ struct Pokeblock pokeblocks[POKEBLOCKS_COUNT];
 #if FREE_EXTRA_SEEN_FLAGS_SAVEBLOCK1 == FALSE
     /*0x988*/ u8 filler1[0x34]; // Previously Dex Flags, feel free to remove.
