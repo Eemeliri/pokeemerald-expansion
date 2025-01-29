@@ -128,7 +128,7 @@ graniteCaveBrockPostBattle_1:
 # 72 "data/maps/GraniteCave_B1F/scripts.pory"
 	waitmessage
 # 73 "data/maps/GraniteCave_B1F/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 74 "data/maps/GraniteCave_B1F/scripts.pory"
 	closemessage
 # 75 "data/maps/GraniteCave_B1F/scripts.pory"
@@ -136,7 +136,7 @@ graniteCaveBrockPostBattle_1:
 # 76 "data/maps/GraniteCave_B1F/scripts.pory"
 	delay 60
 # 77 "data/maps/GraniteCave_B1F/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 78 "data/maps/GraniteCave_B1F/scripts.pory"
 	release
 	end

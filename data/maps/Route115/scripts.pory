@@ -167,13 +167,13 @@ script Route115_Falkner {
         giveitem(ITEM_TM19, 1)
         waitmessage
         msgbox(format("Good bye for now."))
-        fadescreen(FADE_TO_BLACK)
+        fadescreenswapbuffers(FADE_TO_BLACK)
         delay(30)
         closemessage
         removeobject(24)
         removeobject(25)
         delay(30) 
-        fadescreen(FADE_FROM_BLACK)
+        fadescreenswapbuffers(FADE_FROM_BLACK)
         setflag(FLAG_HIDE_ROUTE115_FALKNER)    
     }
     release
