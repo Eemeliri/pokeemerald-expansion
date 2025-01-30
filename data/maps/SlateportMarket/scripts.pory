@@ -16,8 +16,7 @@ script HyperTrainer_Lady{
         end
     }
     msgbox(format("Which stat would you like to train?"))
-    dynmultichoice(0,0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed")
-    waitstate
+    dynmultichoice(0,0, FALSE, 7, 0, DYN_MULTICHOICE_CB_NONE, "HP", "Attack", "Defense", "Sp. Atk", "Sp. Def", "Speed", "Cancel")
     switch(var(VAR_RESULT)) {
         case 0: // HP
             msgbox(format ("Alright, Please choose a Pokemon to train."))
@@ -30,14 +29,14 @@ script HyperTrainer_Lady{
                 end
             }
             copyvar(VAR_RESULT, VAR_0x8004)
-            hypertrain(STAT_HP, VAR_0x8008)
-            if (var(VAR_0x8008) == FALSE) {
+            canhypertrain(STAT_HP, VAR_0x8004)
+            if (var(VAR_RESULT) == FALSE) {
                 msgbox(format("That Pokémon's HP is already at its peak!"))
                 waitmessage
                 releaseall
                 end
             }
-            
+            hypertrain(STAT_HP, VAR_0x8004)
             playfanfare(MUS_LEVEL_UP)
             waitfanfare
             removeitem(ITEM_BOTTLE_CAP, 1)
@@ -55,15 +54,14 @@ script HyperTrainer_Lady{
                 releaseall
                 end
             }
-            copyvar(VAR_RESULT, VAR_0x8004)
-            hypertrain(STAT_ATK, VAR_0x8008)
-            if (var(VAR_0x8008) == FALSE) {
+            canhypertrain(STAT_ATK, VAR_0x8004)
+            if (var(VAR_RESULT) == FALSE) {
                 msgbox(format("That Pokémon's Attack is already at its peak!"))
                 waitmessage
                 releaseall
                 end
             }
-            
+            hypertrain(STAT_ATK, VAR_0x8004)
             playfanfare(MUS_LEVEL_UP)
             waitfanfare
             removeitem(ITEM_BOTTLE_CAP, 1)
@@ -81,15 +79,14 @@ script HyperTrainer_Lady{
                 releaseall
                 end
             }
-            copyvar(VAR_RESULT, VAR_0x8004)
-            hypertrain(STAT_DEF, VAR_0x8008)
-            if (var(VAR_0x8008) == FALSE) {
+            canhypertrain(STAT_DEF, VAR_0x8004)
+            if (var(VAR_RESULT) == FALSE) {
                 msgbox(format("That Pokémon's Defense is already at its peak!"))
                 waitmessage
                 releaseall
                 end
             }
-            
+            hypertrain(STAT_DEF, VAR_0x8004)
             playfanfare(MUS_LEVEL_UP)
             waitfanfare
             removeitem(ITEM_BOTTLE_CAP, 1)
@@ -107,15 +104,14 @@ script HyperTrainer_Lady{
                 releaseall
                 end
             }
-            copyvar(VAR_RESULT, VAR_0x8004)
-            hypertrain(STAT_SPATK, VAR_0x8008)
-            if (var(VAR_0x8008) == FALSE) {
+            canhypertrain(STAT_SPATK, VAR_0x8004)
+            if (var(VAR_RESULT) == FALSE) {
                 msgbox(format("That Pokémon's Sp. Atk is already at its peak!"))
                 waitmessage
                 releaseall
                 end
             }
-            
+            hypertrain(STAT_SPATK, VAR_0x8004)
             playfanfare(MUS_LEVEL_UP)
             waitfanfare
             removeitem(ITEM_BOTTLE_CAP, 1)
@@ -133,15 +129,14 @@ script HyperTrainer_Lady{
                 releaseall
                 end
             }
-            copyvar(VAR_RESULT, VAR_0x8004)
-            hypertrain(STAT_SPDEF, VAR_0x8008)
-            if (var(VAR_0x8008) == FALSE) {
+            canhypertrain(STAT_SPDEF, VAR_0x8004)
+            if (var(VAR_RESULT) == FALSE) {
                 msgbox(format("That Pokémon's Sp. Def is already at its peak!"))
                 waitmessage
                 releaseall
                 end
             }
-            
+            hypertrain(STAT_SPDEF, VAR_0x8004)
             playfanfare(MUS_LEVEL_UP)
             waitfanfare
             removeitem(ITEM_BOTTLE_CAP, 1)
@@ -159,15 +154,14 @@ script HyperTrainer_Lady{
                 releaseall
                 end
             }
-            copyvar(VAR_RESULT, VAR_0x8004)
-            hypertrain(STAT_SPEED, VAR_0x8008)
-            if (var(VAR_0x8008) == FALSE) {
+            canhypertrain(STAT_SPEED, VAR_0x8004)
+            if (var(VAR_RESULT) == FALSE) {
                 msgbox(format("That Pokémon's Speed is already at its peak!"))
                 waitmessage
                 releaseall
                 end
             }
-            
+            hypertrain(STAT_SPEED, VAR_0x8004)
             playfanfare(MUS_LEVEL_UP)
             waitfanfare
             removeitem(ITEM_BOTTLE_CAP, 1)
