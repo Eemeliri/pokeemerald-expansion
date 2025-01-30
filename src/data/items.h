@@ -184,9 +184,9 @@ static const u8 sTM59Desc[] = _(
     "foe is holding.");
 
 static const u8 sTM60Desc[] = _(
-    "Suppresses the foe\n"
-    "and makes its move\n"
-    "go last.");
+    "Attacks foe with a\n"
+    "explosive puff. Heals\n"
+    "if used on ally.");
 
 static const u8 sTM61Desc[] = _(
     "Shoots a bluish-\n"
@@ -199,9 +199,9 @@ static const u8 sTM62Desc[] = _(
     "holding an item.");
 
 static const u8 sTM63Desc[] = _(
-    "Prevents the foe\n"
-    "from using their\n"
-    "held item.");
+    "Attacks with cold\n"
+    "water. Lower's foe's\n"
+    "attack.");
 
 static const u8 sTM64Desc[] = _(
     "The user explodes\n"
@@ -229,14 +229,14 @@ static const u8 sTM68Desc[] = _(
     "Must recharge.");
 
 static const u8 sTM69Desc[] = _(
-    "The user polishes\n"
-    "its body. Sharply\n"
-    "raises Speed.");
+    "Reacts to fast\n"
+    "fast attack. Fails\n"
+    "if not priority.");
 
 static const u8 sTM70Desc[] = _(
-    "Looses a powerful\n"
-    "blast of light that\n"
-    "reduces accuracy.");
+    "Attack's suddenly\n"
+    "and boosts user's\n"
+    "speed.");
 
 static const u8 sTM71Desc[] = _(
     "Stabs the foe with\n"
