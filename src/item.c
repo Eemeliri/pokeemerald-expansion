@@ -160,7 +160,7 @@ bool8 CheckBagHasItem(u16 itemId, u16 count)
     u16 i;
     u16 pocket;
 
-    if (ItemId_GetPocket(itemId) == 0)
+    if (ItemId_GetPocket(itemId) >= POCKETS_COUNT)
         return FALSE;
     if (InBattlePyramid() || FlagGet(FLAG_STORING_ITEMS_IN_PYRAMID_BAG) == TRUE)
         return CheckPyramidBagHasItem(itemId, count);
