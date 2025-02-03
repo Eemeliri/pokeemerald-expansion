@@ -9,6 +9,7 @@
 #include "config/pokemon.h"
 #include "config/overworld.h"
 #include "config/dexnav.h"
+#include "config/summary_screen.h"
 
 // Invalid Versions show as "----------" in Gen 4 and Gen 5's summary screen.
 // In Gens 6 and 7, invalid versions instead show "a distant land" in the summary screen.
@@ -59,8 +60,8 @@
 #define MAIL_COUNT (10 + PARTY_SIZE)
 #define SECRET_BASES_COUNT 1
 #define POKE_NEWS_COUNT 16
-#define PC_ITEMS_COUNT 20
-#define BAG_ITEMS_COUNT 80
+#define PC_ITEMS_COUNT 10
+#define BAG_ITEMS_COUNT 100
 #define BAG_KEYITEMS_COUNT 55
 #define BAG_POKEBALLS_COUNT 27
 #define BAG_TMHM_COUNT 128
@@ -129,6 +130,7 @@
 #define TYPE_NAME_LENGTH 8
 #define ABILITY_NAME_LENGTH 16
 #define TRAINER_NAME_LENGTH 10
+#define CODE_NAME_LENGTH 11
 
 #define MAX_STAMP_CARD_STAMPS 7
 

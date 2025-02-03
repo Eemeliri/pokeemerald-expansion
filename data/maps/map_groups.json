@@ -95,7 +95,8 @@
     "Underwater_Route125",
     "DewfordOutskirts",
     "DewfordDojo",
-    "RuggedRoad"
+    "RuggedRoad",
+    "SlateportMarket"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -186,7 +187,9 @@
     "SlateportCity_House",
     "SlateportCity_PokemonCenter_1F",
     "SlateportCity_PokemonCenter_2F",
-    "SlateportCity_Mart"
+    "SlateportCity_Mart",
+    "SlateportMarketHarbor",
+    "SlateportMarket_Underwater"
   ],
   "gMapGroup_IndoorMauville": [
     "MauvilleCity_Gym",

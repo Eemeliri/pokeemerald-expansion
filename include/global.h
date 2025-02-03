@@ -1040,7 +1040,7 @@ struct SaveBlock1
     /*0x650*/ struct ItemSlot bagPocket_PokeBalls[BAG_POKEBALLS_COUNT];
     /*0x690*/ struct ItemSlot bagPocket_TMHM[BAG_TMHM_COUNT];
     /*0x790*/ struct ItemSlot bagPocket_Berries[BAG_BERRIES_COUNT];
-    #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+        #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
               struct ItemSlot bagPocket_Medicine[BAG_MEDICINE_COUNT];
         #endif
         #if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET

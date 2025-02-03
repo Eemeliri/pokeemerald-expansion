@@ -28,7 +28,7 @@ struct LoadedSaveData
  /*0x0130*/ struct ItemSlot TMsHMs[BAG_TMHM_COUNT];
  /*0x0230*/ struct ItemSlot berries[BAG_BERRIES_COUNT];
  /*0x02E8*/ struct Mail mail[MAIL_COUNT];
- #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+#if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
  /*0x0230*/ struct ItemSlot medicine[BAG_MEDICINE_COUNT];
 #endif
 #if POCKET_BATTLE_ITEMS != DEFAULT_BATTLE_ITEMS_POCKET
@@ -301,7 +301,7 @@ void LoadPlayerBag(void)
     for (i = 0; i < MAIL_COUNT; i++)
         gLoadedSaveData.mail[i] = gSaveBlock1Ptr->mail[i];
 
-    #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+#if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
     // load player medicine.
     for (i = 0; i < BAG_MEDICINE_COUNT; i++)
         gLoadedSaveData.medicine[i] = gSaveBlock1Ptr->bagPocket_Medicine[i];
@@ -343,7 +343,6 @@ void LoadPlayerBag(void)
         gLoadedSaveData.zcrystals[i] = gSaveBlock1Ptr->bagPocket_ZCrystals[i];
 #endif
 
-
     gLastEncryptionKey = gSaveBlock2Ptr->encryptionKey;
 }
 
@@ -376,7 +375,7 @@ void SavePlayerBag(void)
     for (i = 0; i < MAIL_COUNT; i++)
         gSaveBlock1Ptr->mail[i] = gLoadedSaveData.mail[i];
 
-    #if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
+#if POCKET_MEDICINE != DEFAULT_MEDICINE_POCKET
     // save player medicine.
     for (i = 0; i < BAG_MEDICINE_COUNT; i++)
         gSaveBlock1Ptr->bagPocket_Medicine[i] = gLoadedSaveData.medicine[i];
@@ -417,7 +416,6 @@ void SavePlayerBag(void)
     for (i = 0; i < BAG_ZCRYSTALS_COUNT; i++)
         gSaveBlock1Ptr->bagPocket_ZCrystals[i] = gLoadedSaveData.zcrystals[i];
 #endif
-
 
     encryptionKeyBackup = gSaveBlock2Ptr->encryptionKey;
     gSaveBlock2Ptr->encryptionKey = gLastEncryptionKey;

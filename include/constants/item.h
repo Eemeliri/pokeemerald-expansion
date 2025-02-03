@@ -13,8 +13,8 @@
 //    - DoWallyTutorialBagMenu
 
 #define POCKET_ITEMS        0
-#define POCKET_POKE_BALLS   1
-#define POCKET_MEDICINE     2
+#define POCKET_MEDICINE     1
+#define POCKET_POKE_BALLS   2
 #define POCKET_BATTLE_ITEMS 3
 #define POCKET_TM_HM        4
 #define POCKET_POWER_UP     5

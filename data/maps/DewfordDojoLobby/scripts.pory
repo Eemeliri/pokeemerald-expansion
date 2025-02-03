@@ -80,11 +80,11 @@ script dojoKubfuGentleman {
             }
             hidemonpic
             msgbox(format("Take care now."))
-            fadescreen(FADE_TO_BLACK)
+            fadescreenswapbuffers(FADE_TO_BLACK)
             closemessage
             removeobject(6)
             delay(50)
-            fadescreen(FADE_FROM_BLACK)
+            fadescreenswapbuffers(FADE_FROM_BLACK)
             release
             end
         } else {

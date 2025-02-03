@@ -1,0 +1,45 @@
+mapscripts SlateportMarketHarbor_MapScripts {
+
+}
+
+script harborTourist {
+    lock
+    faceplayer
+    msgbox(format("I'm currently visiting Hoenn with my girlfriend. We've lived in Johto for our whole lives, but decided recently to start travelling the world."))
+    msgbox(format("Have you visited any other regions?"))
+    waitmessage
+    release
+    end
+}
+
+script harborForeman {
+    lock
+    faceplayer
+    msgbox(format("The ship experienced some technical difficulties during the last trip to Hoenn from Johto."))
+    msgbox(format("We're making sure that everything is functional for the return trip."))
+    waitmessage
+    release
+    end
+}
+
+script harborResearcher {
+    lock
+    faceplayer
+    msgbox(format("I'm working on my thesis about Orange Archipelago and its native Pokémon species for Celadon university. Did you know there exists an island where all local species have turned pink?"))
+    waitmessage
+    release
+    end
+}
+
+script harborFerryman {
+    lock
+    faceplayer
+    msgbox(format("Hello! We're currently conducting maintenance work for the ship. Come back a bit later!"))
+    waitmessage
+        
+    
+    release
+    end
+}
+
+

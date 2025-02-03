@@ -89,7 +89,7 @@ gSpecialVars::
 	.4byte gSpecialVar_MonBoxId
 	.4byte gSpecialVar_MonBoxPos
 	.4byte gSpecialVar_Unused_0x8014
-	.4byte gTrainerBattleOpponent_A
+	.4byte gTrainerBattleParameter + 2 // gTrainerBattleParameter.params.opponentA
 
 	.include "data/specials.inc"
 
@@ -1176,3 +1176,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RuggedCave2/scripts.inc"
 
 	.include "data/maps/RuggedCave3/scripts.inc"
+
+	.include "data/maps/SlateportMarket/scripts.inc"
+
+	.include "data/maps/SlateportMarketHarbor/scripts.inc"
+
+	.include "data/maps/SlateportMarket_Underwater/scripts.inc"

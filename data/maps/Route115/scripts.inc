@@ -322,7 +322,7 @@ Route115_Falkner::
 # 169 "data/maps/Route115/scripts.pory"
 	msgbox Route115_Falkner_Text_9
 # 170 "data/maps/Route115/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 171 "data/maps/Route115/scripts.pory"
 	delay 30
 # 172 "data/maps/Route115/scripts.pory"
@@ -334,7 +334,7 @@ Route115_Falkner::
 # 175 "data/maps/Route115/scripts.pory"
 	delay 30
 # 176 "data/maps/Route115/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 177 "data/maps/Route115/scripts.pory"
 	setflag FLAG_HIDE_ROUTE115_FALKNER
 # 179 "data/maps/Route115/scripts.pory"

@@ -136,7 +136,7 @@ dojoKubfuGentleman_7:
 # 82 "data/maps/DewfordDojoLobby/scripts.pory"
 	msgbox dojoKubfuGentleman_Text_4
 # 83 "data/maps/DewfordDojoLobby/scripts.pory"
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 # 84 "data/maps/DewfordDojoLobby/scripts.pory"
 	closemessage
 # 85 "data/maps/DewfordDojoLobby/scripts.pory"
@@ -144,7 +144,7 @@ dojoKubfuGentleman_7:
 # 86 "data/maps/DewfordDojoLobby/scripts.pory"
 	delay 50
 # 87 "data/maps/DewfordDojoLobby/scripts.pory"
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 # 88 "data/maps/DewfordDojoLobby/scripts.pory"
 	release
 	end
