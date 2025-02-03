@@ -46,6 +46,14 @@ struct BlendSettings
     u32 unused:2;
 };
 
+struct TimeBlendSettings
+{
+    struct BlendSettings startBlend;
+    struct BlendSettings endBlend;
+    u16 weight;
+    u16 altWeight;
+};
+
 struct PaletteFadeControl
 {
     u32 multipurpose1; // This field needs to exist or errors will occur
@@ -101,7 +109,7 @@ void BlendPalettesUnfaded(u32 selectedPalettes, u8 coeff, u32 color);
 void BlendPalettesGradually(u32 selectedPalettes, s8 delay, u8 coeff, u8 coeffTarget, u16 color, u8 priority, u8 id);
 void TimeBlendPalette(u16 palOffset, u32 coeff, u32 blendColor);
 void TintPalette_RGB_Copy(u16 palOffset, u32 blendColor);
-void TimeMixPalettes(u32, u16 *, u16 *, struct BlendSettings *, struct BlendSettings *, u16);
+void TimeMixPalettes(u32 palettes, u16 *src, u16 *dst, struct BlendSettings *blend0, struct BlendSettings *blend1, u16 weight0);
 void AvgPaletteWeighted(u16 *src0, u16 *src1, u16 *dst, u16 weight0);
 void TintPalette_GrayScale(u16 *palette, u32 count);
 void TintPalette_GrayScale2(u16 *palette, u32 count);
