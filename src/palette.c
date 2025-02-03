@@ -232,8 +232,8 @@ static u8 UpdateTimeOfDayPaletteFade(void)
     u16 selectedPalettes;
     u16 timePalettes = 0; // palettes passed to the time-blender
     u16 copyPalettes;
-    u16 * src;
-    u16 * dst;
+    u16 *src;
+    u16 *dst;
 
     if (!gPaletteFade.active)
         return PALETTE_FADE_STATUS_DONE;
@@ -246,7 +246,7 @@ static u8 UpdateTimeOfDayPaletteFade(void)
         if (gPaletteFade.delayCounter < gPaletteFade_delay)
         {
             gPaletteFade.delayCounter++;
-            return 2;
+            return PALETTE_FADE_STATUS_DELAY;
         }
         gPaletteFade.delayCounter = 0;
     }
@@ -286,8 +286,8 @@ static u8 UpdateTimeOfDayPaletteFade(void)
     // palettes that were not blended above must be copied through
     if ((copyPalettes = ~timePalettes))
     {
-        u16 * src1 = src;
-        u16 * dst1 = dst;
+        u16 *src1 = src;
+        u16 *dst1 = dst;
         while (copyPalettes)
         {
             if (copyPalettes & 1)
@@ -357,7 +357,7 @@ static u32 UpdateNormalPaletteFade(void)
             if (gPaletteFade.delayCounter < gPaletteFade_delay)
             {
                 gPaletteFade.delayCounter++;
-                return 2;
+                return PALETTE_FADE_STATUS_DELAY;
             }
             gPaletteFade.delayCounter = 0;
         }
@@ -714,7 +714,8 @@ static u32 UpdateHardwarePaletteFade(void)
     {
         if (gPaletteFade.shouldResetBlendRegisters)
         {
-            gPaletteFade_blendCnt = 0;
+            // clear TGT1
+            gPaletteFade_blendCnt &= ~0xFF;
             gPaletteFade.y = 0;
         }
         gPaletteFade.shouldResetBlendRegisters = FALSE;
@@ -725,10 +726,44 @@ static u32 UpdateHardwarePaletteFade(void)
     return gPaletteFade.active ? PALETTE_FADE_STATUS_ACTIVE : PALETTE_FADE_STATUS_DONE;
 }
 
+// Only called for hardware fades
 static void UpdateBlendRegisters(void)
 {
     SetGpuReg(REG_OFFSET_BLDCNT, (u16)gPaletteFade_blendCnt);
     SetGpuReg(REG_OFFSET_BLDY, gPaletteFade.y);
+    // If fade-out, also adjust BLDALPHA and DISPCNT
+    if (!gPaletteFade.yDec /*&& gPaletteFade.mode == HARDWARE_FADE*/)
+    {
+        u16 bldAlpha = GetGpuReg(REG_OFFSET_BLDALPHA);
+        u8 tgt1 = BLDALPHA_TGT1(bldAlpha);
+        u8 tgt2 = BLDALPHA_TGT2(bldAlpha);
+        u8 bldFade;
+
+        switch (gPaletteFade_blendCnt & BLDCNT_EFFECT_EFF_MASK)
+        {
+        // FADE_TO_BLACK
+        case BLDCNT_EFFECT_DARKEN:
+            bldFade = BLDALPHA_TGT1(max(0, 16 - gPaletteFade.y));
+            SetGpuReg(
+                REG_OFFSET_BLDALPHA,
+                BLDALPHA_BLEND(min(tgt1, bldFade), min(tgt2, bldFade))
+            );
+            break;
+        // FADE_TO_WHITE
+        case BLDCNT_EFFECT_LIGHTEN:
+            SetGpuReg(
+                REG_OFFSET_BLDALPHA,
+                BLDALPHA_BLEND(min(++tgt1, 31), min(++tgt2, 31))
+            );
+            // cause display to show white when finished
+            // (otherwise blend-mode sprites will still be visible)
+            if (gPaletteFade.hardwareFadeFinishing && gPaletteFade.y >= 16)
+                SetGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_FORCED_BLANK);
+            break;
+        }
+    } else
+        ClearGpuRegBits(REG_OFFSET_DISPCNT, DISPCNT_FORCED_BLANK);
+
     if (gPaletteFade.hardwareFadeFinishing)
     {
         gPaletteFade.hardwareFadeFinishing = FALSE;
@@ -872,14 +907,14 @@ void TimeMixPalettes(u32 palettes, u16 *src, u16 *dst, struct BlendSettings *ble
     u32 defaultColor = DEFAULT_LIGHT_COLOR;
 
     if (!palettes)
-    return;
+        return;
 
     color0 = blend0->blendColor;
     tint0 = blend0->isTint;
-    coeff0 = tint0 ? 8*2 : blend0->coeff*2;
+    coeff0 = tint0 ? 16 : blend0->coeff * 2;
     color1 = blend1->blendColor;
     tint1 = blend1->isTint;
-    coeff1 = tint1 ? 8*2 : blend1->coeff*2;
+    coeff1 = tint1 ? 16 : blend1->coeff * 2;
 
     if (tint0)
     {
