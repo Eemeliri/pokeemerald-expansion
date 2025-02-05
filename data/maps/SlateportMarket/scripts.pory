@@ -315,7 +315,6 @@ mart miscBerryMart {
 }
 
 mart miscItemMart {
-    ITEM_LINKING_CORD
     ITEM_ABSORB_BULB
     ITEM_DESTINY_KNOT
     ITEM_COVERT_CLOAK
