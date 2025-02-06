@@ -1182,3 +1182,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/SlateportMarketHarbor/scripts.inc"
 
 	.include "data/maps/SlateportMarket_Underwater/scripts.inc"
+
+	.include "data/maps/OlivineCity/scripts.inc"
+
+	.include "data/maps/Route40/scripts.inc"
+
+	.include "data/maps/Route39/scripts.inc"
