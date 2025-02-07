@@ -499,150 +499,450 @@ mysticTrader::
 # 275 "data/maps/SlateportMarket/scripts.pory"
 	faceplayer
 # 276 "data/maps/SlateportMarket/scripts.pory"
-	goto_if_set FLAG_ITEM_ALAKAZITE, mysticTrader_5
-mysticTrader_4:
+	goto_if_set FLAG_DAILY_STARTER_GACHA, mysticTrader_2
+# 279 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_1
 # 280 "data/maps/SlateportMarket/scripts.pory"
-	goto_if_set FLAG_ITEM_ALAKAZITE, mysticTrader_3
-# 285 "data/maps/SlateportMarket/scripts.pory"
-	msgbox mysticTrader_Text_2
-	checkitem ITEM_PSYCHIC_GEM
-# 0 "data/maps/SlateportMarket/scripts.pory"
-	compare VAR_RESULT, TRUE
-	goto_if_eq mysticTrader_9
+	checkmoney 5000
+# 281 "data/maps/SlateportMarket/scripts.pory"
+	compare VAR_RESULT, FALSE
+	goto_if_eq mysticTrader_6
+# 286 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_3
+# 287 "data/maps/SlateportMarket/scripts.pory"
+	dynmultichoice 0, 0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, mysticTrader_Text_4, mysticTrader_Text_5, mysticTrader_Text_6, mysticTrader_Text_7
+# 288 "data/maps/SlateportMarket/scripts.pory"
+	switch VAR_RESULT
+# 289 "data/maps/SlateportMarket/scripts.pory"
+	case 0, mysticTrader_10
+# 325 "data/maps/SlateportMarket/scripts.pory"
+	case 1, mysticTrader_11
+# 361 "data/maps/SlateportMarket/scripts.pory"
+	case 2, mysticTrader_12
+# 396 "data/maps/SlateportMarket/scripts.pory"
+	case 3, mysticTrader_13
 mysticTrader_8:
-# 293 "data/maps/SlateportMarket/scripts.pory"
+# 401 "data/maps/SlateportMarket/scripts.pory"
+	playbgm MUS_HG_RECEIVE_POKEMON, FALSE
+# 402 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_12
+# 403 "data/maps/SlateportMarket/scripts.pory"
+	delay 100
+# 404 "data/maps/SlateportMarket/scripts.pory"
+	removemoney 5000
+# 405 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_13
+# 406 "data/maps/SlateportMarket/scripts.pory"
+	setflag FLAG_DAILY_STARTER_GACHA
+mysticTrader_1:
+# 408 "data/maps/SlateportMarket/scripts.pory"
 	releaseall
 	end
 
 mysticTrader_2:
 # 277 "data/maps/SlateportMarket/scripts.pory"
 	msgbox mysticTrader_Text_0
-# 278 "data/maps/SlateportMarket/scripts.pory"
-	release
-	end
+	goto mysticTrader_1
 
-mysticTrader_3:
-# 281 "data/maps/SlateportMarket/scripts.pory"
-	msgbox mysticTrader_Text_1
+mysticTrader_6:
 # 282 "data/maps/SlateportMarket/scripts.pory"
-	release
+	msgbox mysticTrader_Text_2
+# 283 "data/maps/SlateportMarket/scripts.pory"
+	releaseall
 	end
 
-mysticTrader_5:
-# 276 "data/maps/SlateportMarket/scripts.pory"
-	goto_if_set FLAG_IS_CHAMPION, mysticTrader_2
-	goto mysticTrader_4
-
-mysticTrader_9:
-# 287 "data/maps/SlateportMarket/scripts.pory"
-	msgbox mysticTrader_Text_3
-# 288 "data/maps/SlateportMarket/scripts.pory"
-	giveitem ITEM_ALAKAZITE
-# 289 "data/maps/SlateportMarket/scripts.pory"
-	removeitem ITEM_PSYCHIC_GEM, 1
+mysticTrader_10:
 # 290 "data/maps/SlateportMarket/scripts.pory"
-	setflag FLAG_ITEM_ALAKAZITE
+	random 9
 # 291 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_8
+# 292 "data/maps/SlateportMarket/scripts.pory"
+	playse SE_CONTEST_PLACE
+# 293 "data/maps/SlateportMarket/scripts.pory"
 	waitmessage
+# 294 "data/maps/SlateportMarket/scripts.pory"
+	delay 60
+# 295 "data/maps/SlateportMarket/scripts.pory"
+	switch VAR_RESULT
+# 296 "data/maps/SlateportMarket/scripts.pory"
+	case 0, mysticTrader_15
+# 299 "data/maps/SlateportMarket/scripts.pory"
+	case 1, mysticTrader_16
+# 302 "data/maps/SlateportMarket/scripts.pory"
+	case 2, mysticTrader_17
+# 305 "data/maps/SlateportMarket/scripts.pory"
+	case 3, mysticTrader_18
+# 308 "data/maps/SlateportMarket/scripts.pory"
+	case 4, mysticTrader_19
+# 311 "data/maps/SlateportMarket/scripts.pory"
+	case 5, mysticTrader_20
+# 314 "data/maps/SlateportMarket/scripts.pory"
+	case 6, mysticTrader_21
+# 317 "data/maps/SlateportMarket/scripts.pory"
+	case 7, mysticTrader_22
+# 320 "data/maps/SlateportMarket/scripts.pory"
+	case 8, mysticTrader_23
+	goto mysticTrader_8
+
+mysticTrader_11:
+# 326 "data/maps/SlateportMarket/scripts.pory"
+	random 9
+# 327 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_9
+# 328 "data/maps/SlateportMarket/scripts.pory"
+	playse SE_CONTEST_PLACE
+# 329 "data/maps/SlateportMarket/scripts.pory"
+	waitmessage
+# 330 "data/maps/SlateportMarket/scripts.pory"
+	delay 60
+# 331 "data/maps/SlateportMarket/scripts.pory"
+	switch VAR_RESULT
+# 332 "data/maps/SlateportMarket/scripts.pory"
+	case 0, mysticTrader_25
+# 336 "data/maps/SlateportMarket/scripts.pory"
+	case 1, mysticTrader_26
+# 339 "data/maps/SlateportMarket/scripts.pory"
+	case 2, mysticTrader_27
+# 342 "data/maps/SlateportMarket/scripts.pory"
+	case 3, mysticTrader_28
+# 345 "data/maps/SlateportMarket/scripts.pory"
+	case 4, mysticTrader_29
+# 348 "data/maps/SlateportMarket/scripts.pory"
+	case 5, mysticTrader_30
+# 351 "data/maps/SlateportMarket/scripts.pory"
+	case 6, mysticTrader_31
+# 354 "data/maps/SlateportMarket/scripts.pory"
+	case 7, mysticTrader_32
+# 357 "data/maps/SlateportMarket/scripts.pory"
+	case 8, mysticTrader_33
+	goto mysticTrader_8
+
+mysticTrader_12:
+# 362 "data/maps/SlateportMarket/scripts.pory"
+	random 9
+# 363 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_10
+# 364 "data/maps/SlateportMarket/scripts.pory"
+	playse SE_CONTEST_PLACE
+# 365 "data/maps/SlateportMarket/scripts.pory"
+	waitmessage
+# 366 "data/maps/SlateportMarket/scripts.pory"
+	delay 60
+# 367 "data/maps/SlateportMarket/scripts.pory"
+	switch VAR_RESULT
+# 368 "data/maps/SlateportMarket/scripts.pory"
+	case 0, mysticTrader_35
+# 371 "data/maps/SlateportMarket/scripts.pory"
+	case 1, mysticTrader_36
+# 374 "data/maps/SlateportMarket/scripts.pory"
+	case 2, mysticTrader_37
+# 377 "data/maps/SlateportMarket/scripts.pory"
+	case 3, mysticTrader_38
+# 380 "data/maps/SlateportMarket/scripts.pory"
+	case 4, mysticTrader_39
+# 383 "data/maps/SlateportMarket/scripts.pory"
+	case 5, mysticTrader_40
+# 386 "data/maps/SlateportMarket/scripts.pory"
+	case 6, mysticTrader_41
+# 389 "data/maps/SlateportMarket/scripts.pory"
+	case 7, mysticTrader_42
+# 392 "data/maps/SlateportMarket/scripts.pory"
+	case 8, mysticTrader_43
+	goto mysticTrader_8
+
+mysticTrader_13:
+# 397 "data/maps/SlateportMarket/scripts.pory"
+	msgbox mysticTrader_Text_11
+# 398 "data/maps/SlateportMarket/scripts.pory"
+	releaseall
+	end
+
+mysticTrader_15:
+# 297 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_CHARMANDER, 5
+# 298 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_CHARMANDER
+	goto mysticTrader_8
+
+mysticTrader_16:
+# 300 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_CYNDAQUIL, 5
+# 301 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_CYNDAQUIL
+	goto mysticTrader_8
+
+mysticTrader_17:
+# 303 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_TORCHIC, 5
+# 304 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_TORCHIC
+	goto mysticTrader_8
+
+mysticTrader_18:
+# 306 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_CHIMCHAR, 5
+# 307 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_CHIMCHAR
+	goto mysticTrader_8
+
+mysticTrader_19:
+# 309 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_TEPIG, 5
+# 310 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_TEPIG
+	goto mysticTrader_8
+
+mysticTrader_20:
+# 312 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_FENNEKIN, 5
+# 313 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_FENNEKIN
+	goto mysticTrader_8
+
+mysticTrader_21:
+# 315 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_LITTEN, 5
+# 316 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_LITTEN
+	goto mysticTrader_8
+
+mysticTrader_22:
+# 318 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_SCORBUNNY, 5
+# 319 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_SCORBUNNY
+	goto mysticTrader_8
+
+mysticTrader_23:
+# 321 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_FUECOCO, 5
+# 322 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_FUECOCO
+	goto mysticTrader_8
+
+mysticTrader_25:
+# 333 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_SQUIRTLE, 5
+# 334 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_SQUIRTLE
+	goto mysticTrader_8
+
+mysticTrader_26:
+# 337 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_TOTODILE, 5
+# 338 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_TOTODILE
+	goto mysticTrader_8
+
+mysticTrader_27:
+# 340 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_MUDKIP, 5
+# 341 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_MUDKIP
+	goto mysticTrader_8
+
+mysticTrader_28:
+# 343 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_PIPLUP, 5
+# 344 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_PIPLUP
+	goto mysticTrader_8
+
+mysticTrader_29:
+# 346 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_OSHAWOTT, 5
+# 347 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_OSHAWOTT
+	goto mysticTrader_8
+
+mysticTrader_30:
+# 349 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_FROAKIE, 5
+# 350 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_FROAKIE
+	goto mysticTrader_8
+
+mysticTrader_31:
+# 352 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_POPPLIO, 5
+# 353 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_POPPLIO
+	goto mysticTrader_8
+
+mysticTrader_32:
+# 355 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_SOBBLE, 5
+# 356 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_SOBBLE
+	goto mysticTrader_8
+
+mysticTrader_33:
+# 358 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_QUAXLY, 5
+# 359 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_QUAXLY
+	goto mysticTrader_8
+
+mysticTrader_35:
+# 369 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_BULBASAUR, 5
+# 370 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
+	goto mysticTrader_8
+
+mysticTrader_36:
+# 372 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_CHIKORITA, 5
+# 373 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_CHIKORITA
+	goto mysticTrader_8
+
+mysticTrader_37:
+# 375 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_TREECKO, 5
+# 376 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_TREECKO
+	goto mysticTrader_8
+
+mysticTrader_38:
+# 378 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_TURTWIG, 5
+# 379 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_TURTWIG
+	goto mysticTrader_8
+
+mysticTrader_39:
+# 381 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_SNIVY, 5
+# 382 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_SNIVY
+	goto mysticTrader_8
+
+mysticTrader_40:
+# 384 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_CHESPIN, 5
+# 385 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_CHESPIN
+	goto mysticTrader_8
+
+mysticTrader_41:
+# 387 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_ROWLET, 5
+# 388 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_ROWLET
+	goto mysticTrader_8
+
+mysticTrader_42:
+# 390 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_GROOKEY, 5
+# 391 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_GROOKEY
+	goto mysticTrader_8
+
+mysticTrader_43:
+# 393 "data/maps/SlateportMarket/scripts.pory"
+	givemon SPECIES_SPRIGATITO, 5
+# 394 "data/maps/SlateportMarket/scripts.pory"
+	bufferspeciesname STR_VAR_1, SPECIES_SPRIGATITO
 	goto mysticTrader_8
 
 
 mysticSign::
-# 298 "data/maps/SlateportMarket/scripts.pory"
+# 413 "data/maps/SlateportMarket/scripts.pory"
 	lock
-# 299 "data/maps/SlateportMarket/scripts.pory"
+# 414 "data/maps/SlateportMarket/scripts.pory"
 	msgbox mysticSign_Text_0
-# 300 "data/maps/SlateportMarket/scripts.pory"
+# 415 "data/maps/SlateportMarket/scripts.pory"
 	waitmessage
-# 301 "data/maps/SlateportMarket/scripts.pory"
+# 416 "data/maps/SlateportMarket/scripts.pory"
 	release
 	end
 
 
 	.align 2
-# 305 "data/maps/SlateportMarket/scripts.pory"
+# 420 "data/maps/SlateportMarket/scripts.pory"
 miscBerryMart:
-# 306 "data/maps/SlateportMarket/scripts.pory"
+# 421 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LIECHI_BERRY
-# 307 "data/maps/SlateportMarket/scripts.pory"
+# 422 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_GANLON_BERRY
-# 308 "data/maps/SlateportMarket/scripts.pory"
+# 423 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_SALAC_BERRY
-# 309 "data/maps/SlateportMarket/scripts.pory"
+# 424 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_PETAYA_BERRY
-# 310 "data/maps/SlateportMarket/scripts.pory"
+# 425 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_APICOT_BERRY
-# 311 "data/maps/SlateportMarket/scripts.pory"
+# 426 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LANSAT_BERRY
-# 312 "data/maps/SlateportMarket/scripts.pory"
+# 427 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_STARF_BERRY
-# 313 "data/maps/SlateportMarket/scripts.pory"
+# 428 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_JABOCA_BERRY
-# 314 "data/maps/SlateportMarket/scripts.pory"
+# 429 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_ROWAP_BERRY
 	.2byte ITEM_NONE
 
 	.align 2
-# 317 "data/maps/SlateportMarket/scripts.pory"
+# 432 "data/maps/SlateportMarket/scripts.pory"
 miscItemMart:
-# 318 "data/maps/SlateportMarket/scripts.pory"
+# 433 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_ABSORB_BULB
-# 319 "data/maps/SlateportMarket/scripts.pory"
+# 434 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_DESTINY_KNOT
-# 320 "data/maps/SlateportMarket/scripts.pory"
+# 435 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_COVERT_CLOAK
 	.2byte ITEM_NONE
 
 	.align 2
-# 323 "data/maps/SlateportMarket/scripts.pory"
+# 438 "data/maps/SlateportMarket/scripts.pory"
 MintShopSunday:
-# 324 "data/maps/SlateportMarket/scripts.pory"
+# 439 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_ADAMANT_MINT
-# 325 "data/maps/SlateportMarket/scripts.pory"
+# 440 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_BOLD_MINT
-# 326 "data/maps/SlateportMarket/scripts.pory"
+# 441 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_HASTY_MINT
-# 327 "data/maps/SlateportMarket/scripts.pory"
+# 442 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_MODEST_MINT
-# 328 "data/maps/SlateportMarket/scripts.pory"
+# 443 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_JOLLY_MINT
-# 329 "data/maps/SlateportMarket/scripts.pory"
+# 444 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_BRAVE_MINT
-# 330 "data/maps/SlateportMarket/scripts.pory"
+# 445 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_CALM_MINT
-# 331 "data/maps/SlateportMarket/scripts.pory"
+# 446 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_CAREFUL_MINT
-# 332 "data/maps/SlateportMarket/scripts.pory"
+# 447 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_GENTLE_MINT
-# 333 "data/maps/SlateportMarket/scripts.pory"
+# 448 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_HASTY_MINT
-# 334 "data/maps/SlateportMarket/scripts.pory"
+# 449 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_IMPISH_MINT
-# 335 "data/maps/SlateportMarket/scripts.pory"
+# 450 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_JOLLY_MINT
-# 336 "data/maps/SlateportMarket/scripts.pory"
+# 451 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LAX_MINT
-# 337 "data/maps/SlateportMarket/scripts.pory"
+# 452 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_LONELY_MINT
-# 338 "data/maps/SlateportMarket/scripts.pory"
+# 453 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_MILD_MINT
-# 339 "data/maps/SlateportMarket/scripts.pory"
+# 454 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_MODEST_MINT
-# 340 "data/maps/SlateportMarket/scripts.pory"
+# 455 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_NAIVE_MINT
-# 341 "data/maps/SlateportMarket/scripts.pory"
+# 456 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_NAUGHTY_MINT
-# 342 "data/maps/SlateportMarket/scripts.pory"
+# 457 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_QUIET_MINT
-# 343 "data/maps/SlateportMarket/scripts.pory"
+# 458 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_RASH_MINT
-# 344 "data/maps/SlateportMarket/scripts.pory"
+# 459 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_RELAXED_MINT
-# 345 "data/maps/SlateportMarket/scripts.pory"
+# 460 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_SASSY_MINT
-# 346 "data/maps/SlateportMarket/scripts.pory"
+# 461 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_SERIOUS_MINT
-# 347 "data/maps/SlateportMarket/scripts.pory"
+# 462 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_TIMID_MINT
 	.2byte ITEM_NONE
 
@@ -811,27 +1111,68 @@ miscBerryMartSign_Text_0:
 
 mysticTrader_Text_0:
 # 277 "data/maps/SlateportMarket/scripts.pory"
-	.string "I knew you were destined for greatness,\n"
-	.string "champion of Hoenn.$"
+	.string "My apogies, but you've already had your\n"
+	.string "daily box of surprises. Come back\l"
+	.string "tomorrow.$"
 
 mysticTrader_Text_1:
-# 281 "data/maps/SlateportMarket/scripts.pory"
-	.string "I look forward to seeing your progress.$"
+# 279 "data/maps/SlateportMarket/scripts.pory"
+	.string "Greetings traveller, would you be\n"
+	.string "interesting in buying one of my lootb- I\l"
+	.string "mean surprise boxes! I can offer you\l"
+	.string "one each day for 5000 Pokedollars.$"
 
 mysticTrader_Text_2:
-# 285 "data/maps/SlateportMarket/scripts.pory"
-	.string "You! Yes you, I sense great potential\n"
-	.string "within you. I can aid your growth\l"
-	.string "towards greatness if you bring me a\l"
-	.string "Psychic Gem.$"
+# 282 "data/maps/SlateportMarket/scripts.pory"
+	.string "Oh you're too poor for a surprise box.$"
 
 mysticTrader_Text_3:
+# 286 "data/maps/SlateportMarket/scripts.pory"
+	.string "Each box contains a rare Pokémon. So\n"
+	.string "come on, pick one!$"
+
+mysticTrader_Text_4:
 # 287 "data/maps/SlateportMarket/scripts.pory"
-	.string "Yes! That is truly a beatiful specimen\n"
-	.string "of a Psychic Gem! As promised I will\l"
-	.string "grant you this stone to foster your\l"
-	.string "growth towards greatness.$"
+	.string "Red$"
+
+mysticTrader_Text_5:
+# 287 "data/maps/SlateportMarket/scripts.pory"
+	.string "Blue$"
+
+mysticTrader_Text_6:
+# 287 "data/maps/SlateportMarket/scripts.pory"
+	.string "Green$"
+
+mysticTrader_Text_7:
+# 287 "data/maps/SlateportMarket/scripts.pory"
+	.string "Decline$"
+
+mysticTrader_Text_8:
+# 291 "data/maps/SlateportMarket/scripts.pory"
+	.string "You peer into the red box and find...!$"
+
+mysticTrader_Text_9:
+# 327 "data/maps/SlateportMarket/scripts.pory"
+	.string "You peer into the blue box and find...!$"
+
+mysticTrader_Text_10:
+# 363 "data/maps/SlateportMarket/scripts.pory"
+	.string "You peer into the green box and find...!$"
+
+mysticTrader_Text_11:
+# 397 "data/maps/SlateportMarket/scripts.pory"
+	.string "O-oh, not into a game of chance? Shame.$"
+
+mysticTrader_Text_12:
+# 402 "data/maps/SlateportMarket/scripts.pory"
+	.string "{STR_VAR_1}! Amazing!$"
+
+mysticTrader_Text_13:
+# 405 "data/maps/SlateportMarket/scripts.pory"
+	.string "Hope you are satisfied with this\n"
+	.string "outcome. Come back tomorrow if not.\l"
+	.string "Heeheehee...$"
 
 mysticSign_Text_0:
-# 299 "data/maps/SlateportMarket/scripts.pory"
-	.string "Mystic Maya sees all.$"
+# 414 "data/maps/SlateportMarket/scripts.pory"
+	.string "Mystic Maya's surprise boxes!$"

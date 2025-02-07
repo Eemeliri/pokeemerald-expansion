@@ -273,22 +273,137 @@ script miscBerryMartSign {
 script mysticTrader {
     lock
     faceplayer
-    if (flag(FLAG_ITEM_ALAKAZITE) && flag(FLAG_IS_CHAMPION)) {
-        msgbox(format("I knew you were destined for greatness, champion of Hoenn."))
-        release
-        end
-    } elif (flag(FLAG_ITEM_ALAKAZITE)) {
-        msgbox(format("I look forward to seeing your progress."))
-        release
-        end
-    }
-    msgbox(format("You! Yes you, I sense great potential within you. I can aid your growth towards greatness if you bring me a Psychic Gem."))
-    if (checkitem(ITEM_PSYCHIC_GEM) == TRUE) {
-        msgbox(format("Yes! That is truly a beatiful specimen of a Psychic Gem! As promised I will grant you this stone to foster your growth towards greatness."))
-        giveitem(ITEM_ALAKAZITE)
-        removeitem(ITEM_PSYCHIC_GEM, 1)
-        setflag(FLAG_ITEM_ALAKAZITE)
-        waitmessage
+    if (flag(FLAG_DAILY_STARTER_GACHA)) {
+        msgbox(format("My apogies, but you've already had your daily box of surprises. Come back tomorrow."))
+    } else {
+        msgbox(format("Greetings traveller, would you be interesting in buying one of my lootb- I mean surprise boxes! I can offer you one each day for 5000 Pokedollars."))
+        checkmoney(5000)
+        if (var(VAR_RESULT) == FALSE) {
+            msgbox(format("Oh you're too poor for a surprise box."))
+            releaseall
+            end
+        }
+        msgbox(format("Each box contains a rare Pokémon. So come on, pick one!"))
+        dynmultichoice(0,0, FALSE, 4, 0, DYN_MULTICHOICE_CB_NONE, "Red", "Blue", "Green", "Decline")
+        switch(var(VAR_RESULT)) {
+            case 0:
+                random(9)
+                msgbox(format("You peer into the red box and find...!"))
+                playse(SE_CONTEST_PLACE)
+                waitmessage
+                delay(60)
+                switch (var(VAR_RESULT)) {
+                    case 0:
+                        givemon(SPECIES_CHARMANDER, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_CHARMANDER)
+                    case 1:
+                        givemon(SPECIES_CYNDAQUIL, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_CYNDAQUIL)
+                    case 2:
+                        givemon(SPECIES_TORCHIC, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_TORCHIC)
+                    case 3:
+                        givemon(SPECIES_CHIMCHAR, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_CHIMCHAR)
+                    case 4:
+                        givemon(SPECIES_TEPIG, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_TEPIG)
+                    case 5:
+                        givemon(SPECIES_FENNEKIN, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_FENNEKIN)
+                    case 6:
+                        givemon(SPECIES_LITTEN, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_LITTEN)
+                    case 7:
+                        givemon(SPECIES_SCORBUNNY, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_SCORBUNNY)
+                    case 8:
+                        givemon(SPECIES_FUECOCO, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_FUECOCO)
+                }
+
+            case 1:
+                random(9)
+                msgbox(format("You peer into the blue box and find...!"))
+                playse(SE_CONTEST_PLACE)
+                waitmessage
+                delay(60)
+                switch (var(VAR_RESULT)) {
+                    case 0:
+                        givemon(SPECIES_SQUIRTLE, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_SQUIRTLE)
+                        
+                    case 1:
+                        givemon(SPECIES_TOTODILE, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_TOTODILE)
+                    case 2:
+                        givemon(SPECIES_MUDKIP, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_MUDKIP)
+                    case 3:
+                        givemon(SPECIES_PIPLUP, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_PIPLUP)
+                    case 4:
+                        givemon(SPECIES_OSHAWOTT, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_OSHAWOTT)
+                    case 5:
+                        givemon(SPECIES_FROAKIE, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_FROAKIE)
+                    case 6:
+                        givemon(SPECIES_POPPLIO, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_POPPLIO)
+                    case 7:
+                        givemon(SPECIES_SOBBLE, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_SOBBLE)
+                    case 8:
+                        givemon(SPECIES_QUAXLY, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_QUAXLY)
+                }
+            case 2:
+                random(9)
+                msgbox(format("You peer into the green box and find...!"))
+                playse(SE_CONTEST_PLACE)
+                waitmessage
+                delay(60)
+                switch (var(VAR_RESULT)) {
+                    case 0:
+                        givemon(SPECIES_BULBASAUR, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_BULBASAUR)
+                    case 1:
+                        givemon(SPECIES_CHIKORITA, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_CHIKORITA)
+                    case 2:
+                        givemon(SPECIES_TREECKO, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_TREECKO)
+                    case 3:
+                        givemon(SPECIES_TURTWIG, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_TURTWIG)
+                    case 4:
+                        givemon(SPECIES_SNIVY, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_SNIVY)
+                    case 5:
+                        givemon(SPECIES_CHESPIN, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_CHESPIN)
+                    case 6:
+                        givemon(SPECIES_ROWLET, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_ROWLET)
+                    case 7:
+                        givemon(SPECIES_GROOKEY, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_GROOKEY)
+                    case 8:
+                        givemon(SPECIES_SPRIGATITO, 5)
+                        bufferspeciesname(STR_VAR_1, SPECIES_SPRIGATITO)
+                    }
+            case 3:
+            msgbox(format("O-oh, not into a game of chance? Shame."))
+            releaseall
+            end
+        }
+        playbgm(MUS_HG_RECEIVE_POKEMON, FALSE)
+        msgbox(format("{STR_VAR_1}! Amazing!"))
+        delay(100)
+        removemoney(5000)
+        msgbox(format("Hope you are satisfied with this outcome. Come back tomorrow if not. Heeheehee..."))
+        setflag(FLAG_DAILY_STARTER_GACHA)
     }
     releaseall
     end
@@ -296,7 +411,7 @@ script mysticTrader {
 
 script mysticSign {
     lock
-    msgbox(format("Mystic Maya sees all.") MSGBOX_SIGN)
+    msgbox(format("Mystic Maya's surprise boxes!") MSGBOX_SIGN)
     waitmessage
     release
     end
