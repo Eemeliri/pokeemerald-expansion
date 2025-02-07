@@ -650,12 +650,12 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 14
+Roselia
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Roselia
-Level: 14
+Breloom
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ROSE_1 ===
@@ -4121,10 +4121,9 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Abra
-Level: 15
+Kadabra
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
 
 === TRAINER_PRESTON ===
 Name: PRESTON
@@ -4293,10 +4292,9 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Abra
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Hidden Power
+Mr Mime
+Level: 26
+IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_HANNAH ===
 Name: HANNAH
@@ -5543,8 +5541,8 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Skitty @ Oran Berry
-Level: 15
+Minccino @ Sitrus Berry
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COLTON ===
@@ -5712,12 +5710,13 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Plusle @ Oran Berry
-Level: 14
+
+Toxel @ Oran Berry
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Minun @ Oran Berry
-Level: 14
+Pawmo @ Oran Berry
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISABEL_2 ===
@@ -6266,12 +6265,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Aron
-Level: 15
+Floragato
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Electrike
-Level: 13
+Applin
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_WALLACE ===
@@ -6342,16 +6341,8 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Tentacool
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Magikarp
-Level: 15
+Gyarados
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_IVAN ===
@@ -6435,20 +6426,16 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
+Marshtomp
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Shellder
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
 Tentacool
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wailmer
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Tentacool
-Level: 11
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Wailmer
-Level: 14
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_NOLAN ===
@@ -6649,17 +6636,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Voltorb
-Level: 6
+Linoone
+Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Voltorb
-Level: 6
+Ninjask
+Level: 26
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Magnemite
-Level: 14
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 
 === TRAINER_ANTHONY ===
 Name: ANTHONY
@@ -6670,12 +6653,12 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 14
+Magneton
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Magnemite
-Level: 14
+Metang
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BENJAMIN_1 ===
@@ -6687,8 +6670,8 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 16
+Girafarig
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BENJAMIN_2 ===
@@ -6752,8 +6735,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 16
+Charjabug
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JASMINE ===
@@ -6765,17 +6748,14 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 14
+Stantler
+Level: 26
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
-Magnemite
-Level: 14
+Combusken
+Level: 26
+Ability: Speed Boost
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
-Voltorb
-Level: 6
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ABIGAIL_2 ===
 Name: ABIGAIL
@@ -8806,12 +8786,12 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Plusle
-Level: 15
+Braixen
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Minun
-Level: 15
+Frogadier
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_AMY_AND_LIV_2 ===
@@ -9363,12 +9343,12 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Lombre
-Level: 14
+Butterfree
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nuzleaf
-Level: 14
+Graveler
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_HECTOR ===
@@ -9549,17 +9529,42 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Pikachu-Starter
-Level: 20
+Ponyta @ Charcoal
+Level: 23
+Ability: Flame Body
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flame Wheel
+- Stomp
+- Sunny Day
+- High Horsepower
+
+Sinistea @ Covert Cloak
+Level: 23
+Ability: Weak Armor
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Imprison
+- Mega Drain
+- Confuse Ray
+- Hex
+
+Pelipper @ Mystic Water
+Level: 24
+Ability: Drizzle
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Pulse
+- Air Slash
+- Icy Wind
+- Aqua Ring
+
+
+Pikachu-Starter @ Sitrus Berry
+Level: 25
+Ability: Lightning Rod
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Shock Wave
+- Splishy Splash
+- Dig
+- Quick Attack
 
 === TRAINER_BRENDAN_ROUTE_119_CLEFAIRY ===
 Name: BRENDAN
@@ -9604,17 +9609,40 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Eevee-Starter
-Level: 20
+Tangela @ Sitrus Berry
+Level: 23
+Ability: Regenerator
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Leech Seed
+- Sleep Powder
+- Ancient Power
+- Sunny Day
+
+Kilowattrel @ Charti Berry
+Level: 24
+Ability: Wind Power
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Pluck
+- Shock Wave
+- Uproar
+- U-turn
+
+Lampent @ Charcoal
+Level: 24
+Ability: Flash Fire
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Will O Wisp
+- Incinerate
+- Hex
+- Curse
+
+Eevee-Starter @ Sitrus Berry
+Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Veevee Volley
+- Bouncy Bubble
+- Covet
+- Quick Attack
 
 === TRAINER_BRENDAN_ROUTE_119_PIKACHU ===
 Name: BRENDAN
@@ -9659,17 +9687,42 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Growlithe @ Charcoal
+Level: 23
+Ability: Intimidate
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flame Wheel
+- Take Down
+- Crunch
+- Thunder Fang
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pupitar @ Rindo Berry
+Level: 24
+Ability: Shed Skin
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Rock Throw
+- Bulldoze
+- Payback
+- Screech
+
+Pidgeotto @ Sharp Beak
+Level: 24
+Ability: Big Pecks
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Air Cutter
+- Quick Attack
+- Whirlwind
+- Steel Wing
 
 Clefairy
-Level: 20
+Level: 25
+Ability: Magic Guard
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+EVs: 150 Atk / 150 SpA
+- Stored Power
+- Low Kick
+- Draining Kiss
+- Chilling Water
 
 === TRAINER_BRENDAN_ROUTE_119_EEVEE ===
 Name: BRENDAN
@@ -9714,17 +9767,42 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Pikachu-Starter
-Level: 20
+Ponyta @ Charcoal
+Level: 23
+Ability: Flame Body
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flame Wheel
+- Stomp
+- Sunny Day
+- High Horsepower
+
+Sinistea @ Covert Cloak
+Level: 23
+Ability: Weak Armor
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Imprison
+- Mega Drain
+- Confuse Ray
+- Hex
+
+Pelipper @ Mystic Water
+Level: 24
+Ability: Drizzle
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Pulse
+- Air Slash
+- Icy Wind
+- Aqua Ring
+
+
+Pikachu-Starter @ Sitrus Berry
+Level: 25
+Ability: Lightning Rod
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Shock Wave
+- Splishy Splash
+- Dig
+- Quick Attack
 
 === TRAINER_MAY_ROUTE_119_CLEFAIRY ===
 Name: MAY
@@ -9769,17 +9847,40 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Eevee-Starter
-Level: 20
+Tangela @ Sitrus Berry
+Level: 23
+Ability: Regenerator
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Leech Seed
+- Sleep Powder
+- Ancient Power
+- Sunny Day
+
+Kilowattrel @ Charti Berry
+Level: 24
+Ability: Wind Power
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Pluck
+- Shock Wave
+- Uproar
+- U-turn
+
+Lampent @ Charcoal
+Level: 24
+Ability: Flash Fire
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Will O Wisp
+- Incinerate
+- Hex
+- Curse
+
+Eevee-Starter @ Sitrus Berry
+Level: 25
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Veevee Volley
+- Bouncy Bubble
+- Covet
+- Quick Attack
 
 === TRAINER_MAY_ROUTE_119_PIKACHU ===
 Name: MAY
@@ -9824,17 +9925,42 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Growlithe @ Charcoal
+Level: 23
+Ability: Intimidate
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Flame Wheel
+- Take Down
+- Crunch
+- Thunder Fang
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+Pupitar @ Rindo Berry
+Level: 24
+Ability: Shed Skin
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Rock Throw
+- Bulldoze
+- Payback
+- Screech
+
+Pidgeotto @ Sharp Beak
+Level: 24
+Ability: Big Pecks
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Air Cutter
+- Quick Attack
+- Whirlwind
+- Steel Wing
 
 Clefairy
-Level: 20
+Level: 25
+Ability: Magic Guard
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+EVs: 150 Atk / 150 SpA
+- Stored Power
+- Low Kick
+- Draining Kiss
+- Chilling Water
 
 === TRAINER_MAY_ROUTE_119_EEVEE ===
 Name: MAY
@@ -13065,12 +13191,12 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Minun @ Oran Berry
-Level: 14
+Flaaffy @ Oran Berry
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Plusle @ Oran Berry
-Level: 14
+Pikachu @ Light Ball
+Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JOSEPH ===
@@ -13083,11 +13209,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Electrike
-Level: 14
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Voltorb
-Level: 14
+Graveler-Alola
+Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ALYSSA ===
@@ -13099,8 +13225,8 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Magnemite
-Level: 15
+Magneton
+Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_MARCOS ===
@@ -13113,7 +13239,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Voltorb
-Level: 15
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_RHETT ===
@@ -13125,8 +13251,8 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Makuhita
-Level: 15
+Primeape
+Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 === TRAINER_TYRON ===
@@ -13602,8 +13728,8 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
-Level: 15
+Tentacruel
+Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ISABELLE ===
@@ -13615,8 +13741,8 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 15
+Azumarill
+Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_ANDRES_1 ===
