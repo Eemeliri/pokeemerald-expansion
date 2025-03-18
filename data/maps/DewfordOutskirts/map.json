@@ -73,7 +73,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_SKORUPI",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SKORUPI)",
       "x": 23,
       "y": 77,
       "elevation": 0,

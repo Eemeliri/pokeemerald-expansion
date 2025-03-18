@@ -338,7 +338,7 @@
       "flag": "FLAG_HIDE_ROUTE115_FALKNER"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MON_BASE+SPECIES_PIDGEOTTO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PIDGEOTTO)",
       "x": 6,
       "y": 67,
       "elevation": 0,
