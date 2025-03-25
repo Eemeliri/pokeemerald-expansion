@@ -1748,3 +1748,22 @@ const u16 gTilesetPalettes_JohtoOlivine[][16] =
 };
 
 const u32 gTilesetTiles_JohtoOlivine[] = INCBIN_U32("data/tilesets/secondary/johto_olivine/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_SkyGatewayEntrance[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_SkyGatewayEntrance[] = INCBIN_U32("data/tilesets/secondary/sky_gateway_entrance/tiles.4bpp.lz");

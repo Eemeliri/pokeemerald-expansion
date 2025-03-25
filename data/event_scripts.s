@@ -1188,3 +1188,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route40/scripts.inc"
 
 	.include "data/maps/Route39/scripts.inc"
+
+	.include "data/maps/SkyGatewayEntrance/scripts.inc"

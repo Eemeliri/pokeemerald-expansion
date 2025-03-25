@@ -4580,6 +4580,16 @@
       "secondary_tileset": "gTileset_JohtoOlivine",
       "border_filepath": "data/layouts/Route39/border.bin",
       "blockdata_filepath": "data/layouts/Route39/map.bin"
+    },
+    {
+      "id": "LAYOUT_SKY_GATEWAY_ENTRANCE",
+      "name": "SkyGatewayEntrance_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SkyGatewayEntrance",
+      "border_filepath": "data/layouts/SkyGatewayEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/SkyGatewayEntrance/map.bin"
     }
   ]
 }

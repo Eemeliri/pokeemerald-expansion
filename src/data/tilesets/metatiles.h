@@ -225,3 +225,6 @@ const u16 gMetatileAttributes_JohtoGeneral[] = INCBIN_U16("data/tilesets/primary
 
 const u16 gMetatiles_JohtoOlivine[] = INCBIN_U16("data/tilesets/secondary/johto_olivine/metatiles.bin");
 const u16 gMetatileAttributes_JohtoOlivine[] = INCBIN_U16("data/tilesets/secondary/johto_olivine/metatile_attributes.bin");
+
+const u16 gMetatiles_SkyGatewayEntrance[] = INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/metatiles.bin");
+const u16 gMetatileAttributes_SkyGatewayEntrance[] = INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/metatile_attributes.bin");

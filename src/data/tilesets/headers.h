@@ -914,3 +914,14 @@ const struct Tileset gTileset_JohtoOlivine =
     .metatileAttributes = gMetatileAttributes_JohtoOlivine,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_SkyGatewayEntrance =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SkyGatewayEntrance,
+    .palettes = gTilesetPalettes_SkyGatewayEntrance,
+    .metatiles = gMetatiles_SkyGatewayEntrance,
+    .metatileAttributes = gMetatileAttributes_SkyGatewayEntrance,
+    .callback = NULL,
+};

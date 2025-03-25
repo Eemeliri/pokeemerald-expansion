@@ -1,0 +1,115 @@
+mapscripts SkyGatewayEntrance_MapScripts {}
+
+script SkyGatewayEntrance_TiredMan{
+    msgbox(format("<Pant> Ascending those stairs took a lot... Maybe I'll rest here for a bit..."), MSGBOX_NPC)
+}
+
+script SkyGatewayEntrance_OldLady {
+    msgbox(format("No matter how many times I come here, the view from here is truly astonishing!"), MSGBOX_NPC)
+}
+
+script SkyGatewayEntrance_Battlegirl {
+    msgbox(format("This board displays the names of those who have climbed the furthest up the Sky Gateway! I wonder if I'll ever make it up there..."), MSGBOX_NPC)
+}
+
+script SkyGatewayEntrance_AceTrainer {
+    msgbox(format("I can't even see the top! They say at the top resides the greatest treasure."), MSGBOX_NPC)
+}
+
+script SkyGatewayEntrance_Shop {
+    msgbox(format("Welcome! We sell rare items!"), MSGBOX_DEFAULT)
+    bpmart(SkyGatewayBPMart, FALSE)
+    release
+    end
+}
+
+script SkyGatewayEntrance_Porygon {
+    lock
+    faceplayer
+    goto(EventScript_PC)
+    release
+    end
+}
+
+script SkyGatewayMarshadow {
+    lock
+    faceplayer
+    playmoncry(SPECIES_MARSHADOW, CRY_MODE_NORMAL)
+    msgbox(format("Whee! Are you going to climb? Many dangers up ahead! Bring me items held close by the guardians and I will help you!"), MSGBOX_DEFAULT)
+    msgbox(format("Which item would you like?"))
+    dynmultichoice(0,0, FALSE, 5, 0, DYN_MULTICHOICE_CB_NONE, "Wind Talisman", "Sky Compass", "Divine Amulet", "Rainbow Feather", "Cancel")
+    switch(var(VAR_RESULT)) {
+        case 0: // Wind Talisman
+            msgbox(format("The Wind Talisman is a powerful item that can help you climb the Sky Gateway!"), MSGBOX_DEFAULT)
+            release
+            end
+
+        case 1: // Sky Compass
+            msgbox(format("The Sky Compass is a powerful item that can help you climb the Sky Gateway!"), MSGBOX_DEFAULT)
+            release
+            end
+
+        case 2: // Divine Amulet
+            msgbox(format("The Divine Amulet is a powerful item that can help you climb the Sky Gateway!"), MSGBOX_DEFAULT)
+            release
+            end
+        
+        case 3: // Rainbow Feather
+            msgbox(format("The Rainbow Feather is a powerful item that can help you climb the Sky Gateway!"), MSGBOX_DEFAULT)
+            release
+            end
+
+        default: // Cancel
+            playmoncry(SPECIES_MARSHADOW, CRY_MODE_NORMAL)
+            msgbox(format("Whee! Come back safe!"), MSGBOX_DEFAULT)
+            waitmessage
+            release
+            end
+        }
+    release
+    end
+}
+
+mart SkyGatewayBPMart {
+    ITEM_BOTTLE_CAP
+    ITEM_TERRAIN_EXTENDER
+    ITEM_EXP_CANDY_L
+    ITEM_NONE
+}
+
+script SkyGatewayDynamicMultichoice {
+    dynmultichoice(0,0, FALSE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Climb", "What is this?", "Cancel")
+    switch(var(VAR_RESULT)) {
+        case 0: // Climb
+            msgbox(format("TODO: Start climb"))
+            release
+            end
+
+        case 1: // What is this?
+            msgbox(format("Sky Gateway is a multi-layered dungeon that any trainer can climb. The higher you ascend, the fiercer the challenges get."))
+            msgbox(format("Each layer is divided into a certain number of floors, and at the end of each layer is a guardian that you must defeat to proceed."))
+            msgbox(format("There will occasionally be obstacles that require you to have a certain amount of gym badges."))
+            msgbox(format("You can expect to find rare treasure, strong trainers to battle and something even greater as you ascend!"))
+            goto(SkyGatewayDynamicMultichoice)
+
+        default:
+            msgbox(format ("We hope to see you again!"))
+            waitmessage
+            releaseall
+            end
+    }
+}
+
+script SkyGatewayEntrance_Receptionist {
+    lock
+    faceplayer
+    msgbox(format("Welcome! This is the entrance to the Sky Gateway, a path to the heavens and beyond!"), MSGBOX_DEFAULT)
+    goto(SkyGatewayDynamicMultichoice)
+}
+
+script SkyGatewayEntrance_Teleporter {
+    lock
+    msgbox(format("The device appears to be inactive."), MSGBOX_DEFAULT)
+    release
+    end
+}
