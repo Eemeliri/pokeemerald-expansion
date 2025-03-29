@@ -9516,9 +9516,11 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Pikachu-Starter
+Rowlet
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Growl
+- Tackle
 
 === TRAINER_BRENDAN_ROUTE_110_CLEFAIRY ===
 Name: BRENDAN
@@ -9557,14 +9559,9 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Aqua Ring
 
 
-Pikachu-Starter @ Sitrus Berry
+Dartrix @ Sitrus Berry
 Level: 25
-Ability: Lightning Rod
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Shock Wave
-- Splishy Splash
-- Dig
-- Quick Attack
 
 === TRAINER_BRENDAN_ROUTE_119_CLEFAIRY ===
 Name: BRENDAN
@@ -9583,8 +9580,8 @@ Pelipper
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Pikachu-Starter
-Level: 31
+Decidueye
+Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_BRENDAN_ROUTE_103_PIKACHU ===
@@ -9596,9 +9593,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Force Setup First Turn
 
-Eevee-Starter
+Fennekin
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Scratch
+- Tail Whip
 
 === TRAINER_BRENDAN_ROUTE_110_PIKACHU ===
 Name: BRENDAN
@@ -9627,22 +9626,17 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Uproar
 - U-turn
 
-Lampent @ Charcoal
+Haunter @ Focus Sash
 Level: 24
-Ability: Flash Fire
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Will O Wisp
-- Incinerate
+- Confuse Ray
+- Shadow Punch
 - Hex
-- Curse
+- Glare
 
-Eevee-Starter @ Sitrus Berry
+Braixen @ Sitrus Berry
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Veevee Volley
-- Bouncy Bubble
-- Covet
-- Quick Attack
 
 === TRAINER_BRENDAN_ROUTE_119_PIKACHU ===
 Name: BRENDAN
@@ -9661,8 +9655,8 @@ Lombre
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Eevee-Starter
-Level: 31
+Delphox
+Level: 36
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_BRENDAN_ROUTE_103_EEVEE ===
@@ -9674,7 +9668,7 @@ Music: Male
 Double Battle: No
 AI: Basic Trainer
 
-Clefairy
+Froakie
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9714,15 +9708,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Whirlwind
 - Steel Wing
 
-Clefairy
+Frogadier
 Level: 25
-Ability: Magic Guard
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 EVs: 150 Atk / 150 SpA
-- Stored Power
-- Low Kick
-- Draining Kiss
-- Chilling Water
 
 === TRAINER_BRENDAN_ROUTE_119_EEVEE ===
 Name: BRENDAN
@@ -9754,9 +9743,11 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Pikachu-Starter
+Rowlet
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Growl
+- Tackle
 
 === TRAINER_MAY_ROUTE_110_CLEFAIRY ===
 Name: MAY
@@ -9794,15 +9785,9 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Icy Wind
 - Aqua Ring
 
-
-Pikachu-Starter @ Sitrus Berry
+Dartrix @ Sitrus Berry
 Level: 25
-Ability: Lightning Rod
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Shock Wave
-- Splishy Splash
-- Dig
-- Quick Attack
 
 === TRAINER_MAY_ROUTE_119_CLEFAIRY ===
 Name: MAY
@@ -9821,7 +9806,7 @@ Lombre
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Pikachu-Starter
+Decidueye
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -9834,7 +9819,7 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Eevee-Starter
+Fennekin
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9865,22 +9850,17 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Uproar
 - U-turn
 
-Lampent @ Charcoal
+Haunter @ Focus Sash
 Level: 24
-Ability: Flash Fire
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Will O Wisp
-- Incinerate
+- Confuse Ray
+- Shadow Punch
 - Hex
-- Curse
+- Glare
 
-Eevee-Starter @ Sitrus Berry
+Braixen @ Sitrus Berry
 Level: 25
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Veevee Volley
-- Bouncy Bubble
-- Covet
-- Quick Attack
 
 === TRAINER_MAY_ROUTE_119_PIKACHU ===
 Name: MAY
@@ -9899,7 +9879,7 @@ Lombre
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
-Eevee-Starter
+Delphox
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
@@ -9912,7 +9892,7 @@ Music: Female
 Double Battle: No
 AI: Basic Trainer
 
-Clefairy
+Froakie
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9952,15 +9932,10 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Whirlwind
 - Steel Wing
 
-Clefairy
+Frogadier
 Level: 25
-Ability: Magic Guard
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 EVs: 150 Atk / 150 SpA
-- Stored Power
-- Low Kick
-- Draining Kiss
-- Chilling Water
 
 === TRAINER_MAY_ROUTE_119_EEVEE ===
 Name: MAY
@@ -11015,7 +10990,7 @@ Tangela
 Level: 17
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Eevee-Starter
+Braixen
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -11036,7 +11011,7 @@ Ponyta
 Level: 17
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Pikachu-Starter
+Dartrix
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -11147,7 +11122,7 @@ Pidgeotto
 Level: 17
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Clefairy
+Frogadier
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -11168,7 +11143,7 @@ Ponyta
 Level: 17
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Pikachu-Starter
+Dartrix
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14308,7 +14283,7 @@ Tangela
 Level: 17
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Eevee-Starter
+Braixen
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
@@ -14329,7 +14304,7 @@ Pidgeotto
 Level: 17
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-Clefairy
+Frogadier
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
