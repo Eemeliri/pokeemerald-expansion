@@ -1,0 +1,64 @@
+raw `
+Route117_House_MapScripts::
+	.byte 0
+`
+script Erika_Route117_PostBattle {
+    msgbox(format("That was marvelous, {PLAYER}. I can see your badges are well earned. Don't you agree, Vileplume?"))
+    waitmessage
+    playmoncry(SPECIES_VILEPLUME, CRY_MODE_NORMAL)
+    msgbox(format("VILEEEE!"), MSGBOX_DEFAULT)
+    waitmoncry
+    waitmessage
+    msgbox(format("I'm glad to have met you. I hope we can battle again in the future."))
+    msgbox(format("But before you go, you should take this."))
+    giveitem(ITEM_SYRUPY_APPLE, 1)
+    msgbox(format("I need to go find the others now. Farewell."))
+    waitmessage
+    fadescreenswapbuffers(FADE_TO_BLACK)
+    closemessage
+    removeobject(1)
+    removeobject(2)
+    delay(60)
+    fadescreenswapbuffers(FADE_FROM_BLACK)
+    release
+    end
+}
+
+script Erika_Route117_YesNo {
+    switch (var(VAR_RESULT)) {
+        case YES:
+            msgbox(format("Wonderful! I am quite looking forward to this."))
+            waitmessage
+            trainerbattle_no_intro(TRAINER_ROUTE117_ERIKA, format("That was like a spring rain, absolutely refreshing!"))
+            goto(Erika_Route117_PostBattle)
+        case NO:
+            msgbox(format("I see... That's unfortunate."))
+            break
+    }
+    release
+    end
+}
+
+script Erika_Route117 {
+    lock
+    faceplayer
+    if (flag(FLAG_TEMP_1)) {
+        msgbox(format("Hello again, did you change your mind?"), MSGBOX_YESNO)
+        goto(Erika_Route117_YesNo)
+    } else {
+        msgbox(format("Oh, hello. What brings you here?"))
+        msgbox(format("...I see. You are a trainer participating in the gym challenge. That's wonderful."))
+        msgbox(format("My name is Erika, I am a gym leader from Kanto. I'm visiting Hoenn alongside my colleagues."))
+        if (flag(FLAG_GRANITECAVE_BROCK)) {
+            msgbox(format("I heard from Brock that you are a very skilled trainer. He was quite impressed by your skills."))
+        }
+        msgbox(format("Would you be willing to show me your battling skills?"), MSGBOX_YESNO)
+        setflag(FLAG_TEMP_1)
+        goto(Erika_Route117_YesNo)
+    }
+}
+
+script Erikas_Vileplume {
+    playmoncry(SPECIES_VILEPLUME, CRY_MODE_NORMAL)
+    msgbox(format("VILEEEE!"), MSGBOX_NPC)
+}

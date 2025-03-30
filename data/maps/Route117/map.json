@@ -368,12 +368,12 @@
       "x": 26,
       "y": 26,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Route117_Vivillon",
       "flag": "0"
     },
     {
@@ -385,9 +385,9 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "0"
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_TRAILBLAZE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ROUTE_117_TRAILBLAZE_TM"
     }
   ],
   "warp_events": [
@@ -402,7 +402,7 @@
       "x": 32,
       "y": 27,
       "elevation": 0,
-      "dest_map": "MAP_ROUTE117",
+      "dest_map": "MAP_ROUTE117_HOUSE",
       "dest_warp_id": "0"
     }
   ],

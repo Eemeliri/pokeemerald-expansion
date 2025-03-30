@@ -2,7 +2,7 @@ Credits
 
 Team Aqua's Asset Repo and Discord
 RHH
-Kasen - BP vendor
+Kasen - BP vendor, all instruments voicegroup
 Zeturic - Move item
 AsparagusEduardo - Better bag
 Ghoulslash - Auto run, repeated field medicine use

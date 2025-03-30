@@ -868,7 +868,7 @@
 
 #define TRAINER_ROUTE115_FALKNER             860
 #define TRAINER_GRANITECAVE_BROCK            861
-#define TRAINER_UNUSED1                      862
+#define TRAINER_ROUTE117_ERIKA               862
 #define TRAINER_UNUSED2                      863
 #define TRAINER_UNUSED3                      864
 #define TRAINER_UNUSED4                      865
@@ -899,7 +899,77 @@
 #define TRAINER_UNUSED29                     890
 #define TRAINER_UNUSED30                     891
 #define TRAINER_UNUSED31                     892
-#define TRAINER_UNUSED32                     893                 
+#define TRAINER_UNUSED32                     893    
+#define TRAINER_UNUSED33                     894
+#define TRAINER_UNUSED34                     895
+#define TRAINER_UNUSED35                     896
+#define TRAINER_UNUSED36                     897
+#define TRAINER_UNUSED37                     898
+#define TRAINER_UNUSED38                     899
+#define TRAINER_UNUSED39                     900
+#define TRAINER_UNUSED40                     901
+#define TRAINER_UNUSED41                     902
+#define TRAINER_UNUSED42                     903
+#define TRAINER_UNUSED43                     904
+#define TRAINER_UNUSED44                     905
+#define TRAINER_UNUSED45                     906
+#define TRAINER_UNUSED46                     907
+#define TRAINER_UNUSED47                     908
+#define TRAINER_UNUSED48                     909
+#define TRAINER_UNUSED49                     910
+#define TRAINER_UNUSED50                     911
+#define TRAINER_UNUSED51                     912
+#define TRAINER_UNUSED52                     913
+#define TRAINER_UNUSED53                     914
+#define TRAINER_UNUSED54                     915
+#define TRAINER_UNUSED55                     916
+#define TRAINER_UNUSED56                     917
+#define TRAINER_UNUSED57                     918
+#define TRAINER_UNUSED58                     919
+#define TRAINER_UNUSED59                     920
+#define TRAINER_UNUSED60                     921
+#define TRAINER_UNUSED61                     922
+#define TRAINER_UNUSED62                     923
+#define TRAINER_UNUSED63                     924
+#define TRAINER_UNUSED64                     925
+#define TRAINER_UNUSED65                     926
+#define TRAINER_UNUSED66                     927
+#define TRAINER_UNUSED67                     928
+#define TRAINER_UNUSED68                     929
+#define TRAINER_UNUSED69                     930
+#define TRAINER_UNUSED70                     931
+#define TRAINER_UNUSED71                     932
+#define TRAINER_UNUSED72                     933
+#define TRAINER_UNUSED73                     934
+#define TRAINER_UNUSED74                     935
+#define TRAINER_UNUSED75                     936
+#define TRAINER_UNUSED76                     937
+#define TRAINER_UNUSED77                     938
+#define TRAINER_UNUSED78                     939
+#define TRAINER_UNUSED79                     940
+#define TRAINER_UNUSED80                     941
+#define TRAINER_UNUSED81                     942
+#define TRAINER_UNUSED82                     943
+#define TRAINER_UNUSED83                     944
+#define TRAINER_UNUSED84                     945
+#define TRAINER_UNUSED85                     946
+#define TRAINER_UNUSED86                     947
+#define TRAINER_UNUSED87                     948
+#define TRAINER_UNUSED88                     949
+#define TRAINER_UNUSED89                     950
+#define TRAINER_UNUSED90                     951
+#define TRAINER_UNUSED91                     952
+#define TRAINER_UNUSED92                     953
+#define TRAINER_UNUSED93                     954
+#define TRAINER_UNUSED94                     955
+#define TRAINER_UNUSED95                     956
+#define TRAINER_UNUSED96                     957
+#define TRAINER_UNUSED97                     958
+#define TRAINER_UNUSED98                     959
+#define TRAINER_UNUSED99                     960
+#define TRAINER_UNUSED100                    961
+
+
 
 // NOTE: Because each Trainer uses a flag to determine when they are defeated, there is only space for 9 additional trainers before trainer flag space overflows
 //       More space can be made by shifting flags around in constants/flags.h or changing how trainer flags are handled
@@ -907,8 +977,8 @@
 
 
 
-#define TRAINERS_COUNT                      894
-#define MAX_TRAINERS_COUNT                  894
+#define TRAINERS_COUNT                      962
+#define MAX_TRAINERS_COUNT                  962
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 
 #endif  // GUARD_CONSTANTS_OPPONENTS_H

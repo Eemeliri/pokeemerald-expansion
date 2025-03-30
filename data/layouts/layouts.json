@@ -4590,6 +4590,16 @@
       "secondary_tileset": "gTileset_SkyGatewayEntrance",
       "border_filepath": "data/layouts/SkyGatewayEntrance/border.bin",
       "blockdata_filepath": "data/layouts/SkyGatewayEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE117_HOUSE",
+      "name": "Route117_House_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/Route117_House/border.bin",
+      "blockdata_filepath": "data/layouts/Route117_House/map.bin"
     }
   ]
 }
