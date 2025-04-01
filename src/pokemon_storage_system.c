@@ -142,8 +142,10 @@ enum {
     MENU_INFO,
     MENU_SCENERY_1,
     MENU_SCENERY_2,
-    MENU_SCENERY_3,
-    MENU_ETCETERA,
+    MENU_ETCETERA_1,
+    MENU_ETCETERA_2,
+    MENU_ETCETERA_3,
+    MENU_ETCETERA_4,
     MENU_FRIENDS,
     MENU_FOREST,
     MENU_CITY,
@@ -161,6 +163,30 @@ enum {
     MENU_POKECENTER,
     MENU_MACHINE,
     MENU_SIMPLE,
+    MENU_SPACE,
+    MENU_BACKYARD,
+    MENU_NOSTALGIC1,
+    MENU_TORCHIC,
+    MENU_TRIO1,
+    MENU_PIKAPIKA1,
+    MENU_TIMEANDSPACE,
+    MENU_GALACTIC1,
+    MENU_DISTORTION,
+    MENU_CONTEST,
+    MENU_NOSTALGIC2,
+    MENU_CROAGUNK,
+    MENU_TRIO2,
+    MENU_PIKAPIKA2,
+    MENU_RENEGADE,
+    MENU_GALACTIC2,
+    MENU_HEART,
+    MENU_SOUL,
+    MENU_BIGBROTHER,
+    MENU_POKEATHLON,
+    MENU_TRIO3,
+    MENU_SPIKYPIKA,
+    MENU_KIMONOGIRL,
+    MENU_REVIVAL,
 };
 #define MENU_WALLPAPER_SETS_START MENU_SCENERY_1
 #define MENU_WALLPAPERS_START MENU_FOREST
@@ -1722,7 +1748,7 @@ void ResetPokemonStorageSystem(void)
     }
 
     for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)
-        SetBoxWallpaper(boxId, boxId % (MAX_DEFAULT_WALLPAPER + 1));
+        SetBoxWallpaper(boxId, (WALLPAPER_COUNT-3) - boxId);
 
     ResetWaldaWallpaper();
 }
@@ -3421,8 +3447,10 @@ static void Task_HandleWallpapers(u8 taskId)
             break;
         case MENU_SCENERY_1:
         case MENU_SCENERY_2:
-        case MENU_SCENERY_3:
-        case MENU_ETCETERA:
+        case MENU_ETCETERA_1:
+        case MENU_ETCETERA_2:
+        case MENU_ETCETERA_3:
+        case MENU_ETCETERA_4:
             PlaySE(SE_SELECT);
             RemoveMenu();
             sStorage->wallpaperSetId -= MENU_WALLPAPER_SETS_START;
@@ -4341,8 +4369,10 @@ static void AddWallpaperSetsMenu(void)
     InitMenu();
     SetMenuText(MENU_SCENERY_1);
     SetMenuText(MENU_SCENERY_2);
-    SetMenuText(MENU_SCENERY_3);
-    SetMenuText(MENU_ETCETERA);
+    SetMenuText(MENU_ETCETERA_1);
+    SetMenuText(MENU_ETCETERA_2);
+    SetMenuText(MENU_ETCETERA_3);
+    SetMenuText(MENU_ETCETERA_4);
     if (IsWaldaWallpaperUnlocked())
         SetMenuText(MENU_FRIENDS);
     AddMenu();
@@ -4358,24 +4388,52 @@ static void AddWallpapersMenu(u8 wallpaperSet)
         SetMenuText(MENU_CITY);
         SetMenuText(MENU_DESERT);
         SetMenuText(MENU_SAVANNA);
-        break;
-    case MENU_SCENERY_2 - MENU_WALLPAPER_SETS_START:
         SetMenuText(MENU_CRAG);
         SetMenuText(MENU_VOLCANO);
         SetMenuText(MENU_SNOW);
-        SetMenuText(MENU_CAVE);
         break;
-    case MENU_SCENERY_3 - MENU_WALLPAPER_SETS_START:
+    case MENU_SCENERY_2 - MENU_WALLPAPER_SETS_START:
+        SetMenuText(MENU_CAVE);
         SetMenuText(MENU_BEACH);
         SetMenuText(MENU_SEAFLOOR);
         SetMenuText(MENU_RIVER);
         SetMenuText(MENU_SKY);
         break;
-    case MENU_ETCETERA - MENU_WALLPAPER_SETS_START:
+    case MENU_ETCETERA_1 - MENU_WALLPAPER_SETS_START:
         SetMenuText(MENU_POLKADOT);
         SetMenuText(MENU_POKECENTER);
         SetMenuText(MENU_MACHINE);
         SetMenuText(MENU_SIMPLE);
+        SetMenuText(MENU_SPACE);
+        SetMenuText(MENU_BACKYARD);
+        SetMenuText(MENU_NOSTALGIC1);
+        break;
+    case MENU_ETCETERA_2 - MENU_WALLPAPER_SETS_START:
+        SetMenuText(MENU_TORCHIC);
+        SetMenuText(MENU_TRIO1);
+        SetMenuText(MENU_PIKAPIKA1);
+        SetMenuText(MENU_TIMEANDSPACE);
+        SetMenuText(MENU_GALACTIC1);
+        SetMenuText(MENU_DISTORTION);
+        SetMenuText(MENU_CONTEST);
+        break;
+    case MENU_ETCETERA_3 - MENU_WALLPAPER_SETS_START:
+        SetMenuText(MENU_NOSTALGIC2);
+        SetMenuText(MENU_CROAGUNK);
+        SetMenuText(MENU_TRIO2);
+        SetMenuText(MENU_PIKAPIKA2);
+        SetMenuText(MENU_RENEGADE);
+        SetMenuText(MENU_GALACTIC2);
+        SetMenuText(MENU_HEART);
+        break;
+    case MENU_ETCETERA_4 - MENU_WALLPAPER_SETS_START:
+        SetMenuText(MENU_SOUL);
+        SetMenuText(MENU_BIGBROTHER);
+        SetMenuText(MENU_POKEATHLON);
+        SetMenuText(MENU_TRIO3);
+        SetMenuText(MENU_SPIKYPIKA);
+        SetMenuText(MENU_KIMONOGIRL);
+        SetMenuText(MENU_REVIVAL);
         break;
     }
     AddMenu();
@@ -8033,8 +8091,10 @@ static const u8 *const sMenuTexts[] =
     [MENU_INFO]       = COMPOUND_STRING("INFO"),
     [MENU_SCENERY_1]  = COMPOUND_STRING("SCENERY 1"),
     [MENU_SCENERY_2]  = COMPOUND_STRING("SCENERY 2"),
-    [MENU_SCENERY_3]  = COMPOUND_STRING("SCENERY 3"),
-    [MENU_ETCETERA]   = COMPOUND_STRING("ETCETERA"),
+    [MENU_ETCETERA_1] = gPCText_Etcetera1,
+    [MENU_ETCETERA_2] = gPCText_Etcetera2,
+    [MENU_ETCETERA_3] = gPCText_Etcetera3,
+    [MENU_ETCETERA_4] = gPCText_Etcetera4,
     [MENU_FRIENDS]    = COMPOUND_STRING("FRIENDS"),
     [MENU_FOREST]     = COMPOUND_STRING("FOREST"),
     [MENU_CITY]       = COMPOUND_STRING("CITY"),
@@ -8052,6 +8112,30 @@ static const u8 *const sMenuTexts[] =
     [MENU_POKECENTER] = COMPOUND_STRING("POKéCENTER"),
     [MENU_MACHINE]    = COMPOUND_STRING("MACHINE"),
     [MENU_SIMPLE]     = COMPOUND_STRING("SIMPLE"),
+    [MENU_SPACE]      = gPCText_Space,
+    [MENU_BACKYARD]   = gPCText_Backyard,
+    [MENU_NOSTALGIC1] = gPCText_Nostalgic1,
+    [MENU_TORCHIC]    = gPCText_Torchic,
+    [MENU_TRIO1]      = gPCText_Trio1,
+    [MENU_PIKAPIKA1]  = gPCText_PikaPika1,
+    [MENU_TIMEANDSPACE] = gPCText_TimeAndSpace,
+    [MENU_GALACTIC1]  = gPCText_Galactic1,
+    [MENU_DISTORTION] = gPCText_Distortion,
+    [MENU_CONTEST]    = gPCText_Contest,
+    [MENU_NOSTALGIC2] = gPCText_Nostalgic2,
+    [MENU_CROAGUNK]   = gPCText_Croagunk,
+    [MENU_TRIO2]      = gPCText_Trio2,
+    [MENU_PIKAPIKA2]  = gPCText_PikaPika2,
+    [MENU_RENEGADE]   = gPCText_Renegade,
+    [MENU_GALACTIC2]  = gPCText_Galactic2,
+    [MENU_HEART]      = gPCText_Heart,
+    [MENU_SOUL]       = gPCText_Soul,
+    [MENU_BIGBROTHER] = gPCText_BigBrother,
+    [MENU_POKEATHLON] = gPCText_Pokeathlon,
+    [MENU_TRIO3]      = gPCText_Trio3,
+    [MENU_SPIKYPIKA]  = gPCText_SpikyPika,
+    [MENU_KIMONOGIRL] = gPCText_KimonoGirl,
+    [MENU_REVIVAL]    = gPCText_Revival,
 };
 
 static void SetMenuText(u8 textId)
