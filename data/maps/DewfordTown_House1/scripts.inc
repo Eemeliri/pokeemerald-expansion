@@ -49,7 +49,7 @@ DewfordTown_House1_EventScript_Trader::
 # 25 "data/maps/DewfordTown_House1/scripts.pory"
 	faceplayer
 # 26 "data/maps/DewfordTown_House1/scripts.pory"
-	goto_if_set FLAG_RUSTBORO_NPC_TRADE_COMPLETED, DewfordTown_House1_EventScript_TradeCompleted
+	goto_if_set FLAG_DEWFORD_TRADE_COMPLETED, DewfordTown_House1_EventScript_TradeCompleted
 # 27 "data/maps/DewfordTown_House1/scripts.pory"
 	setvar VAR_0x8008, INGAME_TRADE_WOOPER
 # 28 "data/maps/DewfordTown_House1/scripts.pory"
