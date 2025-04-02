@@ -11655,7 +11655,7 @@
               {
                 "min_level": 3,
                 "max_level": 5,
-                "species": "SPECIES_RATTATA"
+                "species": "SPECIES_CATERPIE"
               },
               {
                 "min_level": 3,
@@ -11710,7 +11710,7 @@
               {
                 "min_level": 4,
                 "max_level": 6,
-                "species": "SPECIES_RATTATA"
+                "species": "SPECIES_CATERPIE"
               }
             ]
           }
