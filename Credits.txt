@@ -14,5 +14,5 @@ MrDollSteak, Rizon/Falsever, Sky High, Spherical Ice - Gen 4 trainer front sprit
 DestvoL - Partner eevee sprite
 devolov - using HMs without teaching
 Ekat - tilesets
-Greenphx - Gen 4 wallpapers
+Greenphx - Gen 4 wallpapers, party menu alpha blending
 Skeli - Dexnav species masking
