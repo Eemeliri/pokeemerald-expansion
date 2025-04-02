@@ -20,8 +20,16 @@ UNUSED_ERROR ?= 0
 # Adds -Og and -g flags, which optimize the build for debugging and include debug info respectively
 DEBUG        ?= 0
 
+# Build with the release flag defined
+RELEASE     ?= 0
+# Build a release without cleaning first
+NOCLEAN     ?= 0
+
 ifeq (compare,$(MAKECMDGOALS))
   COMPARE := 1
+endif
+ifeq (release,$(MAKECMDGOALS))
+  export RELEASE := 1
 endif
 ifeq (check,$(MAKECMDGOALS))
   TEST := 1
@@ -117,7 +125,7 @@ O_LEVEL ?= g
 else
 O_LEVEL ?= 2
 endif
-CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST)
+CPPFLAGS := $(INCLUDE_CPP_ARGS) -Wno-trigraphs -DMODERN=1 -DTESTING=$(TEST) -DRELEASE=$(RELEASE)
 ARMCC := $(PREFIX)gcc
 PATH_ARMCC := PATH="$(PATH)" $(ARMCC)
 CC1 := $(shell $(PATH_ARMCC) --print-prog-name=cc1) -quiet
@@ -185,7 +193,7 @@ MAKEFLAGS += --no-print-directory
 .DELETE_ON_ERROR:
 
 RULES_NO_SCAN += libagbsyscall clean clean-assets tidy tidymodern tidycheck generated clean-generated
-.PHONY: all rom agbcc modern compare check debug
+.PHONY: all rom agbcc modern compare check debug release
 .PHONY: $(RULES_NO_SCAN)
 
 infoshell = $(foreach line, $(shell $1 | sed "s/ /__SPACE__/g"), $(info $(subst __SPACE__, ,$(line))))
@@ -256,6 +264,11 @@ $(shell mkdir -p $(SUBDIRS))
 modern: all
 compare: all
 debug: all
+release: 
+ifneq ($(NOCLEAN),1)
+	$(MAKE) clean
+endif
+	$(MAKE) all
 # Uncomment the next line, and then comment the 4 lines after it to reenable agbcc.
 #agbcc: all
 agbcc:
