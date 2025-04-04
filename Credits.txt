@@ -16,3 +16,4 @@ devolov - using HMs without teaching
 Ekat - tilesets
 Greenphx - Gen 4 wallpapers, party menu alpha blending
 Skeli - Dexnav species masking
+Teraneck - Swimmer in-water sprite

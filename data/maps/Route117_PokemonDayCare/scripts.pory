@@ -1,0 +1,61 @@
+raw `
+
+Route117_PokemonDayCare_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route117_PokemonDayCare_OnTransition
+	.byte 0
+
+Route117_PokemonDayCare_OnTransition:
+	setflag FLAG_LANDMARK_POKEMON_DAYCARE
+	end
+
+`
+script HatchEggNpc {
+    lock
+    faceplayer
+    if (flag(FLAG_TEMP_2) == false) {
+    msgbox(format("Hi! Bored of walking around with your Eggs? I can help you with that!"), MSGBOX_DEFAULT)
+    msgbox(format("I will hatch an Egg for you for 1000 Pokédollars!"), MSGBOX_DEFAULT)
+    setflag(FLAG_TEMP_2)
+    }
+    showmoneybox(0,0)
+    msgbox(format("Do you want me to hatch an Egg for you?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        checkmoney(1000)
+        if (var(VAR_RESULT) == FALSE) {
+            msgbox(format("Hey, you can't afford that!"), MSGBOX_DEFAULT)
+            hidemoneybox
+            release
+            end
+        }
+    } else {
+        hidemoneybox
+        release
+        end
+    }
+    getpartysize
+    if (var(VAR_RESULT) == 0) {
+        msgbox(format("You don't have any Pokémon in your party."), MSGBOX_DEFAULT)
+        hidemoneybox
+        release
+        end
+    }
+    hidemoneybox
+    special(ChoosePartyMon)
+    waitstate
+    if (var(VAR_0x8004) >= PARTY_SIZE) {
+        release
+        end
+    }
+    specialvar(VAR_RESULT, ScriptGetPartyMonSpecies)
+    if (var(VAR_RESULT) != SPECIES_EGG) {
+        msgbox(format("You can't hatch an egg if you don't have one."), MSGBOX_DEFAULT)
+        release
+        end
+    }
+    showmoneybox(0,0)
+    removemoney(1000)
+    updatemoneybox
+    hidemoneybox
+    special(EggHatch)
+    waitstate
+}

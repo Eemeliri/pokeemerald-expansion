@@ -267,6 +267,19 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blaine;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Blue;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Battle_Girl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Bird_Keeper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Breeder;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cool_Trainer_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cool_Trainer_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Guitarist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lady;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Picnicker_F;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Picnicker_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Swimmer_F_OW;
+
+
+
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
     [OBJ_EVENT_GFX_BRENDAN_MACH_BIKE] =        &gObjectEventGraphicsInfo_BrendanMachBike,
@@ -511,10 +524,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
     [OBJ_EVENT_GFX_TM_BALL] =                  &gObjectEventGraphicsInfo_TMBall,
-    [OBJ_EVENT_GFX_CYNTHIA] =                   &gObjectEventGraphicsInfo_Cynthia,
-    [OBJ_EVENT_GFX_RUIN_MANIAC] =                &gObjectEventGraphicsInfo_Ruin_Maniac,
-    [OBJ_EVENT_GFX_CHUCK] =                     &gObjectEventGraphicsInfo_Chuck,
-    [OBJ_EVENT_GFX_FALKNER] =                   &gObjectEventGraphicsInfo_Falkner,
+    [OBJ_EVENT_GFX_CYNTHIA] =                  &gObjectEventGraphicsInfo_Cynthia,
+    [OBJ_EVENT_GFX_RUIN_MANIAC] =              &gObjectEventGraphicsInfo_Ruin_Maniac,
+    [OBJ_EVENT_GFX_CHUCK] =                    &gObjectEventGraphicsInfo_Chuck,
+    [OBJ_EVENT_GFX_FALKNER] =                  &gObjectEventGraphicsInfo_Falkner,
     [OBJ_EVENT_GFX_MEGASTONE_SPARKLE] =        &gObjectEventGraphicsInfo_MegaStoneSparkle,
     [OBJ_EVENT_GFX_BROCK] =                    &gObjectEventGraphicsInfo_Brock,
     [OBJ_EVENT_GFX_MISTY] =                    &gObjectEventGraphicsInfo_Misty,
@@ -526,6 +539,16 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_BLAINE] =                   &gObjectEventGraphicsInfo_Blaine,
     [OBJ_EVENT_GFX_GIOVANNI] =                 &gObjectEventGraphicsInfo_Giovanni,
     [OBJ_EVENT_GFX_BLUE] =                     &gObjectEventGraphicsInfo_Blue,
+    [OBJ_EVENT_GFX_BATTLE_GIRL] =              &gObjectEventGraphicsInfo_Battle_Girl,
+    [OBJ_EVENT_GFX_BIRD_KEEPER] =              &gObjectEventGraphicsInfo_Bird_Keeper,
+    [OBJ_EVENT_GFX_BREEDER] =                  &gObjectEventGraphicsInfo_Breeder,
+    [OBJ_EVENT_GFX_COOLTRAINER_F] =            &gObjectEventGraphicsInfo_Cool_Trainer_F,
+    [OBJ_EVENT_GFX_COOLTRAINER_M] =            &gObjectEventGraphicsInfo_Cool_Trainer_M,
+    [OBJ_EVENT_GFX_GUITARIST] =                &gObjectEventGraphicsInfo_Guitarist,
+    [OBJ_EVENT_GFX_LADY] =                     &gObjectEventGraphicsInfo_Lady,
+    [OBJ_EVENT_GFX_PICNICKER_F] =              &gObjectEventGraphicsInfo_Picnicker_F,
+    [OBJ_EVENT_GFX_PICNICKER_M] =              &gObjectEventGraphicsInfo_Picnicker_M,
+    [OBJ_EVENT_GFX_SWIMMER_F_OW] =             &gObjectEventGraphicsInfo_Swimmer_F_OW,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
