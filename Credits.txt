@@ -1,19 +1,20 @@
 Credits
 
 Team Aqua's Asset Repo and Discord
-RHH
+RHH - Expansion and help
 Kasen - BP vendor, all instruments voicegroup
 Zeturic - Move item
 AsparagusEduardo - Better bag
 Ghoulslash - Auto run, repeated field medicine use
-Archie+Xaman - Gen5 style party menu
+Archie+Xaman - Gen5 style party menu, new main menu
 Ravepossum - BW summary screen, battle bgs
 Ruki - Battle bgs
 Hyo - FRLG sprites, brendan, may
 MrDollSteak, Rizon/Falsever, Sky High, Spherical Ice - Gen 4 trainer front sprites
 DestvoL - Partner eevee sprite
-devolov - using HMs without teaching
+devolov - using HMs without teaching, second option page
 Ekat - tilesets
 Greenphx - Gen 4 wallpapers, party menu alpha blending
 Skeli - Dexnav species masking
 Teraneck - Swimmer in-water sprite
+Pokabbie and Alex - Battle Speed modifier
