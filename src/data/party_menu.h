@@ -761,6 +761,11 @@ const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bg.bin.lz");
 const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball.4bpp.lz");
 const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
 const u32 gPartyMenuPokeball_Pal[] = INCBIN_U32("graphics/party_menu/pokeball.gbapal.lz");
+const u32 gPartyMenuBgScroll_Gfx_BW[] = INCBIN_U32("graphics/party_menu/scroll_tiles.4bpp.lz");
+const u32 gPartyMenuBgScroll_Pal[] = INCBIN_U32("graphics/party_menu/scroll_bg.gbapal.lz");
+const u32 gPartyMenuBgScroll_Tilemap[] = INCBIN_U32("graphics/party_menu/scroll_bg.bin.lz");
+
+
 static const u8 sEqualMainSlotTileNums[] =      {43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45,
                                                  49, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 50,
                                                  49, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 50,

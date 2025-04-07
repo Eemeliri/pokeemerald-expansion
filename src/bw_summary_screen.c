@@ -416,6 +416,7 @@ static const u8 sText_None[]                                = _("NONE");
 const u32 sSummaryScreen_Gfx_BW[]                           = INCBIN_U32("graphics/summary_screen/bw/tiles.4bpp.lz");
 const u32 sSummaryScreen_Pal_BW[]                           = INCBIN_U32("graphics/summary_screen/bw/tiles.gbapal.lz");
 const u32 sSummaryPage_ScrollBG_Tilemap_BW[]                = INCBIN_U32("graphics/summary_screen/bw/scroll_bg.bin.lz");
+const u32 sSummaryScreen_Scroll_Gfx_BW[]                    = INCBIN_U32("graphics/summary_screen/bw/scroll_tiles.4bpp.lz");
 const u32 sSummaryPage_Info_Tilemap_BW[]                    = INCBIN_U32("graphics/summary_screen/bw/page_info.bin.lz");
 const u32 sSummaryPage_Skills_Tilemap_BW[]                  = INCBIN_U32("graphics/summary_screen/bw/page_skills.bin.lz");
 const u32 sSummaryPage_BattleMoves_Tilemap_BW[]             = INCBIN_U32("graphics/summary_screen/bw/page_battle_moves.bin.lz");
@@ -1967,6 +1968,7 @@ static bool8 DecompressGraphics(void)
     case 0:
         ResetTempTileDataBuffers();
         DecompressAndCopyTileDataToVram(1, &sSummaryScreen_Gfx_BW, 0, 0, 0);
+        DecompressAndCopyTileDataToVram(3, &sSummaryScreen_Scroll_Gfx_BW, 0, 265, 0);
         sMonSummaryScreen->switchCounter++;
         break;
     case 1:

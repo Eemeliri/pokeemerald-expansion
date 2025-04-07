@@ -907,6 +907,8 @@ static bool8 AllocPartyMenuBgGfx(void)
         {
             LZDecompressWram(gPartyMenuBg_Tilemap, sPartyBgTilemapBuffer);
             LZDecompressWram(gPartyMenuBgScroll_Tilemap, sPartyScrollBgTilemapBuffer);
+            LoadCompressedPalette(gPartyMenuBgScroll_Pal, BG_PLTT_ID(0), 7 * PLTT_SIZE_4BPP);
+            CpuCopy16(gPlttBufferUnfaded, sPartyMenuInternal->palBuffer, 7 * PLTT_SIZE_4BPP);
             sPartyMenuInternal->data[0]++;
         }
         break;
