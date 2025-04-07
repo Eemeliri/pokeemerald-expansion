@@ -802,7 +802,7 @@ static void VBlankCB_BuyMenu(void)
     LoadOam();
     ProcessSpriteCopyRequests();
     TransferPlttBuffer();
-    ChangeBgY(2, 96, BG_COORD_SUB);
+    ChangeBgY(2, 96, BG_COORD_ADD);
 }
 
 static void CB2_InitBuyMenu(void)
@@ -1233,7 +1233,7 @@ static void BuyMenuDecompressBgGraphics(void)
     if (MARTMOVE)
     {
         DecompressAndCopyTileDataToVram(1, gShopMenu_Gfx_MoveTutor, 0, 4, 0);
-        DecompressAndCopyTileDataToVram(2, gShopMenu_ScrollGfx, 0, 0, 0);
+        DecompressAndCopyTileDataToVram(2, gShopMenu_ScrollGfx, 0, 28, 0);
         LZDecompressWram(gShopMenu_Tilemap_MoveTutor, sShopData->tilemapBuffers[0]);
         LZDecompressWram(gShopMenu_ScrollTilemap, sShopData->tilemapBuffers[1]);
         
@@ -1241,7 +1241,7 @@ static void BuyMenuDecompressBgGraphics(void)
     else
     {
         DecompressAndCopyTileDataToVram(1, gShopMenu_Gfx, 0, 4, 0);
-        DecompressAndCopyTileDataToVram(2, gShopMenu_ScrollGfx, 0, 0, 0);
+        DecompressAndCopyTileDataToVram(2, gShopMenu_ScrollGfx, 0, 28, 0);
         LZDecompressWram(gShopMenu_Tilemap, sShopData->tilemapBuffers[0]);
         LZDecompressWram(gShopMenu_ScrollTilemap, sShopData->tilemapBuffers[1]);
     }

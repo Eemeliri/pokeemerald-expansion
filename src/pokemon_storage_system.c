@@ -1748,7 +1748,7 @@ void ResetPokemonStorageSystem(void)
     }
 
     for (boxId = 0; boxId < TOTAL_BOXES_COUNT; boxId++)
-        SetBoxWallpaper(boxId, (WALLPAPER_COUNT-3) - boxId);
+        SetBoxWallpaper(boxId, (WALLPAPER_COUNT-4) - boxId);
 
     ResetWaldaWallpaper();
 }
