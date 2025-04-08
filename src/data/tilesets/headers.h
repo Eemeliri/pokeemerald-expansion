@@ -925,3 +925,25 @@ const struct Tileset gTileset_SkyGatewayEntrance =
     .metatileAttributes = gMetatileAttributes_SkyGatewayEntrance,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_KantoBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_KantoBuilding,
+    .palettes = gTilesetPalettes_KantoBuilding,
+    .metatiles = gMetatiles_KantoBuilding,
+    .metatileAttributes = gMetatileAttributes_KantoBuilding,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_SilphCo =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_SilphCo,
+    .palettes = gTilesetPalettes_SilphCo,
+    .metatiles = gMetatiles_SilphCo,
+    .metatileAttributes = gMetatileAttributes_SilphCo,
+    .callback = NULL,
+};

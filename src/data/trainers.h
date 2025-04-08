@@ -387,12 +387,12 @@ F_TRAINER_FEMALE |
 #line 226
         .trainerName = _("GRUNT"),
 #line 227
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_ROCKET_GRUNT,
 #line 228
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender =
 #line 230
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
 #line 231
         .doubleBattle = FALSE,
 #line 232
@@ -27909,9 +27909,9 @@ F_TRAINER_FEMALE |
 #line 11126
         .trainerName = _("TIANA"),
 #line 11127
-        .trainerClass = TRAINER_CLASS_ROCKET_GRUNT,
+        .trainerClass = TRAINER_CLASS_LASS,
 #line 11128
-        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .trainerPic = TRAINER_PIC_LASS,
         .encounterMusic_gender =
 #line 11129
 F_TRAINER_FEMALE | 

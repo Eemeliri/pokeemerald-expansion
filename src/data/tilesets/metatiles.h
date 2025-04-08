@@ -228,3 +228,9 @@ const u16 gMetatileAttributes_JohtoOlivine[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_SkyGatewayEntrance[] = INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/metatiles.bin");
 const u16 gMetatileAttributes_SkyGatewayEntrance[] = INCBIN_U16("data/tilesets/secondary/sky_gateway_entrance/metatile_attributes.bin");
+
+const u16 gMetatiles_KantoBuilding[] = INCBIN_U16("data/tilesets/primary/kanto_building/metatiles.bin");
+const u16 gMetatileAttributes_KantoBuilding[] = INCBIN_U16("data/tilesets/primary/kanto_building/metatile_attributes.bin");
+
+const u16 gMetatiles_SilphCo[] = INCBIN_U16("data/tilesets/secondary/silph_co/metatiles.bin");
+const u16 gMetatileAttributes_SilphCo[] = INCBIN_U16("data/tilesets/secondary/silph_co/metatile_attributes.bin");

@@ -224,10 +224,10 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Rocket Grunt
+Pic: Rocket Grunt M
 Gender: Male
-Music: Aqua
+Music: Rocket
 Double Battle: No
 AI: Check Bad Move
 

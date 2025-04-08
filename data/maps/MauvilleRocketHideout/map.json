@@ -1,0 +1,28 @@
+{
+  "id": "MAP_MAUVILLE_ROCKET_HIDEOUT",
+  "name": "MauvilleRocketHideout",
+  "layout": "LAYOUT_MAUVILLE_ROCKET_HIDEOUT",
+  "music": "MUS_HG_TEAM_ROCKET_HQ",
+  "region_map_section": "MAPSEC_MAUVILLE_CITY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

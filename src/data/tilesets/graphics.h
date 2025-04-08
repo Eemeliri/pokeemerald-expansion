@@ -1767,3 +1767,41 @@ const u16 gTilesetPalettes_SkyGatewayEntrance[][16] =
 };
 
 const u32 gTilesetTiles_SkyGatewayEntrance[] = INCBIN_U32("data/tilesets/secondary/sky_gateway_entrance/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_KantoBuilding[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/kanto_building/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_KantoBuilding[] = INCBIN_U32("data/tilesets/primary/kanto_building/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_SilphCo[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/silph_co/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_SilphCo[] = INCBIN_U32("data/tilesets/secondary/silph_co/tiles.4bpp.lz");

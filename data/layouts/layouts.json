@@ -4600,6 +4600,16 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/Route117_House/border.bin",
       "blockdata_filepath": "data/layouts/Route117_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVILLE_ROCKET_HIDEOUT",
+      "name": "MauvilleRocketHideout_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_KantoBuilding",
+      "secondary_tileset": "gTileset_SilphCo",
+      "border_filepath": "data/layouts/MauvilleRocketHideout/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleRocketHideout/map.bin"
     }
   ]
 }
