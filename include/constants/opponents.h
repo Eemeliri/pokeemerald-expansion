@@ -869,7 +869,7 @@
 #define TRAINER_ROUTE115_FALKNER             860
 #define TRAINER_GRANITECAVE_BROCK            861
 #define TRAINER_ROUTE117_ERIKA               862
-#define TRAINER_UNUSED2                      863
+#define TRAINER_GAMECORNER_GRUNT             863
 #define TRAINER_UNUSED3                      864
 #define TRAINER_UNUSED4                      865
 #define TRAINER_UNUSED5                      866

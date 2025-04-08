@@ -17259,3 +17259,34 @@ Ball: Poke ball
 - Dragon Tail
 - Giga Drain
 - Bug Bite
+
+=== TRAINER_GAMECORNER_GRUNT ===
+Name: Sean
+Class: Rocket Grunt
+Pic: Rocket Grunt M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Raticate @ Silk Scarf
+Adamant Nature
+Level: 32
+IVs: 20 HP / 20 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Shiny: No
+Ball: Poke ball
+- Hyper Fang
+- Super Fang
+- Quick Attack
+- Endeavor
+
+Raticate Alola @ Blackglasses
+Adamant Nature
+Level: 33
+IVs: 20 HP / 20 Atk / 21 Def / 21 SpA / 21 SpD / 21 Spe
+Shiny: No
+Ball: Poke ball
+- Crunch
+- Super Fang
+- Quick Attack
+- Facade

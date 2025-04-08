@@ -43136,3 +43136,74 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 17263
+    [DIFFICULTY_NORMAL][TRAINER_GAMECORNER_GRUNT] =
+    {
+#line 17264
+        .trainerName = _("Sean"),
+#line 17265
+        .trainerClass = TRAINER_CLASS_ROCKET_GRUNT,
+#line 17266
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender =
+#line 17268
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+#line 17269
+        .doubleBattle = FALSE,
+#line 17270
+        .aiFlags = AI_FLAG_BASIC_TRAINER,
+        .partySize = 2,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 17272
+            .species = SPECIES_RATICATE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17272
+            .heldItem = ITEM_SILK_SCARF,
+#line 17275
+            .iv = TRAINER_PARTY_IVS(20, 20, 21, 21, 21, 21),
+#line 17274
+            .lvl = 32,
+#line 17277
+            .ball = ITEM_POKE_BALL,
+#line 17273
+            .nature = NATURE_ADAMANT,
+#line 17276
+            .isShiny = FALSE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17278
+                MOVE_HYPER_FANG,
+                MOVE_SUPER_FANG,
+                MOVE_QUICK_ATTACK,
+                MOVE_ENDEAVOR,
+            },
+            },
+            {
+#line 17283
+            .species = SPECIES_RATICATE_ALOLA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 17283
+            .heldItem = ITEM_BLACKGLASSES,
+#line 17286
+            .iv = TRAINER_PARTY_IVS(20, 20, 21, 21, 21, 21),
+#line 17285
+            .lvl = 33,
+#line 17288
+            .ball = ITEM_POKE_BALL,
+#line 17284
+            .nature = NATURE_ADAMANT,
+#line 17287
+            .isShiny = FALSE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 17289
+                MOVE_CRUNCH,
+                MOVE_SUPER_FANG,
+                MOVE_QUICK_ATTACK,
+                MOVE_FACADE,
+            },
+            },
+        },
+    },

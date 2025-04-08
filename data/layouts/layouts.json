@@ -4604,7 +4604,7 @@
     {
       "id": "LAYOUT_MAUVILLE_ROCKET_HIDEOUT",
       "name": "MauvilleRocketHideout_Layout",
-      "width": 24,
+      "width": 34,
       "height": 24,
       "primary_tileset": "gTileset_KantoBuilding",
       "secondary_tileset": "gTileset_SilphCo",

@@ -330,6 +330,15 @@
 #define METATILE_Mauville_MirageTower_TileE   0x9DD
 #define METATILE_Mauville_MirageTower_TileF   0x9E3
 
+// gTileset_MauvilleGameCorner
+#define METATILE_MauvilleGameCorner_GameCornerFloor_Shaded                    0x804
+#define METATILE_MauvilleGameCorner_GameCorner_StairsBot                      0x861
+#define METATILE_MauvilleGameCorner_GameCorner_StairsBotRight                 0x862
+#define METATILE_MauvilleGameCorner_GameCorner_StairsTop                      0x859
+#define METATILE_MauvilleGameCorner_GameCorner_StairsTopRight                 0x85A
+#define METATILE_MauvilleGameCorner_GameCorner_TableEdge                      0x863
+#define METATILE_MauvilleGameCorner_MauvilleGameCorner_GameCorner_StairsWarp  0x864
+
 // gTileset_MauvilleGym
 #define METATILE_MauvilleGym_FloorTile        0x81A
 #define METATILE_MauvilleGym_GreenBeamH1_Off  0x830
