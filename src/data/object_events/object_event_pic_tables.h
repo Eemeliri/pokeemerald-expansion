@@ -1593,3 +1593,11 @@ static const struct SpriteFrameImage sPicTable_Swimmer_F_OW[] = {
 static const struct SpriteFrameImage sPicTable_Swimmer_F[] = {
     overworld_ascending_frames(gObjectEventPic_Swimmer_F_OW, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Rocket_Grunt_F[] = {
+    overworld_ascending_frames(gObjectEventPic_Rocket_Grunt_F, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Rocket_Grunt_M[] = {
+    overworld_ascending_frames(gObjectEventPic_Rocket_Grunt_M, 2, 4),
+};

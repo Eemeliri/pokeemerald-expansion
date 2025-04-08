@@ -486,6 +486,9 @@ const u32 gObjectEventPic_Picnicker_M[] = INCBIN_U32("graphics/object_events/pic
 const u32 gObjectEventPic_Sailor[] = INCBIN_U32("graphics/object_events/pics/people/sailor.4bpp");
 const u32 gObjectEventPic_Swimmer_F_OW[] = INCBIN_U32("graphics/object_events/pics/people/swimmer_f_ow.4bpp");
 const u32 gObjectEventPic_Swimmer_F[] = INCBIN_U32("graphics/object_events/pics/people/swimmer_f.4bpp");
+const u32 gObjectEventPic_Rocket_Grunt_F[] = INCBIN_U32("graphics/object_events/pics/people/rocket_grunt_f.4bpp");
+const u32 gObjectEventPic_Rocket_Grunt_M[] = INCBIN_U32("graphics/object_events/pics/people/rocket_grunt_m.4bpp");
+
 
 const u16 gObjectEventPal_Cynthia[] = INCBIN_U16("graphics/object_events/palettes/cynthia.gbapal");
 const u16 gObjectEventPal_Ruin_Maniac[] = INCBIN_U16("graphics/object_events/palettes/ruin_maniac.gbapal");
@@ -511,6 +514,8 @@ const u16 gObjectEventPal_Picnicker_M[] = INCBIN_U16("graphics/object_events/pal
 const u16 gObjectEventPal_Sailor[] = INCBIN_U16("graphics/object_events/palettes/sailor.gbapal");
 const u16 gObjectEventPal_Swimmer_F_OW[] = INCBIN_U16("graphics/object_events/palettes/swimmer_f_ow.gbapal");
 const u16 gObjectEventPal_Swimmer_F[] = INCBIN_U16("graphics/object_events/palettes/swimmer_f.gbapal");
+const u16 gObjectEventPal_Rocket_Grunt_F[] = INCBIN_U16("graphics/object_events/palettes/rocket_grunt_f.gbapal");
+const u16 gObjectEventPal_Rocket_Grunt_M[] = INCBIN_U16("graphics/object_events/palettes/rocket_grunt_m.gbapal");
 
 const u32 gObjectEventPic_Brock[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/brock.4bpp");
 const u32 gObjectEventPic_Misty[] = INCBIN_U32("graphics/object_events/pics/people/gym_leaders/misty.4bpp");
