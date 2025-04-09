@@ -484,6 +484,12 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         return EventScript_RunningShoesManual;
     if (MetatileBehavior_IsPictureBookShelf(metatileBehavior) == TRUE)
         return EventScript_PictureBookShelf;
+    if (MetatileBehavior_IsPokemonCage(metatileBehavior) == TRUE && FlagGet(FLAG_FREED_MONS_HIDEOUT) == TRUE)
+        return EventScript_CageNoPokemon;
+    if (MetatileBehavior_IsPokemonCage(metatileBehavior) == TRUE)
+        return EventScript_CagedPokemon;
+    if (MetatileBehavior_IsStrangeMachinery(metatileBehavior) == TRUE)
+        return EventScript_StrangeMachinery;
     if (MetatileBehavior_IsBookShelf(metatileBehavior) == TRUE)
         return EventScript_BookShelf;
     if (MetatileBehavior_IsPokeCenterBookShelf(metatileBehavior) == TRUE)

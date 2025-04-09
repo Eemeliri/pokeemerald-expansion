@@ -282,8 +282,24 @@ const u32 gTrainerPalette_RubySapphireMay[] = INCBIN_U32("graphics/trainers/pale
 
 const u32 gTrainerFrontPic_RocketGruntM[] = INCBIN_U32("graphics/trainers/front_pics/rocket_grunt_m.4bpp.lz");
 const u32 gTrainerPalette_RocketGruntM[] = INCBIN_U32("graphics/trainers/palettes/rocket_grunt_m.gbapal.lz");
+
 const u32 gTrainerFrontPic_RocketGruntF[] = INCBIN_U32("graphics/trainers/front_pics/rocket_grunt_f.4bpp.lz");
 const u32 gTrainerPalette_RocketGruntF[] = INCBIN_U32("graphics/trainers/palettes/rocket_grunt_f.gbapal.lz");
+
+const u32 gTrainerFrontPic_Petrel[] = INCBIN_U32("graphics/trainers/front_pics/petrel.4bpp.lz");
+const u32 gTrainerPalette_Petrel[] = INCBIN_U32("graphics/trainers/palettes/petrel.gbapal.lz");
+
+const u32 gTrainerFrontPic_Proton[] = INCBIN_U32("graphics/trainers/front_pics/proton.4bpp.lz");
+const u32 gTrainerPalette_Proton[] = INCBIN_U32("graphics/trainers/palettes/proton.gbapal.lz");
+
+const u32 gTrainerFrontPic_Ariana[] = INCBIN_U32("graphics/trainers/front_pics/ariana.4bpp.lz");
+const u32 gTrainerPalette_Ariana[] = INCBIN_U32("graphics/trainers/palettes/ariana.gbapal.lz");
+
+const u32 gTrainerFrontPic_Archer[] = INCBIN_U32("graphics/trainers/front_pics/archer.4bpp.lz");
+const u32 gTrainerPalette_Archer[] = INCBIN_U32("graphics/trainers/palettes/archer.gbapal.lz");
+
+const u32 gTrainerFrontPic_Scientist[] = INCBIN_U32("graphics/trainers/front_pics/scientist.4bpp.lz");
+const u32 gTrainerPalette_Scientist[] = INCBIN_U32("graphics/trainers/palettes/scientist.gbapal.lz");
 
 const u8 gTrainerBackPic_Brendan[] = INCBIN_U8("graphics/trainers/back_pics/brendan.4bpp");
 const u8 gTrainerBackPic_May[] = INCBIN_U8("graphics/trainers/back_pics/may.4bpp");
@@ -588,6 +604,11 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_CHAMPION_IRIS, gTrainerFrontPic_Iris, gTrainerPalette_Iris),    
     TRAINER_SPRITE(TRAINER_PIC_ROCKET_GRUNT_F, gTrainerFrontPic_RocketGruntF, gTrainerPalette_RocketGruntF),
     TRAINER_SPRITE(TRAINER_PIC_ROCKET_GRUNT_M, gTrainerFrontPic_RocketGruntM, gTrainerPalette_RocketGruntM),
+    TRAINER_SPRITE(TRAINER_PIC_PETREL, gTrainerFrontPic_Petrel, gTrainerPalette_Petrel),
+    TRAINER_SPRITE(TRAINER_PIC_PROTON, gTrainerFrontPic_Proton, gTrainerPalette_Proton),
+    TRAINER_SPRITE(TRAINER_PIC_ARIANA, gTrainerFrontPic_Ariana, gTrainerPalette_Ariana),
+    TRAINER_SPRITE(TRAINER_PIC_ARCHER, gTrainerFrontPic_Archer, gTrainerPalette_Archer),
+    TRAINER_SPRITE(TRAINER_PIC_SCIENTIST, gTrainerFrontPic_Scientist, gTrainerPalette_Scientist),
 };
 
 static const union AnimCmd sAnimCmd_Hoenn[] =

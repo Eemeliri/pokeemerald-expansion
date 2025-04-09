@@ -3,7 +3,7 @@
   "name": "MauvilleRocketHideout",
   "layout": "LAYOUT_MAUVILLE_ROCKET_HIDEOUT",
   "music": "MUS_HG_TEAM_ROCKET_HQ",
-  "region_map_section": "MAPSEC_MAUVILLE_CITY",
+  "region_map_section": "MAPSEC_ROCKET_WAREHOUSE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
@@ -25,16 +25,36 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_HIDE_ROCKET_HIDEOUT_GRUNTS"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 28,
+      "y": 21,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_ROCKET_HIDEOUT_F1_ITEM"
     }
   ],
   "warp_events": [
     {
-      "x": 28,
+      "x": 29,
       "y": 3,
       "elevation": 0,
       "dest_map": "MAP_MAUVILLE_CITY_GAME_CORNER",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 7,
+      "y": 21,
+      "elevation": 0,
+      "dest_map": "MAP_MAUVILLE_ROCKET_HIDEOUT2",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

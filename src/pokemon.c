@@ -5798,6 +5798,8 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_ELITE_FOUR:
             return MUS_VS_ELITE_FOUR;
         case TRAINER_CLASS_ROCKET_GRUNT:
+        case TRAINER_CLASS_ROCKET_EXE:
+        case TRAINER_CLASS_ROCKET_BOSS:
             return MUS_HG_VS_ROCKET;
         case TRAINER_CLASS_SALON_MAIDEN:
         case TRAINER_CLASS_DOME_ACE:

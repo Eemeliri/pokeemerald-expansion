@@ -584,6 +584,10 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Swimmer_F_OW,          OBJ_EVENT_PAL_TAG_SWIMMER_F_OW},
     {gObjectEventPal_Rocket_Grunt_F,        OBJ_EVENT_PAL_TAG_ROCKET_GRUNT_F},
     {gObjectEventPal_Rocket_Grunt_M,        OBJ_EVENT_PAL_TAG_ROCKET_GRUNT_M},
+    {gObjectEventPal_Proton,                OBJ_EVENT_PAL_TAG_PROTON},
+    {gObjectEventPal_Petrel,                OBJ_EVENT_PAL_TAG_PETREL},
+    {gObjectEventPal_Ariana,                OBJ_EVENT_PAL_TAG_ARIANA},
+    {gObjectEventPal_Archer,                OBJ_EVENT_PAL_TAG_ARCHER},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

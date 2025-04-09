@@ -280,6 +280,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Swimmer_F_O
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocket_Grunt_F;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Rocket_Grunt_M;
 
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Petrel;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Proton;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ariana;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archer;
+
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -553,6 +558,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SWIMMER_F_OW] =             &gObjectEventGraphicsInfo_Swimmer_F_OW,
     [OBJ_EVENT_GFX_ROCKET_GRUNT_F] =           &gObjectEventGraphicsInfo_Rocket_Grunt_F,
     [OBJ_EVENT_GFX_ROCKET_GRUNT_M] =           &gObjectEventGraphicsInfo_Rocket_Grunt_M,
+    [OBJ_EVENT_GFX_PETREL] =                   &gObjectEventGraphicsInfo_Petrel,
+    [OBJ_EVENT_GFX_PROTON] =                   &gObjectEventGraphicsInfo_Proton,
+    [OBJ_EVENT_GFX_ARIANA] =                   &gObjectEventGraphicsInfo_Ariana,
+    [OBJ_EVENT_GFX_ARCHER] =                   &gObjectEventGraphicsInfo_Archer,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

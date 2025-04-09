@@ -70,6 +70,8 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
     [MB_WESTWARD_CURRENT]                   = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_NORTHWARD_CURRENT]                  = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
     [MB_SOUTHWARD_CURRENT]                  = TILE_FLAG_UNUSED | TILE_FLAG_SURFABLE,
+    [MB_CAGED_POKEMON]                      = TILE_FLAG_UNUSED,
+    [MB_STRANGE_MACHINERY]                  = TILE_FLAG_UNUSED,
     [MB_NON_ANIMATED_DOOR]                  = TILE_FLAG_UNUSED,
     [MB_LADDER]                             = TILE_FLAG_UNUSED,
     [MB_EAST_ARROW_WARP]                    = TILE_FLAG_UNUSED,
@@ -138,6 +140,22 @@ static const u8 sTileBitAttributes[NUM_METATILE_BEHAVIORS] =
 bool8 MetatileBehavior_IsATile(u8 metatileBehavior)
 {
     return TRUE;
+}
+
+bool8 MetatileBehavior_IsPokemonCage(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_CAGED_POKEMON)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsStrangeMachinery(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_STRANGE_MACHINERY)
+        return TRUE;
+    else
+        return FALSE;
 }
 
 bool8 MetatileBehavior_IsEncounterTile(u8 metatileBehavior)

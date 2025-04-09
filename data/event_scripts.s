@@ -1194,3 +1194,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route117_House/scripts.inc"
 
 	.include "data/maps/MauvilleRocketHideout/scripts.inc"
+
+	.include "data/maps/MauvilleRocketHideout2/scripts.inc"
+
+	.include "data/maps/MauvilleRocketHideout2Sub/scripts.inc"
+
+	.include "data/maps/MauvilleRocketHideout3/scripts.inc"

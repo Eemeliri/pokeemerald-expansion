@@ -1601,3 +1601,19 @@ static const struct SpriteFrameImage sPicTable_Rocket_Grunt_F[] = {
 static const struct SpriteFrameImage sPicTable_Rocket_Grunt_M[] = {
     overworld_ascending_frames(gObjectEventPic_Rocket_Grunt_M, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Petrel[] = {
+    overworld_ascending_frames(gObjectEventPic_Petrel, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Proton[] = {
+    overworld_ascending_frames(gObjectEventPic_Proton, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Ariana[] = {
+    overworld_ascending_frames(gObjectEventPic_Ariana, 2, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_Archer[] = {
+    overworld_ascending_frames(gObjectEventPic_Archer, 2, 4),
+};

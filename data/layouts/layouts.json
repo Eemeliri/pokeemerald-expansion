@@ -4610,6 +4610,36 @@
       "secondary_tileset": "gTileset_SilphCo",
       "border_filepath": "data/layouts/MauvilleRocketHideout/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleRocketHideout/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVILLE_ROCKET_HIDEOUT2",
+      "name": "MauvilleRocketHideout2_Layout",
+      "width": 34,
+      "height": 30,
+      "primary_tileset": "gTileset_KantoBuilding",
+      "secondary_tileset": "gTileset_SilphCo",
+      "border_filepath": "data/layouts/MauvilleRocketHideout2/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleRocketHideout2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVILLE_ROCKET_HIDEOUT2SUB",
+      "name": "MauvilleRocketHideout2Sub_Layout",
+      "width": 24,
+      "height": 24,
+      "primary_tileset": "gTileset_KantoBuilding",
+      "secondary_tileset": "gTileset_SilphCo",
+      "border_filepath": "data/layouts/MauvilleRocketHideout2Sub/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleRocketHideout2Sub/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAUVILLE_ROCKET_HIDEOUT3",
+      "name": "MauvilleRocketHideout3_Layout",
+      "width": 24,
+      "height": 28,
+      "primary_tileset": "gTileset_KantoBuilding",
+      "secondary_tileset": "gTileset_SilphCo",
+      "border_filepath": "data/layouts/MauvilleRocketHideout3/border.bin",
+      "blockdata_filepath": "data/layouts/MauvilleRocketHideout3/map.bin"
     }
   ]
 }

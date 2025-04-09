@@ -205,7 +205,10 @@
     "MauvilleCity_PokemonCenter_2F",
     "MauvilleCity_Mart",
     "Route117_House",
-    "MauvilleRocketHideout"
+    "MauvilleRocketHideout",
+    "MauvilleRocketHideout2",
+    "MauvilleRocketHideout2Sub",
+    "MauvilleRocketHideout3"
   ],
   "gMapGroup_IndoorRustboro": [
     "RustboroCity_DevonCorp_1F",

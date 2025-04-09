@@ -731,6 +731,9 @@
 #define METATILE_Shop_Laptop2_Flash   0x860
 #define METATILE_Shop_Laptop2_Normal  0x8A5
 
+// gTileset_SilphCo
+#define METATILE_SilphCo_CagedMons  0x979
+
 // gTileset_Slateport
 #define METATILE_Slateport_Door             0x8DC
 #define METATILE_Slateport_Door_BattleTent  0x993

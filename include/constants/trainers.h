@@ -155,7 +155,14 @@
 #define TRAINER_PIC_CYNTHIA               137
 #define TRAINER_PIC_ROCKET_GRUNT_M        138
 #define TRAINER_PIC_ROCKET_GRUNT_F        139
-#define TRAINER_PIC_COUNT                 140
+#define TRAINER_PIC_PETREL                140
+#define TRAINER_PIC_PROTON                141
+#define TRAINER_PIC_ARIANA                142
+#define TRAINER_PIC_ARCHER                143
+#define TRAINER_PIC_SCIENTIST             144
+
+#define TRAINER_PIC_COUNT                 144
+
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0
@@ -401,7 +408,10 @@
 #define TRAINER_CLASS_J_LEADER       0x42
 #define TRAINER_CLASS_K_LEADER       0x43
 #define TRAINER_CLASS_ROCKET_GRUNT   0x44
-#define TRAINER_CLASS_COUNT          0x45
+#define TRAINER_CLASS_ROCKET_EXE     0x45
+#define TRAINER_CLASS_ROCKET_BOSS    0x46
+#define TRAINER_CLASS_SCIENTIST      0x47
+#define TRAINER_CLASS_COUNT          0x48
 
 #define TRAINER_ENCOUNTER_MUSIC_MALE         0 // standard male encounter music
 #define TRAINER_ENCOUNTER_MUSIC_FEMALE       1 // standard female encounter music
