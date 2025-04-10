@@ -870,13 +870,13 @@
 #define TRAINER_GRANITECAVE_BROCK            861
 #define TRAINER_ROUTE117_ERIKA               862
 #define TRAINER_GAMECORNER_GRUNT             863
-#define TRAINER_UNUSED3                      864
-#define TRAINER_UNUSED4                      865
-#define TRAINER_UNUSED5                      866
-#define TRAINER_UNUSED6                      867
-#define TRAINER_UNUSED7                      868
-#define TRAINER_UNUSED8                      869
-#define TRAINER_UNUSED9                      870
+#define TRAINER_ROCKETHIDEOUT_SCIENTIST1     864 // F1 Scientist guarding the computer
+#define TRAINER_ROCKETHIDEOUT_GRUNT1         865 // F2 First grunt
+#define TRAINER_ROCKETHIDEOUT_SCIENTIST2     866 // F2 first Scientist 
+#define TRAINER_ROCKETHIDEOUT_GRUNT2         867 // F2 second grunt
+#define TRAINER_ROCKETHIDEOUT_SCIENTIST3     868 // F2 second scientist
+#define TRAINER_ROCKETHIDEOUT_CAGEGUARD      869 // F2 side room grunt
+#define TRAINER_ROCKETHIDEOUT_PROTON         870 // proton
 #define TRAINER_UNUSED10                     871
 #define TRAINER_UNUSED11                     872
 #define TRAINER_UNUSED12                     873

@@ -41,3 +41,14 @@ script EventScript_StrangeMachinery {
     msgbox(format("Strange numbers and graphs are displayed on the monitor. Better not touch."), MSGBOX_SIGN)
     end
 }
+
+script EventScript_ElectrodeTrap {
+	lock
+	playmoncry(SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER)
+	waitmoncry
+	delay(40)
+	setwildbattle(SPECIES_ELECTRODE, 35)
+	dowildbattle
+	release
+	end
+}

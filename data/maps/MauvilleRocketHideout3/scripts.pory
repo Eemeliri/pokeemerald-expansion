@@ -1,1 +1,8 @@
 mapscripts MauvilleRocketHideout3_MapScripts {}
+
+script Hideout_Proton {
+    lock
+    faceplayer
+    release
+    end
+}

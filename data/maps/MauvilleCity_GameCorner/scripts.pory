@@ -820,7 +820,7 @@ script MauvilleGameCorner_RocketGrunt {
     delay(60)
     msgbox(format("Not budging huh? Guess I'll have to teach you a lesson!"), MSGBOX_DEFAULT)
     trainerbattle_no_intro(TRAINER_GAMECORNER_GRUNT, "Uh oh...")
-    msgbox(format("This is bad! I gotta warn Proton!"), MSGBOX_DEFAULT)
+    msgbox(format("Oh no! I need to warn Proton and turn on the security!"), MSGBOX_DEFAULT)
     closemessage
     switch (var(VAR_FACING)) {
         case DIR_NORTH:

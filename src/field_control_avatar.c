@@ -651,6 +651,11 @@ static bool8 TryStartMiscWalkingScripts(u16 metatileBehavior)
         PlaySecretBaseMusicNoteMatSound(MapGridGetMetatileIdAt(x, y));
         return FALSE;
     }
+    else if (MetatileBehavior_isElectrodeTrap(metatileBehavior) == TRUE && FlagGet(FLAG_DISABLED_SECURITY_HIDEOUT) == FALSE)
+    {
+        ScriptContext_SetupScript(EventScript_ElectrodeTrap);
+        return FALSE;
+    }
     return FALSE;
 }
 
@@ -1177,7 +1182,7 @@ int SetCableClubWarp(void)
 
 extern const u8 EventScript_DisableAutoRun[];
 extern const u8 EventScript_EnableAutoRun[];
-static bool8 EnableAutoRun(void)
+static bool8 UNUSED EnableAutoRun(void)
 {
     if (!FlagGet(FLAG_SYS_B_DASH))
         return FALSE;   //auto run unusable until you get running shoes

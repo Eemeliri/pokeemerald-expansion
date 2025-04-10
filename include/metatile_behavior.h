@@ -168,5 +168,6 @@ bool8 MetatileBehavior_IsSidewaysStairsRightSideAny(u8 metatileBehavior);
 bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior);
 bool8 MetatileBehavior_IsPokemonCage(u8);
 bool8 MetatileBehavior_IsStrangeMachinery(u8);
+bool8 MetatileBehavior_isElectrodeTrap(u8);
 
 #endif // GUARD_METATILE_BEHAVIOR_H

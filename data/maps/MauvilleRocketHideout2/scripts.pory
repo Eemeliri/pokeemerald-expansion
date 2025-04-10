@@ -1,1 +1,25 @@
 mapscripts MauvilleRocketHideout2_MapScripts {}
+
+script HideoutF2_Grunt1 {
+
+}
+
+script HideoutF2_Scientist1 {
+
+}
+
+script HideoutF2_Grunt2 {
+
+}
+
+script HideoutF2_Scientist2 {
+
+}
+
+script HideoutF2_LockedDoor {
+
+}
+
+script HideoutF2_SecurityGate {
+    
+}

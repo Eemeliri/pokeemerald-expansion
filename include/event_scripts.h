@@ -561,6 +561,7 @@ extern const u8 EventScript_PictureBookShelf[];
 extern const u8 EventScript_CageNoPokemon[];
 extern const u8 EventScript_CagedPokemon[];
 extern const u8 EventScript_StrangeMachinery[];
+extern const u8 EventScript_ElectrodeTrap[];
 extern const u8 EventScript_BookShelf[];
 extern const u8 EventScript_PokemonCenterBookShelf[];
 extern const u8 EventScript_Vase[];

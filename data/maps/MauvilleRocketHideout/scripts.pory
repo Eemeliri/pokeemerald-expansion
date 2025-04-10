@@ -1,1 +1,30 @@
 mapscripts MauvilleRocketHideout_MapScripts {}
+
+script HideoutF1_Scientist {
+    
+}
+
+script HideoutF1_SecurityComputer {
+    lock
+    if (!flag(FLAG_DISABLED_SECURITY_HIDEOUT)) {
+        msgbox(format("The computer seems to control the Electrode traps in this floor. Hit the big red button to shut it down?"), MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            setflag(FLAG_DISABLED_SECURITY_HIDEOUT)
+            playse(SE_PIN)
+            delay(20)
+            playse(SE_PIN)
+            delay(20)
+            playse(SE_PIN)
+            delay(40)
+            msgbox(format("All traps on this floor have been disabled!"))
+            release
+            end
+        } else {
+            release
+            end
+        }
+    }
+    msgbox(format("The security system has already been turned off."))
+    release
+    end
+}

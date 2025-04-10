@@ -73,6 +73,24 @@ EventScript_StrangeMachinery::
 	end
 
 
+EventScript_ElectrodeTrap::
+# 46 "data/scripts/check_furniture.pory"
+	lock
+# 47 "data/scripts/check_furniture.pory"
+	playmoncry SPECIES_ELECTRODE, CRY_MODE_ENCOUNTER
+# 48 "data/scripts/check_furniture.pory"
+	waitmoncry
+# 49 "data/scripts/check_furniture.pory"
+	delay 40
+# 50 "data/scripts/check_furniture.pory"
+	setwildbattle SPECIES_ELECTRODE, 35
+# 51 "data/scripts/check_furniture.pory"
+	dowildbattle
+# 52 "data/scripts/check_furniture.pory"
+	release
+	end
+
+
 EventScript_CagedPokemon_Text_0:
 # 31 "data/scripts/check_furniture.pory"
 	.string "Captured Pokémon are trapped inside\n"
