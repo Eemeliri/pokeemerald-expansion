@@ -1749,4 +1749,5 @@ MauvilleGameCorner_RocketGrunt_Text_3:
 
 MauvilleGameCorner_RocketGrunt_Text_4:
 # 823 "data/maps/MauvilleCity_GameCorner/scripts.pory"
-	.string "This is bad! I gotta warn Proton!$"
+	.string "Oh no! I need to warn Proton and turn on\n"
+	.string "the security!$"

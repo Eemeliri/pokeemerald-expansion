@@ -944,8 +944,9 @@
 #define MUS_HG_OBTAIN_CASTLE_POINTS       896 // Received Castle Points!
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
+#define MUS_LUGIAS_SONG                   899 // Lugia's Song
 
-#define HG_MUSIC_END                      MUS_HG_WIN_MINIGAME
+#define HG_MUSIC_END                      MUS_LUGIAS_SONG
 
 #define SONGS_END                         HG_MUSIC_END
 
