@@ -25468,6 +25468,7 @@ static const u16 sSerperiorTeachableLearnset[] = {
     MOVE_TORMENT,
     MOVE_TOXIC,
     MOVE_TRAILBLAZE,
+    MOVE_DRACO_METEOR,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_SNIVY
