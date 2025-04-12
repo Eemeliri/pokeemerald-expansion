@@ -433,6 +433,8 @@ mart miscItemMart {
     ITEM_ABSORB_BULB
     ITEM_DESTINY_KNOT
     ITEM_COVERT_CLOAK
+    ITEM_UTILITY_UMBRELLA
+    ITEM_RING_TARGET
 }
 
 mart MintShopSunday {

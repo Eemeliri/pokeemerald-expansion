@@ -45333,7 +45333,16 @@
       "MOVE_BREAKING_SWIPE"
     ],
     "EggMoves": [],
-    "TutorMoves": []
+    "TutorMoves": [
+      "MOVE_DRAGON_PULSE",
+      "MOVE_DRACO_METEOR",
+      "MOVE_SEED_BOMB",
+      "MOVE_GIGA_DRAIN",
+      "MOVE_AQUA_TAIL",
+      "MOVE_IRON_TAIL",
+      "MOVE_OUTRAGE",
+      "MOVE_KNOCK_OFF"
+    ]
   },
   "TEPIG": {
     "LevelMoves": [

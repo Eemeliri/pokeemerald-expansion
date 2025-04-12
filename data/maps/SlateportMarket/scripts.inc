@@ -891,58 +891,62 @@ miscItemMart:
 	.2byte ITEM_DESTINY_KNOT
 # 435 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_COVERT_CLOAK
+# 436 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_UTILITY_UMBRELLA
+# 437 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_RING_TARGET
 	.2byte ITEM_NONE
 
 	.align 2
-# 438 "data/maps/SlateportMarket/scripts.pory"
-MintShopSunday:
-# 439 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_ADAMANT_MINT
 # 440 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_BOLD_MINT
+MintShopSunday:
 # 441 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_HASTY_MINT
+	.2byte ITEM_ADAMANT_MINT
 # 442 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_MODEST_MINT
+	.2byte ITEM_BOLD_MINT
 # 443 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_JOLLY_MINT
-# 444 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_BRAVE_MINT
-# 445 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_CALM_MINT
-# 446 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_CAREFUL_MINT
-# 447 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_GENTLE_MINT
-# 448 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_HASTY_MINT
-# 449 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_IMPISH_MINT
-# 450 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_JOLLY_MINT
-# 451 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_LAX_MINT
-# 452 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_LONELY_MINT
-# 453 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_MILD_MINT
-# 454 "data/maps/SlateportMarket/scripts.pory"
+# 444 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_MODEST_MINT
+# 445 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_JOLLY_MINT
+# 446 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_BRAVE_MINT
+# 447 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_CALM_MINT
+# 448 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_CAREFUL_MINT
+# 449 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_GENTLE_MINT
+# 450 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_HASTY_MINT
+# 451 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_IMPISH_MINT
+# 452 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_JOLLY_MINT
+# 453 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_LAX_MINT
+# 454 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_LONELY_MINT
 # 455 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_NAIVE_MINT
+	.2byte ITEM_MILD_MINT
 # 456 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_NAUGHTY_MINT
+	.2byte ITEM_MODEST_MINT
 # 457 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_QUIET_MINT
+	.2byte ITEM_NAIVE_MINT
 # 458 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_RASH_MINT
+	.2byte ITEM_NAUGHTY_MINT
 # 459 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_RELAXED_MINT
+	.2byte ITEM_QUIET_MINT
 # 460 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_SASSY_MINT
+	.2byte ITEM_RASH_MINT
 # 461 "data/maps/SlateportMarket/scripts.pory"
-	.2byte ITEM_SERIOUS_MINT
+	.2byte ITEM_RELAXED_MINT
 # 462 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_SASSY_MINT
+# 463 "data/maps/SlateportMarket/scripts.pory"
+	.2byte ITEM_SERIOUS_MINT
+# 464 "data/maps/SlateportMarket/scripts.pory"
 	.2byte ITEM_TIMID_MINT
 	.2byte ITEM_NONE
 
