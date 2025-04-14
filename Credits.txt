@@ -19,3 +19,4 @@ Skeli - Dexnav species masking
 Teraneck - Swimmer in-water sprite
 Pokabbie and Alex - Battle Speed modifier
 Mudskip - Scrolling shop background
+ellabrella - Faster text printing
