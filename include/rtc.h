@@ -98,6 +98,7 @@ enum TimeOfDay
 STATIC_ASSERT(OW_TIME_OF_DAY_DEFAULT == 0, TimeOfDayDefaultMustBeFirstElementInTimeOfDayEnum)
 
 extern struct Time gLocalTime;
+extern const s32 sNumDaysInMonths[12];
 
 void RtcDisableInterrupts(void);
 void RtcRestoreInterrupts(void);
@@ -133,6 +134,10 @@ u32 RtcGetDayOfWeek(void);
 u32 RtcGetHour(void);
 u32 RtcGetDay(void);
 u32 RtcGetMonth(void);
+u16 GetFullYear(void);
+enum Month GetMonth(void);
+u8 GetDay(void);
+enum Weekday GetDayOfWeek(void);
 enum TimeOfDay TryIncrementTimeOfDay(enum TimeOfDay timeOfDay);
 enum TimeOfDay TryDecrementTimeOfDay(enum TimeOfDay timeOfDay);
 
