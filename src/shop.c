@@ -178,6 +178,10 @@ static void CB2_InitBuyMenuAfterTutor(void);
 static const u16 sShopInventory_ZeroBadgesBeforePokedex[] =
 {
     ITEM_POTION,
+    ITEM_ANTIDOTE,
+    ITEM_PARLYZ_HEAL,
+    ITEM_AWAKENING,
+    ITEM_REPEL,
     ITEM_NONE
 };
 
@@ -186,6 +190,9 @@ static const u16 sShopInventory_ZeroBadgesAfterPokedex[] =
     ITEM_POKE_BALL,
     ITEM_POTION,
     ITEM_ANTIDOTE,
+    ITEM_PARLYZ_HEAL,
+    ITEM_AWAKENING,
+    ITEM_REPEL,
     ITEM_NONE
 };
 

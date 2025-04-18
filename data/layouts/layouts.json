@@ -4640,6 +4640,16 @@
       "secondary_tileset": "gTileset_SilphCo",
       "border_filepath": "data/layouts/MauvilleRocketHideout3/border.bin",
       "blockdata_filepath": "data/layouts/MauvilleRocketHideout3/map.bin"
+    },
+    {
+      "id": "LAYOUT_MAIHA_GARDEN",
+      "name": "MaihaGarden_Layout",
+      "width": 30,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MaihaGarden/border.bin",
+      "blockdata_filepath": "data/layouts/MaihaGarden/map.bin"
     }
   ]
 }

@@ -692,7 +692,7 @@
 #define FLAG_FREED_MONS_HIDEOUT  0x285
 #define FLAG_DISABLED_SECURITY_HIDEOUT  0x286
 #define FLAG_UNLOCKED_GATE_HIDEOUT  0x287
-#define FLAG_UNUSED_0x288  0x288 // Unused Flag
+#define FLAG_DEWFORD_DOJO_ITEM  0x288 // Leek
 #define FLAG_UNUSED_0x289  0x289 // Unused Flag
 #define FLAG_UNUSED_0x28A  0x28A // Unused Flag
 #define FLAG_UNUSED_0x28B  0x28B // Unused Flag

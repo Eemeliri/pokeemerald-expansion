@@ -8608,8 +8608,8 @@ const struct Item gItemsInfo[] =
         #if I_EXP_SHARE_ITEM >= GEN_6
             .price = 0,
             .description = COMPOUND_STRING(
-                "This device gives\n"
-                "exp. to other\n"
+                "This device splits\n"
+                "exp to all\n"
                 "party members."),
         #else
             .price = 3000,

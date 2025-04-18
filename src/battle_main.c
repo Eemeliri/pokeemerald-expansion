@@ -5500,8 +5500,10 @@ static void HandleEndTurn_BattleWon(void)
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
         case TRAINER_CLASS_LEADER:
-        case TRAINER_CLASS_J_LEADER:
             PlayBGM(MUS_VICTORY_GYM_LEADER);
+            break;
+        case TRAINER_CLASS_J_LEADER:
+            PlayBGM(MUS_HG_VICTORY_GYM_LEADER);
             break;
         case TRAINER_CLASS_K_LEADER:
             PlayBGM(MUS_RG_VICTORY_GYM_LEADER);

@@ -385,7 +385,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_PETALBURG_WOODS] =
     {
 #line 226
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Jackson"),
 #line 227
         .trainerClass = TRAINER_CLASS_ROCKET_GRUNT,
 #line 228
@@ -627,12 +627,12 @@ F_TRAINER_FEMALE |
 #line 321
         .trainerName = _("GRUNT"),
 #line 322
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_ROCKET_GRUNT,
 #line 323
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender =
 #line 325
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
 #line 326
         .doubleBattle = FALSE,
 #line 327
@@ -642,14 +642,14 @@ F_TRAINER_FEMALE |
         {
             {
 #line 329
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_MAGNEMITE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 332
             .ev = TRAINER_PARTY_EVS(10, 31, 10, 10, 10, 10),
 #line 331
             .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
 #line 330
-            .lvl = 16,
+            .lvl = 17,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -812,14 +812,14 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_1] =
     {
 #line 395
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Miles"),
 #line 396
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_ROCKET_GRUNT,
 #line 397
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender =
 #line 399
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
 #line 400
         .doubleBattle = FALSE,
 #line 401
@@ -829,7 +829,7 @@ F_TRAINER_FEMALE |
         {
             {
 #line 403
-            .species = SPECIES_CARVANHA,
+            .species = SPECIES_GRIMER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 405
             .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
@@ -855,14 +855,14 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_2] =
     {
 #line 412
-        .trainerName = _("GRUNT"),
+        .trainerName = _("Simon"),
 #line 413
-        .trainerClass = TRAINER_CLASS_TEAM_AQUA,
+        .trainerClass = TRAINER_CLASS_ROCKET_GRUNT,
 #line 414
-        .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender =
 #line 416
-            TRAINER_ENCOUNTER_MUSIC_AQUA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
 #line 417
         .doubleBattle = FALSE,
 #line 418
@@ -894,7 +894,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 428
-            .species = SPECIES_BASCULIN,
+            .species = SPECIES_LINOONE_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 430
             .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),

@@ -432,7 +432,7 @@ RusturfTunnel_Text_Peeko:
 	.string "PEEKO: Pii pihyoh!$"
 
 RusturfTunnel_Text_GruntIntro:
-	.string "Grah, keelhaul it all!\p"
+	.string "Grah, damn it all!\p"
 	.string "That hostage POKéMON turned out to\n"
 	.string "be worthless!\p"
 	.string "And to think I made a getaway…\n"

@@ -223,7 +223,7 @@ Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
-Name: GRUNT
+Name: Jackson
 Class: Rocket Grunt
 Pic: Rocket Grunt M
 Gender: Male
@@ -319,15 +319,15 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Class: Rocket Grunt
+Pic: Rocket Grunt M
 Gender: Male
-Music: Aqua
+Music: Rocket
 Double Battle: No
 AI: Check Bad Move
 
-Carvanha
-Level: 16
+Magnemite
+Level: 17
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 EVs: 10 HP / 31 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -392,15 +392,15 @@ Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_GRUNT_MUSEUM_1 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Miles
+Class: Rocket Grunt
+Pic: Rocket Grunt M
 Gender: Male
-Music: Aqua
+Music: Rocket
 Double Battle: No
 AI: Smart Trainer
 
-Carvanha
+Grimer
 Level: 22
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
@@ -409,11 +409,11 @@ Level: 23
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_GRUNT_MUSEUM_2 ===
-Name: GRUNT
-Class: Team Aqua
-Pic: Aqua Grunt M
+Name: Simon
+Class: Rocket Grunt
+Pic: Rocket Grunt M
 Gender: Male
-Music: Aqua
+Music: Rocket
 Double Battle: No
 AI: Smart Trainer
 
@@ -425,7 +425,7 @@ Marshtomp
 Level: 23
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
-Basculin
+Linoone-Galar
 Level: 23
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
