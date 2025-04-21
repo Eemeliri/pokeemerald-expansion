@@ -1330,7 +1330,7 @@
 	.byte \stat
 	.endm
 
-	.macro jumpifoppositegenders jumpInstr:req
+	.macro jumpifcaptivateaffected jumpInstr:req
 	.byte 0xfc
 	.4byte \jumpInstr
 	.endm
@@ -1818,6 +1818,12 @@
 	.byte \battler
 	.4byte \jumpInstr
 	.endm
+
+	@ BP gain from battles (agsmgmaster64)
+	.macro jumpifpointbattle jumpInstr:req
+ 	callnative BS_JumpIfPointBattle
+ 	.4byte \jumpInstr
+ 	.endm
 
 @ various command changed to more readable macros
 	.macro cancelmultiturnmoves battler:req

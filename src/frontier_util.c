@@ -1920,6 +1920,57 @@ static void GiveBattlePoints(void)
     gSaveBlock2Ptr->frontier.cardBattlePoints = points;
 }
 
+u16 GetBattlePoints(void)
+{
+    return gSaveBlock2Ptr->frontier.battlePoints;
+}
+
+bool8 IsEnoughBattlePoints(u16 cost)
+{
+    if (GetBattlePoints() >= cost)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+void SetBattlePoints(u16 pointAmount)
+{
+    gSaveBlock2Ptr->frontier.battlePoints = pointAmount;
+}
+
+bool8 RemoveBattlePoints(u16 toSub)
+{
+    u16 ownedBp = GetBattlePoints();
+    if (ownedBp >= toSub)
+    {
+        SetBattlePoints(ownedBp - toSub);
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool8 AddBattlePoints(u16 toAdd)
+{
+    u16 newAmount;
+    u16 ownedBp = GetBattlePoints();
+    if (ownedBp >= MAX_BATTLE_FRONTIER_POINTS)
+        return FALSE;
+    // check overflow, can't have less coins than previously
+    if (ownedBp > ownedBp + toAdd)
+    {
+        newAmount = MAX_BATTLE_FRONTIER_POINTS;
+    }
+    else
+    {
+        ownedBp += toAdd;
+        if (ownedBp > MAX_BATTLE_FRONTIER_POINTS)
+            ownedBp = MAX_BATTLE_FRONTIER_POINTS;
+        newAmount = ownedBp;
+    }
+    SetBattlePoints(newAmount);
+    return TRUE;
+}
+
 static void GetFacilitySymbolCount(void)
 {
     s32 facility = VarGet(VAR_FRONTIER_FACILITY);
