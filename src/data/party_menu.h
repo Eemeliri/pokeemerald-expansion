@@ -756,13 +756,13 @@ static const u8 sSlotTilemap_WideEmpty[] = INCBIN_U8("graphics/party_menu/slot_w
  //Custom party menu
 #if PARTY_MENU_STYLE == PARTY_MENU_STYLE_DEFAULT
 const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bg.4bpp.lz");
-const u32 gPartyMenuBg_Pal[] = INCBIN_U32("graphics/party_menu/bg.gbapal.lz");
+const u16 gPartyMenuBg_Pal[] = INCBIN_U16("graphics/party_menu/bg.gbapal");
 const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bg.bin.lz");
 const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball.4bpp.lz");
 const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
-const u32 gPartyMenuPokeball_Pal[] = INCBIN_U32("graphics/party_menu/pokeball.gbapal.lz");
+const u16 gPartyMenuPokeball_Pal[] = INCBIN_U16("graphics/party_menu/pokeball.gbapal");
 const u32 gPartyMenuBgScroll_Gfx_BW[] = INCBIN_U32("graphics/party_menu/scroll_tiles.4bpp.lz");
-const u32 gPartyMenuBgScroll_Pal[] = INCBIN_U32("graphics/party_menu/scroll_bg.gbapal.lz");
+const u16 gPartyMenuBgScroll_Pal[] = INCBIN_U16("graphics/party_menu/scroll_bg.gbapal");
 const u32 gPartyMenuBgScroll_Tilemap[] = INCBIN_U32("graphics/party_menu/scroll_bg.bin.lz");
 
 
@@ -785,11 +785,11 @@ static const u8 sEqualEmptySlotTileNums[] = {21, 22, 22, 22, 22, 22, 22, 22, 22,
                                              37, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 39};
 #elif PARTY_MENU_STYLE == PARTY_MENU_STYLE_HGSS
 const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/hgss/bg.4bpp.lz");
-const u32 gPartyMenuBg_Pal[] = INCBIN_U32("graphics/party_menu/hgss/bg.gbapal.lz");
+const u16 gPartyMenuBg_Pal[] = INCBIN_U16("graphics/party_menu/hgss/bg.gbapal");
 const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/hgss/bg.bin.lz");
 const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/hgss/pokeball.4bpp.lz");
 const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
-const u32 gPartyMenuPokeball_Pal[] = INCBIN_U32("graphics/party_menu/hgss/pokeball.gbapal.lz");
+const u16 gPartyMenuPokeball_Pal[] = INCBIN_U16("graphics/party_menu/hgss/pokeball.gbapal");
 static const u8 sEqualMainSlotTileNums[] =      {24, 25, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 34,
                                                  32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 44,
                                                  40, 41, 41, 41, 41, 52, 53, 51, 51, 51, 51, 51, 51, 54,
@@ -809,11 +809,11 @@ static const u8 sEqualEmptySlotTileNums[] = { 0,  0,  0,  0,  0,  0,  0,  0,  0,
                                               0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0};
 #elif PARTY_MENU_STYLE == PARTY_MENU_STYLE_BW
 const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bw/bg.4bpp.lz");
-const u32 gPartyMenuBg_Pal[] = INCBIN_U32("graphics/party_menu/bw/bg.gbapal.lz");
+const u16 gPartyMenuBg_Pal[] = INCBIN_U16("graphics/party_menu/bw/bg.gbapal");
 const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bw/bg.bin.lz");
 const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/bw/pokeball.4bpp.lz");
 const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
-const u32 gPartyMenuPokeball_Pal[] = INCBIN_U32("graphics/party_menu/bw/pokeball.gbapal.lz");
+const u16 gPartyMenuPokeball_Pal[] = INCBIN_U16("graphics/party_menu/bw/pokeball.gbapal");
 static const u8 sEqualMainSlotTileNums[] =      {24, 25, 25, 25, 25, 48, 30, 30, 30, 30, 30, 30, 56, 26,
                                                  32, 33, 33, 33, 49, 38, 38, 38, 38, 38, 38, 57, 33, 34,
                                                  32, 33, 33, 49, 38, 51, 52, 53, 53, 53, 54, 39, 39, 55,
@@ -1178,7 +1178,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_MenuPokeball =
     gPartyMenuPokeball_Gfx, 0x400, TAG_POKEBALL
 };
 
-static const struct CompressedSpritePalette sSpritePalette_MenuPokeball =
+static const struct SpritePalette sSpritePalette_MenuPokeball =
 {
     gPartyMenuPokeball_Pal, TAG_POKEBALL
 };
@@ -1358,7 +1358,7 @@ static const struct CompressedSpriteSheet sSpriteSheet_StatusIcons =
     gStatusGfx_Icons, 0x400, TAG_STATUS_ICONS
 };
 
-static const struct CompressedSpritePalette sSpritePalette_StatusIcons =
+static const struct SpritePalette sSpritePalette_StatusIcons =
 {
     gStatusPal_Icons, TAG_STATUS_ICONS
 };

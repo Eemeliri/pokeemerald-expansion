@@ -1252,7 +1252,7 @@ static void BuyMenuDecompressBgGraphics(void)
         LZDecompressWram(gShopMenu_Tilemap, sShopData->tilemapBuffers[0]);
         LZDecompressWram(gShopMenu_ScrollTilemap, sShopData->tilemapBuffers[1]);
     }
-    LoadCompressedPalette(gShopMenu_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
+    LoadPalette(gShopMenu_Pal, BG_PLTT_ID(12), PLTT_SIZE_4BPP);
 }
 
 static void BuyMenuInitWindows(void)
