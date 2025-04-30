@@ -1203,3 +1203,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MauvilleRocketHideout3/scripts.inc"
 
 	.include "data/maps/MaihaGarden/scripts.inc"
+
+	.include "data/maps/BigGameCorner/scripts.inc"

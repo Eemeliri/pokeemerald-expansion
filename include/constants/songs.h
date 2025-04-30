@@ -945,8 +945,18 @@
 #define MUS_HG_OBTAIN_B_POINTS            897 // Received Battle Points!
 #define MUS_HG_WIN_MINIGAME               898 // Cleared Wobbuffet Pop!
 #define MUS_LUGIAS_SONG                   899 // Lugia's Song
+#define MUS_HGSS_CASINO                   900
+#define MUS_CASINO_PLUS_1                 901
+#define MUS_CASINO_PLUS_2                 902
+#define MUS_CASINO_PLUS_3                 903
+#define MUS_CASINO_PLUS_4                 904
+#define MUS_CASINO_PLUS_5                 905
+#define MUS_CASINO_PLUS_6                 906
+#define MUS_CASINO_PLUS_7                 907
+#define MUS_CASINO_PLUS_8                 908
+#define MUS_CASINO_PLUS_9                 909
 
-#define HG_MUSIC_END                      MUS_LUGIAS_SONG
+#define HG_MUSIC_END                      MUS_CASINO_PLUS_9
 
 #define SONGS_END                         HG_MUSIC_END
 
