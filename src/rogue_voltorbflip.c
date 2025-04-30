@@ -648,7 +648,7 @@ static void CreateCreditSprites(void)
 
 	for (i = 0; i < ARRAY_COUNT(sSpriteSheets_Interface) - 1; i++)  
 		{
-			struct SpriteSheet s;
+			//struct SpriteSheet s;
 			LoadCompressedSpriteSheet(&sSpriteSheets_Interface[i]);
 		}
 
@@ -683,7 +683,7 @@ static void CreateCreditSprites(void)
 
 static void CreateCoins(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheet_Coins);
 	
 	sVflip->CoinsSpriteId = CreateSprite(&sSpriteTemplate_Coins, 198, 132, 0);

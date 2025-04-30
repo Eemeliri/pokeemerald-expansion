@@ -1797,7 +1797,7 @@ static void CheckLevel_3(void)
 {
 	s16 curX1;
 	s16 curX2;
-	s16 curX3;
+	//s16 curX3;
 	s16 preX1;
 	s16 preX2;
 	s16 preX3;
@@ -1842,10 +1842,10 @@ static void CheckLevel_4(void)
 {
 	s16 curX1;
 	s16 curX2;
-	s16 curX3;
+	//s16 curX3;
 	s16 preX1;
 	s16 preX2;
-	s16 preX3;
+	//s16 preX3;
 	u8 Lives;
 	
 	curX1 = gSprites[sBlockStacker->Row4Block1SpriteId].x;
@@ -1885,11 +1885,11 @@ static void CheckLevel_4(void)
 static void CheckLevel_5(void)
 {
 	s16 curX1;
-	s16 curX2;
-	s16 curX3;
+	//s16 curX2;
+	//s16 curX3;
 	s16 preX1;
 	s16 preX2;
-	s16 preX3;
+	//s16 preX3;
 	u8 Lives;
 	
 	curX1 = gSprites[sBlockStacker->Row5Block1SpriteId].x;
@@ -1916,10 +1916,10 @@ static void CheckLevel_6(void)
 {
 	s16 curX1;
 	s16 curX2;
-	s16 curX3;
+	//s16 curX3;
 	s16 preX1;
-	s16 preX2;
-	s16 preX3;
+	//s16 preX2;
+	//s16 preX3;
 	u8 Lives;
 	
 	curX1 = gSprites[sBlockStacker->Row6Block1SpriteId].x;
@@ -1947,8 +1947,8 @@ static void CheckLevel_7(void)
 	s16 curX2;
 	s16 curX3;
 	s16 preX1;
-	s16 preX2;
-	s16 preX3;
+	//s16 preX2;
+	//s16 preX3;
 	u8 Lives;
 	
 	curX1 = gSprites[sBlockStacker->Row7Block1SpriteId].x;
@@ -1973,11 +1973,11 @@ static void CheckLevel_7(void)
 static void CheckLevel_8(void)
 {
 	s16 curX1;
-	s16 curX2;
-	s16 curX3;
+	//s16 curX2;
+	//s16 curX3;
 	s16 preX1;
-	s16 preX2;
-	s16 preX3;
+	//s16 preX2;
+	//s16 preX3;
 	u8 Lives;
 	
 	curX1 = gSprites[sBlockStacker->Row8Block1SpriteId].x;

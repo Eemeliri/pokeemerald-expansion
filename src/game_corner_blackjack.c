@@ -2865,8 +2865,8 @@ static void AButton(void)
 	u8 playerCard1Points;
 	u8 playerCard2Points;
 	u8 dealerCard1Points;
-	u8 taskId1;
-	u8 taskId2;
+	//u8 taskId1;
+	//u8 taskId2;
 	
 	if (VarGet(BLACKJACK_VAR_OPTIONS) != 4)
 	{
@@ -3084,7 +3084,7 @@ static void AButton(void)
 
 static void MoveCursor(int direction)
 {
-    struct Sprite *cursorSprite = &gSprites[sBlackJack->cursorSpriteId];
+    //struct Sprite *cursorSprite = &gSprites[sBlackJack->cursorSpriteId];
     int curY;
     int destY;
 	curY = gSprites[sBlackJack->cursorSpriteId].y;
@@ -3161,14 +3161,14 @@ static void UpdateCards(void)
 
 static void SetCardSprite(u8 cardId, u8 cardNum, u8 cardIndex, u8 isPlayerCard)
 {
-    unsigned int tileNum = cardNum % 13;
+    //unsigned int tileNum = cardNum % 13;
     s16 x = cardPositions[cardIndex].x;
     s16 y = cardPositions[cardIndex].y;
     u8 subpriority = cardPositions[cardIndex].priority;
 
     const struct CompressedSpriteSheet* sheet = NULL;
     const struct SpriteTemplate* template = NULL;
-	struct SpriteSheet spriteSheet;
+	//struct SpriteSheet spriteSheet;
 
     switch (cardNum)
     {

@@ -2045,8 +2045,8 @@ void GetNewDerby(void)
 	u32 sOdds;
 	
 	int i;
-	int j;
-	int temp;
+	//int j;
+	//int temp;
 	u8 conditions[6];
 	int condition4Index;
 	int condition3Index;
@@ -2577,7 +2577,7 @@ static void CreatePokemonSprites(void)
 {
 	s16 x;
 	s16 y;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	x = 64;
 	y = 96;
@@ -3027,7 +3027,7 @@ static void UpdatePokemonSprites(void)
 
 static void CreateMenuData(void)
 {
-		struct SpriteSheet s;
+		//struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheet_Name_Ponyta);
 	
 	sDerby->SpeciesNameSpriteId = CreateSprite(&sSpriteTemplate_Name_Ponyta, 164, 60, 0);
@@ -3048,7 +3048,7 @@ static void CreateMenuData(void)
 static void UpdatePokemonSpeciesNames(void)
 {
 	u8 species = 0;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	if (sDerby->MenuPosition == 0)
 	{
@@ -3107,7 +3107,7 @@ static void UpdatePokemonSpeciesNames(void)
 static void UpdateCondition(void)
 {
 	u8 stars = 0;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	if (sDerby->MenuPosition == 0)
 	{
@@ -3173,7 +3173,7 @@ static void UpdatePayout(void)
 {
 	u8 multi = 0;
 	s16 y;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	y = 124;
 	
@@ -3252,7 +3252,7 @@ static void UpdatePayout(void)
 
 static void UpdateUI(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	DestroySpriteAndFreeResources(&gSprites[sDerby->uiSpriteId]);
 	LoadSpritePalettes(sSpritePalettes);
@@ -3297,7 +3297,7 @@ static void UpdateUI(void)
 
 static void CreateP10(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	LoadSpritePalettes(sSpritePalettes);
 	LoadCompressedSpriteSheet(&sSpriteSheet_P10);
 	
@@ -3306,7 +3306,7 @@ static void CreateP10(void)
 
 static void CreateCreditIcon(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	LoadSpritePalettes(sSpritePalettes);
 	LoadCompressedSpriteSheet(&sSpriteSheet_Credit_Icon);
 	
@@ -3315,7 +3315,7 @@ static void CreateCreditIcon(void)
 
 static void CreateCreditIconRed(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	LoadSpritePalettes(sSpritePalettes);
 	LoadCompressedSpriteSheet(&sSpriteSheet_Credit_Icon_Red);
 	
@@ -3326,7 +3326,7 @@ static void CreateArrows(void)
 {
 	s16 x;
 	s16 y;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	x = 32;
 	y = 88;
@@ -3674,7 +3674,7 @@ static void CreateBetSprites(void)
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_BetInterface) - 1; i++)  
     {
-        struct SpriteSheet s;
+        //struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheets_BetInterface[i]);
     }
 
@@ -3723,7 +3723,7 @@ static void CreatePotentialSprites(void)
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_PotentialInterface) - 1; i++)  
     {
-        struct SpriteSheet s;
+        //struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheets_PotentialInterface[i]);
     }
 
@@ -3772,7 +3772,7 @@ static void CreateCreditSprites(void)
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_CreditsInterface) - 1; i++)  
     {
-        struct SpriteSheet s;
+        //struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheets_CreditsInterface[i]);
     }
 
@@ -4219,7 +4219,7 @@ static void CreateRacers(void)
 	u8 horseAdd;
 	u8 ratfishAdd;
 	u8 position;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	horseY = 48;
 	ratfishY = 56;
@@ -4619,7 +4619,7 @@ static void CreateCursor(void)
 {
 	u8 y = 0;
 	u8 position = 0;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	LoadSpritePalettes(sSpritePalettes);
 	
@@ -4746,7 +4746,7 @@ void AssignRacerPlacements(void) {
 static void DerbyMain(u8 taskId)
 {
 	s16 finalX;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	finalX = 16;
 	

@@ -930,7 +930,7 @@ static void SnakeMainCallback(void)
     UpdatePaletteFade();
 }
 
-static void HandleInput(void)
+static void UNUSED HandleInput(void)
 {
 	if (sSnake->ToggleButtons == 1) 
 	{
@@ -962,7 +962,7 @@ static void StartExitSnake(void)
 
 static void CreateOnix(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheet_Onix);
 	
 	sSnake->OnixSpriteId = CreateSprite(&sSpriteTemplate_Onix, 120, 64, 0); // 5, 4
@@ -971,7 +971,7 @@ static void CreateOnix(void)
 static void CreateBody(s16 x, s16 y)
 {
 	u8 Body;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	Body = Random() % 4;
 	
@@ -1006,7 +1006,7 @@ static void CreateBody1(void)
 	s16 x = 120;
 	s16 y = 48;
 	u8 Body;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	Body = 3;
 	
@@ -1041,7 +1041,7 @@ static void CreateBody2(void)
 	s16 x = 120;
 	s16 y = 32;
 	u8 Body;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 	Body = Random() % 4;
 	
@@ -1450,7 +1450,7 @@ static void CreateBerry(void)
 	u8 Count = sSnake->BodyCount - 3;
 	int i;
 	int j;
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 
     while (1)
 	{
@@ -1580,7 +1580,7 @@ static void CreateCreditSprites(void)
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_CreditsInterface) - 1; i++)  
     {
-        struct SpriteSheet s;
+        //struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheets_CreditsInterface[i]);
     }
 
@@ -1597,7 +1597,7 @@ static void CreateNumberSprites(void)
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_CreditsInterface) - 1; i++)  
     {
-        struct SpriteSheet s;
+        //struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheets_CreditsInterface[i]);
     }
 
@@ -1614,10 +1614,10 @@ static void CheckBerry(void)
 	u8 Count = sSnake->BodyCount - 3;
 	u8 index = Count; 
 	u8 Body;
-	s16 xf;
-	s16 yf;
-	int i;
-	struct SpriteSheet s;
+	//s16 xf;
+	//s16 yf;
+	//int i;
+	//struct SpriteSheet s;
 	
 	if ((sSnake->OnixTileX == sSnake->BerryX) && (sSnake->OnixTileY == sSnake->BerryY))
 	{
@@ -1902,7 +1902,7 @@ static void CheckBerry(void)
 
 static void CreateStartMenu(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 		LoadSpritePalettes(sSpritePalettes);
         LoadCompressedSpriteSheet(&sSpriteSheet_Start);
@@ -1912,7 +1912,7 @@ static void CreateStartMenu(void)
 
 static void CreateGameOver(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 		LoadSpritePalettes(sSpritePalettes);
         LoadCompressedSpriteSheet(&sSpriteSheet_GameOver);
@@ -1922,7 +1922,7 @@ static void CreateGameOver(void)
 
 static void CreateMenu(void)
 {
-	struct SpriteSheet s;
+	//struct SpriteSheet s;
 	
 		LoadSpritePalettes(sSpritePalettes);
         LoadCompressedSpriteSheet(&sSpriteSheet_Menu);

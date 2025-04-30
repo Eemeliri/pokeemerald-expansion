@@ -2206,7 +2206,7 @@ static void CreatePlayerSprites(void)
 
     for (i = 0; i < ARRAY_COUNT(sSpriteSheets_PlayerInterface) - 1; i++)  
     {
-        struct SpriteSheet s;
+        //struct SpriteSheet s;
         LoadCompressedSpriteSheet(&sSpriteSheets_PlayerInterface[i]);
     }
 
@@ -3065,7 +3065,7 @@ static void HandleTilt(struct Ball *ball, struct Tilt *tilt, int xDelta, int yDe
 static bool32 HandleFlippers(struct Ball *ball, u16 *outYForce, u8 *outCollisionNormal, int *outCollisionAmplification)
 {
     bool32 collided;
-    struct Flipper *flipper;
+    //struct Flipper *flipper;
 
     UpdateFlipperState(&sPinballGame->rightFlipper);
     UpdateFlipperState(&sPinballGame->leftFlipper);
@@ -3555,9 +3555,9 @@ static void ApplyCollisionForces(struct Ball *ball, u16 flipperYForce, int colli
 static void UpdateCamera(void)
 {
     int scrollX, scrollY;
-    int stagePixelWidth = sPinballGame->stageTileWidth * 8;
-    int stagePixelHeight = sPinballGame->stageTileHeight * 8;
-    struct Ball *ball = &sPinballGame->ball;
+    //int stagePixelWidth = sPinballGame->stageTileWidth * 8;
+    //int stagePixelHeight = sPinballGame->stageTileHeight * 8;
+    //struct Ball *ball = &sPinballGame->ball;
 
     // scrollX = (ball->xPos >> 8) - (DISPLAY_WIDTH / 2);
     // if (scrollX < 0)
@@ -3894,7 +3894,7 @@ static bool32 CheckMeowthJewelsCollision(struct Ball *ball, struct Meowth *meowt
     return FALSE;
 }
 
-static int GetNumActiveJewels(struct Meowth *meowth)
+static int UNUSED GetNumActiveJewels(struct Meowth *meowth)
 {
     int i, count;
     for (i = 0; i < MAX_MEOWTH_JEWELS; i++)
@@ -3907,7 +3907,7 @@ static int GetNumActiveJewels(struct Meowth *meowth)
 
 static struct MeowthJewel *TryCreateNewJewel(struct Meowth *meowth, int ballXPos)
 {
-    int i, count;
+    int i;
     for (i = 0; i < MAX_MEOWTH_JEWELS; i++)
     {
         if (meowth->jewels[i].state == JEWEL_STATE_HIDDEN)
