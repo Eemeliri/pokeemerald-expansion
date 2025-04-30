@@ -4650,6 +4650,16 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/MaihaGarden/border.bin",
       "blockdata_filepath": "data/layouts/MaihaGarden/map.bin"
+    },
+    {
+      "id": "LAYOUT_BIG_GAME_CORNER",
+      "name": "BigGameCorner_Layout",
+      "width": 30,
+      "height": 22,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BigGameCorner",
+      "border_filepath": "data/layouts/BigGameCorner/border.bin",
+      "blockdata_filepath": "data/layouts/BigGameCorner/map.bin"
     }
   ]
 }
