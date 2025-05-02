@@ -4660,6 +4660,16 @@
       "secondary_tileset": "gTileset_BigGameCorner",
       "border_filepath": "data/layouts/BigGameCorner/border.bin",
       "blockdata_filepath": "data/layouts/BigGameCorner/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE40BEACH",
+      "name": "Route40Beach_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_JohtoGeneral",
+      "secondary_tileset": "gTileset_JohtoOlivine",
+      "border_filepath": "data/layouts/Route40Beach/border.bin",
+      "blockdata_filepath": "data/layouts/Route40Beach/map.bin"
     }
   ]
 }

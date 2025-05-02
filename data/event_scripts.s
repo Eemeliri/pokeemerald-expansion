@@ -1205,3 +1205,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MaihaGarden/scripts.inc"
 
 	.include "data/maps/BigGameCorner/scripts.inc"
+
+	.include "data/maps/Route40Beach/scripts.inc"
