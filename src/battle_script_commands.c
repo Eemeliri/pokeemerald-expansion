@@ -1770,6 +1770,7 @@ static void AccuracyCheck(bool32 recalcDragonDarts, const u8 *nextInstr, const u
                     gBattleStruct->blunderPolicy = TRUE;    // Only activates from missing through acc/evasion checks
 
                 if (effect == EFFECT_DRAGON_DARTS
+                    && !IsAffectedByFollowMe(gBattlerAttacker, GetBattlerSide(battlerDef), gCurrentMove)
                     && !recalcDragonDarts // So we don't jump back and forth between targets
                     && CanTargetPartner(gBattlerAttacker, battlerDef)
                     && !TargetFullyImmuneToCurrMove(gBattlerAttacker, BATTLE_PARTNER(battlerDef)))
@@ -7031,6 +7032,7 @@ static void Cmd_moveend(void)
                 else
                 {
                     if (moveEffect == EFFECT_DRAGON_DARTS
+                     && !IsAffectedByFollowMe(gBattlerAttacker, GetBattlerSide(gBattlerTarget), gCurrentMove)
                      && !(gBattleStruct->moveResultFlags[BATTLE_PARTNER(gBattlerTarget)] & MOVE_RESULT_MISSED) // didn't miss the other target
                      && CanTargetPartner(gBattlerAttacker, gBattlerTarget)
                      && !TargetFullyImmuneToCurrMove(gBattlerAttacker, BATTLE_PARTNER(gBattlerTarget)))
@@ -7157,6 +7159,10 @@ static void Cmd_moveend(void)
                     u32 battler = battlers[i];
 
                     if (!(ejectPackBattlers & 1u << battler))
+                        continue;
+
+                    // Hit escape moves activate before Eject Pack for user
+                    if (moveEffect == EFFECT_HIT_ESCAPE && gBattlerAttacker == battler)
                         continue;
 
                     gBattleScripting.battler = battler;
@@ -9117,7 +9123,7 @@ static bool32 TryCheekPouch(u32 battler, u32 itemId)
         && !IsBattlerAtMaxHp(battler))
     {
         gBattleStruct->cheekPouchActivated = TRUE;
-        gBattleScripting.savedDmg = gBattleStruct->moveDamage[battler];
+        gBattleStruct->savedcheekPouchDamage = gBattleStruct->moveDamage[battler];
         gBattleStruct->moveDamage[battler] = GetNonDynamaxMaxHP(battler) / 3;
         if (gBattleStruct->moveDamage[battler] == 0)
             gBattleStruct->moveDamage[battler] = 1;
@@ -9135,7 +9141,7 @@ static void TryRestoreDamageAfterCheeckPouch(u32 battler)
 {
     if (gBattleStruct->cheekPouchActivated)
     {
-        gBattleStruct->moveDamage[battler] = gBattleScripting.savedDmg;
+        gBattleStruct->moveDamage[battler] = gBattleStruct->savedcheekPouchDamage;
         gBattleStruct->cheekPouchActivated = FALSE;
     }
 }
@@ -10666,6 +10672,7 @@ static void Cmd_various(void)
     {
         VARIOUS_ARGS();
         if (GetMoveEffect(gCurrentMove) == EFFECT_FELL_STINGER
+            && IsBattlerAlive(gBattlerAttacker)
             && HasAttackerFaintedTarget()
             && !NoAliveMonsForEitherParty()
             && CompareStat(gBattlerAttacker, STAT_ATK, MAX_STAT_STAGE, CMP_LESS_THAN))
@@ -11080,7 +11087,7 @@ static void Cmd_various(void)
         if (cmd->case_ == 0)
         {
             // Save sprite IDs, because trainer slide in will overwrite gBattlerSpriteIds variable.
-            gBattleScripting.savedDmg = (gBattlerSpriteIds[battler] & 0xFF) | (gBattlerSpriteIds[BATTLE_PARTNER(battler)] << 8);
+            gBattleStruct->storeBattlerSpriteId = (gBattlerSpriteIds[battler] & 0xFF) | (gBattlerSpriteIds[BATTLE_PARTNER(battler)] << 8);
         }
         else if (cmd->case_ == 1)
         {
@@ -11089,9 +11096,8 @@ static void Cmd_various(void)
         }
         else
         {
-            gBattlerSpriteIds[BATTLE_PARTNER(battler)] = gBattleScripting.savedDmg >> 8;
-            gBattlerSpriteIds[battler] = gBattleScripting.savedDmg & 0xFF;
-            gBattleScripting.savedDmg = 0;
+            gBattlerSpriteIds[BATTLE_PARTNER(battler)] = gBattleStruct->storeBattlerSpriteId >> 8;
+            gBattlerSpriteIds[battler] = gBattleStruct->storeBattlerSpriteId & 0xFF;
             if (IsBattlerAlive(battler))
             {
                 SetBattlerShadowSpriteCallback(battler, gBattleMons[battler].species);
