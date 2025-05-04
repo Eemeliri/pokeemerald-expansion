@@ -4665,7 +4665,7 @@
       "id": "LAYOUT_ROUTE40BEACH",
       "name": "Route40Beach_Layout",
       "width": 20,
-      "height": 20,
+      "height": 34,
       "primary_tileset": "gTileset_JohtoGeneral",
       "secondary_tileset": "gTileset_JohtoOlivine",
       "border_filepath": "data/layouts/Route40Beach/border.bin",
