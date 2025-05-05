@@ -4564,7 +4564,7 @@
     {
       "id": "LAYOUT_ROUTE40",
       "name": "Route40_Layout",
-      "width": 30,
+      "width": 50,
       "height": 70,
       "primary_tileset": "gTileset_JohtoGeneral",
       "secondary_tileset": "gTileset_JohtoOlivine",

@@ -272,6 +272,12 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x833
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x82B
 
+// gTileset_JohtoGeneral
+#define METATILE_JohtoGeneral_PcDoor  0x041
+
+// gTileset_JohtoOlivine
+#define METATILE_JohtoOlivine_Door  0x8C1
+
 // gTileset_Lavaridge
 #define METATILE_Lavaridge_AshGrass             0x807
 #define METATILE_Lavaridge_CaveEntrance_Bottom  0x85E

@@ -89,9 +89,11 @@
 #define MAPSEC_SKY_PILLAR                   0x55
 #define MAPSEC_SECRET_BASE                  0x56
 #define MAPSEC_DYNAMIC                      0x57
+
+// Johto map sections
 #define MAPSEC_OLIVINE_CITY                 0x58
-#define MAPSEC_VIRIDIAN_CITY                0x59
-#define MAPSEC_PEWTER_CITY                  0x5A
+#define MAPSEC_ROUTE40                      0x59
+#define MAPSEC_ROUITE39                     0x5A
 #define MAPSEC_CERULEAN_CITY                0x5B
 #define MAPSEC_LAVENDER_TOWN                0x5C
 #define MAPSEC_VERMILION_CITY               0x5D
@@ -134,6 +136,8 @@
 #define MAPSEC_UNDERGROUND_PATH_2           0x82
 #define MAPSEC_DIGLETTS_CAVE                0x83
 #define MAPSEC_KANTO_VICTORY_ROAD           0x84
+
+
 #define MAPSEC_ROCKET_HIDEOUT               0x85
 #define MAPSEC_SILPH_CO                     0x86
 #define MAPSEC_POKEMON_MANSION              0x87
@@ -224,7 +228,7 @@
 #define METLOC_IN_GAME_TRADE                0xFE
 #define METLOC_FATEFUL_ENCOUNTER            0xFF
 
-#define KANTO_MAPSEC_START  MAPSEC_VIRIDIAN_CITY
+#define KANTO_MAPSEC_START  MAPSEC_ROCKET_HIDEOUT
 #define KANTO_MAPSEC_END    MAPSEC_SPECIAL_AREA
 #define KANTO_MAPSEC_COUNT (KANTO_MAPSEC_END - KANTO_MAPSEC_START + 1)
 

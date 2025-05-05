@@ -75,6 +75,13 @@ static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
 static void QueueAnimTiles_Mauville_Game_Corner_Lights(u16);
+static void TilesetAnim_Johto_General(u16);
+static void QueueAnimTiles_Johto_General_Water(u16);
+static void QueueAnimTiles_Johto_General_Water2(u16);
+static void QueueAnimTiles_Johto_General_Flower(u16);
+static void QueueAnimTiles_Johto_General_SandWaterEdge(u16);
+static void QueueAnimTiles_Johto_General_Waterfall(u16);
+static void QueueAnimTiles_Johto_General_LandWaterEdge(u16);
 
 const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame0[] = INCBIN_U16("data/tilesets/secondary/big_game_corner/anim/lights/light_anim_0.4bpp");
 const u16 gTilesetAnims_MauvilleGameCorner_Lights_Frame1[] = INCBIN_U16("data/tilesets/secondary/big_game_corner/anim/lights/light_anim_1.4bpp");
@@ -122,6 +129,103 @@ const u16 *const gTilesetAnims_General_Water[] = {
     gTilesetAnims_General_Water_Frame5,
     gTilesetAnims_General_Water_Frame6,
     gTilesetAnims_General_Water_Frame7
+};
+
+
+const u16 gTilesetAnims_Johto_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/0.4bpp");
+const u16 gTilesetAnims_Johto_General_Water_Frame1[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/1.4bpp");
+const u16 gTilesetAnims_Johto_General_Water_Frame2[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/2.4bpp");
+const u16 gTilesetAnims_Johto_General_Water_Frame3[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/3.4bpp");
+const u16 gTilesetAnims_Johto_General_Water_Frame4[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/4.4bpp");
+const u16 gTilesetAnims_Johto_General_Water_Frame5[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/5.4bpp");
+const u16 gTilesetAnims_Johto_General_Water_Frame6[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/6.4bpp");
+const u16 gTilesetAnims_Johto_General_Water_Frame7[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water/7.4bpp");
+
+const u16 *const gTilesetAnims_Johto_General_Water[] = {
+    gTilesetAnims_Johto_General_Water_Frame0,
+    gTilesetAnims_Johto_General_Water_Frame1,
+    gTilesetAnims_Johto_General_Water_Frame2,
+    gTilesetAnims_Johto_General_Water_Frame3,
+    gTilesetAnims_Johto_General_Water_Frame4,
+    gTilesetAnims_Johto_General_Water_Frame5,
+    gTilesetAnims_Johto_General_Water_Frame6,
+    gTilesetAnims_Johto_General_Water_Frame7
+};
+
+const u16 gTilesetAnims_Johto_General_Water2_Frame0[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/0.4bpp");
+const u16 gTilesetAnims_Johto_General_Water2_Frame1[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/1.4bpp");
+const u16 gTilesetAnims_Johto_General_Water2_Frame2[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/2.4bpp");
+const u16 gTilesetAnims_Johto_General_Water2_Frame3[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/3.4bpp");
+const u16 gTilesetAnims_Johto_General_Water2_Frame4[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/4.4bpp");
+const u16 gTilesetAnims_Johto_General_Water2_Frame5[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/5.4bpp");
+const u16 gTilesetAnims_Johto_General_Water2_Frame6[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/6.4bpp");
+const u16 gTilesetAnims_Johto_General_Water2_Frame7[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/water2/7.4bpp");
+
+const u16 *const gTilesetAnims_Johto_General_Water2[] = {
+    gTilesetAnims_Johto_General_Water2_Frame0,
+    gTilesetAnims_Johto_General_Water2_Frame1,
+    gTilesetAnims_Johto_General_Water2_Frame2,
+    gTilesetAnims_Johto_General_Water2_Frame3,
+    gTilesetAnims_Johto_General_Water2_Frame4,
+    gTilesetAnims_Johto_General_Water2_Frame5,
+    gTilesetAnims_Johto_General_Water2_Frame6,
+    gTilesetAnims_Johto_General_Water2_Frame7
+};
+
+const u16 gTilesetAnims_Johto_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/flower/1.4bpp");
+const u16 gTilesetAnims_Johto_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/flower/0.4bpp");
+const u16 gTilesetAnims_Johto_General_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/flower/2.4bpp");
+
+const u16 *const gTilesetAnims_Johto_General_Flower[] = {
+    gTilesetAnims_Johto_General_Flower_Frame0,
+    gTilesetAnims_Johto_General_Flower_Frame1,
+    gTilesetAnims_Johto_General_Flower_Frame0,
+    gTilesetAnims_Johto_General_Flower_Frame2
+};
+
+
+const u16 gTilesetAnims_Johto_General_SandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/sand_water_edge/0.4bpp");
+const u16 gTilesetAnims_Johto_General_SandWaterEdge_Frame1[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/sand_water_edge/1.4bpp");
+const u16 gTilesetAnims_Johto_General_SandWaterEdge_Frame2[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/sand_water_edge/2.4bpp");
+const u16 gTilesetAnims_Johto_General_SandWaterEdge_Frame3[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/sand_water_edge/3.4bpp");
+const u16 gTilesetAnims_Johto_General_SandWaterEdge_Frame4[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/sand_water_edge/4.4bpp");
+const u16 gTilesetAnims_Johto_General_SandWaterEdge_Frame5[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/sand_water_edge/5.4bpp");
+const u16 gTilesetAnims_Johto_General_SandWaterEdge_Frame6[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/sand_water_edge/6.4bpp");
+
+const u16 *const gTilesetAnims_Johto_General_SandWaterEdge[] = {
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame0,
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame1,
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame2,
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame3,
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame4,
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame5,
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame6,
+    gTilesetAnims_Johto_General_SandWaterEdge_Frame0
+};
+
+const u16 gTilesetAnims_Johto_General_Waterfall_Frame0[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/waterfall/0.4bpp");
+const u16 gTilesetAnims_Johto_General_Waterfall_Frame1[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/waterfall/1.4bpp");
+const u16 gTilesetAnims_Johto_General_Waterfall_Frame2[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/waterfall/2.4bpp");
+const u16 gTilesetAnims_Johto_General_Waterfall_Frame3[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/waterfall/3.4bpp");
+
+const u16 *const gTilesetAnims_Johto_General_Waterfall[] = {
+    gTilesetAnims_Johto_General_Waterfall_Frame0,
+    gTilesetAnims_Johto_General_Waterfall_Frame1,
+    gTilesetAnims_Johto_General_Waterfall_Frame2,
+    gTilesetAnims_Johto_General_Waterfall_Frame3
+};
+
+
+const u16 gTilesetAnims_Johto_General_LandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/land_water_edge/0.4bpp");
+const u16 gTilesetAnims_Johto_General_LandWaterEdge_Frame1[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/land_water_edge/1.4bpp");
+const u16 gTilesetAnims_Johto_General_LandWaterEdge_Frame2[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/land_water_edge/2.4bpp");
+const u16 gTilesetAnims_Johto_General_LandWaterEdge_Frame3[] = INCBIN_U16("data/tilesets/primary/johto_general/anim/land_water_edge/3.4bpp");
+
+const u16 *const gTilesetAnims_Johto_General_LandWaterEdge[] = {
+    gTilesetAnims_Johto_General_LandWaterEdge_Frame0,
+    gTilesetAnims_Johto_General_LandWaterEdge_Frame1,
+    gTilesetAnims_Johto_General_LandWaterEdge_Frame2,
+    gTilesetAnims_Johto_General_LandWaterEdge_Frame3
 };
 
 const u16 gTilesetAnims_General_SandWaterEdge_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/sand_water_edge/0.4bpp");
@@ -640,6 +744,14 @@ void InitTilesetAnim_General(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_General;
 }
 
+
+void InitTilesetAnim_Johto_General(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Johto_General;
+}
+
 void InitTilesetAnim_Building(void)
 {
     sPrimaryTilesetAnimCounter = 0;
@@ -660,6 +772,22 @@ static void TilesetAnim_General(u16 timer)
     if (timer % 16 == 4)
         QueueAnimTiles_General_LandWaterEdge(timer / 16);
 }
+
+static void TilesetAnim_Johto_General(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_Johto_General_Flower(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_Johto_General_Water(timer / 16);
+        QueueAnimTiles_Johto_General_Water2(timer / 16);
+    if (timer % 16 == 2)
+        QueueAnimTiles_Johto_General_SandWaterEdge(timer / 16);
+    if (timer % 16 == 3)
+        QueueAnimTiles_Johto_General_Waterfall(timer / 16);
+    if (timer % 16 == 4)
+        QueueAnimTiles_Johto_General_LandWaterEdge(timer / 16);
+}
+
 
 static void TilesetAnim_Building(u16 timer)
 {
@@ -689,6 +817,43 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
 {
     u16 i = timer % ARRAY_COUNT(gTilesetAnims_General_Waterfall);
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
+}
+
+
+static void QueueAnimTiles_Johto_General_Flower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Johto_General_Flower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Johto_General_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(508)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Johto_General_Water(u16 timer)
+{
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_Johto_General_Water);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Johto_General_Water[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(432)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Johto_General_Water2(u16 timer)
+{
+    u8 i = timer % ARRAY_COUNT(gTilesetAnims_Johto_General_Water2);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Johto_General_Water2[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(440)), 4 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Johto_General_SandWaterEdge(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Johto_General_SandWaterEdge);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Johto_General_SandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(464)), 10 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Johto_General_Waterfall(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Johto_General_Waterfall);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Johto_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Johto_General_LandWaterEdge(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Johto_General_LandWaterEdge);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Johto_General_LandWaterEdge[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(480)), 10 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Mauville_Game_Corner_Lights(u16 timer)

@@ -672,11 +672,11 @@ Level: 25
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Roselia
-Level: 27
+Level: 25
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Roserade
-Level: 29
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_FELIX ===
@@ -3463,11 +3463,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Magneton
-Level: 29
+Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Electrode Hisui
-Level: 28
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_DALTON_2 ===
@@ -4006,11 +4006,11 @@ Double Battle: No
 AI: Check Bad Move
 
 Beedrill
-Level: 29
+Level: 27
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Butterfree
-Level: 29
+Level: 27
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_JEFFREY_2 ===
@@ -5406,11 +5406,11 @@ Double Battle: Yes
 AI: Check Bad Move
 
 Cinccino
-Level: 29
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Lopunny
-Level: 29
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_ANNA_AND_MEG_2 ===
@@ -6432,7 +6432,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Croconaw
-Level: 29
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CARTER ===
@@ -6773,7 +6773,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pelipper
-Level: 30
+Level: 28
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_DYLAN_2 ===
@@ -6838,7 +6838,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Kilowattrel
-Level: 29
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_MARIA_2 ===
@@ -9922,15 +9922,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Heracross
-Level: 28
+Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Linoone Galar
-Level: 28
+Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Lairon
-Level: 28
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 
@@ -10114,15 +10114,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Tinkatuff
-Level: 28
+Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Breloom
-Level: 28
+Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Azumarill
-Level: 28
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_HALLE ===
@@ -13330,15 +13330,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Linoone
-Level: 28
+Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Dunsparce
-Level: 28
+Level: 26
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Girafarig
-Level: 28
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
@@ -13968,7 +13968,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Pidgeotto
-Level: 28
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_BRANDI ===
@@ -13981,7 +13981,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Corvisquire
-Level: 30
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_AISHA ===
@@ -13994,7 +13994,7 @@ Double Battle: No
 AI: Check Bad Move
 
 Medicham
-Level: 30
+Level: 27
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_MAKAYLA ===

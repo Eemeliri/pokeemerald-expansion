@@ -892,7 +892,7 @@ const struct Tileset gTileset_JohtoGeneral =
     .palettes = gTilesetPalettes_JohtoGeneral,
     .metatiles = gMetatiles_JohtoGeneral,
     .metatileAttributes = gMetatileAttributes_JohtoGeneral,
-    .callback = NULL,
+    .callback = InitTilesetAnim_Johto_General,
 };
 
 const struct Tileset gTileset_JohtoOlivine =
