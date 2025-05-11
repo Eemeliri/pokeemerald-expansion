@@ -190,6 +190,8 @@
 .include "sound/voicegroups/voicegroup188.inc"
 .include "sound/voicegroups/voicegroup189.inc"
 .include "sound/voicegroups/voicegroup190.inc"
+
+@ Start DPPt HGSS voicegroups
 .include "sound/voicegroups/voicegroup191.inc" @ DPPt main
 .include "sound/voicegroups/voicegroup192.inc"
 .include "sound/voicegroups/voicegroup193.inc"
@@ -273,5 +275,18 @@
 .include "sound/voicegroups/voicegroup271.inc"
 .include "sound/voicegroups/voicegroup272.inc"
 .include "sound/voicegroups/voicegroup273.inc"
+
+@ Start BW voicegroup
 .include "sound/voicegroups/voicegroup274.inc"
 .include "sound/voicegroups/voicegroup275.inc"
+.include "sound/voicegroups/voicegroup276.inc"
+.include "sound/voicegroups/voicegroup277.inc"
+.include "sound/voicegroups/voicegroup278.inc"
+.include "sound/voicegroups/voicegroup279.inc"
+.include "sound/voicegroups/voicegroup280.inc"
+.include "sound/voicegroups/voicegroup281.inc"
+.include "sound/voicegroups/voicegroup282.inc"
+.include "sound/voicegroups/voicegroup283.inc"
+.include "sound/voicegroups/voicegroup284.inc"
+.include "sound/voicegroups/voicegroup285.inc"
+.include "sound/voicegroups/voicegroup286.inc"
