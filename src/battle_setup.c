@@ -1427,10 +1427,10 @@ void PlayTrainerEncounterMusic(void)
         switch (GetTrainerEncounterMusicId(trainerId))
         {
         case TRAINER_ENCOUNTER_MUSIC_MALE:
-            music = MUS_ENCOUNTER_MALE;
+            music = MUS_BW_ENCOUNTER_YOUNGSTER;
             break;
         case TRAINER_ENCOUNTER_MUSIC_FEMALE:
-            music = MUS_ENCOUNTER_FEMALE;
+            music = MUS_BW_ENCOUNTER_LASS;
             break;
         case TRAINER_ENCOUNTER_MUSIC_GIRL:
             music = MUS_ENCOUNTER_GIRL;
@@ -1448,10 +1448,10 @@ void PlayTrainerEncounterMusic(void)
             music = MUS_ENCOUNTER_MAGMA;
             break;
         case TRAINER_ENCOUNTER_MUSIC_SWIMMER:
-            music = MUS_ENCOUNTER_SWIMMER;
+            music = MUS_HG_ENCOUNTER_GIRL_2;
             break;
         case TRAINER_ENCOUNTER_MUSIC_TWINS:
-            music = MUS_ENCOUNTER_TWINS;
+            music = MUS_BW_ENCOUNTER_TWINS;
             break;
         case TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR:
             music = MUS_ENCOUNTER_ELITE_FOUR;
@@ -1466,7 +1466,7 @@ void PlayTrainerEncounterMusic(void)
             music = MUS_ENCOUNTER_RICH;
             break;
         default:
-            music = MUS_ENCOUNTER_SUSPICIOUS;
+            music = MUS_HG_ENCOUNTER_SUSPICIOUS_1;
         }
         PlayNewMapMusic(music);
     }
