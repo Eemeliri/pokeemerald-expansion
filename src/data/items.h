@@ -8588,7 +8588,7 @@ const struct Item gItemsInfo[] =
         .bpCost = ((I_PRICE_BP <= GEN_3) ? 48 : (I_PRICE_BP == GEN_4) ? 32 : (I_PRICE_BP == GEN_5) ? 16
                  : (I_PRICE_BP == GEN_6) ? 32 : ((I_PRICE_BP == GEN_7) ? 24 : 15)),
         .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
-        .holdEffect = HOLD_EFFECT_RESTORE_STATS,
+        .holdEffect = HOLD_EFFECT_WHITE_HERB,
         .description = COMPOUND_STRING(
             "A hold item that\n"
             "restores any\n"
