@@ -429,7 +429,7 @@ void HandleAction_UseMove(void)
 
     if (IsBattlerAlive(gBattlerAttacker))
     {
-        if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
+        if (IsOnPlayerSide(gBattlerAttacker))
             gBattleResults.lastUsedMovePlayer = gCurrentMove;
         else
             gBattleResults.lastUsedMoveOpponent = gCurrentMove;
@@ -678,7 +678,7 @@ void HandleAction_Run(void)
 
         for (i = 0; i < gBattlersCount; i++)
         {
-            if (GetBattlerSide(i) == B_SIDE_PLAYER)
+            if (IsOnPlayerSide(i))
             {
                 if (gChosenActionByBattler[i] == B_ACTION_RUN)
                     gBattleOutcome |= B_OUTCOME_LOST;
@@ -695,7 +695,7 @@ void HandleAction_Run(void)
     }
     else
     {
-        if (GetBattlerSide(gBattlerAttacker) == B_SIDE_PLAYER)
+        if (IsOnPlayerSide(gBattlerAttacker))
         {
             if (!TryRunFromBattle(gBattlerAttacker)) // failed to run away
             {
@@ -1216,7 +1216,7 @@ void OpponentSwitchInResetSentPokesToOpponentValue(u32 battler)
     s32 i = 0;
     u32 bits = 0;
 
-    if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+    if (!IsOnPlayerSide(battler))
     {
         u8 flank = ((battler & BIT_FLANK) >> 1);
         gSentPokesToOpponent[flank] = 0;
@@ -1232,7 +1232,7 @@ void OpponentSwitchInResetSentPokesToOpponentValue(u32 battler)
 
 void UpdateSentPokesToOpponentValue(u32 battler)
 {
-    if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+    if (!IsOnPlayerSide(battler))
     {
         OpponentSwitchInResetSentPokesToOpponentValue(battler);
     }
@@ -1645,11 +1645,10 @@ u8 GetImprisonedMovesCount(u32 battler, u16 move)
 
 u32 GetBattlerAffectionHearts(u32 battler)
 {
-    u8 side = GetBattlerSide(battler);
     struct Pokemon *mon = GetBattlerMon(battler);
     u16 species = GetMonData(mon, MON_DATA_SPECIES);
 
-    if (side != B_SIDE_PLAYER)
+    if (!IsOnPlayerSide(battler))
         return AFFECTION_NO_HEARTS;
     else if (gSpeciesInfo[species].isMegaEvolution
           || (gBattleTypeFlags & (BATTLE_TYPE_EREADER_TRAINER
@@ -2488,7 +2487,7 @@ static void CancellerMultiTargetMoves(u32 *effect)
     {
         for (u32 battlerDef = 0; battlerDef < gBattlersCount; battlerDef++)
         {
-            if (gBattleStruct->bouncedMoveIsUsed && B_SIDE_OPPONENT == GetBattlerSide(battlerDef))
+            if (gBattleStruct->bouncedMoveIsUsed && !IsOnPlayerSide(battlerDef))
                 continue;
 
             u32 abilityDef = GetBattlerAbility(battlerDef);
@@ -2579,15 +2578,15 @@ u32 AtkCanceller_MoveSuccessOrder(void)
 
 bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2)
 {
-    u32 i, side, playerId, flankId;
+    u32 i, playerId, flankId;
     struct Pokemon *party;
 
     if (!IsDoubleBattle())
         return FALSE;
 
-    side = GetBattlerSide(battler);
+    bool32 isPlayerside = IsOnPlayerSide(battler);
 
-    if (BATTLE_TWO_VS_ONE_OPPONENT && side == B_SIDE_OPPONENT)
+    if (BATTLE_TWO_VS_ONE_OPPONENT && !isPlayerside)
     {
         flankId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
         playerId = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
@@ -2625,7 +2624,7 @@ bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2
     else if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
     {
         party = GetBattlerParty(battler);
-        if (side == B_SIDE_OPPONENT && WILD_DOUBLE_BATTLE)
+        if (!isPlayerside && WILD_DOUBLE_BATTLE)
         {
             flankId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
             playerId = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
@@ -2659,7 +2658,7 @@ bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2
     {
         if (gBattleTypeFlags & BATTLE_TYPE_TOWER_LINK_MULTI)
         {
-            if (side == B_SIDE_PLAYER)
+            if (isPlayerside)
             {
                 party = gPlayerParty;
                 flankId = GetBattlerMultiplayerId(battler);
@@ -2688,7 +2687,7 @@ bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2
         }
         return (i == playerId * MULTI_PARTY_SIZE + MULTI_PARTY_SIZE);
     }
-    else if ((gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS) && side == B_SIDE_OPPONENT)
+    else if ((gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS) && !isPlayerside)
     {
         party = gEnemyParty;
 
@@ -2706,7 +2705,7 @@ bool32 HasNoMonsToSwitch(u32 battler, u8 partyIdBattlerOn1, u8 partyIdBattlerOn2
     }
     else
     {
-        if (side == B_SIDE_OPPONENT)
+        if (!isPlayerside)
         {
             flankId = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
             playerId = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
@@ -3621,11 +3620,9 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         case ABILITY_ANTICIPATION:
             if (!gSpecialStatuses[battler].switchInAbilityDone)
             {
-                u32 side = GetBattlerSide(battler);
-
                 for (i = 0; i < MAX_BATTLERS_COUNT; i++)
                 {
-                    if (IsBattlerAlive(i) && side != GetBattlerSide(i))
+                    if (IsBattlerAlive(i) && !IsBattlerAlly(i, battler))
                     {
                         for (j = 0; j < MAX_MON_MOVES; j++)
                         {
@@ -4614,8 +4611,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
              && IsBattlerAlive(gBattlerAttacker))
             {
                 // Prevent Innards Out effect if Future Sight user is currently not on field
-                if (GetMoveEffect(gCurrentMove) == EFFECT_FUTURE_SIGHT
-                 && IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget))
+                if (IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget, gCurrentMove))
                     break;
 
                 gBattleScripting.battler = gBattlerTarget;
@@ -6653,7 +6649,7 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
             switch (battlerHoldEffect)
             {
             case HOLD_EFFECT_DOUBLE_PRIZE:
-                if (GetBattlerSide(battler) == B_SIDE_PLAYER && !gBattleStruct->moneyMultiplierItem)
+                if (IsOnPlayerSide(battler) && !gBattleStruct->moneyMultiplierItem)
                 {
                     gBattleStruct->moneyMultiplier *= 2;
                     gBattleStruct->moneyMultiplierItem = 1;
@@ -7154,7 +7150,7 @@ u32 ItemBattleEffects(enum ItemCaseId caseID, u32 battler, bool32 moveTurn)
                 && (IsBattlerTurnDamaged(gBattlerTarget) || !(gBattleStruct->moveResultFlags[gBattlerTarget] & MOVE_RESULT_NO_EFFECT)) // Needs the second check in case of Substitute
                 && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
                 && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
-                && !IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget))
+                && !IsFutureSightAttackerInParty(gBattlerAttacker, gBattlerTarget, gCurrentMove))
             {
                 gBattleStruct->moveDamage[gBattlerAttacker] = GetNonDynamaxMaxHP(gBattlerAttacker) / 10;
                 if (gBattleStruct->moveDamage[gBattlerAttacker] == 0)
@@ -9557,7 +9553,7 @@ static inline s32 DoFutureSightAttackDamageCalcVars(struct DamageCalculationData
     u32 move = damageCalcData->move;
     u32 moveType = damageCalcData->moveType;
 
-    struct Pokemon *party = GetSideParty(GetBattlerSide(battlerAtk));
+    struct Pokemon *party = GetBattlerParty(battlerAtk);
     struct Pokemon *partyMon = &party[gWishFutureKnock.futureSightPartyIndex[battlerDef]];
     u32 partyMonLevel = GetMonData(partyMon, MON_DATA_LEVEL, NULL);
     u32 partyMonSpecies = GetMonData(partyMon, MON_DATA_SPECIES, NULL);
@@ -9616,9 +9612,12 @@ static u32 GetWeather(void)
         return gBattleWeather;
 }
 
-bool32 IsFutureSightAttackerInParty(u32 battlerAtk, u32 battlerDef)
+bool32 IsFutureSightAttackerInParty(u32 battlerAtk, u32 battlerDef, u32 move)
 {
-    struct Pokemon *party = GetSideParty(GetBattlerSide(battlerAtk));
+    if (GetMoveEffect(move) != EFFECT_FUTURE_SIGHT)
+        return FALSE;
+
+    struct Pokemon *party = GetBattlerParty(battlerAtk);
     return &party[gWishFutureKnock.futureSightPartyIndex[battlerDef]] != &party[gBattlerPartyIndexes[battlerAtk]]
         && &party[gWishFutureKnock.futureSightPartyIndex[battlerDef]] != &party[BATTLE_PARTNER(gBattlerPartyIndexes[battlerAtk])];
 }
@@ -9632,8 +9631,7 @@ s32 CalculateMoveDamage(struct DamageCalculationData *damageCalcData, u32 fixedB
                                                                       GetBattlerAbility(damageCalcData->battlerDef),
                                                                       damageCalcData->updateFlags);
 
-    if (GetMoveEffect(damageCalcData->move) == EFFECT_FUTURE_SIGHT
-     && IsFutureSightAttackerInParty(damageCalcData->battlerAtk, damageCalcData->battlerDef))
+    if (IsFutureSightAttackerInParty(damageCalcData->battlerAtk, damageCalcData->battlerDef, damageCalcData->move))
         return DoFutureSightAttackDamageCalc(damageCalcData, typeEffectivenessMultiplier, GetWeather());
 
     return DoMoveDamageCalc(damageCalcData, fixedBasePower, typeEffectivenessMultiplier, GetWeather());
@@ -9966,9 +9964,9 @@ s32 GetStealthHazardDamage(enum TypeSideHazard hazardType, u32 battler)
 
 bool32 IsPartnerMonFromSameTrainer(u32 battler)
 {
-    if (GetBattlerSide(battler) == B_SIDE_OPPONENT && gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
+    if (!IsOnPlayerSide(battler) && gBattleTypeFlags & BATTLE_TYPE_TWO_OPPONENTS)
         return FALSE;
-    else if (GetBattlerSide(battler) == B_SIDE_PLAYER && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
+    else if (IsOnPlayerSide(battler) && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
         return FALSE;
     else if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
         return FALSE;
@@ -10375,7 +10373,7 @@ struct Pokemon *GetIllusionMonPtr(u32 battler)
 {
     if (gBattleStruct->illusion[battler].state == ILLUSION_NOT_SET)
     {
-        if (GetBattlerSide(battler) == B_SIDE_PLAYER)
+        if (IsOnPlayerSide(battler))
             SetIllusionMon(GetBattlerMon(battler), battler);
         else
             SetIllusionMon(GetBattlerMon(battler), battler);
@@ -10454,7 +10452,7 @@ bool32 ShouldGetStatBadgeBoost(u16 badgeFlag, u32 battler)
     {
         if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_FRONTIER))
             return FALSE;
-        else if (GetBattlerSide(battler) != B_SIDE_PLAYER)
+        else if (!IsOnPlayerSide(battler))
             return FALSE;
         else if (gBattleTypeFlags & BATTLE_TYPE_TRAINER && TRAINER_BATTLE_PARAM.opponentA == TRAINER_SECRET_BASE)
             return FALSE;
@@ -10725,7 +10723,7 @@ void TrySaveExchangedItem(u32 battler, u16 stolenItem)
     // If regular trainer battle and mon's original item matches what is being stolen, save it to be restored at end of battle
     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER
       && !(gBattleTypeFlags & BATTLE_TYPE_FRONTIER)
-      && GetBattlerSide(battler) == B_SIDE_PLAYER
+      && IsOnPlayerSide(battler)
       && stolenItem == gBattleStruct->itemLost[B_SIDE_PLAYER][gBattlerPartyIndexes[battler]].originalItem)
         gBattleStruct->itemLost[B_SIDE_PLAYER][gBattlerPartyIndexes[battler]].stolen = TRUE;
 }
