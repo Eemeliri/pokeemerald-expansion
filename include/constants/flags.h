@@ -1231,7 +1231,7 @@
 #define FLAG_BLACKJACK_JACK                                         0x499
 #define FLAG_DERBY_NICKNAME                                           0x49A // Unused Flag
 #define FLAG_DERBY_RESET                                           0x49B // Unused Flag
-#define FLAG_UNUSED_0x49C                                           0x49C // Unused Flag
+#define FLAG_FRONTIER_LEVEL                                         0x49C // Set level to 50 for frontier battles
 #define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag

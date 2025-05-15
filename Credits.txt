@@ -23,3 +23,4 @@ ellabrella - Faster text printing
 agsmgmaster64 - BP as trainer reward, casino expansion port
 Chris - Casino expansion
 Aichiya - BW Music for expansion
+Resetes12 - Capping frontier mon levels to 50
