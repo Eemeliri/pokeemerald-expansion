@@ -2564,3 +2564,8 @@
 	printstring STRINGID_EMPTYSTRING3
 	waitmessage 1
 	.endm
+
+	.macro jumpifnowhiteout jumpInstr:req
+	callnative BS_JumpIfNoWhiteOut
+	.4byte \jumpInstr
+	.endm
