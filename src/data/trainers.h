@@ -33016,12 +33016,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13169
-            .species = SPECIES_SANDSHREW,
+            .species = SPECIES_PINSIR,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13171
             .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
 #line 13170
-            .lvl = 19,
+            .lvl = 29,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
@@ -33050,12 +33050,12 @@ F_TRAINER_FEMALE |
         {
             {
 #line 13182
-            .species = SPECIES_ROSELIA,
+            .species = SPECIES_SCYTHER,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13184
             .iv = TRAINER_PARTY_IVS(10, 10, 10, 10, 10, 10),
 #line 13183
-            .lvl = 18,
+            .lvl = 28,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

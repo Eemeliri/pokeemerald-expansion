@@ -497,39 +497,35 @@ Route117_Vivillon::
 # 251 "data/maps/Route117/scripts.pory"
 	msgbox Route117_Vivillon_Text_0, MSGBOX_NPC
 # 252 "data/maps/Route117/scripts.pory"
-	delay 40
-# 253 "data/maps/Route117/scripts.pory"
 	waitmoncry
-# 254 "data/maps/Route117/scripts.pory"
-	waitbuttonpress
-# 255 "data/maps/Route117/scripts.pory"
+# 253 "data/maps/Route117/scripts.pory"
 	setwildbattle2 SPECIES_VIVILLON_GARDEN, 25, ITEM_INSECT_PLATE, 2, MOVE_RAGE_POWDER, MOVE_DRAINING_KISS, MOVE_AIR_SLASH, MOVE_TAILWIND, FALSE
-# 256 "data/maps/Route117/scripts.pory"
+# 254 "data/maps/Route117/scripts.pory"
 	dowildbattle
-# 257 "data/maps/Route117/scripts.pory"
+# 255 "data/maps/Route117/scripts.pory"
 	specialvar VAR_RESULT, GetBattleOutcome
-# 258 "data/maps/Route117/scripts.pory"
+# 256 "data/maps/Route117/scripts.pory"
 	compare VAR_RESULT, B_OUTCOME_CAUGHT
 	goto_if_eq Route117_Vivillon_2
-# 265 "data/maps/Route117/scripts.pory"
+# 263 "data/maps/Route117/scripts.pory"
 	release
 	end
 
 Route117_Vivillon_1:
-# 268 "data/maps/Route117/scripts.pory"
+# 266 "data/maps/Route117/scripts.pory"
 	release
 	end
 
 Route117_Vivillon_2:
-# 259 "data/maps/Route117/scripts.pory"
+# 257 "data/maps/Route117/scripts.pory"
 	setflag FLAG_ROUTE117_VIVILLON
-# 260 "data/maps/Route117/scripts.pory"
+# 258 "data/maps/Route117/scripts.pory"
 	fadescreenswapbuffers FADE_TO_BLACK, 0
-# 261 "data/maps/Route117/scripts.pory"
+# 259 "data/maps/Route117/scripts.pory"
 	removeobject 27
-# 262 "data/maps/Route117/scripts.pory"
+# 260 "data/maps/Route117/scripts.pory"
 	delay 20
-# 263 "data/maps/Route117/scripts.pory"
+# 261 "data/maps/Route117/scripts.pory"
 	fadescreenswapbuffers FADE_FROM_BLACK, 0
 	goto Route117_Vivillon_1
 

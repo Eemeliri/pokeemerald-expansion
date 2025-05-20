@@ -250,7 +250,6 @@ script Route117_Vivillon {
     playmoncry(SPECIES_VIVILLON_GARDEN, CRY_MODE_NORMAL)
 	msgbox(format("VII!!"), MSGBOX_NPC)
     waitmoncry
-	waitbuttonpress
     setwildbattle2(SPECIES_VIVILLON_GARDEN, 25, ITEM_INSECT_PLATE, 2, MOVE_RAGE_POWDER, MOVE_DRAINING_KISS, MOVE_AIR_SLASH, MOVE_TAILWIND, FALSE)
     dowildbattle
     specialvar(VAR_RESULT, GetBattleOutcome)
