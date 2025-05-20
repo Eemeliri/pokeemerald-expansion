@@ -36,11 +36,11 @@ static void RestoreBGMVolumeAfterPokemonCry(void);
 
 static const struct Fanfare sFanfares[] = {
     [FANFARE_LEVEL_UP]                 = { MUS_BW_LEVEL_UP                ,  80 },
-    [FANFARE_HEAL]                     = { MUS_BW_HEAL                    , 160 },
+    [FANFARE_HEAL]                     = { MUS_HEAL                    , 160 },
     [FANFARE_OBTAIN_BADGE]             = { MUS_BW_OBTAIN_BADGE            , 340 },
     [FANFARE_OBTAIN_ITEM]              = { MUS_BW_OBTAIN_ITEM             , 160 },
     [FANFARE_EVOLVED]                  = { MUS_BW_EVOLVED                 , 220 },
-    [FANFARE_OBTAIN_TMHM]              = { MUS_BW_OBTAIN_TMHM             , 220 },
+    [FANFARE_OBTAIN_TMHM]              = { MUS_HG_OBTAIN_TMHM             , 220 },
     [FANFARE_EVOLUTION_INTRO]          = { MUS_EVOLUTION_INTRO         ,  60 },
     [FANFARE_MOVE_DELETED]             = { MUS_MOVE_DELETED            , 180 },
     [FANFARE_OBTAIN_BERRY]             = { MUS_BW_OBTAIN_BERRY            , 120 },

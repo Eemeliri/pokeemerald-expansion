@@ -17746,7 +17746,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         )
         .cannotBeTraded = TRUE,
         .perfectIVCount = NUM_STATS,
-        .levelUpLearnset = sEeveeLevelUpLearnset,
+        .levelUpLearnset = sEeveeStarterLevelUpLearnset,
         .teachableLearnset = sEeveeTeachableLearnset,
         .eggMoveLearnset = sEeveeEggMoveLearnset,
         .formSpeciesIdTable = sEeveeFormSpeciesIdTable,

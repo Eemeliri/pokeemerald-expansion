@@ -2083,7 +2083,7 @@ SlateportCity_Text_QuitPushing:
 # 1042 "data/maps/SlateportCity/scripts.pory"
 SlateportCity_Text_AquaHasPolicy:
 # 1043 "data/maps/SlateportCity/scripts.pory"
-	.string "TEAM AQUA has a policy of\n"
+	.string "TEAM ROCKET has a policy of\n"
 # 1044 "data/maps/SlateportCity/scripts.pory"
 	.string "assembling and dispersing at\l"
 # 1045 "data/maps/SlateportCity/scripts.pory"

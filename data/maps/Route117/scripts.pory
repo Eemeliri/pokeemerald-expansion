@@ -245,6 +245,26 @@ Route117_Text_DayCareSign:
 `
 
 script Route117_Vivillon {
-    playmoncry(SPECIES_VIVILLON, CRY_MODE_NORMAL)
-    msgbox(format("VII!!"), MSGBOX_NPC)
+	lock
+    faceplayer
+    playmoncry(SPECIES_VIVILLON_GARDEN, CRY_MODE_NORMAL)
+	msgbox(format("VII!!"), MSGBOX_NPC)
+    waitmoncry
+	waitbuttonpress
+    setwildbattle2(SPECIES_VIVILLON_GARDEN, 25, ITEM_INSECT_PLATE, 2, MOVE_RAGE_POWDER, MOVE_DRAINING_KISS, MOVE_AIR_SLASH, MOVE_TAILWIND, FALSE)
+    dowildbattle
+    specialvar(VAR_RESULT, GetBattleOutcome)
+    if (var(VAR_RESULT) == B_OUTCOME_CAUGHT) {
+        setflag(FLAG_ROUTE117_VIVILLON)
+		fadescreenswapbuffers(FADE_TO_BLACK, 0)
+    	removeobject(27)
+		delay(20)
+		fadescreenswapbuffers(FADE_FROM_BLACK, 0)
+    } else {
+    	release
+    	end
+	}
+	release
+	end
 }
+

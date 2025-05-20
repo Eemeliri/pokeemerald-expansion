@@ -269,14 +269,14 @@ static const u8 sTM76Desc[] = _(
     "Sp. Atk.");
 
 static const u8 sTM77Desc[] = _(
-    "The user hypnotizes\n"
+    "User hypnotizes\n"
     "to copy the foe's\n"
     "stat changes.");
 
 static const u8 sTM78Desc[] = _(
-    "Damages all Pokémon,\n"
+    "Damages everyone,\n"
     "lowering the Speed\n"
-    "of everything hit.");
+    "of all hit.");
 
 static const u8 sTM79Desc[] = _(
     "Blows a cold breath\n"
@@ -294,7 +294,7 @@ static const u8 sTM81Desc[] = _(
     "scythes or claws.");
 
 static const u8 sTM82Desc[] = _(
-    "Knocks away the foe\n"
+    "Knocks away foe\n"
     "and drags out\n"
     "another Pokémon.");
 
@@ -11008,7 +11008,7 @@ const struct Item gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "Drenches target\n"
-            "with poison. Doubles\n"
+            "with poison. Strong\n"
             "against poisoned."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
@@ -11604,7 +11604,7 @@ const struct Item gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "Attacks target's\n"
-            "legs. Reducing their\n"
+            "legs. Lowers their\n"
             "speed."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,

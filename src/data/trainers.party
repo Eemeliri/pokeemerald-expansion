@@ -6347,15 +6347,15 @@ Battle Type: Singles
 AI: Check Bad Move
 
 Slowpoke
-Level: 18
+Level: 16
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Tentacool
-Level: 19
+Level: 17
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 Shellder
-Level: 19
+Level: 17
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_NED ===
@@ -6368,7 +6368,7 @@ Battle Type: Singles
 AI: Check Bad Move
 
 Croconaw
-Level: 19
+Level: 17
 IVs: 20 HP / 20 Atk / 10 Def / 10 SpA / 20 SpD / 10 Spe
 
 === TRAINER_DALE ===
@@ -13166,8 +13166,8 @@ Music: Male
 Battle Type: Singles
 AI: Check Bad Move
 
-Sandshrew
-Level: 19
+Pinsir
+Level: 29
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_CELINA ===
@@ -13179,8 +13179,8 @@ Music: Female
 Battle Type: Singles
 AI: Check Bad Move
 
-Roselia
-Level: 18
+Scyther
+Level: 28
 IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 
 === TRAINER_BIANCA ===
