@@ -606,8 +606,8 @@ void CB2_InitTitleScreen(void)
         LZ77UnCompVram(sTitleScreenRayquazaGfx, (void *)(BG_CHAR_ADDR(2)));
         LZ77UnCompVram(sTitleScreenRayquazaTilemap, (void *)(BG_SCREEN_ADDR(26)));
         // bg1
-        LZ77UnCompVram(sTitleScreenCloudsGfx, (void *)(BG_CHAR_ADDR(3)));
-        LZ77UnCompVram(gTitleScreenCloudsTilemap, (void *)(BG_SCREEN_ADDR(27)));
+        //LZ77UnCompVram(sTitleScreenCloudsGfx, (void *)(BG_CHAR_ADDR(3)));
+        //LZ77UnCompVram(gTitleScreenCloudsTilemap, (void *)(BG_SCREEN_ADDR(27)));
         ScanlineEffect_Stop();
         ResetTasks();
         ResetSpriteData();
@@ -871,16 +871,80 @@ static void CB2_GoToBerryFixScreen(void)
     }
 }
 
+struct FadeColors
+{
+    u16 color1;
+    u16 color2;
+    u8 colorIndex;
+};
+
+#ifndef RHH_EXPANSION
+#define RGB2GBA(r, g, b) (((r >> 3) & 31) | (((g >> 3) & 31) << 5) | (((b >> 3) & 31) << 10))
+#endif
+
+static const struct FadeColors sFadeColors[] = {
+/*
+    {
+        .color1 = RGB2GBA(, , ),
+        .color2 = RGB2GBA(, , ),
+        .colorIndex = 
+    }
+*/  
+    {
+        .color1 = RGB2GBA(160, 48, 80),
+        .color2 = RGB2GBA(160, 216, 80),
+        .colorIndex = 1
+    },
+    {
+        .color1 = RGB2GBA(200, 96, 160),
+        .color2 = RGB2GBA(72, 112, 32),
+        .colorIndex = 4
+    },
+    {
+        .color1 = RGB2GBA(252, 242, 8),
+        .color2 = RGB2GBA(255, 255, 255),
+        .colorIndex = 15
+    }
+};
+
 static void UpdateLegendaryMarkingColor(u8 frameNum)
 {
     if ((frameNum % 4) == 0) // Change color every 4th frame
     {
-        s32 intensity = Cos(frameNum, 128) + 128;
-        s32 r = 31 - ((intensity * 32 - intensity) / 256);
-        s32 g = 31 - (intensity * 22 / 256);
-        s32 b = 12;
+        s32 intensity = (((Cos(frameNum, 128) + 128) * 10) / 250);
+        s32 r;
+        s32 g;
+        s32 b;
+        u16 color;
+        u32 i;
 
-        u16 color = RGB(r, g, b);
-        LoadPalette(&color, BG_PLTT_ID(14) + 15, sizeof(color));
-   }
+        for (i = 0; i < ARRAY_COUNT(sFadeColors); i++)
+        {
+            if (intensity == 0)
+            {
+                color = sFadeColors[i].color2;
+            }
+            else
+            {
+                if (GET_R(sFadeColors[i].color1) <= GET_R(sFadeColors[i].color2))
+                    r = (GET_R(sFadeColors[i].color2) - (((GET_R(sFadeColors[i].color2) - GET_R(sFadeColors[i].color1)) * intensity) / 10));
+                else
+                    r = (GET_R(sFadeColors[i].color2) + (((GET_R(sFadeColors[i].color1) - GET_R(sFadeColors[i].color2)) * intensity) / 10));
+
+                if (GET_G(sFadeColors[i].color1) <= GET_G(sFadeColors[i].color2))
+                    g = (GET_G(sFadeColors[i].color2) - (((GET_G(sFadeColors[i].color2) - GET_G(sFadeColors[i].color1)) * intensity) / 10));
+                else
+                    g = (GET_G(sFadeColors[i].color2) + (((GET_G(sFadeColors[i].color1) - GET_G(sFadeColors[i].color2)) * intensity) / 10));
+
+                if (GET_B(sFadeColors[i].color1) <= GET_B(sFadeColors[i].color2))
+                    b = (GET_B(sFadeColors[i].color2) - (((GET_B(sFadeColors[i].color2) - GET_B(sFadeColors[i].color1)) * intensity) / 10));
+                else
+                    b = (GET_B(sFadeColors[i].color2) + (((GET_B(sFadeColors[i].color1) - GET_B(sFadeColors[i].color2)) * intensity) / 10));
+
+                color = RGB(r, g, b);
+            }
+            
+            LoadPalette(&color, BG_PLTT_ID(14) + sFadeColors[i].colorIndex, sizeof(color));
+        }
+    }
 }
