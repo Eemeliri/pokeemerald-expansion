@@ -4670,6 +4670,26 @@
       "secondary_tileset": "gTileset_JohtoOlivine",
       "border_filepath": "data/layouts/Route40Beach/border.bin",
       "blockdata_filepath": "data/layouts/Route40Beach/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE111_GATEHOUSE",
+      "name": "Route111_Gatehouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Gatehouse",
+      "border_filepath": "data/layouts/Route111_Gatehouse/border.bin",
+      "blockdata_filepath": "data/layouts/Route111_Gatehouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_DEVMAP",
+      "name": "devmap_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_dev",
+      "border_filepath": "data/layouts/devmap/border.bin",
+      "blockdata_filepath": "data/layouts/devmap/map.bin"
     }
   ]
 }

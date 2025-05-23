@@ -1824,3 +1824,41 @@ const u16 gTilesetPalettes_BigGameCorner[][16] =
 };
 
 const u32 gTilesetTiles_BigGameCorner[] = INCBIN_U32("data/tilesets/secondary/big_game_corner/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Gatehouse[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/gatehouse/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Gatehouse[] = INCBIN_U32("data/tilesets/secondary/gatehouse/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_dev[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/dev/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_dev[] = INCBIN_U32("data/tilesets/secondary/dev/tiles.4bpp.lz");

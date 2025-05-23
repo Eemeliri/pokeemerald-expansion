@@ -1207,3 +1207,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/BigGameCorner/scripts.inc"
 
 	.include "data/maps/Route40Beach/scripts.inc"
+
+	.include "data/maps/Route111_Gatehouse/scripts.inc"
+
+	.include "data/maps/devmap/scripts.inc"
