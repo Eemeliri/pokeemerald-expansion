@@ -1,6 +1,6 @@
 # Pokemon Astral Jade
 
-A hack made with [**RHH's pokeemerald-expansion**](https://github.com/rh-hideout/pokeemerald-expansion) where you can traverse altered region of Johto and Hoenn.
+A hack made with [**RHH's pokeemerald-expansion**](https://github.com/rh-hideout/pokeemerald-expansion) where you traverse an altered region of Johto and Hoenn.
 
 ### Features
 
