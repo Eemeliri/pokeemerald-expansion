@@ -4,7 +4,7 @@ A hack made with [**RHH's pokeemerald-expansion**](https://github.com/rh-hideout
 
 ### Features
 
-- Begin your journey in Hoenn as usual, but get sent to Johto after getting 3rd badge.
+- Begin your journey in Hoenn as usual, but get sent to explore Johto after getting 3rd badge.
 - A curated pokedex of about 450 Pokémons excluding legendaries.
 - Sky Gateway, a multi-layered dungeon that unlocks more layers as you progress through the regular game. Face tough enemies and gain powerful rewards!
 - Additional areas in both region, giving player access to more varied biomes and opportunies to find new Pokémon and rewards.
@@ -17,30 +17,55 @@ A hack made with [**RHH's pokeemerald-expansion**](https://github.com/rh-hideout
 ## Credits
 
 Team Aqua's Asset Repo and Discord
+
 RHH - Expansion and help
+
 Kasen - BP vendor, all instruments voicegroup
+
 Zeturic - Move item
+
 AsparagusEduardo - Better bag
+
 Ghoulslash - Auto run, repeated field medicine use
+
 Archie+Xaman - Gen5 style party menu, new main menu
+
 Ravepossum - BW summary screen, battle bgs
+
 Ruki - Battle bgs
+
 Hyo - FRLG sprites, brendan, may
+
 MrDollSteak, Rizon/Falsever, Sky High, Spherical Ice - Gen 4 trainer front sprites
+
 DestvoL - Partner eevee sprite
+
 devolov - using HMs without teaching, second option page
+
 Ekat - tilesets
+
 Greenphx - Gen 4 wallpapers, party menu alpha blending
+
 Skeli - Dexnav species masking
+
 Teraneck - Swimmer in-water sprite
+
 Pokabbie and Alex - Battle Speed modifier
+
 Mudskip - Scrolling shop background
+
 ellabrella - Faster text printing
+
 agsmgmaster64 - BP as trainer reward, casino expansion port
+
 Chris - Casino expansion
+
 Aichiya - BW Music for expansion
+
 Resetes12 - Capping frontier mon levels to 50
+
 Bivurnum - Title screen blending
+
 
 
 
