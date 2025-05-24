@@ -1793,6 +1793,7 @@ static void DestroyWindow(u8 windowId) // sub_080E9750
     X(MUS_BW_RELIC_SONG               , "MUS-BW-RELIC-SONG"                          ) \
     X(MUS_BW_VS_WCS_CHAMPION          , "MUS-BW-VS-WCS-CHAMPION"                     ) \
     X(MUS_BW_OBTAIN_BERRY             , "MUS-BW-OBTAIN-BERRY"                        ) \
+    X(MUS_SPACEJUNK                   , "MUS-SPACEJUNK"                              ) \
 
 
 #define SOUND_LIST_SE \

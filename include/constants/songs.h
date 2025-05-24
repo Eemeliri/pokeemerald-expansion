@@ -1146,8 +1146,9 @@
 #define MUS_BW_RELIC_SONG 1097
 #define MUS_BW_VS_WCS_CHAMPION 1098
 #define MUS_BW_OBTAIN_BERRY 1099
+#define MUS_SPACEJUNK 1100
 
-#define HG_MUSIC_END                      MUS_BW_OBTAIN_BERRY
+#define HG_MUSIC_END                      MUS_SPACEJUNK
 
 #define SONGS_END                         HG_MUSIC_END
 
