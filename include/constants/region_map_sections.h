@@ -93,10 +93,10 @@
 // Johto map sections
 #define MAPSEC_OLIVINE_CITY                 0x58
 #define MAPSEC_ROUTE40                      0x59
-#define MAPSEC_ROUITE39                     0x5A
-#define MAPSEC_CERULEAN_CITY                0x5B
-#define MAPSEC_LAVENDER_TOWN                0x5C
-#define MAPSEC_VERMILION_CITY               0x5D
+#define MAPSEC_ROUTE39                      0x5A
+#define MAPSEC_ROUTE38                      0x5B
+#define MAPSEC_ROUTE38_SHRINE               0x5C
+#define MAPSEC_ECRUTEAK_CITY                0x5D
 #define MAPSEC_CELADON_CITY                 0x5E
 #define MAPSEC_FUCHSIA_CITY                 0x5F
 #define MAPSEC_CINNABAR_ISLAND              0x60
@@ -222,7 +222,17 @@
 #define MAPSEC_RUGGED_ROAD                  0xD6
 #define MAPSEC_DEWFORD_OUTSKIRTS            0xD7
 #define MAPSEC_SLATEPORT_MARKET             0xD8
-#define MAPSEC_NONE                         0xD9
+#define MAPSEC_RUGGED_CAVE                  0xD9
+#define MAPSEC_LEHTI_TOWN                   0xDA
+#define MAPSEC_LEHTI_ROAD                   0xDB
+#define MAPSEC_SKY_GATEWAY                  0xDC
+#define MAPSEC_SKY_GATEWAY_LAYER_1          0xDD
+#define MAPSEC_SKY_GATEWAY_LAYER_2          0xDE
+#define MAPSEC_SKY_GATEWAY_LAYER_3          0xDF
+#define MAPSEC_SKY_GATEWAY_LAYER_4          0xE0
+#define MAPSEC_SKY_GATEWAY_LAYER_5          0xE1
+
+#define MAPSEC_NONE                         (MAPSEC_SKY_GATEWAY_LAYER_5 + 1)
 
 #define METLOC_SPECIAL_EGG                  0xFD
 #define METLOC_IN_GAME_TRADE                0xFE

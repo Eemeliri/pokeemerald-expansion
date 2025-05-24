@@ -3,7 +3,7 @@
   "name": "RuggedCave",
   "layout": "LAYOUT_RUGGED_CAVE",
   "music": "MUS_RG_SEVII_CAVE",
-  "region_map_section": "MAPSEC_RUGGED_ROAD",
+  "region_map_section": "MAPSEC_RUGGED_CAVE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

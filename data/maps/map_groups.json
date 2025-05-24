@@ -102,7 +102,10 @@
     "Route39",
     "SkyGatewayEntrance",
     "MaihaGarden",
-    "Route40Beach"
+    "Route40Beach",
+    "Route38",
+    "Route38Shrine",
+    "EcruteakCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

@@ -3,7 +3,7 @@
   "name": "Route40",
   "layout": "LAYOUT_ROUTE40",
   "music": "MUS_HG_ROUTE42",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_ROUTE40",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",

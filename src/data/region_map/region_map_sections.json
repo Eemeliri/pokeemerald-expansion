@@ -713,24 +713,24 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_CERULEAN_CITY",
-      "name": "CERULEAN CITY",
+      "map_section": "MAPSEC_ROUTE38",
+      "name": "Route 38",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_LAVENDER_TOWN",
-      "name": "LAVENDER TOWN",
+      "map_section": "MAPSEC_ROUTE38_SHRINE",
+      "name": "Pond Shrine",
       "x": 0,
       "y": 0,
       "width": 1,
       "height": 1
     },
     {
-      "map_section": "MAPSEC_VERMILION_CITY",
-      "name": "VERMILION CITY",
+      "map_section": "MAPSEC_ECRUTEAK_CITY",
+      "name": "Ecruteak City",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1717,6 +1717,38 @@
       "name": "Slateport Market",
       "x": 7,
       "y": 11,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_SKY_GATEWAY",
+      "name": "Sky Gateway",
+      "x": 7,
+      "y": 7,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_LEHTI_ROAD",
+      "name": "Lehti Road",
+      "x": 5,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_LEHTI_TOWN",
+      "name": "Lehti Town",
+      "x": 6,
+      "y": 9,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "map_section": "MAPSEC_RUGGED_CAVE",
+      "name": "Rugged Cave",
+      "x": 3,
+      "y": 7,
       "width": 1,
       "height": 1
     }

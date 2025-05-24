@@ -4690,6 +4690,36 @@
       "secondary_tileset": "gTileset_dev",
       "border_filepath": "data/layouts/devmap/border.bin",
       "blockdata_filepath": "data/layouts/devmap/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE38",
+      "name": "Route38_Layout",
+      "width": 46,
+      "height": 32,
+      "primary_tileset": "gTileset_JohtoGeneral",
+      "secondary_tileset": "gTileset_JohtoOlivine",
+      "border_filepath": "data/layouts/Route38/border.bin",
+      "blockdata_filepath": "data/layouts/Route38/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE38SHRINE",
+      "name": "Route38Shrine_Layout",
+      "width": 21,
+      "height": 20,
+      "primary_tileset": "gTileset_JohtoGeneral",
+      "secondary_tileset": "gTileset_JohtoOlivine",
+      "border_filepath": "data/layouts/Route38Shrine/border.bin",
+      "blockdata_filepath": "data/layouts/Route38Shrine/map.bin"
+    },
+    {
+      "id": "LAYOUT_ECRUTEAK_CITY",
+      "name": "EcruteakCity_Layout",
+      "width": 34,
+      "height": 34,
+      "primary_tileset": "gTileset_JohtoGeneral",
+      "secondary_tileset": "gTileset_JohtoOlivine",
+      "border_filepath": "data/layouts/EcruteakCity/border.bin",
+      "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
     }
   ]
 }

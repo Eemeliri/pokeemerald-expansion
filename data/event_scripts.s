@@ -1211,3 +1211,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route111_Gatehouse/scripts.inc"
 
 	.include "data/maps/devmap/scripts.inc"
+
+	.include "data/maps/Route38/scripts.inc"
+
+	.include "data/maps/Route38Shrine/scripts.inc"
+
+	.include "data/maps/EcruteakCity/scripts.inc"
