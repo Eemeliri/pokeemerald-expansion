@@ -4717,9 +4717,39 @@
       "width": 34,
       "height": 34,
       "primary_tileset": "gTileset_JohtoGeneral",
-      "secondary_tileset": "gTileset_JohtoOlivine",
+      "secondary_tileset": "gTileset_JohtoEcruteak",
       "border_filepath": "data/layouts/EcruteakCity/border.bin",
       "blockdata_filepath": "data/layouts/EcruteakCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEHTI_TOWN",
+      "name": "LehtiTown_Layout",
+      "width": 46,
+      "height": 38,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LehtiTown",
+      "border_filepath": "data/layouts/LehtiTown/border.bin",
+      "blockdata_filepath": "data/layouts/LehtiTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEHTI_ROAD",
+      "name": "LehtiRoad_Layout",
+      "width": 34,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_LehtiTown",
+      "border_filepath": "data/layouts/LehtiRoad/border.bin",
+      "blockdata_filepath": "data/layouts/LehtiRoad/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEHTI_ROAD2",
+      "name": "LehtiRoad2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LehtiRoad2/border.bin",
+      "blockdata_filepath": "data/layouts/LehtiRoad2/map.bin"
     }
   ]
 }

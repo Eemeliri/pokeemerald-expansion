@@ -1217,3 +1217,9 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/Route38Shrine/scripts.inc"
 
 	.include "data/maps/EcruteakCity/scripts.inc"
+
+	.include "data/maps/LehtiTown/scripts.inc"
+
+	.include "data/maps/LehtiRoad/scripts.inc"
+
+	.include "data/maps/LehtiRoad2/scripts.inc"

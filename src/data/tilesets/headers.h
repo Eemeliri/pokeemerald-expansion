@@ -971,3 +971,25 @@ const struct Tileset gTileset_dev =
     .metatileAttributes = gMetatileAttributes_dev,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_JohtoEcruteak =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_JohtoEcruteak,
+    .palettes = gTilesetPalettes_JohtoEcruteak,
+    .metatiles = gMetatiles_JohtoEcruteak,
+    .metatileAttributes = gMetatileAttributes_JohtoEcruteak,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_LehtiTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_LehtiTown,
+    .palettes = gTilesetPalettes_LehtiTown,
+    .metatiles = gMetatiles_LehtiTown,
+    .metatileAttributes = gMetatileAttributes_LehtiTown,
+    .callback = NULL,
+};
