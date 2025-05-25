@@ -1846,7 +1846,7 @@ static int GetNumOwnedBadges(void)
 {
     u32 i;
 
-    for (i = 0; i < NUM_BADGES; i++)
+    for (i = 0; i < NUM_ALL_BADGES; i++)
     {
         if (!FlagGet(gBadgeFlags[i]))
             break;

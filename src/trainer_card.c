@@ -58,7 +58,7 @@ struct TrainerCardData
     bool8 unused_E;
     bool8 unused_F;
     bool8 hasTrades;
-    u8 badgeCount[NUM_BADGES];
+    u8 badgeCount[NUM_ALL_BADGES];
     u8 easyChatProfile[TRAINER_CARD_PROFILE_LENGTH][13];
     u8 textPlayersCard[70];
     u8 textHofTime[70];
@@ -82,7 +82,7 @@ struct TrainerCardData
     u16 frontTilemap[600];
     u16 backTilemap[600];
     u16 bgTilemap[600];
-    u8 badgeTiles[0x80 * NUM_BADGES];
+    u8 badgeTiles[0x80 * NUM_ALL_BADGES];
     u8 stickerTiles[0x200];
     u8 cardTiles[0x2300];
     u16 cardTilemapBuffer[0x1000];
@@ -844,6 +844,11 @@ static void SetDataFromTrainerCard(void)
         if (FlagGet(badgeFlag))
             sData->badgeCount[i]++;
     }
+    for (i = 8, badgeFlag = FLAG_JOHTO_BADGE01_GET; badgeFlag < FLAG_JOHTO_BADGE01_GET + NUM_JOHTO_BADGES; badgeFlag++, i++)
+    {
+        if (FlagGet(badgeFlag))
+            sData->badgeCount[i]++;
+    }
 }
 
 static void InitGpuRegs(void)
@@ -1502,6 +1507,7 @@ static void DrawStarsAndBadgesOnCard(void)
 
     s16 i, x;
     u16 tileNum = 192;
+    u16 JohtoTileNum = 224;
     u8 palNum = 3;
 
     FillBgTilemapBufferRect(3, 143, 15, yOffsets[sData->isHoenn], sData->trainerCard.stars, 1, 4);
@@ -1516,6 +1522,17 @@ static void DrawStarsAndBadgesOnCard(void)
                 FillBgTilemapBufferRect(3, tileNum + 1, x + 1, 15, 1, 1, palNum);
                 FillBgTilemapBufferRect(3, tileNum + 16, x, 16, 1, 1, palNum);
                 FillBgTilemapBufferRect(3, tileNum + 17, x + 1, 16, 1, 1, palNum);
+            }
+        }
+        x = 4;
+        for (i = 8; i < NUM_ALL_BADGES; i++, JohtoTileNum += 2, x += 3)
+        {
+            if (sData->badgeCount[i])
+            {
+                FillBgTilemapBufferRect(3, JohtoTileNum, x, 17, 1, 1, palNum);
+                FillBgTilemapBufferRect(3, JohtoTileNum + 1, x + 1, 17, 1, 1, palNum);
+                FillBgTilemapBufferRect(3, JohtoTileNum + 16, x, 18, 1, 1, palNum);
+                FillBgTilemapBufferRect(3, JohtoTileNum + 17, x + 1, 18, 1, 1, palNum);
             }
         }
     }

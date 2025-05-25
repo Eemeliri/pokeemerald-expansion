@@ -186,6 +186,8 @@ enum FlagsVarsDebugMenu
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_RUN_SHOES,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL,
+    DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_HOENN,
+    DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_JOHTO,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_GAME_CLEAR,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_FRONTIER_PASS,
     DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_COLLISION,
@@ -451,6 +453,8 @@ static void DebugAction_FlagsVars_SwitchPokeNav(u8 taskId);
 static void DebugAction_FlagsVars_SwitchMatchCall(u8 taskId);
 static void DebugAction_FlagsVars_ToggleFlyFlags(u8 taskId);
 static void DebugAction_FlagsVars_ToggleBadgeFlags(u8 taskId);
+static void DebugAction_FlagsVars_ToggleJohtoBadgeFlags(u8 taskId);
+static void DebugAction_FlagsVars_ToggleHoennBadgeFlags(u8 taskId);
 static void DebugAction_FlagsVars_ToggleGameClear(u8 taskId);
 static void DebugAction_FlagsVars_ToggleFrontierPass(u8 taskId);
 static void DebugAction_FlagsVars_CollisionOnOff(u8 taskId);
@@ -742,6 +746,8 @@ static const struct ListMenuItem sDebugMenu_Items_FlagsVars[] =
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_RUN_SHOES]     = {COMPOUND_STRING("Toggle {STR_VAR_1}Running Shoes"),          DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_RUN_SHOES},
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS]     = {COMPOUND_STRING("Toggle {STR_VAR_1}Fly Flags"),              DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS},
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL]    = {COMPOUND_STRING("Toggle {STR_VAR_1}All badges"),             DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL},
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_JOHTO]  = {COMPOUND_STRING("Toggle {STR_VAR_1}Johto badges"),           DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_JOHTO},
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_HOENN]  = {COMPOUND_STRING("Toggle {STR_VAR_1}Hoenn badges"),           DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_HOENN},
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_GAME_CLEAR]    = {COMPOUND_STRING("Toggle {STR_VAR_1}Game clear"),             DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_GAME_CLEAR},
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_FRONTIER_PASS] = {COMPOUND_STRING("Toggle {STR_VAR_1}Frontier Pass"),          DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_FRONTIER_PASS},
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_COLLISION]     = {COMPOUND_STRING("Toggle {STR_VAR_1}Collision OFF"),          DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_COLLISION},
@@ -924,6 +930,8 @@ static void (*const sDebugMenu_Actions_Flags[])(u8) =
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_RUN_SHOES]     = DebugAction_FlagsVars_RunningShoes,
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_LOCATIONS]     = DebugAction_FlagsVars_ToggleFlyFlags,
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL]    = DebugAction_FlagsVars_ToggleBadgeFlags,
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_JOHTO]  = DebugAction_FlagsVars_ToggleJohtoBadgeFlags,
+    [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_HOENN]  = DebugAction_FlagsVars_ToggleHoennBadgeFlags,
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_GAME_CLEAR]    = DebugAction_FlagsVars_ToggleGameClear,
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_FRONTIER_PASS] = DebugAction_FlagsVars_ToggleFrontierPass,
     [DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_COLLISION]     = DebugAction_FlagsVars_CollisionOnOff,
@@ -1386,6 +1394,28 @@ static u8 Debug_CheckToggleFlags(u8 id)
         case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_ALL:
             result = TRUE;
             for (u32 i = 0; i < ARRAY_COUNT(gBadgeFlags); i++)
+            {
+                if (!FlagGet(gBadgeFlags[i]))
+                {
+                    result = FALSE;
+                    break;
+                }
+            }
+            break;
+        case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_JOHTO:
+            result = TRUE;
+            for (u32 i = 8; i < ARRAY_COUNT(gBadgeFlags); i++)
+            {
+                if (!FlagGet(gBadgeFlags[i]))
+                {
+                    result = FALSE;
+                    break;
+                }
+            }
+            break;
+        case DEBUG_FLAGVAR_MENU_ITEM_TOGGLE_BADGES_HOENN:
+            result = TRUE;
+            for (u32 i = 0; i < ARRAY_COUNT(gBadgeFlags) - 8; i++)
             {
                 if (!FlagGet(gBadgeFlags[i]))
                 {
@@ -2819,10 +2849,55 @@ static void DebugAction_FlagsVars_ToggleBadgeFlags(u8 taskId)
     else
     {
         PlaySE(SE_PC_LOGIN);
-        for (u32 i = 0; i < ARRAY_COUNT(gBadgeFlags); i++)
+        for (u32 i = 0; i < ARRAY_COUNT(gBadgeFlags); i++) 
+        {
             FlagSet(gBadgeFlags[i]);
+        }
+            
+            
     }
 }
+
+static void DebugAction_FlagsVars_ToggleJohtoBadgeFlags(u8 taskId)
+{
+    if (FlagGet(gBadgeFlags[ARRAY_COUNT(gBadgeFlags) - 1]))
+    {
+        PlaySE(SE_PC_OFF);
+        for (u32 i = 8; i < ARRAY_COUNT(gBadgeFlags); i++)
+            FlagClear(gBadgeFlags[i]);
+    }
+    else
+    {
+        PlaySE(SE_PC_LOGIN);
+        for (u32 i = 8; i < ARRAY_COUNT(gBadgeFlags); i++) 
+        {
+            FlagSet(gBadgeFlags[i]);
+        }
+            
+            
+    }
+}
+
+static void DebugAction_FlagsVars_ToggleHoennBadgeFlags(u8 taskId)
+{
+    if (FlagGet(FLAG_BADGE08_GET))
+    {
+        PlaySE(SE_PC_OFF);
+        for (u32 i = 0; i < NUM_BADGES; i++)
+            FlagClear(gBadgeFlags[i]);
+    }
+    else
+    {
+        PlaySE(SE_PC_LOGIN);
+        for (u32 i = 0; i < NUM_BADGES; i++) 
+        {
+            FlagSet(gBadgeFlags[i]);
+        }
+            
+            
+    }
+}
+
 
 static void DebugAction_FlagsVars_ToggleGameClear(u8 taskId)
 {

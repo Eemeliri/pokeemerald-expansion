@@ -2264,10 +2264,17 @@ static void MainMenu_FormatSavegameBadges(void)
     {
         if (FlagGet(i))
             badgeCount++;
+            MgbaPrintf(MGBA_LOG_WARN, "Badgecount is %d", badgeCount);
+    }
+    for (i = FLAG_JOHTO_BADGE01_GET; i < FLAG_JOHTO_BADGE01_GET + NUM_JOHTO_BADGES; i++)
+    {
+        if (FlagGet(i))
+            badgeCount++;
+            MgbaPrintf(MGBA_LOG_WARN, "Badgecount is %d", badgeCount);
     }
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuBadges);
     AddTextPrinterParameterized3(2, FONT_NORMAL, 0x6C, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4);
-    ConvertIntToDecimalStringN(str, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 1);
+    ConvertIntToDecimalStringN(str, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 2);
     AddTextPrinterParameterized3(2, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, str, 0xD0), 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str);
 }
 

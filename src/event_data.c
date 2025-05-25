@@ -36,7 +36,7 @@ EWRAM_DATA static u16 sTestVars[TEST_VARS_SIZE] = {0};
 
 extern u16 *const gSpecialVars[];
 
-const u16 gBadgeFlags[NUM_BADGES] =
+const u16 gBadgeFlags[NUM_ALL_BADGES] =
 {
     FLAG_BADGE01_GET,
     FLAG_BADGE02_GET,
@@ -46,6 +46,14 @@ const u16 gBadgeFlags[NUM_BADGES] =
     FLAG_BADGE06_GET,
     FLAG_BADGE07_GET,
     FLAG_BADGE08_GET,
+    FLAG_JOHTO_BADGE01_GET,
+    FLAG_JOHTO_BADGE02_GET,
+    FLAG_JOHTO_BADGE03_GET,
+    FLAG_JOHTO_BADGE04_GET,
+    FLAG_JOHTO_BADGE05_GET,
+    FLAG_JOHTO_BADGE06_GET,
+    FLAG_JOHTO_BADGE07_GET,
+    FLAG_JOHTO_BADGE08_GET,
 };
 
 void InitEventData(void)

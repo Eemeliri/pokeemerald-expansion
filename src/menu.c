@@ -2268,8 +2268,13 @@ void BufferSaveMenuText(u8 textId, u8 *dest, u8 color)
                 if (FlagGet(curFlag))
                     flagCount++;
             }
-            *string = flagCount + CHAR_0;
-            *endOfString = EOS;
+            for (curFlag = FLAG_JOHTO_BADGE01_GET; curFlag < FLAG_JOHTO_BADGE01_GET + NUM_JOHTO_BADGES; curFlag++)
+            {
+                if (FlagGet(curFlag))
+                    flagCount++;
+            }
+            ConvertIntToDecimalStringN(string, flagCount, STR_CONV_MODE_LEADING_ZEROS, 2);
+            
             break;
     }
 }

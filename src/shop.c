@@ -672,6 +672,11 @@ static u32 GetNumberOfBadges(void)
         if (FlagGet(badgeFlag))
             count++;
     }
+    for (badgeFlag = FLAG_JOHTO_BADGE01_GET; badgeFlag < FLAG_JOHTO_BADGE01_GET + NUM_JOHTO_BADGES; badgeFlag++)
+    {
+        if (FlagGet(badgeFlag))
+            count++;
+    }
 
     return count;
 }

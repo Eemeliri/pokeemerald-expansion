@@ -872,7 +872,12 @@ static void PrintToWindow(u8 windowId, u8 colorIdx)
         if (FlagGet(i))
             badgeCount++;
     } 
-    ConvertIntToDecimalStringN(gStringVar1, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 1);
+    for (i = FLAG_JOHTO_BADGE01_GET; i < FLAG_JOHTO_BADGE01_GET + NUM_JOHTO_BADGES; i++)
+    {
+        if (FlagGet(i))
+            badgeCount++;
+    }
+    ConvertIntToDecimalStringN(gStringVar1, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringExpandPlaceholders(gStringVar4, sText_Badges);
     AddTextPrinterParameterized4(WINDOW_MIDDLE, FONT_NORMAL, 16, 32 + 2, 0, 0, colors, TEXT_SKIP_DRAW, gStringVar4);
 
