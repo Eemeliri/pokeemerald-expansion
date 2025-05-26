@@ -249,3 +249,12 @@ const u16 gMetatileAttributes_JohtoEcruteak[] = INCBIN_U16("data/tilesets/second
 
 const u16 gMetatiles_LehtiTown[] = INCBIN_U16("data/tilesets/secondary/lehti_town/metatiles.bin");
 const u16 gMetatileAttributes_LehtiTown[] = INCBIN_U16("data/tilesets/secondary/lehti_town/metatile_attributes.bin");
+
+const u16 gMetatiles_CustomBuilding[] = INCBIN_U16("data/tilesets/secondary/custom_building/metatiles.bin");
+const u16 gMetatileAttributes_CustomBuilding[] = INCBIN_U16("data/tilesets/secondary/custom_building/metatile_attributes.bin");
+
+const u16 gMetatiles_JohtoBuilding[] = INCBIN_U16("data/tilesets/primary/johto_building/metatiles.bin");
+const u16 gMetatileAttributes_JohtoBuilding[] = INCBIN_U16("data/tilesets/primary/johto_building/metatile_attributes.bin");
+
+const u16 gMetatiles_JohtoBuilding1[] = INCBIN_U16("data/tilesets/secondary/johto_building_1/metatiles.bin");
+const u16 gMetatileAttributes_JohtoBuilding1[] = INCBIN_U16("data/tilesets/secondary/johto_building_1/metatile_attributes.bin");

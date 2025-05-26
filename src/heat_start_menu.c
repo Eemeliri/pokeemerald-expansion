@@ -765,7 +765,7 @@ static void HeatStartMenu_ShowTimeWindow(void)
 	CopyWindowToVram(sHeatStartMenu->sStartClockWindowId, COPYWIN_GFX);
 }
 
-static void HeatStartMenu_UpdateClockDisplay(void)
+static void UNUSED HeatStartMenu_UpdateClockDisplay(void)
 {
     u8 analogHour;
 
@@ -1097,7 +1097,7 @@ static u8 SaveConfirmOverwriteDefaultNoCallback(void)
     return SAVE_IN_PROGRESS;
 }
 
-static u8 SaveConfirmOverwriteCallback(void)
+static u8 UNUSED SaveConfirmOverwriteCallback(void)
 {
     DisplayYesNoMenuDefaultYes(); // Show Yes/No menu
     sSaveDialogCallback = SaveOverwriteInputCallback;
@@ -1174,8 +1174,6 @@ static void ShowSaveInfoWindow(void) {
     u8 color;
     u32 xOffset;
     u32 yOffset;
-    const u8 *suffix;
-    u8 *alignedSuffix = gStringVar3;
 
     if (!FlagGet(FLAG_SYS_POKEDEX_GET))
     {
@@ -1272,7 +1270,7 @@ static void Task_HandleSave(u8 taskId) {
   }
 }
 
-#define STD_WINDOW_BASE_TILE_NUM 0x21A
+//#define STD_WINDOW_BASE_TILE_NUM 0x21A
 #define STD_WINDOW_PALETTE_NUM 14
 
 static void DoCleanUpAndStartSaveMenu(void) {

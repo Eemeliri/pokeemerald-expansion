@@ -4750,6 +4750,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LehtiRoad2/border.bin",
       "blockdata_filepath": "data/layouts/LehtiRoad2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEHTI_PLAYERS_HOUSE",
+      "name": "LehtiPlayersHouse_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_JohtoBuilding",
+      "secondary_tileset": "gTileset_JohtoBuilding1",
+      "border_filepath": "data/layouts/LehtiPlayersHouse/border.bin",
+      "blockdata_filepath": "data/layouts/LehtiPlayersHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_LEHTI_PLAYERS_HOUSE2F",
+      "name": "LehtiPlayersHouse2F_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_JohtoBuilding",
+      "secondary_tileset": "gTileset_JohtoBuilding1",
+      "border_filepath": "data/layouts/LehtiPlayersHouse2F/border.bin",
+      "blockdata_filepath": "data/layouts/LehtiPlayersHouse2F/map.bin"
     }
   ]
 }

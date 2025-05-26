@@ -993,3 +993,36 @@ const struct Tileset gTileset_LehtiTown =
     .metatileAttributes = gMetatileAttributes_LehtiTown,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_CustomBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_CustomBuilding,
+    .palettes = gTilesetPalettes_CustomBuilding,
+    .metatiles = gMetatiles_CustomBuilding,
+    .metatileAttributes = gMetatileAttributes_CustomBuilding,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_JohtoBuilding =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_JohtoBuilding,
+    .palettes = gTilesetPalettes_JohtoBuilding,
+    .metatiles = gMetatiles_JohtoBuilding,
+    .metatileAttributes = gMetatileAttributes_JohtoBuilding,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_JohtoBuilding1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_JohtoBuilding1,
+    .palettes = gTilesetPalettes_JohtoBuilding1,
+    .metatiles = gMetatiles_JohtoBuilding1,
+    .metatileAttributes = gMetatileAttributes_JohtoBuilding1,
+    .callback = NULL,
+};

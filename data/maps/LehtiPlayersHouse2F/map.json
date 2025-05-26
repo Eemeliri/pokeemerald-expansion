@@ -1,0 +1,41 @@
+{
+  "id": "MAP_LEHTI_PLAYERS_HOUSE2F",
+  "name": "LehtiPlayersHouse2F",
+  "layout": "LAYOUT_LEHTI_PLAYERS_HOUSE2F",
+  "music": "MUS_BW_NUVEMA",
+  "region_map_section": "MAPSEC_LEHTI_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 7,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_LEHTI_PLAYERS_HOUSE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_LEHTI_TOWN",
+      "dest_warp_id": "2"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
