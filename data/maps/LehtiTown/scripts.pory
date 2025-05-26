@@ -42,3 +42,224 @@ script LehtiTownRailwaySign {
 
 }
 
+script rivalStarterPick {
+
+}
+
+script birchDuringStarterPick {
+    msgbox(format("Don't think too hard about it, just go with the choice your heart tells you."), MSGBOX_NPC)
+    end
+}
+
+script birchNoticesPlayer {
+    lock
+    playse(SE_PIN)
+    applymovement(1, moves (
+        face_left
+        emote_exclamation_mark
+        delay_16
+        delay_16
+        delay_16
+    ))
+    waitmovement(0)
+    msgbox(format("Ah, there you are, {PLAYER}!"))
+    closemessage
+    getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
+    switch (var(VAR_TEMP_3)) {
+        case 12:
+            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+                walk_right
+                walk_down
+                walk_right
+            ))
+        case 13:
+            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+                walk_right
+                walk_right
+            ))
+
+        case 14:
+            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+                walk_right
+                walk_up
+                walk_right
+            ))
+        default:
+            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+                walk_right
+                walk_right
+            ))
+    }
+    waitmovement(0)
+    msgbox(format("Are you excited? It's a big day for you! Today you will receive your very own Pokémon."))
+    msgbox(format("I have prepared some rare species to choose from. Let's go see them right away!"))
+    closemessage
+    applymovement(1, moves(
+        walk_down * 11
+        walk_right
+        face_down
+    ))
+    applymovement(OBJ_EVENT_ID_PLAYER, moves (
+        walk_right
+        walk_down * 12
+    ))
+    waitmovement(0)
+    setvar(VAR_PICKING_STARTER, 1)
+    applymovement(7, moves(face_up))
+    applymovement(8, moves(face_up))
+    applymovement(9, moves(face_up))
+    waitmovement(9)
+    msgbox(format("These little ones come all the way from Kalos region. You won't find many with these Pokémon around these parts."))
+    msgbox(format("So {PLAYER}, which one would you like to pick? Take as long as you need, this is a monumental step in your journey."))
+    release
+    end
+}
+
+script whereAreYouGoing {
+    lockall
+    msgbox(format("Where are you going? You haven't picked your starter Pokémon yet!"))
+    closemessage
+    applymovement(OBJ_EVENT_ID_PLAYER, moves (walk_down))
+    waitmovement(0)
+    releaseall
+    end
+}
+
+script starterChespin {
+    lock
+    faceplayer
+    showmonpic(SPECIES_CHESPIN, 10, 3)
+    playmoncry(SPECIES_CHESPIN, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("That's the Grass-type Pokémon, Chespin. Is that the one you want?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        hidemonpic
+        bufferspeciesname(STR_VAR_1, SPECIES_CHESPIN)
+        givemon(SPECIES_CHESPIN, 5)
+        removeobject(7)
+        call(obtainedStarter)
+        updatefollowingmon
+        setobjectxy(OBJ_EVENT_ID_FOLLOWER, 19, 26)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, moves(exit_pokeball, set_visible, face_player))
+        waitmovement(0)
+        release
+        msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            setvar(VAR_0x8004, 0)
+	        call(Common_EventScript_NameReceivedPartyMon)
+        }
+        setvar(VAR_STARTER_MON, 1)
+	    setvar(VAR_LEHTI_TOWN_STATE, 1)
+        applymovement(1, moves(face_down))
+	    msgbox(format("You two will get along well. Why not take a trip to Route 103? You can get there by heading west until you reach Oldale Town. After that head north."))
+        msgbox(format("If you run into my assistant, tell them to swing by the lab later, I've got to get back to dealing with all the paperwork this job comes with."))
+        closemessage
+        call(removeBirchandStarters)
+        release
+        end
+    } else {
+        hidemonpic
+        msgbox(format("Take your time. It's an important decision."))
+    }
+    release
+    end
+}
+
+script starterFennekin {
+    lock
+    faceplayer
+    showmonpic(SPECIES_FENNEKIN, 10, 3)
+    playmoncry(SPECIES_FENNEKIN, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("That's the Fire-type Pokémon, Fennekin. Is that the one you want?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        hidemonpic
+        bufferspeciesname(STR_VAR_1, SPECIES_FENNEKIN)
+        givemon(SPECIES_FENNEKIN, 5)
+        removeobject(8)
+        call(obtainedStarter)
+        updatefollowingmon
+        setobjectxy(OBJ_EVENT_ID_FOLLOWER, 20, 26)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, moves(exit_pokeball, set_visible, face_player))
+        waitmovement(0)
+        msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            setvar(VAR_0x8004, 0)
+	        call(Common_EventScript_NameReceivedPartyMon)
+        }
+        setvar(VAR_STARTER_MON, 2)
+	    setvar(VAR_LEHTI_TOWN_STATE, 1)
+        applymovement(1, moves(face_down))
+	    msgbox(format("You two will get along well. Why not take a trip to Route 103? You can get there by heading west until you reach Oldale Town. After that head north."))
+        msgbox(format("If you run into my assistant, tell them to swing by the lab later, I've got to get back to dealing with all the paperwork this job comes with."))
+        closemessage
+        call(removeBirchandStarters)
+        release
+        end
+    } else {
+        hidemonpic
+        msgbox(format("Take your time. It's an important decision."))
+    }
+    release
+    end
+}
+
+script starterFroakie {
+    lock
+    faceplayer
+    showmonpic(SPECIES_FROAKIE, 10, 3)
+    playmoncry(SPECIES_FROAKIE, CRY_MODE_NORMAL)
+    waitmoncry
+    msgbox(format("That's the Water-type Pokémon, Froakie. Is that the one you want?"), MSGBOX_YESNO)
+    if (var(VAR_RESULT) == YES) {
+        hidemonpic
+        bufferspeciesname(STR_VAR_1, SPECIES_FROAKIE)
+        givemon(SPECIES_FROAKIE, 5)
+        removeobject(9)
+        call(obtainedStarter)
+        updatefollowingmon
+        setobjectxy(OBJ_EVENT_ID_FOLLOWER, 21, 26)
+        applymovement(OBJ_EVENT_ID_FOLLOWER, moves(exit_pokeball, set_visible, face_player))
+        waitmovement(0)
+        msgbox(gText_NicknameThisPokemon, MSGBOX_YESNO)
+        if (var(VAR_RESULT) == YES) {
+            setvar(VAR_0x8004, 0)
+	        call(Common_EventScript_NameReceivedPartyMon)
+        }
+        setvar(VAR_STARTER_MON, 3)
+	    setvar(VAR_LEHTI_TOWN_STATE, 1)
+        applymovement(1, moves(face_down))
+	    msgbox(format("You two will get along well. Why not take a trip to Route 103? You can get there by heading west until you reach Oldale Town. After that head north."))
+        msgbox(format("If you run into my assistant, tell them to swing by the lab later, I've got to get back to dealing with all the paperwork this job comes with."))
+        closemessage
+        call(removeBirchandStarters)
+        release
+        end
+    } else {
+        hidemonpic
+        msgbox(format("Take your time. It's an important decision."))
+    }
+    release
+    end
+}
+
+script obtainedStarter {
+    playfanfare(MUS_HG_EVOLVED)
+	msgbox("{PLAYER} received the {STR_VAR_1}\nfrom Prof. Birch!")
+    setvar(VAR_PICKING_STARTER, 2)
+	waitmessage
+	waitfanfare
+	return
+}
+
+script removeBirchandStarters {
+    fadescreenswapbuffers(FADE_TO_BLACK, 0)
+    removeobject(7)
+    removeobject(8)
+    removeobject(9)
+    removeobject(1)
+    setflag(FLAG_HIDE_AFTER_STARTER)
+    delay(60)
+    fadescreenswapbuffers(FADE_FROM_BLACK, 0)
+    return
+}
