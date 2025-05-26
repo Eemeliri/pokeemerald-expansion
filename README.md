@@ -34,7 +34,7 @@ Ravepossum - BW summary screen, battle bgs
 
 Ruki - Battle bgs
 
-Hyo - FRLG sprites, brendan, may
+Hyo - FRLG sprites, brendan, may, red
 
 MrDollSteak, Rizon/Falsever, Sky High, Spherical Ice - Gen 4 trainer front sprites
 
@@ -65,6 +65,8 @@ Aichiya - BW Music for expansion
 Resetes12 - Capping frontier mon levels to 50
 
 Bivurnum - Title screen blending
+
+Vol - Pause menu (and Phantumpnomy for easy commit for this)
 
 
 

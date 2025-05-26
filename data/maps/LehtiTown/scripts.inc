@@ -3,6 +3,7 @@ LehtiTown_MapScripts::
 
 
 LehtiTownTechnologyGuy::
+# 5 "data/maps/LehtiTown/scripts.pory"
 	msgbox LehtiTownTechnologyGuy_Text_0, MSGBOX_NPC
 	end
 
@@ -44,5 +45,6 @@ LehtiTownRailwaySign::
 
 
 LehtiTownTechnologyGuy_Text_0:
+# 5 "data/maps/LehtiTown/scripts.pory"
 	.string "Technology is amazing! You can connect\n"
 	.string "to the internet with Game Boy games!$"
