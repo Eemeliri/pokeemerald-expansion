@@ -1,1 +1,14 @@
 mapscripts LehtiRoad_MapScripts {}
+
+script girlInGrass {
+    msgbox(format("I'm here to gather some flowers for my homework. We were asked to bring 10 different kinds of flowers. I've only found one so far..."), MSGBOX_NPC)
+}
+
+script artistOnBridge {
+    msgbox(format("This view shall be my next artistic masterpiece! Just you wait, darling!"), MSGBOX_NPC)
+}
+
+script boyOnLeft {
+    msgbox(format("It's quite a trip to nearest Pokémart. We need to always keep a Pokémon with us."), MSGBOX_NPC)
+}
+

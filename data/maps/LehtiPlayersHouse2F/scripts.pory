@@ -1,1 +1,88 @@
-mapscripts LehtiPlayersHouse2F_MapScripts {}
+mapscripts LehtiPlayersHouse2F_MapScripts {
+    MAP_SCRIPT_ON_FRAME_TABLE 
+    [
+        VAR_LEHTI_TOWN_STATE, 0: LehtiTown_MomFirstNotice 
+    ]
+}
+
+script LehtiTown_MomFirstNotice {
+    if (flag(FLAG_MOM_INTRO_DONE) == FALSE) {
+        lock
+        applymovement(1, moves(emote_exclamation_mark))
+        playse(SE_PIN)
+        waitmovement(0)
+        applymovement(1, moves(walk_left*3,
+                            walk_up*2))
+        waitmovement(0)
+        applymovement(OBJ_EVENT_ID_PLAYER, moves(face_down))
+        waitmovement(0)
+        msgbox(format("Mom: Hi {PLAYER}! Ready for the big day? I know you've been waiting for it."))
+        msgbox(format("You know back in the day I was quite a trainer and... Well nevermind, we can talk about that later."))
+        msgbox(format("Prof. Birch should be outside waiting for you."))
+        msgbox(format("But before you go, don't forget these!"))
+        setflag(FLAG_SYS_B_DASH)
+        playfanfare(MUS_OBTAIN_ITEM)
+        message(LittlerootTown_Text_SwitchShoesWithRunningShoes)
+        waitfanfare
+        setflag(FLAG_RECEIVED_RUNNING_SHOES)
+        msgbox(format("Now, go make your mom proud!"))
+        setflag(FLAG_MOM_INTRO_DONE)
+        closemessage
+        applymovement(1, moves(walk_down*2,
+                            walk_right*3,
+                            face_up))
+        waitmovement(0)
+        release
+        end
+    }
+    end
+}
+
+script LehtiTown_Mom {
+    lock
+    faceplayer
+    if (flag(FLAG_SHOWN_STARTER_TO_MOM) == FALSE) {
+        msgbox(format("Mom: Oh! {PLAYER}! That's a cute Pokémon you have."))
+        msgbox(format("If you're gonna go exploring, you should take this."))
+        giveitem(ITEM_POTION)
+        msgbox(format("This might be useful too!"))
+        giveitem(ITEM_TOWN_MAP)
+        setflag(FLAG_SHOWN_STARTER_TO_MOM)
+        msgbox(format("Remember, you're always welcome to come back and rest at home!"))
+        release
+        end
+    }
+    msgbox(format("Mom: You look tired {PLAYER}, you should take a rest."))
+    call(Common_EventScript_OutOfCenterPartyHeal)
+    msgbox(format("Mom: Just do your best sweetie, mom will always love you!"))
+    release
+    end
+}
+
+script momsTV {
+    lock
+    random(9)
+    buffernumberstring(STR_VAR_1, VAR_RESULT)
+    msgbox(format("Mom's favourite show seems to be on."))
+    msgbox(format("They are currently airing season {STR_VAR_1}."))
+    release
+    end
+}
+
+script momsBreloom {
+    lock
+    faceplayer
+    playmoncry(SPECIES_BRELOOM, CRY_MODE_NORMAL)
+    msgbox(format("Breloo!!"))
+    waitmoncry
+    applymovement(2, moves(face_original_direction))
+    waitmovement(0)
+    msgbox(format("Breloom is happily washing the dishes."))
+    release
+    end
+}
+
+script momsFridge {
+    msgbox(format("The fridge is full of delicious food!"), MSGBOX_SIGN)
+    end
+}

@@ -694,10 +694,10 @@
 #define FLAG_UNLOCKED_GATE_HIDEOUT  0x287
 #define FLAG_DEWFORD_DOJO_ITEM  0x288 // Leek
 #define FLAG_HIDE_AFTER_STARTER  0x289
-#define FLAG_UNUSED_0x28A  0x28A // Unused Flag
-#define FLAG_UNUSED_0x28B  0x28B // Unused Flag
-#define FLAG_UNUSED_0x28C  0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
+#define FLAG_LEHTI_TOWN_ITEM1  0x28A
+#define FLAG_LEHTI_TOWN_ITEM2  0x28B
+#define FLAG_MOM_INTRO_DONE  0x28C
+#define FLAG_MAIHA_REPEL  0x28D
 #define FLAG_UNUSED_0x28E  0x28E // Unused Flag
 #define FLAG_UNUSED_0x28F  0x28F // Unused Flag
 #define FLAG_UNUSED_0x290  0x290 // Unused Flag
@@ -776,7 +776,7 @@
 #define FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY   0x2D7
 #define FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM                         0x2D8
 
-#define FLAG_UNUSED_0x2D9                                           0x2D9 // Unused Flag
+#define FLAG_SHOWN_STARTER_TO_MOM                                   0x2D9
 
 #define FLAG_HIDE_LILYCOVE_FAN_CLUB_INTERVIEWER                     0x2DA
 #define FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT                          0x2DB
@@ -1573,7 +1573,7 @@
 // These flags are cleared once per day
 // The start and end are byte-aligned because the flags are cleared in byte increments
 #define DAILY_FLAGS_START                           (FLAG_UNUSED_0x91F + (8 - FLAG_UNUSED_0x91F % 8))
-#define FLAG_UNUSED_0x920                           (DAILY_FLAGS_START + 0x0)  // Unused Flag
+#define FLAG_DAILY_MOMS_SHOW                        (DAILY_FLAGS_START + 0x0)  // Basically unused, just for fun.
 #define FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY     (DAILY_FLAGS_START + 0x1)
 #define FLAG_DAILY_SECRET_BASE                      (DAILY_FLAGS_START + 0x2)
 #define FLAG_DAILY_FOSSIL                           (DAILY_FLAGS_START + 0x3)  

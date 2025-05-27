@@ -1,1 +1,15 @@
-mapscripts MaihaGarden_MapScripts {}
+mapscripts MaihaGarden_MapScripts {
+    MAP_SCRIPT_ON_TRANSITION {
+        call(Common_EventScript_SetupRivalGfxId)
+    }
+}
+
+script miltankBoy {
+    msgbox(format("I'm taking care of the Miltanks! They give us Moomoo Milk every day!"), MSGBOX_NPC)
+}
+
+script rivalMaiha {
+    lock
+    msgbox(format(""))
+}
+

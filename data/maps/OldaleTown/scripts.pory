@@ -1,3 +1,4 @@
+raw `
 .set LOCALID_FOOTPRINTS_MAN, 2
 
 OldaleTown_MapScripts::
@@ -299,3 +300,12 @@ OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"
 	.string "“Where things start off scarce.”$"
 
+`
+
+script OldaleLady {
+    msgbox(format("Gotta remember to stock up on Antidotes for Petalburg Forest! My last trip ended poorly due to poisoning."), MSGBOX_NPC)
+}
+
+script OldaleHiker {
+    msgbox(format("Nearby towns get a fresh produce of Moomoo Milk from the small farm up north. You should check it out."), MSGBOX_NPC)
+}

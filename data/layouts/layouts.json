@@ -105,7 +105,7 @@
       "id": "LAYOUT_OLDALE_TOWN",
       "name": "OldaleTown_Layout",
       "width": 20,
-      "height": 20,
+      "height": 26,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/OldaleTown/border.bin",
@@ -4647,7 +4647,7 @@
       "width": 30,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/MaihaGarden/border.bin",
       "blockdata_filepath": "data/layouts/MaihaGarden/map.bin"
     },

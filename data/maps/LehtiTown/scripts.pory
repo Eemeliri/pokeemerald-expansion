@@ -2,48 +2,44 @@ mapscripts LehtiTown_MapScripts {}
 
 
 script LehtiTownTechnologyGuy {
-    msgbox(format("Technology is amazing! You can connect to the internet with Game Boy games!"), MSGBOX_NPC)
+    msgbox(format("Technology is amazing! You can trade with people all around the world!"), MSGBOX_NPC)
     end
 }
 
-script LehtiTownGirl {
+script LehtiTownSign {
+    msgbox(format("Lehti Town, where peaceful winds blow."), MSGBOX_SIGN)
+}
 
+script LehtiTownGirl {
+    msgbox(format("Wow you got a Pokémon?! I'm so jealous!"), MSGBOX_NPC)
 }
 
 script LehtiTownOldWoman {
-
+    msgbox(format("Life out here is quite peaceful, don't you think? The hustle of city can be quite taxing at my age."), MSGBOX_NPC)
 }
 
 script LehtiTownFisherman {
-
-}
-
-script LehtiTownWallyStarterScene {
-
+    msgbox(format("Sometimes I wonder what's above the waterfall of the village. It would take an experienced trainer to get up there."), MSGBOX_NPC)
 }
 
 script LehtiTownPlayerMailbox {
-
-}
-
-script LehtiTownRivalMailbox {
-
+    msgbox(format("{PLAYER}'s house"), MSGBOX_SIGN)
 }
 
 script LehtiTownLabSign {
-
+    lock
+    msgbox(format("Prof. Birch's Laboratory"), MSGBOX_DEFAULT)
+    msgbox(format("...Someone has scribbled a '2.0' with a marker pen below the text."), MSGBOX_DEFAULT)
+    release
+    end
 }
 
 script LehtiTownLabMailbox {
-
+    msgbox(format("Prof. Birch's mailbox, it seems to be full of mail..."), MSGBOX_SIGN)
 }
 
 script LehtiTownRailwaySign {
-
-}
-
-script rivalStarterPick {
-
+    msgbox(format("Underground Subway project of Hoenn has started!"), MSGBOX_SIGN)
 }
 
 script birchDuringStarterPick {
@@ -91,7 +87,7 @@ script birchNoticesPlayer {
             ))
     }
     waitmovement(0)
-    msgbox(format("Are you excited? It's a big day for you! Today you will receive your very own Pokémon."))
+    msgbox(format("Are you ready? It's a big day for you! Today you will receive your very own Pokémon and begin your adventure!"))
     msgbox(format("I have prepared some rare species to choose from. Let's go see them right away!"))
     closemessage
     applymovement(1, moves(
@@ -148,12 +144,8 @@ script starterChespin {
             setvar(VAR_0x8004, 0)
 	        call(Common_EventScript_NameReceivedPartyMon)
         }
-        setvar(VAR_STARTER_MON, 1)
-	    setvar(VAR_LEHTI_TOWN_STATE, 1)
-        applymovement(1, moves(face_down))
-	    msgbox(format("You two will get along well. Why not take a trip to Route 103? You can get there by heading west until you reach Oldale Town. After that head north."))
-        msgbox(format("If you run into my assistant, tell them to swing by the lab later, I've got to get back to dealing with all the paperwork this job comes with."))
-        closemessage
+        setvar(VAR_STARTER_MON, 0)
+        call(birchCommonEndSpeech)
         call(removeBirchandStarters)
         release
         end
@@ -187,12 +179,8 @@ script starterFennekin {
             setvar(VAR_0x8004, 0)
 	        call(Common_EventScript_NameReceivedPartyMon)
         }
-        setvar(VAR_STARTER_MON, 2)
-	    setvar(VAR_LEHTI_TOWN_STATE, 1)
-        applymovement(1, moves(face_down))
-	    msgbox(format("You two will get along well. Why not take a trip to Route 103? You can get there by heading west until you reach Oldale Town. After that head north."))
-        msgbox(format("If you run into my assistant, tell them to swing by the lab later, I've got to get back to dealing with all the paperwork this job comes with."))
-        closemessage
+        setvar(VAR_STARTER_MON, 1)
+        call(birchCommonEndSpeech)
         call(removeBirchandStarters)
         release
         end
@@ -226,12 +214,8 @@ script starterFroakie {
             setvar(VAR_0x8004, 0)
 	        call(Common_EventScript_NameReceivedPartyMon)
         }
-        setvar(VAR_STARTER_MON, 3)
-	    setvar(VAR_LEHTI_TOWN_STATE, 1)
-        applymovement(1, moves(face_down))
-	    msgbox(format("You two will get along well. Why not take a trip to Route 103? You can get there by heading west until you reach Oldale Town. After that head north."))
-        msgbox(format("If you run into my assistant, tell them to swing by the lab later, I've got to get back to dealing with all the paperwork this job comes with."))
-        closemessage
+        setvar(VAR_STARTER_MON, 2)
+        call(birchCommonEndSpeech)
         call(removeBirchandStarters)
         release
         end
@@ -252,14 +236,75 @@ script obtainedStarter {
 	return
 }
 
+script birchCommonEndSpeech {
+    setvar(VAR_LEHTI_TOWN_STATE, 1)
+    setflag(FLAG_SYS_POKEMON_GET)
+    applymovement(1, moves(face_down))
+    if (var(VAR_STARTER_MON) == 0) {
+        applymovement(8, moves(
+            enter_pokeball,
+            set_invisible
+        ))
+        playse(SE_BALL)
+        waitse
+        waitmovement(0)
+        applymovement(9, moves(
+        enter_pokeball,
+            set_invisible
+        ))
+        playse(SE_BALL)
+        waitse
+        waitmovement(0)
+
+    } elif (var(VAR_STARTER_MON) == 1) {
+        applymovement(7, moves(
+            enter_pokeball,
+            set_invisible
+        ))
+        playse(SE_BALL)
+        waitse
+        waitmovement(0)
+        applymovement(9, moves(
+            enter_pokeball,
+            set_invisible
+        ))
+        
+        playse(SE_BALL)
+        waitse
+        waitmovement(0)
+    } else {
+        applymovement(7, moves(
+            enter_pokeball,
+            set_invisible
+        ))
+        playse(SE_BALL)
+        waitse
+        waitmovement(0)
+        applymovement(8, moves(
+            enter_pokeball,
+            set_invisible
+        ))
+        playse(SE_BALL)
+        waitse
+        waitmovement(0)
+    }
+    msgbox(format("You two will get along well. Why not take a trip to Route 103? You can get there by heading west until you reach Oldale Town. After that head north."))
+    msgbox(format("If you run into my assistant, tell them to swing by the lab later, I've got to get back to dealing with all the paperwork this job comes with."))
+    msgbox(format("Oh, and don't forget to show {STR_VAR_1} to your mom!"))
+    closemessage
+    return
+}
+
 script removeBirchandStarters {
-    fadescreenswapbuffers(FADE_TO_BLACK, 0)
+    applymovement(1, moves(walk_up * 4,
+                           walk_left * 9,
+                           walk_up
+                           set_invisible))
+    waitmovement(0)
     removeobject(7)
     removeobject(8)
     removeobject(9)
     removeobject(1)
     setflag(FLAG_HIDE_AFTER_STARTER)
-    delay(60)
-    fadescreenswapbuffers(FADE_FROM_BLACK, 0)
     return
 }

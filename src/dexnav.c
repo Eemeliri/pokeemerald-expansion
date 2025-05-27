@@ -501,11 +501,7 @@ static void AddSearchWindowText(u16 species, u8 proximity, u8 searchLevel, bool8
     StringExpandPlaceholders(gStringVar4, sText_MonLevel);
     AddTextPrinterParameterized3(sDexNavSearchDataPtr->windowId, 0, WINDOW_COL_1, 0, sSearchFontColor, TEXT_SKIP_DRAW, gStringVar4);
 
-    if (proximity <= SNEAKING_PROXIMITY)
-    {
-        PlaySE(SE_POKENAV_ON);
-        // move
-        if (searchLevel > 1 && sDexNavSearchDataPtr->moves[0])
+    if (searchLevel > 1 && sDexNavSearchDataPtr->moves[0])
         {
             StringCopy(gStringVar1, GetMoveName(sDexNavSearchDataPtr->moves[0]));
             StringExpandPlaceholders(gStringVar4, sText_EggMove);
@@ -526,7 +522,6 @@ static void AddSearchWindowText(u16 species, u8 proximity, u8 searchLevel, bool8
                 AddTextPrinterParameterized3(windowId, 0, WINDOW_COL_0, 12, sSearchFontColor, TEXT_SKIP_DRAW, gStringVar4);
             }
         }
-    }
 
     //chain level - always present
     ConvertIntToDecimalStringN(gStringVar1, gSaveBlock3Ptr->dexNavChain, STR_CONV_MODE_LEFT_ALIGN, 3);
@@ -1079,14 +1074,14 @@ static void Task_DexNavSearch(u8 taskId)
         return;
     }
 
-    if (sDexNavSearchDataPtr->proximity <= CREEPING_PROXIMITY && !gPlayerAvatar.creeping && task->tFrameCount > 60)
+/*     if (sDexNavSearchDataPtr->proximity <= CREEPING_PROXIMITY && !gPlayerAvatar.creeping && task->tFrameCount > 60)
     { //should be creeping but player walks normally
         if (sDexNavSearchDataPtr->hiddenSearch && !task->tRevealed)
             EndDexNavSearch(taskId);
         else
             EndDexNavSearchSetupScript(EventScript_MovedTooFast, taskId);
         return;
-    }
+    } */
 
     if (sDexNavSearchDataPtr->proximity <= SNEAKING_PROXIMITY && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_DASH | PLAYER_AVATAR_FLAG_BIKE))
     { // running/biking too close

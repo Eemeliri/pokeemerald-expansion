@@ -43,7 +43,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "LehtiTownOldWoman",
       "flag": "0"
     },
     {
@@ -56,7 +56,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "LehtiTownGirl",
       "flag": "0"
     },
     {
@@ -82,7 +82,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "LehtiTownFisherman",
       "flag": "0"
     },
     {
@@ -231,7 +231,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "LehtiTownRailwaySign"
     },
     {
       "type": "sign",
@@ -239,7 +239,7 @@
       "y": 7,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "LehtiTownRailwaySign"
     },
     {
       "type": "sign",
@@ -247,7 +247,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "LehtiTownLabSign"
     },
     {
       "type": "sign",
@@ -255,7 +255,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "LehtiTownLabSign"
     },
     {
       "type": "sign",
@@ -263,7 +263,7 @@
       "y": 21,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "LehtiTownSign"
     },
     {
       "type": "sign",
@@ -271,7 +271,7 @@
       "y": 19,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "LehtiTownLabMailbox"
     },
     {
       "type": "sign",
@@ -279,31 +279,23 @@
       "y": 11,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
-    },
-    {
-      "type": "sign",
-      "x": 22,
-      "y": 11,
-      "elevation": 0,
-      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "LehtiTownPlayerMailbox"
     },
     {
       "type": "hidden_item",
       "x": 33,
       "y": 32,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_DAWN_STONE",
+      "flag": "FLAG_LEHTI_TOWN_ITEM2"
     },
     {
       "type": "hidden_item",
       "x": 31,
       "y": 16,
       "elevation": 0,
-      "item": "ITEM_NONE",
-      "flag": "FLAG_TEMP_1"
+      "item": "ITEM_BERRY_JUICE",
+      "flag": "FLAG_LEHTI_TOWN_ITEM1"
     }
   ]
 }
