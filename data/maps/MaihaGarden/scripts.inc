@@ -16,6 +16,10 @@ miltankBoy::
 
 
 rivalMaiha::
+# 12 "data/maps/MaihaGarden/scripts.pory"
+	lock
+# 13 "data/maps/MaihaGarden/scripts.pory"
+	msgbox rivalMaiha_Text_0
 	return
 
 
@@ -23,3 +27,7 @@ miltankBoy_Text_0:
 # 8 "data/maps/MaihaGarden/scripts.pory"
 	.string "I'm taking care of the Miltanks! They\n"
 	.string "give us Moomoo Milk every day!$"
+
+rivalMaiha_Text_0:
+# 13 "data/maps/MaihaGarden/scripts.pory"
+	.string "$"
