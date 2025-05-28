@@ -4,11 +4,11 @@ script DewfordDojoBrawlyNPC {
     lock
     getplayerxy(VAR_TEMP_0, VAR_TEMP_1)
     if (var(VAR_TEMP_0) == 12) {
-        applymovement(OBJ_EVENT_ID_PLAYER, playerwalkstoBrawlyfromRight)
+        applymovement(LOCALID_PLAYER, playerwalkstoBrawlyfromRight)
     } else {
-        applymovement(OBJ_EVENT_ID_PLAYER, playerwalkstoBrawlyfromLeft)
+        applymovement(LOCALID_PLAYER, playerwalkstoBrawlyfromLeft)
     }
-    waitmovement(OBJ_EVENT_ID_PLAYER)
+    waitmovement(LOCALID_PLAYER)
     msgbox(format("Brawly: I did not expect you to come here all the way from Johto, Chuck."))
     msgbox(format("Chuck: When I heard what you folks have been setting up, I couldn't just sit still, you know I'm always raring for a good match!"))
     playse(SE_PIN)
@@ -23,8 +23,8 @@ script DewfordDojoBrawlyNPC {
     msgbox(format("We'll continue this later old friend."))
     applymovement(1, brawlyFarewellsChuck2)
     msgbox(format("I'll return to the gym now. Feel free to use the dojo's training facility in the nearby room if you feel unprepared."))
-    applymovement(OBJ_EVENT_ID_PLAYER, playerDodgesBrawly)
-    waitmovement(OBJ_EVENT_ID_PLAYER)
+    applymovement(LOCALID_PLAYER, playerDodgesBrawly)
+    waitmovement(LOCALID_PLAYER)
     applymovement(1, brawlyLeaves)
     waitmovement(1)
     playse(SE_EXIT)

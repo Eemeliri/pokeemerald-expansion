@@ -63,25 +63,25 @@ script birchNoticesPlayer {
     getplayerxy(VAR_TEMP_2, VAR_TEMP_3)
     switch (var(VAR_TEMP_3)) {
         case 12:
-            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+            applymovement(LOCALID_PLAYER, moves (
                 walk_right
                 walk_down
                 walk_right
             ))
         case 13:
-            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+            applymovement(LOCALID_PLAYER, moves (
                 walk_right
                 walk_right
             ))
 
         case 14:
-            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+            applymovement(LOCALID_PLAYER, moves (
                 walk_right
                 walk_up
                 walk_right
             ))
         default:
-            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+            applymovement(LOCALID_PLAYER, moves (
                 walk_right
                 walk_right
             ))
@@ -95,7 +95,7 @@ script birchNoticesPlayer {
         walk_right
         face_down
     ))
-    applymovement(OBJ_EVENT_ID_PLAYER, moves (
+    applymovement(LOCALID_PLAYER, moves (
         walk_right
         walk_down * 12
     ))
@@ -115,7 +115,7 @@ script whereAreYouGoing {
     lockall
     msgbox(format("Where are you going? You haven't picked your starter Pokémon yet!"))
     closemessage
-    applymovement(OBJ_EVENT_ID_PLAYER, moves (walk_down))
+    applymovement(LOCALID_PLAYER, moves (walk_down))
     waitmovement(0)
     releaseall
     end

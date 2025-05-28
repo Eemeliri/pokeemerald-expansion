@@ -838,7 +838,7 @@ script MauvilleGameCorner_RocketGrunt {
             ))
             break
         case DIR_WEST:
-            applymovement(OBJ_EVENT_ID_PLAYER, moves (
+            applymovement(LOCALID_PLAYER, moves (
             walk_down
             face_up
             step_end

@@ -1,5 +1,4 @@
 raw `
-.set LOCALID_FOOTPRINTS_MAN, 2
 
 OldaleTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, OldaleTown_OnTransition
@@ -105,7 +104,7 @@ OldaleTown_EventScript_FootprintsMan::
 
 OldaleTown_EventScript_BlockedPath::
 	lockall
-	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_PlayerStepBack
+	applymovement LOCALID_PLAYER, OldaleTown_Movement_PlayerStepBack
 	applymovement LOCALID_FOOTPRINTS_MAN, OldaleTown_Movement_BackUp
 	waitmovement 0
 	msgbox OldaleTown_Text_WaitDontComeInHere, MSGBOX_DEFAULT
@@ -132,7 +131,7 @@ OldaleTown_EventScript_RivalTrigger1::
 	lockall
 	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalApproachPlayer1
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	setvar VAR_0x8009, 1
 	goto OldaleTown_EventScript_ShowRivalMessage
@@ -142,7 +141,7 @@ OldaleTown_EventScript_RivalTrigger2::
 	lockall
 	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalApproachPlayer2
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	setvar VAR_0x8009, 1
 	goto OldaleTown_EventScript_ShowRivalMessage
@@ -152,7 +151,7 @@ OldaleTown_EventScript_RivalTrigger3::
 	lockall
 	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalApproachPlayer3
 	waitmovement 0
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
 	setvar VAR_0x8009, 1
 	goto OldaleTown_EventScript_ShowRivalMessage
@@ -193,7 +192,7 @@ OldaleTown_EventScript_DoExitMovement1::
 	return
 
 OldaleTown_EventScript_DoExitMovement2::
-	applymovement OBJ_EVENT_ID_PLAYER, OldaleTown_Movement_WatchRivalExit
+	applymovement LOCALID_PLAYER, OldaleTown_Movement_WatchRivalExit
 	applymovement LOCALID_RIVAL, OldaleTown_Movement_RivalExit
 	waitmovement 0
 	return
