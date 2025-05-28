@@ -1233,7 +1233,7 @@
 #define FLAG_DERBY_RESET                                            0x49B
 #define FLAG_FRONTIER_LEVEL                                         0x49C // Set level to 50 for frontier battles
 #define FLAG_ROUTE117_VIVILLON                                      0x49D
-#define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
+#define FLAG_USE_LEGENDARIES                                        0x49E // Allow use of legendaries in frontier sets
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag
 #define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag

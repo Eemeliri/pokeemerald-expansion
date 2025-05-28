@@ -46,7 +46,7 @@ Ekat - tilesets
 
 Greenphx - Gen 4 wallpapers, party menu alpha blending
 
-Skeli - Dexnav species masking
+Skeli - Dexnav species masking, battle frontier code and spreads
 
 Teraneck - Swimmer in-water sprite
 
