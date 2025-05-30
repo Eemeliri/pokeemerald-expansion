@@ -1,4 +1,4 @@
-
+raw `
 BattleFrontier_BattleTowerBattleRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleTowerBattleRoom_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattleTowerBattleRoom_OnWarp
@@ -554,12 +554,11 @@ BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain:
 	.string "so enjoyable before…\p"
 	.string "I wish I could battle with you again…$"
 
-BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent::
-	copyvar VAR_BATTLE_TOWER_STREAK, VAR_RESULT
-	buffernumberstring STR_VAR_1, VAR_RESULT
-	msgbox BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent_Text_0
-	return
+`
 
-
-BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent_Text_0:
-	.string "You will be facing opponent\nno. {STR_VAR_1}. Are you ready?$"
+script BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent {
+    copyvar(VAR_BATTLE_TOWER_STREAK, VAR_RESULT)
+    buffernumberstring(STR_VAR_1, VAR_RESULT)
+    msgbox("You will be facing opponent\nno. {STR_VAR_1}. Are you ready?")
+}
+	
