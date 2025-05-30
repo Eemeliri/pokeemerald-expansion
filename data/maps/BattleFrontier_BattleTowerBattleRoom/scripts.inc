@@ -1,3 +1,4 @@
+
 BattleFrontier_BattleTowerBattleRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, BattleFrontier_BattleTowerBattleRoom_OnFrame
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, BattleFrontier_BattleTowerBattleRoom_OnWarp
@@ -51,8 +52,8 @@ BattleFrontier_BattleTower_EventScript_WarpToLobbyLost::
 BattleFrontier_BattleTowerBattleRoom_EventScript_DefeatedOpponent::
 	call BattleFrontier_EventScript_IncrementWinStreak
 	tower_setbattlewon
-	switch VAR_RESULT
-	case 7, BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon
+	@ switch VAR_RESULT
+	@ case 7, BattleFrontier_BattleTowerBattleRoom_EventScript_WarpToLobbyWon
 	applymovement LOCALID_TOWER_BATTLE_OPPONENT, BattleFrontier_BattleTowerBattleRoom_Movement_OpponentExit
 	waitmovement 0
 	removeobject LOCALID_TOWER_BATTLE_OPPONENT
@@ -66,9 +67,11 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_DefeatedOpponent::
 	playfanfare MUS_HEAL
 	waitfanfare
 	special HealPlayerParty
+    tower_givepoints
+    msgbox BattleFrontier_Text_ObtainedXBattlePoints, MSGBOX_GETPOINTS 
 BattleFrontier_BattleTowerBattleRoom_EventScript_AskReadyForOpponent::
 	frontier_getbrainstatus
-	copyvar VAR_TEMP_F, VAR_RESULT
+	copyvar VAR_BATTLE_TOWER_STREAK, VAR_RESULT
 	goto_if_ne VAR_RESULT, FRONTIER_BRAIN_NOT_READY, BattleFrontier_BattleTowerBattleRoom_EventScript_MaidenUpNext
 	frontier_get FRONTIER_DATA_BATTLE_NUM
 	call BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent
@@ -143,16 +146,6 @@ BattleFrontier_BattleTowerBattleRoom_EventScript_PauseChallenge::
 	fadescreen FADE_TO_BLACK
 	frontier_reset
 	end
-
-BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent::
-	copyvar VAR_TEMP_F, VAR_RESULT
-	switch VAR_TEMP_F
-	case 1, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor2ndOpponent
-	case 2, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor3rdOpponent
-	case 3, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor4thOpponent
-	case 4, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor5thOpponent
-	case 5, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor6thOpponent
-	case 6, BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor7thOpponent
 
 BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyFor2ndOpponent::
 	message BattleFrontier_BattleTowerBattleRoom_Text_ReadyFor2ndOpponent
@@ -561,3 +554,12 @@ BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain:
 	.string "so enjoyable before…\p"
 	.string "I wish I could battle with you again…$"
 
+BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent::
+	copyvar VAR_BATTLE_TOWER_STREAK, VAR_RESULT
+	buffernumberstring STR_VAR_1, VAR_RESULT
+	msgbox BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent_Text_0
+	return
+
+
+BattleFrontier_BattleTowerBattleRoom_EventScript_ReadyForOpponent_Text_0:
+	.string "You will be facing opponent\nno. {STR_VAR_1}. Are you ready?$"
