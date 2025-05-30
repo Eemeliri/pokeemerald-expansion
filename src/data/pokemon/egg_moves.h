@@ -4495,6 +4495,7 @@ static const u16 sMinccinoEggMoveLearnset[] = {
     MOVE_SLEEP_TALK,
     MOVE_ENDURE,
     MOVE_FLAIL,
+    MOVE_BONE_RUSH,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_MINCCINO

@@ -9095,7 +9095,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] = {
         .heldItem = ITEM_SCOPE_LENS,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 0, 31),
         .ev = TRAINER_PARTY_EVS(0, 252, 4, 252, 0, 0),
-        .ability = ABILITY_MOXIE,
+        .ability = ABILITY_SHARPNESS,
         .nature = NATURE_JOLLY
     },
     [FRONTIER_MON_GALLADE_2] = {
@@ -9122,7 +9122,7 @@ const struct TrainerMon gBattleFrontierMons[NUM_FRONTIER_MONS] = {
         .heldItem = ITEM_SALAC_BERRY,
         .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 0, 31),
         .ev = TRAINER_PARTY_EVS(4, 252, 0, 252, 0, 0),
-        .ability = ABILITY_MOXIE,
+        .ability = ABILITY_SHARPNESS,
         .nature = NATURE_JOLLY
     },
     [FRONTIER_MON_GALLADE_5] = {
