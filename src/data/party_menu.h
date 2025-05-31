@@ -755,15 +755,15 @@ static const u8 sSlotTilemap_WideEmpty[] = INCBIN_U8("graphics/party_menu/slot_w
 
  //Custom party menu
 #if PARTY_MENU_STYLE == PARTY_MENU_STYLE_DEFAULT
-const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bg.4bpp.lz");
+const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bg.4bpp.smol");
 const u16 gPartyMenuBg_Pal[] = INCBIN_U16("graphics/party_menu/bg.gbapal");
-const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bg.bin.lz");
-const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball.4bpp.lz");
-const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
+const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bg.bin.smolTM");
+const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball.4bpp.smol");
+const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.smol"); //unused
 const u16 gPartyMenuPokeball_Pal[] = INCBIN_U16("graphics/party_menu/pokeball.gbapal");
-const u32 gPartyMenuBgScroll_Gfx_BW[] = INCBIN_U32("graphics/party_menu/scroll_tiles.4bpp.lz");
+const u32 gPartyMenuBgScroll_Gfx_BW[] = INCBIN_U32("graphics/party_menu/scroll_tiles.4bpp.smol");
 const u16 gPartyMenuBgScroll_Pal[] = INCBIN_U16("graphics/party_menu/scroll_bg.gbapal");
-const u32 gPartyMenuBgScroll_Tilemap[] = INCBIN_U32("graphics/party_menu/scroll_bg.bin.lz");
+const u32 gPartyMenuBgScroll_Tilemap[] = INCBIN_U32("graphics/party_menu/scroll_bg.bin.smolTM");
 
 
 static const u8 sEqualMainSlotTileNums[] =      {43, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 44, 45,
@@ -784,11 +784,11 @@ static const u8 sEqualEmptySlotTileNums[] = {21, 22, 22, 22, 22, 22, 22, 22, 22,
                                              30,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0, 31,
                                              37, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 38, 39};
 #elif PARTY_MENU_STYLE == PARTY_MENU_STYLE_HGSS
-const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/hgss/bg.4bpp.lz");
+const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/hgss/bg.4bpp.smol");
 const u16 gPartyMenuBg_Pal[] = INCBIN_U16("graphics/party_menu/hgss/bg.gbapal");
-const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/hgss/bg.bin.lz");
-const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/hgss/pokeball.4bpp.lz");
-const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
+const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/hgss/bg.bin.smolTM");
+const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/hgss/pokeball.4bpp.smol");
+const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.smol"); //unused
 const u16 gPartyMenuPokeball_Pal[] = INCBIN_U16("graphics/party_menu/hgss/pokeball.gbapal");
 static const u8 sEqualMainSlotTileNums[] =      {24, 25, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 26, 34,
                                                  32, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 33, 44,
@@ -808,11 +808,11 @@ static const u8 sEqualEmptySlotTileNums[] = { 0,  0,  0,  0,  0,  0,  0,  0,  0,
                                               0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,
                                               0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0};
 #elif PARTY_MENU_STYLE == PARTY_MENU_STYLE_BW
-const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bw/bg.4bpp.lz");
+const u32 gPartyMenuBg_Gfx[] = INCBIN_U32("graphics/party_menu/bw/bg.4bpp.smol");
 const u16 gPartyMenuBg_Pal[] = INCBIN_U16("graphics/party_menu/bw/bg.gbapal");
-const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bw/bg.bin.lz");
-const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/bw/pokeball.4bpp.lz");
-const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.lz"); //unused
+const u32 gPartyMenuBg_Tilemap[] = INCBIN_U32("graphics/party_menu/bw/bg.bin.smolTM");
+const u32 gPartyMenuPokeball_Gfx[] = INCBIN_U32("graphics/party_menu/bw/pokeball.4bpp.smol");
+const u32 gPartyMenuPokeballSmall_Gfx[] = INCBIN_U32("graphics/party_menu/pokeball_small.4bpp.smol"); //unused
 const u16 gPartyMenuPokeball_Pal[] = INCBIN_U16("graphics/party_menu/bw/pokeball.gbapal");
 static const u8 sEqualMainSlotTileNums[] =      {24, 25, 25, 25, 25, 48, 30, 30, 30, 30, 30, 30, 56, 26,
                                                  32, 33, 33, 33, 49, 38, 38, 38, 38, 38, 38, 57, 33, 34,
@@ -1015,55 +1015,6 @@ static const u8 sPartyMenuActionCounts[] =
     [ACTIONS_TAKEITEM_TOSS] = ARRAY_COUNT(sPartyMenuAction_TakeItemTossCancel),
     [ACTIONS_ROTOM_CATALOG] = ARRAY_COUNT(sPartyMenuAction_RotomCatalog),
     [ACTIONS_ZYGARDE_CUBE]  = ARRAY_COUNT(sPartyMenuAction_ZygardeCube),
-};
-
-static const u16 sFieldMoves[FIELD_MOVES_COUNT + 1] =
-{
-    [FIELD_MOVE_CUT]          = MOVE_CUT,
-    [FIELD_MOVE_FLASH]        = MOVE_FLASH,
-    [FIELD_MOVE_ROCK_SMASH]   = MOVE_ROCK_SMASH,
-    [FIELD_MOVE_STRENGTH]     = MOVE_STRENGTH,
-    [FIELD_MOVE_SURF]         = MOVE_SURF,
-    [FIELD_MOVE_FLY]          = MOVE_FLY,
-    [FIELD_MOVE_DIVE]         = MOVE_DIVE,
-    [FIELD_MOVE_WATERFALL]    = MOVE_WATERFALL,
-    [FIELD_MOVE_TELEPORT]     = MOVE_TELEPORT,
-    [FIELD_MOVE_DIG]          = MOVE_DIG,
-    [FIELD_MOVE_SECRET_POWER] = MOVE_SECRET_POWER,
-    [FIELD_MOVE_MILK_DRINK]   = MOVE_MILK_DRINK,
-    [FIELD_MOVE_SOFT_BOILED]  = MOVE_SOFT_BOILED,
-    [FIELD_MOVE_SWEET_SCENT]  = MOVE_SWEET_SCENT,
-#if OW_DEFOG_FIELD_MOVE == TRUE
-    [FIELD_MOVE_DEFOG]        = MOVE_DEFOG,
-#endif
-    // NOTE: This value is used as the terminal value for the table. There's no reason to do this, as the size of the table is known.
-    //       Whichever move shares this value (MOVE_SWORDS_DANCE by default) if present will be treated as the end of the array rather than a field move.
-    [FIELD_MOVES_COUNT]       = FIELD_MOVES_COUNT
-};
-
-struct
-{
-    bool8 (*fieldMoveFunc)(void);
-    u8 msgId;
-} static const sFieldMoveCursorCallbacks[FIELD_MOVES_COUNT] =
-{
-    [FIELD_MOVE_CUT]          = {SetUpFieldMove_Cut,         PARTY_MSG_NOTHING_TO_CUT},
-    [FIELD_MOVE_FLASH]        = {SetUpFieldMove_Flash,       PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_ROCK_SMASH]   = {SetUpFieldMove_RockSmash,   PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_STRENGTH]     = {SetUpFieldMove_Strength,    PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_SURF]         = {SetUpFieldMove_Surf,        PARTY_MSG_CANT_SURF_HERE},
-    [FIELD_MOVE_FLY]          = {SetUpFieldMove_Fly,         PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_DIVE]         = {SetUpFieldMove_Dive,        PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_WATERFALL]    = {SetUpFieldMove_Waterfall,   PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_TELEPORT]     = {SetUpFieldMove_Teleport,    PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_DIG]          = {SetUpFieldMove_Dig,         PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_SECRET_POWER] = {SetUpFieldMove_SecretPower, PARTY_MSG_CANT_USE_HERE},
-    [FIELD_MOVE_MILK_DRINK]   = {SetUpFieldMove_SoftBoiled,  PARTY_MSG_NOT_ENOUGH_HP},
-    [FIELD_MOVE_SOFT_BOILED]  = {SetUpFieldMove_SoftBoiled,  PARTY_MSG_NOT_ENOUGH_HP},
-    [FIELD_MOVE_SWEET_SCENT]  = {SetUpFieldMove_SweetScent,  PARTY_MSG_CANT_USE_HERE},
-#if OW_DEFOG_FIELD_MOVE == TRUE
-    [FIELD_MOVE_DEFOG]        = {SetUpFieldMove_Defog,       PARTY_MSG_CANT_USE_HERE},
-#endif
 };
 
 static const u8 *const sUnionRoomTradeMessages[] =

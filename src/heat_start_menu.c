@@ -145,9 +145,9 @@ static EWRAM_DATA u8 sSaveDialogTimer = 0;
 static EWRAM_DATA u8 sSaveInfoWindowId = 0;
 
 // --BG-GFX--
-static const u32 sStartMenuTiles[] = INCBIN_U32("graphics/heat_start_menu/bg.4bpp.lz");
-static const u32 sStartMenuTilemap[] = INCBIN_U32("graphics/heat_start_menu/bg.bin.lz");
-static const u32 sStartMenuTilemapSafari[] = INCBIN_U32("graphics/heat_start_menu/bg_safari.bin.lz");
+static const u32 sStartMenuTiles[] = INCBIN_U32("graphics/heat_start_menu/bg.4bpp.smol");
+static const u32 sStartMenuTilemap[] = INCBIN_U32("graphics/heat_start_menu/bg.bin.smolTM");
+static const u32 sStartMenuTilemapSafari[] = INCBIN_U32("graphics/heat_start_menu/bg_safari.bin.smolTM");
 static const u16 sStartMenuPalette[] = INCBIN_U16("graphics/heat_start_menu/bg.gbapal");
 const u16 gStandardMenuPalette[] = INCBIN_U16("graphics/interface/std_menu.gbapal");
 
@@ -155,7 +155,7 @@ const u16 gStandardMenuPalette[] = INCBIN_U16("graphics/interface/std_menu.gbapa
 #define TAG_ICON_GFX 1234
 #define TAG_ICON_PAL 0x4654
 
-static const u32 sIconGfx[] = INCBIN_U32("graphics/heat_start_menu/icons.4bpp.lz");
+static const u32 sIconGfx[] = INCBIN_U32("graphics/heat_start_menu/icons.4bpp.smol");
 static const u16 sIconPal[] = INCBIN_U16("graphics/heat_start_menu/icons.gbapal");
 
 static const struct WindowTemplate sSaveInfoWindowTemplate = {
@@ -728,9 +728,9 @@ static void HeatStartMenu_LoadBgGfx(void) {
   LoadBgTilemap(0, 0, 0, 0);
   DecompressAndCopyTileDataToVram(0, sStartMenuTiles, 0, 0, 0);
   if (GetSafariZoneFlag() == FALSE) {
-    LZDecompressWram(sStartMenuTilemap, buf);
+    DecompressDataWithHeaderVram(sStartMenuTilemap, buf);
   } else {
-    LZDecompressWram(sStartMenuTilemapSafari, buf);
+    DecompressDataWithHeaderVram(sStartMenuTilemapSafari, buf);
   }
   LoadPalette(gStandardMenuPalette, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
   LoadPalette(sStartMenuPalette, BG_PLTT_ID(14), PLTT_SIZE_4BPP);
