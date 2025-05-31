@@ -1957,3 +1957,22 @@ const u16 gTilesetPalettes_JohtoBuilding1[][16] =
 };
 
 const u32 gTilesetTiles_JohtoBuilding1[] = INCBIN_U32("data/tilesets/secondary/johto_building_1/tiles.4bpp.fastSmol");
+
+const u16 gTilesetPalettes_NewBattleArena[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/new_battle_arena/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_NewBattleArena[] = INCBIN_U32("data/tilesets/secondary/new_battle_arena/tiles.4bpp.lz");

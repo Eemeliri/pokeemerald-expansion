@@ -1026,3 +1026,14 @@ const struct Tileset gTileset_JohtoBuilding1 =
     .metatileAttributes = gMetatileAttributes_JohtoBuilding1,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_NewBattleArena =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_NewBattleArena,
+    .palettes = gTilesetPalettes_NewBattleArena,
+    .metatiles = gMetatiles_NewBattleArena,
+    .metatileAttributes = gMetatileAttributes_NewBattleArena,
+    .callback = NULL,
+};
