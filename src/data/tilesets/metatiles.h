@@ -258,3 +258,6 @@ const u16 gMetatileAttributes_JohtoBuilding[] = INCBIN_U16("data/tilesets/primar
 
 const u16 gMetatiles_JohtoBuilding1[] = INCBIN_U16("data/tilesets/secondary/johto_building_1/metatiles.bin");
 const u16 gMetatileAttributes_JohtoBuilding1[] = INCBIN_U16("data/tilesets/secondary/johto_building_1/metatile_attributes.bin");
+
+const u16 gMetatiles_NewBattleArena[] = INCBIN_U16("data/tilesets/secondary/new_battle_arena/metatiles.bin");
+const u16 gMetatileAttributes_NewBattleArena[] = INCBIN_U16("data/tilesets/secondary/new_battle_arena/metatile_attributes.bin");

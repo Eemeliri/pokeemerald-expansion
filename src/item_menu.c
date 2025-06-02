@@ -833,7 +833,7 @@ static void BagMenu_InitBGs(void)
     SetGpuReg(REG_OFFSET_BLDCNT, 0);
 }
 
-const u32 sBagMenuScrollingBGTilemap[] = INCBIN_U32("graphics/bag/scrolling_bg.bin.lz");
+const u32 sBagMenuScrollingBGTilemap[] = INCBIN_U32("graphics/bag/scrolling_bg.bin.smolTM");
 
 static bool8 LoadBagMenu_Graphics(void)
 {
@@ -847,13 +847,13 @@ static bool8 LoadBagMenu_Graphics(void)
     case 1:
         if (FreeTempTileDataBuffersIfPossible() != TRUE)
         {
-            LZDecompressWram(gBagScreen_GfxTileMap, gBagMenu->tilemapBuffer);
+            DecompressDataWithHeaderWram(gBagScreen_GfxTileMap, gBagMenu->tilemapBuffer);
             gBagMenu->graphicsLoadState++;
         }
         break;
     case 2:
         //Load Scrolling Background
-        LZDecompressWram(sBagMenuScrollingBGTilemap, gBagMenu->tilemapBuffer[BAG_MENU_BG_SCROLLING]);
+        DecompressDataWithHeaderVram(sBagMenuScrollingBGTilemap, gBagMenu->tilemapBuffer[BAG_MENU_BG_SCROLLING]);
         gBagMenu->graphicsLoadState++;
     break;
     case 3:
