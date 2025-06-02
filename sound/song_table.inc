@@ -901,16 +901,6 @@ gSongTable::
 	song mus_hg_obtain_b_points, 2, 2
 	song mus_hg_win_minigame, 2, 2
 	song mus_lugias_song, 0, 0
-	song mus_hgss_casino, 0, 0
-	song mus_casino_plus_1, 0, 0
-	song mus_casino_plus_2, 0, 0
-	song mus_casino_plus_3, 0, 0
-	song mus_casino_plus_4, 0, 0
-	song mus_casino_plus_5, 0, 0
-	song mus_casino_plus_6, 0, 0
-	song mus_casino_plus_7, 0, 0
-	song mus_casino_plus_8, 0, 0
-	song mus_casino_plus_9, 0, 0
 	song mus_bw_game_freak, 0, 0
 	song mus_bw_intro, 0, 0
 	song mus_bw_the_pokemon, 0, 0

@@ -235,8 +235,6 @@ const u16 gMetatileAttributes_KantoBuilding[] = INCBIN_U16("data/tilesets/primar
 const u16 gMetatiles_SilphCo[] = INCBIN_U16("data/tilesets/secondary/silph_co/metatiles.bin");
 const u16 gMetatileAttributes_SilphCo[] = INCBIN_U16("data/tilesets/secondary/silph_co/metatile_attributes.bin");
 
-const u16 gMetatiles_BigGameCorner[] = INCBIN_U16("data/tilesets/secondary/big_game_corner/metatiles.bin");
-const u16 gMetatileAttributes_BigGameCorner[] = INCBIN_U16("data/tilesets/secondary/big_game_corner/metatile_attributes.bin");
 
 const u16 gMetatiles_Gatehouse[] = INCBIN_U16("data/tilesets/secondary/gatehouse/metatiles.bin");
 const u16 gMetatileAttributes_Gatehouse[] = INCBIN_U16("data/tilesets/secondary/gatehouse/metatile_attributes.bin");

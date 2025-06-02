@@ -939,16 +939,7 @@ const struct Tileset gTileset_SilphCo =
     .callback = NULL,
 };
 
-const struct Tileset gTileset_BigGameCorner =
-{
-    .isCompressed = TRUE,
-    .isSecondary = TRUE,
-    .tiles = gTilesetTiles_BigGameCorner,
-    .palettes = gTilesetPalettes_BigGameCorner,
-    .metatiles = gMetatiles_BigGameCorner,
-    .metatileAttributes = gMetatileAttributes_BigGameCorner,
-    .callback = InitTilesetAnim_MauvilleGameCorner,
-};
+
 
 const struct Tileset gTileset_Gatehouse =
 {

@@ -1806,24 +1806,6 @@ const u16 gTilesetPalettes_SilphCo[][16] =
 
 const u32 gTilesetTiles_SilphCo[] = INCBIN_U32("data/tilesets/secondary/silph_co/tiles.4bpp.fastSmol");
 
-const u16 gTilesetPalettes_BigGameCorner[][16] =
-{
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/00.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/01.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/02.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/03.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/04.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/05.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/06.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/07.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/08.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/09.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/10.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/11.gbapal"),
-    INCBIN_U16("data/tilesets/secondary/big_game_corner/palettes/12.gbapal"),
-};
-
-const u32 gTilesetTiles_BigGameCorner[] = INCBIN_U32("data/tilesets/secondary/big_game_corner/tiles.4bpp.fastSmol");
 
 const u16 gTilesetPalettes_Gatehouse[][16] =
 {

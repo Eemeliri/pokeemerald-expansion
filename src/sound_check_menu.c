@@ -1593,16 +1593,6 @@ static void DestroyWindow(u8 windowId) // sub_080E9750
     X(MUS_HG_OBTAIN_B_POINTS          , "MUS-HG-OBTAIN-B-POINTS"          ) \
     X(MUS_HG_WIN_MINIGAME             , "MUS-HG-WIN-MINIGAME"             ) \
     X(MUS_LUGIAS_SONG                 , "MUS-LUGIAS-SONG"                 ) \
-    X(MUS_HGSS_CASINO                 , "MUS-HGSS-CASINO"                            ) \
-    X(MUS_CASINO_PLUS_1               , "MUS-CASINO-PLUS-1"                          ) \
-    X(MUS_CASINO_PLUS_2               , "MUS-CASINO-PLUS-2"                          ) \
-    X(MUS_CASINO_PLUS_3               , "MUS-CASINO-PLUS-3"                          ) \
-    X(MUS_CASINO_PLUS_4               , "MUS-CASINO-PLUS-4"                          ) \
-    X(MUS_CASINO_PLUS_5               , "MUS-CASINO-PLUS-5"                          ) \
-    X(MUS_CASINO_PLUS_6               , "MUS-CASINO-PLUS-6"                          ) \
-    X(MUS_CASINO_PLUS_7               , "MUS-CASINO-PLUS-7"                          ) \
-    X(MUS_CASINO_PLUS_8               , "MUS-CASINO-PLUS-8"                          ) \
-    X(MUS_CASINO_PLUS_9               , "MUS-CASINO-PLUS-9"                          ) \
     X(MUS_BW_GAME_FREAK               , "MUS-BW-GAME-FREAK"                          ) \
     X(MUS_BW_INTRO                    , "MUS-BW-INTRO"                               ) \
     X(MUS_BW_THE_POKEMON              , "MUS-BW-THE-POKEMON"                         ) \

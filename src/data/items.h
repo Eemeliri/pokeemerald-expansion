@@ -10875,8 +10875,8 @@ const struct Item gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "The user sharpens\n"
-            "its claws to boost its\n"
-            "Attack stat and accuracy."),
+            "its claws to boost\n"
+            "Accuracy and Atk."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
