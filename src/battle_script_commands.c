@@ -58,7 +58,6 @@
 #include "constants/hold_effects.h"
 #include "constants/items.h"
 #include "constants/item_effects.h"
-#include "constants/map_types.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
 #include "constants/rgb.h"
@@ -17914,16 +17913,6 @@ void BS_ApplyTerastallization(void)
 {
     NATIVE_ARGS();
     ApplyBattlerVisualsForTeraAnim(gBattlerAttacker);
-    gBattlescriptCurrInstr = cmd->nextInstr;
-}
-
-void BS_DamageToQuarterTargetHP(void)
-{
-    NATIVE_ARGS();
-    gBattleStruct->moveDamage[gBattlerTarget] = (3 * GetNonDynamaxHP(gBattlerTarget)) / 4;
-    if (gBattleStruct->moveDamage[gBattlerTarget] == 0)
-        gBattleStruct->moveDamage[gBattlerTarget] = 1;
-
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
